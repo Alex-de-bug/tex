@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} %кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel} %русификатор 
+\usepackage{mathtools} %библиотека матеши
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage{amsmath}
+\usepackage{graphicx} %библиотека для графики и картинок
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{tabularx}
+
+\begin{document}
+\section{list}
+\tiny
+
+\begin{minipage}{.18\textwidth}
+1.arr: WORD 0x100\\
+2.dimN: WORD 2\\
+3.dimM: WORD 2\\
+4.dimElement: WORD 2\\
+5.\textbf{MUL:}\ LD \&1\\
+        6.ADD \#1\\
+        7.ST \&1\\
+        8.CLA\\
+9.\textbf{MUL\_LP:}\ LOOP \&1\\
+        10.JUMP MUL\_ACT\\
+        11.JUMP MUL\_RT\\
+12.\textbf{MUL\_ACT:}\ ADD \&2\\
+        13.JUMP MUL\_LP\\
+14.\textbf{MUL\_RT:}\ SWAP\\
+        15.ST \&2\\
+        16.POP\\
+        17.SWAP\\
+        18.POP\\
+        19.RET\\
+20.\textbf{GET:} \ LD \&2\\
+        21.PUSH\\
+        22.LD \$dimN\\
+        23.PUSH\\
+        24.CALL MUL\\
+        25.ADD \&1\\
+        26.PUSH\\
+        27.LD \$dimElement\\
+        28.PUSH\\
+        29.CALL MUL\\
+        30.ADD \$arr\\
+        31.SWAP\\
+        32.ST \&2\\
+        33.POP\\
+        34.SWAP\\
+        35.POP\\
+       36.RET\\
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+        1.DEREF: WORD ?\\
+        2.X\_1: WORD ?\\
+        3.X\_2: WORD ?\\
+        4.i: WORD 0\\
+        5.j: WORD 0\\
+        6.\textbf{STARTold}:\ LD i\\
+        7.CMP dimN\\
+        8.BZS EXT\\
+        9.LD j\\
+        10.CMP dimM\\
+        11.BZS addI\\
+        12.LD i\\
+        13.PUSH\\
+        14.LD j\\
+        15.PUSH\\
+        16.CALL GET\_ADDR\\
+        17.ST DEREF\\
+        18.LD (DEREF)+\\
+        19.ST X\_1\\
+        20.LD (DEREF)\\
+        21.ST X\_2\\
+        22.LD (j)+\\
+        23.JUMP START\\
+        24.\textbf{addI}:\ LD (i)+\\
+        25.LD \#0\\
+        26.ST j\\
+        27.JUMP START\\
+        28.\textbf{EXT}:\ HLT\\
+\end{minipage}
+
+\begin{minipage}{.5\textwidth}
+        1.arr: WORD 0x100\\
+        2.dimN: WORD 2\\
+       3. dimM: WORD 2\\
+        4.dimL: WORD 2\\
+        5.DEREF: WORD ?\\
+        6.i: WORD 0\\
+        7.j: WORD 0\\
+        8.k: WORD 0\\
+        9.\textbf{START:}LD i\\
+            10.CMP dimN\\
+            11.BZS EXT\\
+            12.LD j\\
+            13.CMP dimM\\
+            14.BZS addI\\
+            15.LD k\\
+            16.CMP dimM\\
+            17.BZS addJ\\
+            18.LD i\\
+            19.PUSH\\
+            20.LD j\\
+            21.PUSH\\
+            22.LD k\\
+            23.PUSH\\
+            24.CALL GET\\
+            25.ST DEREF\\
+            26.LD (k)+\\
+            27.JUMP START\\
+            28.\textbf{addI:}LD (i)+\\
+            29.LD \#0\\
+            30.ST j\\
+            31.JUMP START\\
+            32.\textbf{addJ:}LD (j)+\\
+            33.LD \#0\\
+            34.ST k\\
+            35.JUMP START\\
+            36.\textbf{EXT:}HLT\\
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+  
+\end{minipage}
+\end{document}

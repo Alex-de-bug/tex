@@ -1,0 +1,154 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} %кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel} %русификатор 
+\usepackage{mathtools} %библиотека матеши
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage{amsmath}
+\usepackage{graphicx} %библиотека для графики и картинок
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{tabularx}
+
+\begin{document}
+\section{mccode}
+\begin{tabularx}{0.13\textwidth} { 
+    | >{\centering\arraybackslash}X 
+    | >{\centering\arraybackslash}X 
+    | >{\raggedleft\arraybackslash}X | }
+   \hline
+   ld & st & reg \\
+   \hline
+   00  &  24 &DRr  \\
+   
+   01  &  25 &CRr \\
+   
+   02  &  26 &  IPr \\
+   
+   03  & 27 &  SPr \\
+   \hline
+   04  &  28 &  ACl \\
+   
+   05  & 29  &  BRl \\
+   
+   06  &  30 & PSl  \\
+   
+   07  &  31 &  KRl \\
+   \hline
+\end{tabularx}\\
+\begin{tabularx}{0.1\textwidth} { 
+    | >{\centering\arraybackslash}X 
+    | >{\centering\arraybackslash}X 
+    | }
+   \hline
+   alu & \tiny{oc/uc} \\
+   \hline
+    08 &  \~r \\
+   
+   09 &  \~l \\
+   
+   10 &  pls1  \\
+   
+   11 &  and \\
+   \hline
+  \end{tabularx}\\
+  \begin{tabularx}{0.1\textwidth} { 
+    | >{\centering\arraybackslash}X 
+    | >{\centering\arraybackslash}X 
+    | }
+   \hline
+   com & OC \\
+   \hline
+   12 &  \tiny{MByte} \\
+   
+   13 &  \tiny{MToS} \\
+   
+   14 &  \tiny{SToM}  \\
+   
+   15 &  \tiny{SByte} \\
+   \hline
+   16 &  \tiny{signExt} \\
+   
+   17 &  \tiny{ASL} \\
+   
+   18 &  \tiny{ROL} \\
+   
+   19 &  \tiny{ASR} \\
+   \hline
+   20 &  \tiny{ROR} \\
+   
+   21 &  c \\
+   
+   22 &  v \\
+   
+   23 &  nz \\
+   \hline
+  \end{tabularx}
+  \begin{tabularx}{0.1\textwidth} { 
+    | >{\centering\arraybackslash}X 
+    | >{\centering\arraybackslash}X 
+    | }
+   \hline
+   com & UC \\
+   \hline
+    &   \\
+   
+    &   \\
+   
+    &    \\
+   
+    &   \\
+   \hline
+   16 &  \tiny{C} \\
+   
+   17 &  \tiny{V} \\
+   
+   18 &  \tiny{Z} \\
+   
+   19 &  \tiny{N} \\
+   \hline
+   20 &  \tiny{0} \\
+   
+   21 &  \tiny{EI} \\
+   
+   22 &  \tiny{INT} \\
+   
+   23 &  \tiny{0HLT} \\
+   \hline
+  \end{tabularx}\\
+  \begin{tabularx}{0.1\textwidth} { 
+    | >{\centering\arraybackslash}X 
+    | >{\centering\arraybackslash}X 
+    | }
+   \hline
+   mem & \tiny{oc} \\
+   \hline
+    32 &  ld \\
+   
+   33 &  st \\
+   
+   34 &  IO  \\
+   
+   35 &  \tiny{INTS} \\
+   \hline
+  \end{tabularx}
+  \begin{tabularx}{0.1\textwidth} { 
+    | >{\centering\arraybackslash}X 
+    | >{\centering\arraybackslash}X 
+    | }
+   \hline
+   last & \tiny{oc/uc} \\
+   \hline
+    36 &  - \\
+   
+   37 &  - \\
+   
+   38 &  \tiny{hlt}  \\
+   
+   39 &  \tiny{0c/1uc} \\
+   \hline
+  \end{tabularx}\\
+\end{document}
+
