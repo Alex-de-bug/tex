@@ -1,0 +1,1017 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  27 JUN 2023 23:51
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/alexalex/Desktop/tex/zachetOPD/main.tex
+(/Users/alexalex/Desktop/tex/zachetOPD/main.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-05-05> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2022/06/11 v1.0j Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t2aenc.dfu
+File: t2aenc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 112.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/04/18 3.88 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen141
+\l@unhyphenated=\language87
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 108.
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-russian/russianb.ldf
+File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
+Language: russian 2020/09/09 1.3k Russian support for the Babel system
+Package babel Info: Making " an active character on input line 124.
+Package babel Info: Default for \cyrdash is provided on input line 163.
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/ru/babel-russian.tex
+Package babel Info: Importing font and identification data for russian
+(babel)             from babel-ru.ini. Reported on input line 11.
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count195
+\calc@Bcount=\count196
+\calc@Adimen=\dimen142
+\calc@Bdimen=\dimen143
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count197
+\calc@Cskip=\skip52
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen144
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count198
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count199
+\leftroot@=\count266
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count267
+\DOTSCASE@=\count268
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count269
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count270
+\dotsspace@=\muskip16
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
+\tag@help=\toks20
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
+\andhelp@=\toks21
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks22
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\g_MT_multlinerow_int=\count276
+\l_MT_multwidth_dim=\dimen153
+\origjot=\skip56
+\l_MT_shortvdotswithinadjustabove_dim=\dimen154
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen155
+\l_MT_above_intertext_sep=\dimen156
+\l_MT_below_intertext_sep=\dimen157
+\l_MT_above_shortintertext_sep=\dimen158
+\l_MT_below_shortintertext_sep=\dimen159
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen160
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
+\Gm@dimlist=\toks24
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen169
+\Gin@req@width=\dimen170
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen171
+\captionmargin=\dimen172
+\caption@leftmargin=\dimen173
+\caption@rightmargin=\dimen174
+\caption@width=\dimen175
+\caption@indent=\dimen176
+\caption@parindent=\dimen177
+\caption@hangindent=\dimen178
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count280
+\c@continuedfloat=\count281
+)
+Package caption Info: New subtype `subfigure' on input line 239.
+\c@subfigure=\count282
+Package caption Info: New subtype `subtable' on input line 239.
+\c@subtable=\count283
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen179
+\pgfutil@tempdimb=\dimen180
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box54
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks28
+))
+\pgf@x=\dimen181
+\pgf@y=\dimen182
+\pgf@xa=\dimen183
+\pgf@ya=\dimen184
+\pgf@xb=\dimen185
+\pgf@yb=\dimen186
+\pgf@xc=\dimen187
+\pgf@yc=\dimen188
+\pgf@xd=\dimen189
+\pgf@yd=\dimen190
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count284
+\c@pgf@countb=\count285
+\c@pgf@countc=\count286
+\c@pgf@countd=\count287
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+\pgf@sys@id@count=\count288
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count289
+\pgfsyssoftpath@bigbuffer@items=\count290
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen191
+\pgfmath@count=\count291
+\pgfmath@box=\box55
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count292
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen192
+\pgf@picmaxx=\dimen193
+\pgf@picminy=\dimen194
+\pgf@picmaxy=\dimen195
+\pgf@pathminx=\dimen196
+\pgf@pathmaxx=\dimen197
+\pgf@pathminy=\dimen198
+\pgf@pathmaxy=\dimen199
+\pgf@xx=\dimen256
+\pgf@xy=\dimen257
+\pgf@yx=\dimen258
+\pgf@yy=\dimen259
+\pgf@zx=\dimen260
+\pgf@zy=\dimen261
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen262
+\pgf@path@lasty=\dimen263
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen264
+\pgf@shorten@start@additional=\dimen265
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count293
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen266
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen267
+\pgf@pt@y=\dimen268
+\pgf@pt@temp=\dimen269
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen270
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen271
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box60
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen272
+\pgf@nodesepend=\dimen273
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen274
+\pgffor@skip=\dimen275
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count296
+\pgfplotmarksize=\dimen276
+)
+\tikz@lastx=\dimen277
+\tikz@lasty=\dimen278
+\tikz@lastxsaved=\dimen279
+\tikz@lastysaved=\dimen280
+\tikz@lastmovetox=\dimen281
+\tikz@lastmovetoy=\dimen282
+\tikzleveldistance=\dimen283
+\tikzsiblingdistance=\dimen284
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count297
+\tikznumberofchildren=\count298
+\tikznumberofcurrentchild=\count299
+\tikz@fig@count=\count300
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count301
+\pgfmatrixcurrentcolumn=\count302
+\pgf@matrix@numberofcolumns=\count303
+)
+\tikz@expandcount=\count304
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks37
+\t@pgfplots@tokb=\toks38
+\t@pgfplots@tokc=\toks39
+\pgfplots@tmpa=\dimen285
+\c@pgfplots@coordindex=\count305
+\c@pgfplots@scanlineindex=\count306
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks40
+\t@pgf@tokb=\toks41
+\t@pgf@tokc=\toks42
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count307
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count308
+\t@pgfplotstable@a=\toks43
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count309
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen286
+\pgfdecoratedremainingdistance=\dimen287
+\pgfdecoratedinputsegmentcompleteddistance=\dimen288
+\pgfdecoratedinputsegmentremainingdistance=\dimen289
+\pgf@decorate@distancetomove=\dimen290
+\pgf@decorate@repeatstate=\count310
+\pgfdecorationsegmentamplitude=\dimen291
+\pgfdecorationsegmentlength=\dimen292
+)
+\tikz@lib@dec@box=\box65
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count311
+\pgfplots@xmin@reg=\dimen293
+\pgfplots@xmax@reg=\dimen294
+\pgfplots@ymin@reg=\dimen295
+\pgfplots@ymax@reg=\dimen296
+\pgfplots@zmin@reg=\dimen297
+\pgfplots@zmax@reg=\dimen298
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count312
+\l__pdf_internal_box=\box66
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Info: Redefining \th on input line 16.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=557.38951pt
+* \textheight=681.15898pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count313
+\scratchdimen=\dimen299
+\scratchbox=\box67
+\nofMPsegments=\count314
+\nofMParguments=\count315
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count316
+\MPscratchDim=\dimen300
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
+\everyMPtoPDFconversion=\toks45
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
+ on input line 16.
+
+[1
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+Overfull \hbox (3.4524pt too wide) in paragraph at lines 32--34
+\T2A/cmr/m/n/10 сто-я-щее из от-дель-ных то-чек раз-но-го цве-та. При-ме-ром дис-крет-но-го хра-не-ния зву-ко-вой ин-фор-ма-ции яв-ля-ет-ся аудиокомпакт-
+ []
+
+[2]
+<utf81.png, id=17, 697.60625pt x 206.7725pt>
+File: utf81.png Graphic file (type png)
+<use utf81.png>
+Package pdftex.def Info: utf81.png  used on input line 103.
+(pdftex.def)             Requested size: 390.17094pt x 115.64667pt.
+<utf82.png, id=19, 696.6025pt x 228.855pt>
+File: utf82.png Graphic file (type png)
+<use utf82.png>
+Package pdftex.def Info: utf82.png  used on input line 108.
+(pdftex.def)             Requested size: 390.17094pt x 128.18236pt.
+
+Overfull \hbox (43.39102pt too wide) in paragraph at lines 117--122
+\T2A/cmr/m/n/10 Символы Unicode до $\OML/cmm/m/it/10 FFFF[]$ \T2A/cmr/m/n/10 вклю-чи-тель-но за-пи-сы-ва-ют-ся как есть 16-битным сло-вом. Сим-во-лы же в диа-па-зоне $\OT1/cmr/m/n/10 10000[]\OML/cmm/m/it/10 :::\OT1/cmr/m/n/10 10\OML/cmm/m/it/10 FFFF[]$
+ []
+
+[3 <./utf81.png> <./utf82.png>]
+<RS1.png, id=28, 118.4425pt x 145.54375pt>
+File: RS1.png Graphic file (type png)
+<use RS1.png>
+Package pdftex.def Info: RS1.png  used on input line 151.
+(pdftex.def)             Requested size: 111.4762pt x 136.98878pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+<calc.png, id=29, 513.92pt x 309.155pt>
+File: calc.png Graphic file (type png)
+<use calc.png>
+Package pdftex.def Info: calc.png  used on input line 186.
+(pdftex.def)             Requested size: 278.69475pt x 167.65352pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--187
+
+ []
+
+[4 <./RS1.png>]
+<unixkom.png, id=34, 379.4175pt x 225.84375pt>
+File: unixkom.png Graphic file (type png)
+<use unixkom.png>
+Package pdftex.def Info: unixkom.png  used on input line 223.
+(pdftex.def)             Requested size: 390.17094pt x 232.24947pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--237
+
+ []
+
+[5 <./calc.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 258--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--279
+
+ []
+
+[6 <./unixkom.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
+
+ []
+
+
+Overfull \hbox (6.22986pt too wide) in paragraph at lines 382--383
+[]\T2A/cmr/m/n/10 2.3) Кос-вен-ная ав-то-ин-кре-мент-ная. SXT_CR(0-7)->BR, BR+IP -> AR, MEM(AR) -> DR, DR+1 -> DR, DR -> MEM(AR),
+ []
+
+
+Overfull \hbox (0.39795pt too wide) in paragraph at lines 385--386
+[]\T2A/cmr/m/n/10 2.4) Кос-вен-ная ав-то-де-кре-мент-ная. SXT_CR(0-7)->BR, BR+IP -> AR, MEM(AR) -> DR, DR-1 -> DR, DR -> MEM(AR),
+ []
+
+[8] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 698--700
+
+ []
+
+
+Overfull \hbox (17.22166pt too wide) in paragraph at lines 627--745
+[]$[]$  $[]$ 
+ []
+
+[11] [12] [13]
+<mpu.png, id=66, 453.695pt x 281.05pt>
+File: mpu.png Graphic file (type png)
+<use mpu.png>
+Package pdftex.def Info: mpu.png  used on input line 850.
+(pdftex.def)             Requested size: 557.38951pt x 345.28632pt.
+ [14 <./mpu.png>] [15]
+Overfull \hbox (10.78902pt too wide) in paragraph at lines 950--950
+[]\T2A/cmr/bx/n/14.4 Структура со-вре-мен-ных про-цес-со-ров. Окру-же-ние про-цес-со-ра. CISC, RISC,
+ []
+
+<memory_adr.png, id=74, 706.64pt x 423.5825pt>
+File: memory_adr.png Graphic file (type png)
+<use memory_adr.png>
+Package pdftex.def Info: memory_adr.png  used on input line 990.
+(pdftex.def)             Requested size: 445.9133pt x 267.2979pt.
+<addr_mem.png, id=75, 346.29375pt x 252.945pt>
+File: addr_mem.png Graphic file (type png)
+<use addr_mem.png>
+Package pdftex.def Info: addr_mem.png  used on input line 997.
+(pdftex.def)             Requested size: 445.9133pt x 325.72147pt.
+[16] [17 <./memory_adr.png>] [18 <./addr_mem.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1067
+
+ []
+
+<memory.png, id=87, 575.14874pt x 341.275pt>
+File: memory.png Graphic file (type png)
+<use memory.png>
+Package pdftex.def Info: memory.png  used on input line 1074.
+(pdftex.def)             Requested size: 445.9133pt x 264.59995pt.
+[19 <./memory.png>]
+Overfull \hbox (19.86638pt too wide) in paragraph at lines 1094--1094
+[]\T2A/cmr/bx/n/14.4 Предназначение и ор-га-ни-за-ция вир-ту-аль-ной па-мя-ти. Сегментно-страничная
+ []
+
+
+Overfull \hbox (18.59459pt too wide) in paragraph at lines 1139--1140
+[]\T2A/cmr/m/n/10 3. По на-зна-че-нию (Вы-чис-ли-тель-ные, Ин-фор-ма-ци-он-ные, Информационно-вычислительные, Информационно-управляющие) 
+ []
+
+[20]
+<osi.png, id=96, 355.3275pt x 334.24875pt>
+File: osi.png Graphic file (type png)
+<use osi.png>
+Package pdftex.def Info: osi.png  used on input line 1154.
+(pdftex.def)             Requested size: 445.9133pt x 419.47256pt.
+ [21 <./osi.png>] [22{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<kontr-bu.png, id=105, 609.27625pt x 383.4325pt>
+File: kontr-bu.png Graphic file (type png)
+<use kontr-bu.png>
+Package pdftex.def Info: kontr-bu.png  used on input line 1239.
+(pdftex.def)             Requested size: 445.9133pt x 280.63474pt.
+<out1.png, id=106, 620.3175pt x 388.45125pt>
+File: out1.png Graphic file (type png)
+<use out1.png>
+Package pdftex.def Info: out1.png  used on input line 1249.
+(pdftex.def)             Requested size: 445.9133pt x 279.2342pt.
+ [23 <./kontr-bu.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1259--1260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1274
+
+ []
+
+<in1.png, id=112, 613.29124pt x 384.43625pt>
+File: in1.png Graphic file (type png)
+<use in1.png>
+Package pdftex.def Info: in1.png  used on input line 1275.
+(pdftex.def)             Requested size: 445.9133pt x 279.51572pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1275--1286
+
+ []
+
+[24 <./out1.png>]
+Overfull \hbox (9.48164pt too wide) in paragraph at lines 1306--1306
+[]\T2A/cmr/bx/n/14.4 Синхронные по-сле-до-ва-тель-ные ин-тер-фей-сы. Кон-трол-ле-ры по-сле-до-ва-тель-
+ []
+
+<out2.png, id=117, 609.27625pt x 379.4175pt>
+File: out2.png Graphic file (type png)
+<use out2.png>
+Package pdftex.def Info: out2.png  used on input line 1307.
+(pdftex.def)             Requested size: 445.9133pt x 277.69614pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1307--1322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1307--1322
+
+ []
+
+[25 <./in1.png>]
+<in2.png, id=123, 607.26875pt x 378.41376pt>
+File: in2.png Graphic file (type png)
+<use in2.png>
+Package pdftex.def Info: in2.png  used on input line 1331.
+(pdftex.def)             Requested size: 445.9133pt x 277.87381pt.
+ [26 <./out2.png>] [27 <./in2.png>]
+<out3.png, id=132, 472.76625pt x 299.1175pt>
+File: out3.png Graphic file (type png)
+<use out3.png>
+Package pdftex.def Info: out3.png  used on input line 1370.
+(pdftex.def)             Requested size: 445.9133pt x 282.13351pt.
+ [28 <./out3.png>]
+<in3.png, id=137, 638.385pt x 396.48125pt>
+File: in3.png Graphic file (type png)
+<use in3.png>
+Package pdftex.def Info: in3.png  used on input line 1398.
+(pdftex.def)             Requested size: 445.9133pt x 276.9421pt.
+ [29 <./in3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1444
+
+ []
+
+<pdp.png, id=142, 492.84125pt x 464.73625pt>
+File: pdp.png Graphic file (type png)
+<use pdp.png>
+Package pdftex.def Info: pdp.png  used on input line 1464.
+(pdftex.def)             Requested size: 445.9133pt x 420.5067pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1460--1466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1460--1466
+
+ []
+
+[30] [31 <./pdp.png>] (./main.aux) ) 
+Here is how much of TeX's memory you used:
+ 27263 strings out of 476047
+ 680027 string characters out of 5790247
+ 1865248 words of memory out of 5000000
+ 47266 multiletter control sequences out of 15000+600000
+ 522469 words of font info for 57 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,6n,103p,1539b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
+Output written on main.pdf (31 pages, 3358619 bytes).
+PDF statistics:
+ 195 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+
