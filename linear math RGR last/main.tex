@@ -1,0 +1,1423 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} %кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel} %русификатор 
+\usepackage{mathtools} %библиотека матеши
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage{amsmath}
+\usepackage{graphicx} %библиотека для графики и картинок
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{caption}
+\usepackage{pgfplots}
+
+
+\usepackage{tikz,tikz-3dplot}
+
+%% style for surfaces
+\tikzset{surface/.style={draw=black, left color=yellow,right color=yellow,middle
+        color=yellow!60!#1, fill opacity=1},surface/.default=white}
+
+%% macros to draw back and front of cones
+%% optional first argument is styling; others are z, radius, side offset (in degrees)
+\newcommand{\coneback}[4][]{
+    %% start at the correct point on the circle, draw the arc, then draw to the origin of the diagram, then close the path
+    \draw[canvas is xy plane at z=#2, #1] (\tdplotmainphi-#4:#3) 
+    arc(\tdplotmainphi-#4:\tdplotmainphi+180+#4:#3) -- (O) --cycle;
+}
+\newcommand{\conefront}[4][]{
+    \draw[canvas is xy plane at z=#2, #1] (\tdplotmainphi-#4:#3) arc
+    (\tdplotmainphi-#4:\tdplotmainphi-180+#4:#3) -- (O) --cycle;
+}
+
+\newcommand{\conetruncback}[7][]{
+    \draw[line join=round,#1] plot[variable=\t,domain=\tdplotmainphi-#4:\tdplotmainphi+180+#4] 
+    ({#3*cos(\t)},{#3*sin(\t)},#2)
+    -- plot[variable=\t,domain=\tdplotmainphi+180-#7:\tdplotmainphi+#7] 
+    ({#6*cos(\t)},{#6*sin(\t)},#5)
+    --cycle;
+}
+
+\newcommand{\conetruncfront}[7][]{
+    \draw[line join=round,#1] plot[variable=\t,domain=\tdplotmainphi-#4:\tdplotmainphi-180+#4] 
+    ({#3*cos(\t)},{#3*sin(\t)},#2)
+    -- plot[variable=\t,domain=\tdplotmainphi-180-#7:\tdplotmainphi+#7] 
+    ({#6*cos(\t)},{#6*sin(\t)},#5)
+    --cycle;
+}
+
+
+
+
+\begin{document}
+
+\thispagestyle{empty}
+% НАЧАЛО ТИТУЛЬНОГО ЛИСТА
+\begin{center}
+        \Large
+        Федеральное государственное автономное \\
+        образовательное учреждение высшего образования \\ 
+        «Научно-образовательная корпорация ИТМО»\\
+        \vspace{0.5cm}
+        \large
+        Факультет программной инженерии и компьютерной техники \\
+        Направление подготовки 09.03.04 Программная инженерия \\
+        \vspace{1cm}
+        \Large
+        \textbf{Отчёт по расчетно-графической работе №3} \\
+        По дисциплине «Линейная геометрия» (второй семестр)\\
+        \large
+        \vspace{8cm}
+    
+        \begin{minipage}{.33\textwidth}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{.4\textwidth}
+            \textbf{Группа}: \vspace{.1cm} \\
+            \ МАТБАЗ 1.5\\ \\
+            \textbf{Студенты}: \vspace{.1cm} \\
+            \ Андриянова Софья\\
+            \ Беляев Михаил\\
+            \ Билошицкий Михаил\\
+            \ Дениченко Александр\\
+            \ Разинкин Александр\\ \\
+            \textbf{Лектор}: \vspace{.1cm} \\
+            \ Правдин Константин Владимирович \\ \\
+            \textbf{Практик}:  \\
+            \ Правдин Константин Владимирович
+        \end{minipage}
+        \vfill
+    Санкт-Петербург\\ 2023 г.
+    \end{center}
+ 
+% КОНЕЦ ТИТУЛЬНОГО ЛИСТА
+
+\newpage
+
+
+% задание 1 начало
+\section{Линейный оператор и спектральный анализ}
+A)
+
+
+\textbf{Задание:} Дано пространство геометрических векторов $\mathbb{R}^3$ , его подпространства $L_1$ и $L_2$ и линейный
+оператор $\mathcal{A}:\ \mathbb{R}^3 \rightarrow \mathbb{R}^3$. $\mathcal{A}$ – оператор проектирования пространства $\mathbb{R}^3$ на подпространство $L_1$ параллельно
+подпространству $L_2$, где $L_1$ определено уравнением x = 0, $L_2$ – уравнениями $2x=2y=-z$\\
+
+
+% 1) Изобразите на графике подпространства $L_1$ и $L_2$.
+
+
+% 2) Методами векторной алгебры составьте формулу для линейного оператора
+
+
+% 3) Составьте его матрицу в базисе $\{i, j, k\}$ пространства $\mathbb{R}^3  $
+
+
+% 4) Решите задачу о диагонализации полученной матрицы методом спектрального анализа.
+
+
+% 5) На построенном ранее графике изобразите базис, в котором матрица линейного оператора
+% имеет диагональный вид. Объясните его смысл.\\
+\textbf{Решение:}\\
+
+1) Изобразим пространства $L_1,\ L_2$:\\
+
+\begin{center}
+    \tdplotsetmaincoords{70}{110}
+
+  \begin{tikzpicture}[scale=1.5]
+    \tdplotsetrotatedcoords{70}{70}{70}
+
+    % Оси координат
+    \draw[thick,->] (0,-3,0) -- (0,3,0) node[anchor=north west]{\(y\)};
+    \draw[thick,->] (0,0,-3) -- (0,0,3) node[anchor=south]{\(z\)};
+    \draw[thick,->] (0,0,0) -- (3,0,0) node[anchor=north east]{\(x\)};
+
+    % Прямая 2x = 2y = -z (пунктирная)
+    
+    \draw[red,thick,dashed] (0, 0, 0) -- (-1.4,-1,2) node[anchor=west]{\(L_2\)};
+    % Плоскость x = 0
+    \fill[blue!20,opacity=0.5] (0,-3,-3) -- (0,-3,3) -- (0,3,3) -- (0,3,-3) -- cycle;
+    \node[blue] at (0,2,2) {\(L_1\)};
+    \draw[red,thick,] (1.4,1,-2) -- (0, 0 ,0) node[anchor=west]{\(L_2\)};
+    % Точка пересечения прямой и плоскости
+    \draw[fill=green] (0,0,0) circle (0.05) node[anchor=south east]{\(R\)};
+  \end{tikzpicture}
+  \captionof{figure}{Пространства}
+\end{center}
+
+2) Методами векторной алгебры составим формулу для линейного оператора:
+
+
+Покажем графически:
+\begin{center}
+    \tdplotsetmaincoords{70}{110}
+
+  \begin{tikzpicture}[scale=1.3]
+    \tdplotsetrotatedcoords{70}{70}{70}
+    % Прямая 2x = 2y = -z (пунктирная)
+    
+    \draw[red,thick,dashed] (0, 0, 0) -- (-1.4,-1,2) node[anchor=west]{\(L_2\)};
+    \draw[blue,thick,dashed] (0, 2, 0) -- (-1.4,1,2) node[anchor=west]{\(\)};
+    % Плоскость x = 0
+    \fill[blue!20,opacity=0.5] (0,-3,-7) -- (0,-3,3) -- (0,3,3) -- (0,3,-7) -- cycle;
+    \node[blue] at (0,-2,2) {\(L_1\)};
+    \draw[red,thick,] (1.4,1,-2) -- (0, 0 ,0) node[anchor=west]{\(\)};
+    \draw[blue,thick, ->] (0, 2 ,0) -- (1.4,3,-2) node[anchor=west]{\(s\)};
+    \draw[red,thick, ->] (0, 2 ,0) -- (0.9,2.632,-1.5) node[midway, above left]{\(\overrightarrow{x_1}\)};
+    \draw[black,thick, ->] (0, 0 ,0) -- (0.9,2.632,-1.5) node[midway, above right]{\(\overrightarrow{x}\)};
+    % Точка пересечения прямой и плоскости
+    \draw[fill=green] (0,0,0) circle (0.05) node[anchor=south east]{\(R\)};
+    \draw[orange,thick, ->] (0, 0 ,0) -- (1, 0 ,0) node[anchor=west]{\(\overrightarrow{n}\)};
+    \draw[blue,thick, ->] (0, 0 ,0) -- (0, 2 ,0) node[midway, above left]{\(\overrightarrow{x_2}\)};
+    \end{tikzpicture}
+    \captionof{figure}{Вспомогательные построения}
+    \end{center}
+
+
+    Получим формулу для линейного оператора.
+    \begin{equation*}
+        \overline{x} = \overline{x_1} + \overline{x_2}
+    \end{equation*}
+    \begin{equation*}
+        \overline{x_2} = \overline{x} - \overline{x_1} = \overline{x} - \frac{<\overline{x},\overline{s}>}{||\overline{s}||^2}\cdot \overline{s}
+    \end{equation*}   
+    
+    3) Составим матрицу оператора в базисе $\{i,j,k\}$ в $\mathbb{R}^3$\\
+    Пусть $\overline{s}$ имеет координаты $(1; 1; -2)^T$, исходя из данного по условию уравнения $2x=2y=-z$. Возьмём точку $A(1; 0; 0)$ и скажем, что новый вектор проходит через эту точку\\
+    При помощи канонического уравнения прямой мы можем получить следующее:
+    \begin{equation*}
+        \frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}
+    \end{equation*}
+    \begin{equation*}
+        \frac{x-1}{1}=\frac{y-0}{1}=\frac{z-0}{-2},\ x-1=y=\frac{z}{-2},\ -2x+2=-2y=z
+    \end{equation*}
+    \begin{equation*}
+        \begin{cases}
+            x=0\\
+            -2x+2=-2y\\
+            -2y=z\\
+            -2x+2=z
+        \end{cases}
+        \begin{cases}
+            x=0\\
+            y=-1\\
+            z=2
+        \end{cases}
+    \end{equation*}
+Мы получили действие оператором на базисный вектор i.\\
+    \begin{equation*}
+        \mathcal{A} i = 
+    \begin{pmatrix}
+        0 \\
+        -1\\
+        2
+    \end{pmatrix}, 
+    \mathcal{A} j = 
+    \begin{pmatrix}
+        0 \\
+        1\\
+        0
+    \end{pmatrix}
+    , 
+    \mathcal{A} k = 
+    \begin{pmatrix}
+        0 \\
+        0\\
+        1
+    \end{pmatrix}
+    \end{equation*}
+    Матрица оператора будет иметь вид:\\
+    \begin{equation*}
+    A = 
+    \begin{pmatrix}
+        0&0&0 \\
+        -1&1&0\\
+        2&0&1
+    \end{pmatrix}
+    \end{equation*}
+
+
+    4) Диагонализуем полученную матрицу.
+    \begin{equation*}
+        det(A-\lambda I)
+    \end{equation*}
+    \begin{equation*}
+        \begin{pmatrix}
+            -\lambda&0&0 \\
+            -1&1-\lambda&0\\
+            2&0&1-\lambda
+        \end{pmatrix}=-\lambda(\lambda-1)^2
+        \end{equation*}
+    $\lambda_1=0$(кр 1):\\
+    \begin{equation*}
+        \begin{pmatrix}
+            0&0&0 \\
+            -1&1&0\\
+            2&0&1
+        \end{pmatrix}\sim 
+        \begin{pmatrix}
+            1&0|&1 \\
+            0&1|&-2
+        \end{pmatrix},\ x_1=C_1
+        \begin{pmatrix}
+            1\\
+            1\\
+            -2
+        \end{pmatrix}
+    \end{equation*}
+    $\lambda_2=1$(кр 2):\\
+    \begin{equation*}
+        \begin{pmatrix}
+            -1&0&0 \\
+            -1&0&0\\
+            2&0&0
+        \end{pmatrix}\sim 
+        \begin{pmatrix}
+            1&0&0 
+        \end{pmatrix}\sim 
+        \begin{pmatrix}
+            1&0|&0 
+        \end{pmatrix},\ x_2=C_2
+        \begin{pmatrix}
+            1\\
+            1\\
+            0
+        \end{pmatrix}+
+        C_3\begin{pmatrix}
+            1\\
+            0\\
+            1
+        \end{pmatrix}
+    \end{equation*}
+Итоговая диагонализованная матрица:\\
+\begin{equation*}A^*=
+    \begin{pmatrix}
+        0&0&0 \\
+        0&1&0\\
+        0&0&1
+    \end{pmatrix}
+\end{equation*}
+5) Базис в котором матрица оператора имеет диагонаольный вид:\\
+\begin{center}
+    \tdplotsetmaincoords{70}{100}
+
+  \begin{tikzpicture}[scale=1]
+    \tdplotsetrotatedcoords{90}{70}{70}
+    \draw[thick,dashed,->] (0,0,0) -- (2,1,-2) node[anchor=north west]{\(\)};
+    \fill[blue!20,opacity=0.5] (0,0,0) -- (3,0,0) -- (3,3,0) -- (0,3,0) -- cycle;
+    % Оси координат
+    \draw[thick,->] (0,0,0) -- (0,3,0) node[anchor=north west]{\(y\)};
+    \draw[thick,->] (0,0,0) -- (0,0,3) node[anchor=south]{\(z\)};
+    \draw[thick,->] (0,0,0) -- (3,0,0) node[anchor=north east]{\(x\)};
+
+    % Оси координат
+    
+    \draw[thick,->] (0,0,0) -- (1,1,0) node[anchor=south]{\(\)};
+    \draw[thick,->] (0,0,0) -- (1,0,1) node[anchor=north east]{\(\)};
+
+    
+    
+  \end{tikzpicture}
+  \captionof{figure}{Базис}
+\end{center}
+
+Б)
+
+
+\textbf{Задание:} Дано множество функций $L$ и отображение $\mathcal{A}: L \rightarrow L$. $L$ - множество функций вида \\$y=a\ cos2t+b\ sin2t+c\ tcos2t+d\ tsin2t$, где $a,b,c,d \in \mathbb{R},\ \mathcal{A} =\mathcal{D}^2+4\mathcal{I}$, $\mathcal{D} $- дифференцирование, т.е. $\mathcal{D}(y(t))=\frac{dy}{dt}. $\\
+
+
+% 1) Изобразите на графике подпространства $L_1$ и $L_2$.
+
+
+% 2) Методами векторной алгебры составьте формулу для линейного оператора
+
+
+% 3) Составьте его матрицу в базисе $\{i, j, k\}$ пространства $\mathbb{R}^3  $
+
+
+% 4) Решите задачу о диагонализации полученной матрицы методом спектрального анализа.
+
+
+% 5) На построенном ранее графике изобразите базис, в котором матрица линейного оператора
+% имеет диагональный вид. Объясните его смысл.\\
+\textbf{Решение:}\\
+
+
+1) Проверим, что множество функций данное по условию является линейным пространством над полем $\mathbb{R} $
+
+
+Давайте проверим каждую из аксиом для данного множества функций:
+\\
+1. Закон сложения:\\
+   Закон коммутативности: Проверим \(f(t) + g(t) = g(t) + f(t)\):
+   \begin{equation*}
+    f(t) + g(t) = (a \cos(2t) + b \sin(2t) + c t \cos(2t) + d t \sin(2t))
+     + (a' \cos(2t) + b' \sin(2t) + c' t \cos(2t) + d' t \sin(2t))
+     =
+   \end{equation*}
+   \begin{equation*}
+    = (a + a') \cos(2t) + (b + b') \sin(2t) 
+   + (c + c') t \cos(2t) + (d + d') t \sin(2t)
+   \end{equation*}
+     Проверка показывает, что \(f(t) + g(t) = g(t) + f(t)\), что соответствует закону коммутативности.\\
+   \\Закон ассоциативности: Проверим \((f(t) + g(t)) + h(t) = f(t) + (g(t) + h(t))\):
+   \begin{equation*}
+    (f(t) + g(t)) + h(t) = ((a \cos(2t) + b \sin(2t) + c t \cos(2t) + d t \sin(2t))
+     + (a' \cos(2t) + b' \sin(2t) + c' t \cos(2t) + d' t \sin(2t))) 
+     + (a'' \cos(2t) + 
+   \end{equation*}
+   \begin{equation*}
+    + b'' \sin(2t) + c'' t \cos(2t) + d'' t \sin(2t))= (a + a' + a'') \cos(2t) + (b + b' + b'') \sin(2t)
+     + (c + c' + c'') t \cos(2t) + (d + d' + d'') t \sin(2t)
+   \end{equation*}
+     и
+     \begin{equation*}
+        f(t) + (g(t) + h(t)) = (a \cos(2t) + b \sin(2t) + c t \cos(2t) + d t \sin(2t))
+      + ((a' \cos(2t) + b' \sin(2t) + c' t \cos(2t) + d' t \sin(2t)) 
+      + (a'' \cos(2t) + b'' \sin(2t) +
+       \end{equation*}
+       \begin{equation*}
+        + c'' t \cos(2t) + d'' t \sin(2t))) 
+     = (a + a' + a'') \cos(2t) + (b + b' + b'') \sin(2t) 
+      + (c + c' + c'') t \cos(2t) + (d + d' + d'') t \sin(2t)
+       \end{equation*}
+       Проверка показывает, что \((f(t) + g(t)) + h(t) = f(t) + (g(t) + h(t))\), что соответствует закону ассоциативности.
+       \\ \\
+       Существование нулевого элемента: Найдем значения коэффициентов \(a, b, c, d\) такие, чтобы функция \(0(t) = 0\) для любого \(t\). Это означает, что все коэффициенты должны быть равны нулю.
+       Если мы положим \(a = b = c = d = 0\), то получим \(y = 0\) для всех \(t\), что соответствует нулевой функции.
+       \\ \\
+     Существование противоположного элемента: Для каждого коэффициента \(a, b, c, d\) найдем противоположные значения, так чтобы сумма функций равнялась нулевой функции.
+       Например, если у нас есть функция \(y = a \cos(2t) + b \sin(2t) + c t \cos(2t) + d t \sin(2t)\), то противоположная функция будет иметь коэффициенты \(-a, -b, -c, -d\) и будет выглядеть как \(-a \cos(2t) - b \sin(2t) - c t \cos(2t) - d t \sin(2t)\).
+\\ \\
+  2. Закон умножения на скаляр:\\
+\begin{itemize}
+  \item Закон ассоциативности: $\forall \alpha, \beta \in \mathbb{R}$, $\forall f(t) \in \mathcal{F}$
+  \[
+  \alpha (\beta f(t)) = (\alpha \beta) f(t)
+  \]
+  
+  \item Закон дистрибутивности по скаляру: $\forall \alpha, \beta \in \mathbb{R}$, $\forall f(t), g(t) \in \mathcal{F}$
+  \[
+  (\alpha + \beta) f(t) = \alpha f(t) + \beta f(t)
+  \]
+\end{itemize}
+
+\textbf{Закон ассоциативности:}
+
+Пусть $\alpha, \beta \in \mathbb{R}$ и $f(t) = a\cos(2t) + b\sin(2t) + ct\cos(2t) + dt\sin(2t)$.
+
+Тогда $\alpha (\beta f(t))$ будет равно:
+\[
+\alpha (\beta f(t)) = \alpha \left(\beta (a\cos(2t) + b\sin(2t) + ct\cos(2t) + dt\sin(2t))\right)
+\]
+\[
+= (\alpha \beta) (a\cos(2t) + b\sin(2t) + ct\cos(2t) + dt\sin(2t))
+\]
+\[
+= (\alpha \beta) f(t)
+\]
+
+Таким образом, закон ассоциативности выполняется.
+
+\textbf{Закон дистрибутивности по скаляру:}
+
+Пусть $\alpha, \beta \in \mathbb{R}$ и $f(t), g(t) \in \mathcal{F}$, где $f(t) = a\cos(2t) + b\sin(2t) + ct\cos(2t) + dt\sin(2t)$ и $g(t) = p\cos(2t) + q\sin(2t) + rt\cos(2t) + st\sin(2t)$.
+
+Тогда $(\alpha + \beta) f(t)$ будет равно:
+\[
+(\alpha + \beta) f(t) = (\alpha + \beta)(a\cos(2t) + b\sin(2t) + ct\cos(2t) + dt\sin(2t))
+\]
+\[
+= \alpha (a\cos(2t) + b\sin(2t) + ct\cos(2t) + dt\sin(2t)) + \beta (a\cos(2t) + b\sin(2t) + ct\cos(2t) + dt\sin(2t))
+\]
+\[
+= \alpha f(t) + \beta f(t)
+\]
+
+Таким образом, мы проверили, что Закон умножения на скаляр выполняется для множества функций $y=a\cos(2t)+b\sin(2t)+ct\cos(2t)+dt\sin(2t)$, и можем сделать вывод, что данное множество является линейным пространством над полем вещественных чисел.
+\\ \\
+\\ \\
+2) Выберем базис пространства.\\
+\begin{equation*}
+    \{cos(2t); sin(2t); t\cdot cos(2t);t\cdot sin(2t)\}
+\end{equation*}
+Получим матрицу оператора $\mathcal{A}$. Для начала исследуем действие оператора $\mathcal{D} $ на наш базис.\\
+\begin{equation*}
+    (cos(2t))'=-2sin(2t)
+\end{equation*}
+\begin{equation*}
+    (sin(2t))'=2cos(2t)
+\end{equation*}
+\begin{equation*}
+    (tcos(2t))'=cos(2t) - 2tsin(2t)
+\end{equation*}
+\begin{equation*}
+    (tsin(2t))'=sin(2t) + 2tcos(2t)
+\end{equation*}
+Матрица $\mathcal{D} $ будет выглядеть следующим образом:\
+\begin{equation*}
+    \begin{pmatrix}
+        0&2&1&0\\
+        -2&0&0&1\\
+        0&0&0&2\\
+        0&0&-2&0
+    \end{pmatrix}
+\end{equation*}
+Матрица $\mathcal{A} $ тогда будет выглядеть:
+\begin{equation*}
+    \begin{pmatrix}
+        0&2&1&0\\
+        -2&0&0&1\\
+        0&0&0&2\\
+        0&0&-2&0
+    \end{pmatrix}^2-
+    \begin{pmatrix}
+        4&0&0&0\\
+        0&4&0&0\\
+        0&0&4&0\\
+        0&0&0&4
+    \end{pmatrix}=
+    \begin{pmatrix}
+        0&0&0&4\\
+        0&0&-4&0\\
+        0&0&0&0\\
+        0&0&0&0
+    \end{pmatrix}
+\end{equation*}
+3) Проверим линейность оператора.\\
+
+
+Для проверки линейности оператора, представленного матрицей, мы должны проверить два условия:
+
+1. Сохранение сложения:
+   Для любых функций $f(t)$ и $g(t)$ должно выполняться $T(f(t) + g(t)) = T(f(t)) + T(g(t))$.
+
+2. Сохранение умножения на скаляр:
+   Для любой функции $f(t)$ и любого скаляра $\alpha$ должно выполняться $T(\alpha f(t)) = \alpha T(f(t))$.
+
+Проверим оба этих условия для данного оператора с матрицей:
+\[
+\begin{pmatrix}
+0 & 0 & 0 & 4 \\
+0 & 0 & -4 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+\end{pmatrix}
+\]
+
+1. Сохранение сложения:
+   Пусть $f(t)$ и $g(t)$ являются произвольными функциями. Тогда
+   \begin{align*}
+   T(f(t) + g(t)) &= \begin{pmatrix} 0 & 0 & 0 & 4 \\ 0 & 0 & -4 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} (a+a_1)\cos(2t) + (b+b_1)\sin(2t) + (c+c_1)t\cos(2t) + (d+d_1)t\sin(2t) \\
+   (e+e_1)\cos(2t) + (f+f_1)\sin(2t) + (g+g_1)t\cos(2t) + (h+h_1)t\sin(2t) \\ 
+   (j+j_1)\cos(2t) + (k+k_1)\sin(2t) + (l+l_1)t\cos(2t) + (m+m_1)t\sin(2t) \\ 
+   (n+n_1)\cos(2t) + (p+p_1)\sin(2t) + (q+q_1)t\cos(2t) + (r+r_1)t\sin(2t) \end{pmatrix} \\
+   &= \begin{pmatrix} 4(n+n_1)\cos(2t) + 4(p+p_1)\sin(2t) + 4(q+q_1)t\cos(2t) + 4(r+r_1)t\sin(2t) \\ 
+    -4(j+j_1)\cos(2t) -4(k+k_1)\sin(2t) -4(l+l_1)t\cos(2t) -4(m+m_1)t\sin(2t) \\ 0 \\ 0 \end{pmatrix} \\
+   &= \begin{pmatrix} 4(n)\cos(2t) + 4(p)\sin(2t) + 4(q)t\cos(2t) + 4(r)t\sin(2t) \\ 
+    -4(j)\cos(2t) -4(k)\sin(2t) -4(l)t\cos(2t) -4(m)t\sin(2t) \\ 0 \\ 0 \end{pmatrix} +\\
+    &+ \begin{pmatrix} 4(n_1)\cos(2t) + 4(p_1)\sin(2t) + 4(q_1)t\cos(2t) + 4(r_1)t\sin(2t) \\ 
+        -4(j_1)\cos(2t) -4(k_1)\sin(2t) -4(l_1)t\cos(2t) -4(m_1)t\sin(2t) \\ 0 \\ 0 \end{pmatrix}= \\
+   &= T(f(t)) + T(g(t))
+   \end{align*}
+   Таким образом, условие сохранения сложения выполняется.
+
+2. Сохранение умножения на скаляр:
+   Пусть $f(t)$ является произвольной функцией, и $\alpha$ является произвольным скаляром. Тогда
+   \begin{align*}
+   T(\alpha f(t)) &= \begin{pmatrix} 0 & 0 & 0 & 4 \\ 0 & 0 & -4 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} 
+   \begin{pmatrix}\alpha(a\cos(2t) + b\sin(2t) + ct\cos(2t) + dt\sin(2t)) \\ \alpha(e\cos(2t) + f\sin(2t) + gt\cos(2t) + ht\sin(2t)) \\ \alpha(j\cos(2t) + k\sin(2t) + lt\cos(2t) + mt\sin(2t)) \\ \alpha(n\cos(2t) + p\sin(2t) + qt\cos(2t) + rt\sin(2t)) \end{pmatrix} \\
+   &= \begin{pmatrix}\alpha4(n\cos(2t) + p\sin(2t) + qt\cos(2t) + rt\sin(2t)) \\ -\alpha4(j\cos(2t) + k\sin(2t) + lt\cos(2t) + mt\sin(2t)) \\ 0 \\ 0 \end{pmatrix} \\
+   &= \alpha \begin{pmatrix}4(n\cos(2t) + p\sin(2t) + qt\cos(2t) + rt\sin(2t)) \\ -4(j\cos(2t) + k\sin(2t) + lt\cos(2t) + mt\sin(2t)) \\ 0 \\ 0 \end{pmatrix} \\
+   &= \alpha T(f(t))
+   \end{align*}
+   Таким образом, условие сохранения умножения на скаляр также выполняется.
+
+Исходя из результатов проверки обоих условий, мы можем заключить, что данный оператор является линейным оператором.
+\\ \\
+\\ \\
+4) Найдём размерности ядра и образа оператора.\\
+\begin{equation*}
+    \begin{pmatrix}
+        0 & 0 & 0 & 4 \\
+        0 & 0 & -4 & 0 \\
+        0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 \\
+        \end{pmatrix}\sim 
+        \begin{pmatrix}
+            0 & 0 & 0 & 1 \\
+            0 & 0 & 1 & 0 \\
+            \end{pmatrix}
+\end{equation*}
+\begin{equation*}
+    dim\ Ker(L) = 2;\ dim\ Im(L)= dim(L)- dim\ Ker(L) = 4 -2=2
+\end{equation*}
+\\ \\
+\\ \\
+5) Диагонализуем матрицу оператора.\\
+\begin{equation*}
+    \begin{pmatrix}
+        -\lambda & 0 & 0 & 4 \\
+        0 & -\lambda & -4 & 0 \\
+        0 & 0 & -\lambda & 0 \\
+        0 & 0 & 0 & -\lambda \\
+        \end{pmatrix}= -\lambda^4
+\end{equation*}
+$\lambda=0 $(кр. = 4):
+\begin{equation*}
+    \begin{pmatrix}
+        0 & 0 & 0 & 4 \\
+        0 & 0 & -4 & 0 \\
+        0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 \\
+        \end{pmatrix}\sim 
+        \begin{pmatrix}
+            0 & 0 & 0 & 1 \\
+            0 & 0 & 1 & 0 \\
+        \end{pmatrix}\sim 
+        \begin{pmatrix}
+            0 & 1| & 0 & 0 \\
+            1 & 0| & 0 & 0 \\
+        \end{pmatrix}
+\end{equation*}
+\begin{equation*}
+    X_1=C_1\cdot 
+    \begin{pmatrix}
+        1 \\
+        0 \\
+        0 \\
+        0 \\
+    \end{pmatrix}+
+    C_2
+    \cdot
+    \begin{pmatrix}
+        0 \\
+        1 \\
+        0 \\
+        0 \\
+    \end{pmatrix}
+\end{equation*}
+Нам нужно присоединить 2 вектора, так как кратности не совпадают.\\
+Присоединим первый вектор к составляющей $X_1$ с коэфицентом $C_1$:
+\begin{equation*}
+    \begin{pmatrix}
+        0 & 0 & 0 & 4|&1 \\
+        0 & 0 & -4 & 0|&0 \\
+        0 & 0 & 0 & 0|&0 \\
+        0 & 0 & 0 & 0|&0 \\
+        \end{pmatrix}\sim 
+        \begin{pmatrix}
+            0 & 0 & 0 & 1|&\frac{1}{4} \\
+            0 & 0 & 1 & 0|&0 \\
+        \end{pmatrix}
+\end{equation*}
+\begin{equation*}
+    X^{(1)}_1=C_1\cdot 
+    \begin{pmatrix}
+        0 \\
+        0 \\
+        0 \\
+        \frac{1}{4} \\
+    \end{pmatrix}+
+    C^{(1)}_2\cdot 
+    \begin{pmatrix}
+        1 \\
+        0 \\
+        0 \\
+        0 \\
+    \end{pmatrix}+
+    C^{(2)}_2\cdot 
+    \begin{pmatrix}
+        0 \\
+        1 \\
+        0 \\
+        0 \\
+    \end{pmatrix}
+\end{equation*}
+Нам нужно присоединить второй вектор, так как кратности попрежнему не совпадают.\\
+Присоединим второй вектор к составляющей $X_1$ с коэфицентом $C_2$:
+\begin{equation*}
+    \begin{pmatrix}
+        0 & 0 & 0 & 4|&1 \\
+        0 & 0 & -4 & 0|&0 \\
+        0 & 0 & 0 & 0|&0 \\
+        0 & 0 & 0 & 0|&0 \\
+        \end{pmatrix}\sim 
+        \begin{pmatrix}
+            0 & 0 & 0 & 1|& 0\\
+            0 & 0 & 1 & 0|&-\frac{1}{4} \\
+        \end{pmatrix}
+\end{equation*}
+\begin{equation*}
+    X^{(2)}_1=C_2\cdot 
+    \begin{pmatrix}
+        0 \\
+        0 \\
+        -\frac{1}{4} \\
+        0 \\
+    \end{pmatrix}+
+    C^{(3)}_2\cdot 
+    \begin{pmatrix}
+        1 \\
+        0 \\
+        0 \\
+        0 \\
+    \end{pmatrix}+
+    C^{(4)}_2\cdot 
+    \begin{pmatrix}
+        0 \\
+        1 \\
+        0 \\
+        0 \\
+    \end{pmatrix}
+\end{equation*}
+Кратности совпали, теперь можно записать диагонализованную матрицу в Жордановом базисе:\\
+\begin{equation*}\mathcal{A}^{\mathcal{J} } =
+    \begin{pmatrix}
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 1 \\
+        0 & 0 & 0 & 0 \\
+        \end{pmatrix}
+\end{equation*}
+6) Выберем произвольно и нетривиально функцию. Найдём её образ умножением на матрицу оператора.
+\begin{equation*}
+   \vartheta (x)= 1\cdot \cos(2t) + 2\cdot \sin(2t) + 3\cdot t \cos(2t) + 4\cdot t \sin(2t)
+\end{equation*}
+\begin{equation*}
+    \begin{pmatrix}
+        0 & 0 & 0 & 4 \\
+        0 & 0 & -4 & 0 \\
+        0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 \\
+        \end{pmatrix}\cdot 
+        \begin{pmatrix}
+            1 \\
+            2 \\
+            3 \\
+            4 \\
+            \end{pmatrix}=
+            \begin{pmatrix}
+                16 \\
+                -12 \\
+                0 \\
+                0 \\
+                \end{pmatrix}
+    \end{equation*}
+    Действием оператора получили следующую функцию:
+    \begin{equation*}
+        \psi (x)= 16\cdot \cos(2t) - 12\cdot \sin(2t)
+     \end{equation*}
+     Найдём непосредственными вычислениями образ:
+     \begin{equation*}
+        \mathcal{D}(\vartheta): \vartheta' (x)= -6\,t\,\sin\left(2\,t\right)+2\,\sin\left(2\,t\right)+8\,t\,\cos\left(2\,t\right)+7\,\cos\left(2\,t\right)
+     \end{equation*}
+     \begin{equation*}
+        \mathcal{D}(\vartheta'): \vartheta'' (x)= -16\,t\,\sin\left(2\,t\right)-20\,\sin\left(2\,t\right)-12\,t\,\cos\left(2\,t\right)+12\,\cos\left(2\,t\right)
+     \end{equation*}
+     \begin{equation*}
+        4\mathcal{I}: 4\cdot \vartheta (x)= 4\cdot \cos(2t) + 8\cdot \sin(2t) + 12\cdot t \cos(2t) + 16\cdot t \sin(2t)
+     \end{equation*}
+     \begin{equation*}
+        \zeta  (x)= \vartheta'' (x) - 4\cdot \vartheta (x) = -16\,t\,\sin\left(2\,t\right)-20\,\sin\left(2\,t\right)-12\,t\,\cos\left(2\,t\right)+12\,\cos\left(2\,t\right)+4\cdot \cos(2t) + 8\cdot \sin(2t) + 12\cdot t \cos(2t) + 16\cdot t \sin(2t)=
+     \end{equation*}
+     \begin{equation*}
+        = 16\cdot \cos(2t) - 12\cdot \sin(2t) = \psi (x)
+     \end{equation*}
+     Вычисления сошлись, удобнее было вычислять через матрицу оператора.
+
+\section{Евклидовы пространства функций}
+
+     A)
+
+
+\textbf{Задание:} Дано пространство многочленов с вещественными коэффициентами, степени не выше третьей,
+определенных на отрезке [– 1; 1]. $P_3(t) = t^3+2t^2-2t+1$\\
+
+\textbf{Решение:}\\
+
+
+1)Проверим, что система векторов  $B= {1, t, t^2,t^3}$ является базисом этого пространства.\\
+Составим матрицу Грама и посчитаем её опередлитель:\\
+
+\begin{equation*}
+    det\left(
+        \begin{pmatrix}
+            \int_{-1}^{1}1dt & \int_{-1}^{1}tdt & \int_{-1}^{1}t^2dt & \int_{-1}^{1}t^3dt \\
+            \int_{-1}^{1}tdt & \int_{-1}^{1}t^2dt & \int_{-1}^{1}t^3dt & \int_{-1}^{1}t^4dt \\
+            \int_{-1}^{1}t^2dt & \int_{-1}^{1}t^3dt & \int_{-1}^{1}t^4dt & \int_{-1}^{1}t^5dt \\
+            \int_{-1}^{1}t^3dt & \int_{-1}^{1}t^4dt & \int_{-1}^{1}t^5dt & \int_{-1}^{1}t^6dt \\
+        \end{pmatrix}\right)
+ \end{equation*}
+ Для вычисления определителя матрицы, можно использовать различные методы, например, метод разложения по определённой строке или столбцу, метод Гаусса и т.д. В данном случае, определитель может быть вычислен с помощью разложения по первому столбцу:
+
+\[
+\begin{vmatrix}
+    \int_{-1}^{1}1dt & \int_{-1}^{1}tdt & \int_{-1}^{1}t^2dt & \int_{-1}^{1}t^3dt \\
+    \int_{-1}^{1}tdt & \int_{-1}^{1}t^2dt & \int_{-1}^{1}t^3dt & \int_{-1}^{1}t^4dt \\
+    \int_{-1}^{1}t^2dt & \int_{-1}^{1}t^3dt & \int_{-1}^{1}t^4dt & \int_{-1}^{1}t^5dt \\
+    \int_{-1}^{1}t^3dt & \int_{-1}^{1}t^4dt & \int_{-1}^{1}t^5dt & \int_{-1}^{1}t^6dt \\
+\end{vmatrix}
+= 
+\begin{vmatrix}
+    2 & 0 & \frac{2}{3} & 0 \\
+    0 & \frac{2}{3} & 0 &\frac{2}{5} \\
+    \frac{2}{3} & 0 & \frac{2}{5} & 0 \\
+    0 & \frac{2}{5} & 0 & \frac{2}{7} \\
+\end{vmatrix}= \frac{256}{23625}
+\]
+
+
+Если определитель матрицы Грама не равен нулю, то это означает, что векторы образуют базис.\\
+
+Для ортогонализации системы функций ${1, t, t^2,t^3}$ на отрезке $[-1,1]$ методом Грама-Шмидта, мы последовательно вычислим ортогональные функции:
+
+1: Первая ортогональная функция \(f_1(t)\) остается равной исходной функции 1.
+
+2: Вторая ортогональная функция \(f_2(t)\) будет равна разности второй функции и проекции второй функции на первую функцию:
+\[
+f_2(t) = t - \frac{\langle t, f_1 \rangle}{\langle f_1, f_1 \rangle} \cdot f_1(t) = t - \frac{\int_{-1}^{1} t \cdot 1 \, dt}{\int_{-1}^{1} 1 \cdot 1 \, dt} \cdot 1 = t - \frac{0}{2} = t
+\]
+
+3: Третья ортогональная функция \(f_3(t)\) будет равна разности третьей функции и проекции третьей функции на первую и вторую функции:
+\[
+f_3(t) = t^2 - \frac{\langle t^2, f_1 \rangle}{\langle f_1, f_1 \rangle} \cdot f_1(t) - \frac{\langle t^2, f_2 \rangle}{\langle f_2, f_2 \rangle} \cdot f_2(t) = t^2 - \frac{\int_{-1}^{1} t^2 \cdot 1 \, dt}{\int_{-1}^{1} 1 \cdot 1 \, dt} \cdot 1 - \frac{\int_{-1}^{1} t^2 \cdot t \, dt}{\int_{-1}^{1} t \cdot t \, dt} \cdot t = t^2 - \frac{2}{6}
+\]
+
+4: Четвертая ортогональная функция \(f_4(t)\) будет равна разности четвертой функции и проекции четвертой функции на первую, вторую и третью функции:
+\[
+f_4(t) = t^3 - \frac{\langle t^3, f_1 \rangle}{\langle f_1, f_1 \rangle} \cdot f_1(t) - \frac{\langle t^3, f_2 \rangle}{\langle f_2, f_2 \rangle} \cdot f_2(t) - \frac{\langle t^3, f_3 \rangle}{\langle f_3, f_3 \rangle} \cdot f_3(t) = t^3 - \frac{\int_{-1}^{1} t^3 \cdot 1 \, dt}{\int_{-1}^{1} 1 \cdot 1 \, dt} \cdot 1 - \frac{\int_{-1}^{1} t^3 \cdot t \, dt}{\int_{-1}^{1} t \cdot t \, dt} \cdot t - \frac{\int_{-1}^{1} t^3 \cdot (t^2 - \frac{2}{6}) \, dt}{\int_{-1}^{1} (t^2 - \frac{2}{6}) \cdot (t^2 - \frac{2}{6}) \, dt} \cdot (t^2 - \frac{2}{6})=t^3-\frac{2}{5}t
+\]
+
+Таким образом, получаем ортогональную систему функций {\(f_1(t)\), \(f_2(t)\), \(f_3(t)\), \(f_4(t)\)} на отрезке \([-1, 1]\)\\
+
+
+
+2)Выпишем первые четыре многочлена Лежандра:\\
+Многочлены Лежандра \(P_n(x)\) ещё определяются рекурсивной формулой:
+
+\[
+P_0(x) = 1
+\]
+\[
+P_1(x) = x
+\]
+\[
+P_n(x) = \frac{{(2n-1)xP_{n-1}(x) - (n-1)P_{n-2}(x)}}{{n}}
+\]
+
+Таким образом, первые четыре многочлена Лежандра равны: \(P_0(x) = 1\), \(P_1(x) = x\), \(P_2(x) = \frac{{3x^2 - 1}}{{2}}\), \(P_3(x) = \frac{{5x^3 - 3x}}{{2}}\).\\
+
+
+3) Чтобы найти координаты многочленов в заданном базисе, нужно разложить каждый многочлен по базисным функциям и выразить их коэффициенты. В данном случае базис состоит из ${1, t, t^2-\frac{2}{6}, t^3-\frac{2}{5}t}$.
+Для многочлена \(P_0(x) = 1\):
+\[P_0(x) = 1 \cdot 1 + 0 \cdot t + 0 \cdot \left(t^2-\frac{2}{6}\right) + 0 \cdot \left(t^3-\frac{2}{5}t\right)\]
+Координаты многочлена \(P_0(x)\) в данном базисе равны (1, 0, 0, 0).
+
+Для многочлена \(P_1(x) = x\):
+\[P_1(x) = 0 \cdot 1 + 1 \cdot t + 0 \cdot \left(t^2-\frac{2}{6}\right) + 0 \cdot \left(t^3-\frac{2}{5}t\right)\]
+Координаты многочлена \(P_1(x)\) в данном базисе равны (0, 1, 0, 0).
+
+Для многочлена \(P_2(x) = \frac{{3x^2 - 1}}{{2}}\):
+\[P_2(x) = 0 \cdot 1 + 0 \cdot t + \frac{3}{2} \cdot \left(t^2-\frac{2}{6}\right) + 0 \cdot \left(t^3-\frac{2}{5}t\right)\]
+Координаты многочлена \(P_2(x)\) в данном базисе равны (0, 0, \(\frac{3}{2}\), 0).
+
+Для многочлена \(P_3(x) = \frac{{5x^3 - 3x}}{{2}}\):
+\[P_3(x) = 0 \cdot 1 + 0 \cdot t + 0 \cdot \left(t^2-\frac{2}{6}\right) + \frac{5}{2} \cdot \left(t^3-\frac{2}{5}t\right)\]
+Координаты многочлена \(P_3(x)\) в данном базисе равны (0, 0, 0, \(\frac{5}{2}\)).
+
+Таким образом, координаты многочленов \(P_0(x)\), \(P_1(x)\), \(P_2(x)\), \(P_3(x)\) в базисе ${1, t, t^2-\frac{2}{6}, t^3-\frac{2}{5}t}$ соответственно равны 
+\begin{center}
+    $(1, 0, 0, 0),\ (0, 1, 0, 0),\ (0, 0, \frac{3}{2}, 0),\ (0, 0, 0, \frac{5}{2})$.
+\end{center}
+
+
+Для проверки ортогональности системы векторов в новом базисе, мы должны вычислить их скалярные произведения и убедиться, что они равны нулю.
+
+Пусть система векторов в новом базисе задана как \(\{v_0, v_1, v_2, v_3\}\) соответственно, где
+\(v_0 = (1, 0, 0, 0)\),
+\(v_1 = (0, 1, 0, 0)\),
+\(v_2 = (0, 0, \frac{3}{2}, 0)\),
+\(v_3 = (0, 0, 0, \frac{5}{2})\).
+
+Вычислим скалярные произведения между парами векторов:
+
+
+\begin{align*}
+v_0 \cdot v_1 &= (1, 0, 0, 0) \cdot (0, 1, 0, 0) = 0 \\
+v_0 \cdot v_2 &= (1, 0, 0, 0) \cdot (0, 0, \frac{3}{2}, 0) = 0 \\
+v_0 \cdot v_3 &= (1, 0, 0, 0) \cdot (0, 0, 0, \frac{5}{2}) = 0 \\
+v_1 \cdot v_2 &= (0, 1, 0, 0) \cdot (0, 0, \frac{3}{2}, 0) = 0 \\
+v_1 \cdot v_3 &= (0, 1, 0, 0) \cdot (0, 0, 0, \frac{5}{2}) = 0 \\
+v_2 \cdot v_3 &= (0, 0, \frac{3}{2}, 0) \cdot (0, 0, 0, \frac{5}{2}) = 0 \\
+\end{align*}
+
+
+Все скалярные произведения равны нулю. Это означает, что система векторов \(\{v_0, v_1, v_2, v_3\}\) ортогональна в новом базисе.
+
+Таким образом, система многочленов \(\{1, t, t^2-\frac{2}{6}, t^3-\frac{2}{5}t\}\) является ортогональной.\\
+
+
+4)Для разложения многочлена \(P_3(t) = t^3+2t^2-2t+1\) по системе векторов \(\{v_0, v_1, v_2, v_3\}\), где
+
+\(v_0 = (1, 0, 0, 0)\)
+
+\(v_1 = (0, 1, 0, 0)\)
+
+\(v_2 = (0, 0, \frac{3}{2}, 0)\)
+
+\(v_3 = (0, 0, 0, \frac{5}{2})\),
+
+мы можем представить систему векторов в виде матрицы \(V\) и вычислить коэффициенты разложения, используя матричную алгебру.
+
+Сначала составим матрицу \(V\) из векторов системы:
+
+\[
+V = \begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{3}{2} & 0 \\
+0 & 0 & 0 & \frac{5}{2} \\
+\end{pmatrix}
+\]
+
+Затем вычислим обратную матрицу \(V^{-1}\):
+
+\[
+V^{-1} = \begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{2}{3} & 0 \\
+0 & 0 & 0 & \frac{2}{5} \\
+\end{pmatrix}
+\]
+
+Теперь вычислим коэффициенты разложения путем умножения матрицы \(V^{-1}\) на вектор многочлена \(P_3(t)\):
+
+\[
+\begin{pmatrix}
+c_0 \\
+c_1 \\
+c_2 \\
+c_3 \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{2}{3} & 0 \\
+0 & 0 & 0 & \frac{2}{5} \\
+\end{pmatrix}
+\begin{pmatrix}
+1 \\
+2 \\
+-2 \\
+1 \\
+\end{pmatrix}
+\]
+
+Выполняя умножение матриц, получаем:
+
+\[
+\begin{pmatrix}
+c_0 \\
+c_1 \\
+c_2 \\
+c_3 \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 \\
+2 \\
+-\frac{4}{3} \\
+\frac{4}{5} \\
+\end{pmatrix}
+\]
+
+Таким образом, разложение многочлена \(P_3(t)\) по системе векторов \(\{v_0, v_1, v_2, v_3\}\) имеет вид:
+
+\(P_3(t) = 1 \cdot v_0 + 2 \cdot v_1 - \frac{4}{3} \cdot v_2 + \frac{4}{5} \cdot v_3\) или \(P_3(t) = v_0 + 2v_1 -\frac{4}{3}v_2 + \frac{4}{5}v_3\)\\
+
+
+Б)
+
+
+\textbf{Задание:} Дано пространство $R$ функций, непрерывных (или имеющих конечный разрыв) на отрезке [$-\pi; \pi$], со скалярным произведением $(f,g)=\int_{-\pi}^{\pi}f(t)g(t)dt$ и длиной вектора $||f||=\sqrt{(f,f)}$. Тригонометрические многочлены $P_n(t)=\frac{a_0}{2}+a_1cos(t)+b_1sin(t)+...+a_ncos(nt)+b_nsin(nt)$, где $a_k,b_k$ - вещественные коэффициенты, образуют подпространство $P$ пространства $R$. Требуется найти многочлен $P_n(t)$ в пространстве $P$, минимально отличающийся от функции $f(t)$ - вектора пространства $R$.\\
+
+\textbf{Решение:}\\
+
+
+1) Для начала проверим ортогональность системы функций $\{1, \cos(t), \sin(t), ..., \cos(nt), \sin(nt)\}$ в пространстве $R$ с заданным скалярным произведением $(f,g)=\int_{-\pi}^{\pi} f(t)g(t)dt$.
+
+Рассмотрим произведение двух функций $f_i(t)$ и $f_j(t)$, где $f_i(t)$ соответствует $i$-й функции из системы, а $f_j(t)$ соответствует $j$-й функции из системы:
+\[(f_i, f_j) = \int_{-\pi}^{\pi} f_i(t)f_j(t)dt.\]
+
+Проверим ортогональность для всех пар функций. Если $(f_i, f_j) = 0$, то функции $f_i(t)$ и $f_j(t)$ ортогональны.
+
+\begin{align*}
+(f_0, f_1) &= \int_{-\pi}^{\pi} 1 \cdot \cos(t) dt = 0\\
+(f_0, f_2) &= \int_{-\pi}^{\pi} 1 \cdot \sin(t) dt = 0\\
+(f_1, f_2) &= \int_{-\pi}^{\pi} \cos(t) \cdot \sin(t) dt = 0\\
+&\vdots\\
+(f_{n-1}, f_n) &= \int_{-\pi}^{\pi} \cos((n-1)t) \cdot \sin(nt) dt = 0
+\end{align*}
+
+Таким образом, все пары функций из системы ортогональны. 
+
+Теперь нормируем систему функций. Для этого найдем длину каждой функции $f_i(t)$, определенную как $||f_i|| = \sqrt{(f_i, f_i)}$:
+
+\begin{align*}
+||f_0|| &= \sqrt{(f_0, f_0)} = \sqrt{\int_{-\pi}^{\pi} 1 \cdot 1 dt} = \sqrt{2\pi}\\
+||f_1|| &= \sqrt{(f_1, f_1)} = \sqrt{\int_{-\pi}^{\pi} \cos^2(t) dt} = \sqrt{\pi}\\
+||f_2|| &= \sqrt{(f_2, f_2)} = \sqrt{\int_{-\pi}^{\pi} \sin^2(t) dt} = \sqrt{\pi}\\
+&\vdots\\
+||f_{n-1}|| &= \sqrt{(f_{n-1}, f_{n-1})} = \sqrt{\int_{-\pi}^{\pi} \cos^2((n-1)t) dt} = \sqrt{\frac{2\pi (n-1)+sin(2\pi (n-1))}{2(n-1)}} =  \sqrt{\pi}\\
+||f_n|| &= \sqrt{(f_n, f_n)} = \sqrt{\int_{-\pi}^{\pi} \sin^2(nt) dt} = \sqrt{\frac{2\pi n-sin(2\pi n)}{2n}} = \sqrt{\pi}
+\end{align*}
+
+Теперь нормируем каждую функцию, разделив ее на длину:
+\begin{align*}
+\frac{1}{||f_0||}f_0 &= \frac{1}{\sqrt{2\pi}}\\
+\frac{1}{||f_1||}f_1 &= \frac{1}{\sqrt{\pi}}\cos(t)\\
+\frac{1}{||f_2||}f_2 &= \frac{1}{\sqrt{\pi}}\sin(t)\\
+&\vdots\\
+\frac{1}{||f_{n-1}||}f_{n-1} &= \frac{1}{\sqrt{\pi}}\cos(nt)\\
+\frac{1}{||f_n||}f_n &= \frac{1}{\sqrt{\pi}}\sin((n-1)t)
+\end{align*}
+
+Таким образом, мы получили ортогональный и нормированный базис системы функций в пространстве $R$.
+Система функций $\{1, \cos(t), \sin(t), ..., \cos(nt), \sin(nt)\}$ является ортогональным базисом подпространства $P$ в пространстве $R$ со скалярным произведением $(f,g)=\int_{-\pi}^{\pi} f(t)g(t)dt$ и нормой $||f||=\sqrt{(f,f)}$.\\
+
+
+2) Найдём проекции вектора $f(t)=0,5\cdot t$ на векторы полученного ортонормированного
+базиса.
+При нормированных векторах базиса можно упростить вычисление проекций. Проекция вектора $f(t) = 0.5 \cdot t$ на каждый из нормированных векторов базиса будет равна скалярному произведению между $f(t)$ и соответствующим вектором базиса, умноженному на базисный вектор.
+\begin{equation*}
+    \mathcal{P}_{e}^{\bot e}(x) = (x,e)\cdot e
+\end{equation*}
+
+Проекция вектора \(f(t) = 0.5t\) на вектор \(\frac{1}{\sqrt{2\pi}}\):
+\[\mathcal{P}_{\frac{1}{\sqrt{2\pi}}}^{\bot \frac{1}{\sqrt{2\pi}}}(0.5t) = \left(0.5t, \frac{1}{\sqrt{2\pi}}\right) \cdot \frac{1}{\sqrt{2\pi}}\]
+
+
+Выполним вычисления:
+\[\mathcal{P}_{\frac{1}{\sqrt{2\pi}}}^{\bot \frac{1}{\sqrt{2\pi}}}(0.5t) = \frac{1}{\sqrt{2\pi}} \cdot \int_{-\pi}^{\pi} 0.5t \cdot \frac{1}{\sqrt{2\pi}} dt\]
+\[\mathcal{P}_{\frac{1}{\sqrt{2\pi}}}^{\bot \frac{1}{\sqrt{2\pi}}}(0.5t) = \frac{1}{2\pi} \int_{-\pi}^{\pi} t dt\]
+\[\mathcal{P}_{\frac{1}{\sqrt{2\pi}}}^{\bot \frac{1}{\sqrt{2\pi}}}(0.5t) = \frac{1}{2\pi} \cdot \left[\frac{t^2}{2}\right]_{-\pi}^{\pi}\]
+\[\mathcal{P}_{\frac{1}{\sqrt{2\pi}}}^{\bot \frac{1}{\sqrt{2\pi}}}(0.5t) = \frac{1}{2\pi} \cdot \left(\frac{\pi^2}{2} - \frac{(-\pi)^2}{2}\right)\]
+\[\mathcal{P}_{\frac{1}{\sqrt{2\pi}}}^{\bot \frac{1}{\sqrt{2\pi}}}(0.5t) = 0\]
+
+Проекция вектора \(f(t) = 0.5t\) на вектор \(\frac{1}{\sqrt{\pi}}\cos(nt)\):
+\[\mathcal{P}_{\frac{1}{\sqrt{\pi}}\cos(nt)}^{\bot \frac{1}{\sqrt{\pi}}\cos(nt)}(0.5t) = \left(0.5t, \frac{1}{\sqrt{\pi}}\cos(nt)\right) \cdot \frac{1}{\sqrt{\pi}}\cos(nt)\]
+
+
+Выполним вычисления:
+\[\mathcal{P}_{\frac{1}{\sqrt{\pi}}\cos(nt)}^{\bot \frac{1}{\sqrt{\pi}}\cos(nt)}(0.5t) = \frac{1}{\sqrt{\pi}}\cos(nt) \cdot \int_{-\pi}^{\pi} 0.5t \cdot \frac{1}{\sqrt{\pi}}\cos(nt) dt = 0\]
+
+
+Продолжим с вычислением проекции вектора \(f(t) = 0.5t\) на вектор \(\frac{1}{\sqrt{\pi}}\sin(nt)\):
+
+\[\mathcal{P}_{\frac{1}{\sqrt{\pi}}\sin(nt)}^{\bot \frac{1}{\sqrt{\pi}}\sin(nt)}(0.5t) = \left(0.5t, \frac{1}{\sqrt{\pi}}\sin(nt)\right) \cdot \frac{1}{\sqrt{\pi}}\sin(nt)\]
+
+Выполним вычисления:
+
+\[\mathcal{P}_{\frac{1}{\sqrt{\pi}}\sin(nt)}^{\bot \frac{1}{\sqrt{\pi}}\sin(nt)}(0.5t) = \frac{1}{\sqrt{\pi}}\sin(nt) \cdot \int_{-\pi}^{\pi} 0.5t \cdot \frac{1}{\sqrt{\pi}}\sin(nt) dt = \]
+\[= \frac{(sin(\pi n)-\pi n cos(\pi n ))\cdot sin(nt)}{\pi n^2}= - \frac{(-1)^n\cdot sin(nt)}{n}\]
+
+
+3) Запишем минимально отстоящий многочлен $P_n(t)$ с найденными коэффициентами
+(тригонометрический многочлен Фурье для данной функции).\\
+\[P_n^{min}(t)= \sum_{n=1}^{\infty}\left(- \frac{(-1)^n\cdot sin(nt)}{n}\right)\]
+
+
+4) Изобразим графики $f(t)$ и многочлена Фурье различных
+порядков n\\
+
+\begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+          axis lines=middle,
+          xlabel=$x$,
+          ylabel=$y$,
+          xmin=-10,
+          xmax=10,
+          ymin=-5,
+          ymax=5,
+          xtick={-10,-8,-6,-4,-2,0,2,4,6,8,10},
+          ytick={-5,-4,-3,-2,-1,0,1,2,3,4,5},
+          xticklabels={-10,-8,-6,-4,-2,0,2,4,6,8,10},
+          yticklabels={-5,-4,-3,-2,-1,0,1,2,3,4,5},
+          legend style={at={(0.05,0.95)},anchor=north west},
+          width=12cm,
+          height=8cm
+        ]
+        % Координатные оси
+        \addplot[black,thick,->] coordinates {(0,0) (10,0)};
+        \addplot[black,thick,->] coordinates {(0,0) (0,5)};
+        
+        % Функция f(x) = 0.5x
+        \addplot[blue,thick,domain=-10:10,samples=100] {0.5*x};
+        \addlegendentry{$f(x) = 0.5x$}
+        
+        % Функция g(x) = 0.5x + (-1)^n * sin(nx)/n
+        \addplot[red,thick,domain=-10:10,samples=100] {0.5*x + ((-1)^5*sin(5*x))/(5)};
+        \addlegendentry{$g(x) = 0.5x + ((-1)^5 \cdot \sin(5x))/5$}
+        \end{axis}
+      \end{tikzpicture}
+      \captionof{figure}{n=5}
+      \begin{tikzpicture}
+        \begin{axis}[
+          axis lines=middle,
+          xlabel=$x$,
+          ylabel=$y$,
+          xmin=-10,
+          xmax=10,
+          ymin=-5,
+          ymax=5,
+          xtick={-10,-8,-6,-4,-2,0,2,4,6,8,10},
+          ytick={-5,-4,-3,-2,-1,0,1,2,3,4,5},
+          xticklabels={-10,-8,-6,-4,-2,0,2,4,6,8,10},
+          yticklabels={-5,-4,-3,-2,-1,0,1,2,3,4,5},
+          legend style={at={(0.05,0.95)},anchor=north west},
+          width=12cm,
+          height=8cm
+        ]
+        % Координатные оси
+        \addplot[black,thick,->] coordinates {(0,0) (10,0)};
+        \addplot[black,thick,->] coordinates {(0,0) (0,5)};
+        
+        % Функция f(x) = 0.5x
+        \addplot[blue,thick,domain=-10:10,samples=100] {0.5*x};
+        \addlegendentry{$f(x) = 0.5x$}
+        
+        % Функция g(x) = 0.5x + (-1)^n * sin(nx)/n
+        \addplot[red,thick,domain=-10:10,samples=100] {0.5*x + ((-1)^(10)*sin(10*x))/(10)};
+        \addlegendentry{$g(x) = 0.5x + ((-1)^{10} \cdot \sin(10x))/10$}
+        \end{axis}
+      \end{tikzpicture}
+      \captionof{figure}{n=10}
+      \begin{tikzpicture}
+        \begin{axis}[
+          axis lines=middle,
+          xlabel=$x$,
+          ylabel=$y$,
+          xmin=-10,
+          xmax=10,
+          ymin=-5,
+          ymax=5,
+          xtick={-10,-8,-6,-4,-2,0,2,4,6,8,10},
+          ytick={-5,-4,-3,-2,-1,0,1,2,3,4,5},
+          xticklabels={-10,-8,-6,-4,-2,0,2,4,6,8,10},
+          yticklabels={-5,-4,-3,-2,-1,0,1,2,3,4,5},
+          legend style={at={(0.05,0.95)},anchor=north west},
+          width=12cm,
+          height=8cm
+        ]
+        % Координатные оси
+        \addplot[black,thick,->] coordinates {(0,0) (10,0)};
+        \addplot[black,thick,->] coordinates {(0,0) (0,5)};
+        
+        % Функция f(x) = 0.5x
+        \addplot[blue,thick,domain=-10:10,samples=100] {0.5*x};
+        \addlegendentry{$f(x) = 0.5x$}
+        
+        % Функция g(x) = 0.5x + (-1)^n * sin(nx)/n
+        \addplot[red,thick,domain=-10:10,samples=100] {0.5*x + ((-1)^(15)*sin(15*x))/(15)};
+        \addlegendentry{$g(x) = 0.5x + ((-1)^{15} \cdot \sin(15x))/15$}
+        \end{axis}
+      \end{tikzpicture}
+      \captionof{figure}{n=15}
+\end{center}
+
+
+5) При росте порядка многочлена Фурье мы приближаемся и исходной функции $f(x)=0.5\cdot x$ и при стремлении $n$ к бесконечности многочлен совпадёт с функцией.
+
+\section{Приведение уравнения поверхности 2-го порядка к каноническому виду}
+
+
+\textbf{Задание:} Дано уравнение поверхности 2-го порядка: $3x^2-2yz=0$. Привести к каноническому виду данное уравнение.\\
+
+\textbf{Решение:}\\
+
+
+1) Матрица поверхности второго порядка 3x3 обычно задается следующим образом:
+
+\[
+A = \begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+\]
+
+Каждый элемент \(a_{ij}\) матрицы соответствует коэффициенту при соответствующем члене поверхности второго порядка. Общий вид уравнения поверхности второго порядка может быть записан как:
+
+\[
+f(x, y, z) = a_{11}x^2 + a_{22}y^2 + a_{33}z^2 + 2a_{12}xy + 2a_{13}xz + 2a_{23}yz + 2a_{21}x + 2a_{31}z + 2a_{32}y + a_{00}
+\]
+
+Здесь \(a_{00}\) представляет свободный член и обычно не включается в матрицу, поскольку он не соответствует элементу матрицы. Он определяет базовый уровень поверхности без учета влияния переменных. В контексте геометрической интерпретации, свободный член может соответствовать смещению поверхности относительно начала координат.
+\\ 
+
+
+Для данного уравнения \(3x^2 - 2yz = 0\) мы можем составить матрицу следующим образом:
+
+\[
+A = \begin{bmatrix}
+3 & 0 & 0 \\
+0 & 0 & -1 \\
+0 & -1 & 0 \\
+\end{bmatrix}
+\]
+\\
+
+
+Приведём к каноническому виду уравнение при помощи метода Лагранжа.
+\[
+3x^2-2yz=
+\begin{vmatrix}
+ x=\frac{1}{\sqrt{3}}p_1\\
+y=\frac{1}{\sqrt{2}}(p_2-p_3)\\
+z=\frac{1}{\sqrt{2}}(p_2+p_3)\\
+\end{vmatrix}=
+{p_1}^2-\left(p_2-p_3\right)\left(p_2+p_3\right)={p_1}^2-{p_2}^2+{p_3}^2
+\]
+
+
+Диагональная матрица в каноническом виде будет следующей:\\
+\[
+A'=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & 1 \\
+\end{bmatrix}
+\]
+\\ \\
+
+
+Для решения данной задачи методом ортогональных преобразований, нам потребуется выполнить следующие шаги:
+\\
+
+1. Найдем собственные значения и собственные векторы матрицы \(A\). Для этого решим уравнение \(\det(A - \lambda I) = 0\), где \(\lambda\) - собственное значение, а \(I\) - единичная матрица:
+\[
+\begin{vmatrix}
+3 - \lambda & 0 & 0 \\
+0 & -\lambda & -1 \\
+0 & -1 & -\lambda \\
+\end{vmatrix}
+= 0
+\]
+
+2. Решим полученное характеристическое уравнение и найдем собственные значения \(\lambda_1 = 3\), \(\lambda_2 = 0\), \(\lambda_3 = -3\).
+
+3. Для каждого собственного значения найдем соответствующий собственный вектор, решив систему уравнений \((A - \lambda I) \mathbf{v} = \mathbf{0}\), где \(\mathbf{v}\) - собственный вектор:
+   
+   Для \(\lambda_1 = 3\):
+   \[
+   (A - 3I) \mathbf{v}_1 = \mathbf{0} \Rightarrow
+   \begin{bmatrix}
+   0 & 0 & 0 \\
+   0 & -3 & -1 \\
+   0 & -1 & -3 \\
+   \end{bmatrix}
+   \begin{bmatrix}
+   v_{11} \\
+   v_{12} \\
+   v_{13} \\
+   \end{bmatrix}
+   =
+   \begin{bmatrix}
+   0 \\
+   0 \\
+   0 \\
+   \end{bmatrix}
+   \]
+   Решив эту систему, получим собственный вектор \(\mathbf{v}_1 = \begin{bmatrix} 0 \\ -1 \\ 1 \end{bmatrix}\).
+
+   Для \(\lambda_2 = 0\):
+   \[
+   (A - 0I) \mathbf{v}_2 = \mathbf{0} \Rightarrow
+   \begin{bmatrix}
+   3 & 0 & 0 \\
+   0 & 0 & -1 \\
+   0 & -1 & 0 \\
+   \end{bmatrix}
+   \begin{bmatrix}
+   v_{21} \\
+   v_{22} \\
+   v_{23} \\
+   \end{bmatrix}
+   =
+   \begin{bmatrix}
+   0 \\
+   0 \\
+   0 \\
+   \end{bmatrix}
+   \]
+   Решив эту систему, получим собственный вектор \(\mathbf{v}_2 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}\).
+
+   Для \(\lambda_3 = -3\):
+   \[
+   (A + 3I) \mathbf{v}_3 = \mathbf{0} \Rightarrow
+   \begin{bmatrix}
+   6 & 0 & 0 \\
+   0 & 3 & -1 \\
+   0 & -1 & 3 \\
+   \end{bmatrix}
+   \begin{bmatrix}
+   v_{31} \\
+   v_{32} \\
+   v_{33} \\
+   \end{bmatrix}
+   =
+   \begin{bmatrix}
+   0 \\
+   0 \\
+   0 \\
+   \end{bmatrix}
+   \]
+   Решив эту систему, получим собственный вектор \(\mathbf{v}_3 = \begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}\).
+
+Нормализуем найденные собственные векторы, чтобы получить ортонормированный базис. Для этого разделим каждый собственный вектор на его длину:
+   \(\mathbf{u}_1 = \frac{\mathbf{v}_1}{\|\mathbf{v}_1\|}\),
+   \(\mathbf{u}_2 = \frac{\mathbf{v}_2}{\|\mathbf{v}_2\|}\),
+   \(\mathbf{u}_3 = \frac{\mathbf{v}_3}{\|\mathbf{v}_3\|}\).
+   
+\[
+\mathbf{u}_1 = \frac{\mathbf{v}_1}{\|\mathbf{v}_1\|} = \frac{1}{\sqrt{2}}\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}
+\]
+
+\[
+\mathbf{u}_2 = \frac{\mathbf{v}_2}{\|\mathbf{v}_2\|} = \frac{1}{\sqrt{2}}\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}
+\]
+
+\[
+\mathbf{u}_3 = \frac{\mathbf{v}_3}{\|\mathbf{v}_3\|} = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
+\]
+
+Теперь у нас есть ортонормированные собственные векторы \(\mathbf{u}_1\), \(\mathbf{u}_2\), \(\mathbf{u}_3\), которые составляют ортогональную матрицу преобразования \(P\).
+
+\[
+P = \begin{bmatrix}
+ \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} & \frac{1}{\sqrt{2}}\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix} & \frac{1}{\sqrt{2}}\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix} 
+\end{bmatrix} = \begin{bmatrix}
+1 & 0 & 0 \\
+ 0&\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}  \\
+ 0&\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}
+\end{bmatrix}
+\]
+
+
+Так как определитель матрицы, составленной из ортогонального базиса равен -1, то это означает поворот системы координат вместе с зеркальным отображением. В декартовой системе координат это является левой тройков векторов.
+\\ \\
+\[
+\begin{bmatrix}
+    1 & 0 & 0 \\
+     0&\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}  \\
+     0&\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}
+    \end{bmatrix}
+    \]
+\\В данном базисе квадратичная форма будет иметь диагональный вид.\\
+Выразим старые координаты черещ новые по формуле:
+\[
+    X = P X'
+\]
+\[
+    \begin{bmatrix}
+        x \\
+         y \\
+         z
+        \end{bmatrix} = \begin{bmatrix}
+            1 & 0 & 0 \\
+             0&\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}  \\
+             0&\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}
+            \end{bmatrix} \begin{bmatrix}
+                p_1 \\
+                 p_2 \\
+                 p_3
+                \end{bmatrix}
+\]
+Получим систему замены переменных (что-то похожее???)
+\[
+    \begin{cases}
+        x = p_1\\
+        y = \frac{1}{\sqrt{2}}(p_2+p_3)\\
+        z = \frac{1}{\sqrt{2}}(p_2-p_3)
+    \end{cases}
+\]
+Выпишем уравнения после диагонализации:\\
+\[
+    3p_1^2-p_2^2+p_3^2=0
+\]
+Дальнейшее приведение к каноническому виду очевидно из первого пункта путём очередной замены. Так как линейной части нет, то процесс приведения к каноническому виду закончен.\\
+Заметим, данный результат можно было получить не нормируя базис, а просто получить матрицу $A'$ по формуле:
+\[
+    A' = 
+    \begin{bmatrix}
+        \mathbf{v}_1\ 
+        \mathbf{v}_2\
+        \mathbf{v}_3
+        \end{bmatrix}^{-1} \cdot A \cdot \begin{bmatrix}
+            \mathbf{v}_1\ 
+            \mathbf{v}_2\
+            \mathbf{v}_3
+            \end{bmatrix}
+     \]
+Где $A'$ находится очевидно после проверки полноты базиса собственного подпространства $A$ и  выглядит:\\
+\[\begin{bmatrix}
+    -1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 3 \\
+    \end{bmatrix}\]
+Порядок собственный чисел по формулировке метода не задан\\
+\\
+2) Изобразим оси исходной и приведённой систем координат.\\
+\begin{center}
+    \begin{tikzpicture}[scale=4]
+        \coordinate (O) at (0,0,0);
+        \coordinate (U1) at (0,0.7,0.7);
+        \coordinate (U2) at (0,0.7,-0.7);
+        \coordinate (U3) at (1,0,0);
+
+        \draw[->] (0,0,0) -- (1,0,0) node[right]{$x$};
+        \draw[->] (0,0,0) -- (0,1,0) node[above]{$y$};
+        \draw[->] (0,0,0) -- (0,0,1) node[below left]{$z$};
+
+        % Vector u1
+        \draw[->,red,thick] (O) -- (U1);
+        \node[above right,red] at (U1) {$\mathbf{u}_1$};
+        % Vector u2
+        \draw[->,blue,thick] (O) -- (U2);
+        \node[below left,blue] at (U2) {$\mathbf{u}_2$};
+        % Vector u3
+        \draw[->,green!70!black,thick] (O) -- (U3);
+        \node[above right,green!70!black] at (U3) {$\mathbf{u}_3$};
+        \end{tikzpicture}
+        \captionof{figure}{Новый и старый базис}
+\end{center}
+
+
+Фигура, заданная уравнением:\\
+\begin{center}
+    \tdplotsetmaincoords{110}{40}
+    \begin{tikzpicture}[tdplot_main_coords]
+        \begin{axis}
+            \addplot3 [surf, domain=-2:2, domain y=0:2*pi, shader=interp] ({x}, {sqrt(3/2)*x*cos(deg(y))}, {sqrt(3/2)*x*sin(deg(y))});
+            \addplot3 [surf, domain=-2:2, domain y=0:2*pi, shader=interp] ({x}, {-sqrt(3/2)*x*cos(deg(y))}, {-sqrt(3/2)*x*sin(deg(y))});
+            \end{axis}
+        \end{tikzpicture}
+        \captionof{figure}{Конус второго порядка}
+\end{center}
+
+
+\end{document}
+
