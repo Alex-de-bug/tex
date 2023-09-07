@@ -11,6 +11,7 @@
 \usepackage{subcaption}
 \usepackage{pgfplots}
 \usepackage{amssymb}
+\usepackage{physics}
 
 \begin{document}
 % НАЧАЛО ТИТУЛЬНОГО ЛИСТА
@@ -47,8 +48,8 @@
 % КОНЕЦ ТИТУЛЬНОГО ЛИСТА 
 \newpage
 
-\section{ФНП и скалярное поле}
-П.1 Основные понятия\\
+\section{ФНП и скалярное поле
+П.1 Основные понятия}
 
 
 $\mathbb{R} x \mathbb{R} x \mathbb{R} ... x \mathbb{R} = \mathbb{R}^n = \{(x_1, x_2, .., x_n): x_i \in \mathbb{R}, i = 1 ... n\}\\
@@ -97,18 +98,19 @@ $z = \sqrt{1-x^2-y^2}$
 
 $\mathcal{D} = \{(x, y): x^2 + y ^2 \leq 1\}$
 
-\begin{equation}
+
+\begin{equation*}
     \begin{cases}
         x^2+y^2+z^2 = 1\\
         z \geq 0
     \end{cases}
-\end{equation}
+\end{equation*}
 
 E = [0; 1]
 
 \includegraphics[width=.3\textwidth]{3} 
 \\ \\
-П.2 Линии и поверхности уровня
+\section{П.2 Линии и поверхности уровня}
 
 n = 2 $f: \mathcal{D} -> \mathbb{R}$
 
@@ -118,7 +120,7 @@ $S_c = \{(x, y, z): f(x, y, z = c )\}$
 
 \includegraphics[width=.3\textwidth]{line} 
 \\ \\
-п.3 Частное и полное приращение 
+\section{п.3 Частное и полное приращение }
 
 $f: \mathcal{D} -> \mathbb{R}$, n=2
 
@@ -154,7 +156,7 @@ $\Delta S = (x+\Delta x)(y+\Delta y) - xy = x \Delta y + y \Delta x +\Delta x \D
 $\Delta_x S + \Delta_y S = (x + \Delta x)y - xy + (y +\Delta y)x  - xy = \Delta x \cdot y + \Delta y \cdot x$
 
 
-п.4 Предел и непрерывность 
+\section{п.4 Предел и непрерывность }
 
 $\lim_{x -> x_0}f(x) = A\ <=>\ \forall \mathcal{E} >0 \ \exists \delta_{\mathcal{E}}>0 : \forall x \in U^{\cdot}_{\delta}(x_0) \cap \mathcal{D}_f => f(x) \in U_{\mathcal{E}}(A)$
 
@@ -171,4 +173,147 @@ $\lim_{(x, y)-> 0)}(\frac{2xy}{x^2 +y^2}) = |y = kx| = \lim_{(x, y)-> 0)}(\frac{
 $
 
 \includegraphics[width=.3\textwidth]{lines} 
+\\ \\
+\section{П.5 Частные производные}
+
+Обычные случаи 
+\begin{equation*}
+    z = f(x)\ \dv{z}{x}= \lim_{\Delta x-> 0}\frac{\Delta x}{\Delta y}
+\end{equation*}
+\begin{center}
+    \includegraphics[width=.3\textwidth]{f(x).png} 
+\end{center}
+
+
+Случай с частной производной 
+\begin{equation*}
+    z = f(x, y)\ \Delta_x z = f(x + \Delta x, y) - f(x, y); \ \ \pdv{z}{x} = \lim_{\Delta x-> 0}\frac{\Delta_x z}{\Delta x}
+\end{equation*}
+Частная производная функции z по y в точке M(x, y)
+
+\begin{equation*}
+    \Delta x - fiks\ => \ \Delta_x z = f(x +\Delta x, y) - f(x, y);\ \pdv{z}{x} = \lim_{\Delta x -> 0 }   \frac{\Delta_x z}{\Delta x}
+\end{equation*}
+Частная производная функции y по y в точке M(x, y)
+
+\begin{equation*}
+    \Delta y - fiks\ => \ \Delta_y z = f(x, y +\Delta y) - f(x, y);\ \pdv{z}{y} = \lim_{\Delta y -> 0 }   \frac{\Delta_y z}{\Delta y}
+\end{equation*}
+\begin{equation*}
+    \pdv{z}{l} = \lim_{\Delta l -> 0 }   \frac{\Delta_l z}{\Delta l}
+\end{equation*}
+Частная производная функции y по направлению в точке M(x, y)
+\begin{center}
+    \includegraphics[width=.3\textwidth]{f(x,y).png} 
+\end{center}
+
+\section{П.6 Дифферинциал}
+
+
+\begin{equation*}
+    z = f(x);\ \Delta z =A \cdot \Delta x + \alpha(x)\cdot \Delta x = f'(x) + \Delta x = \dd z +o(\Delta x)
+\end{equation*}
+\begin{center}
+    \includegraphics[width=.3\textwidth]{dx} 
+\end{center}
+
+Полный Дифферинциал функции двух переменных
+
+\begin{equation*}
+    z = f(x, y);\ \Delta z =A \cdot \Delta x + b \cdot \Delta y;\ A, B \in \mathbb{R}
+\end{equation*}
+\textbf{Теорема(о дифферинциале)}:\\
+\begin{equation*}
+    z = f(x,y) \ M(x,y)
+\end{equation*}
+\begin{equation*}
+    => \dd z = z_x'\dd x + z_y'\dd y 
+\end{equation*}
+\begin{equation*}
+    \Delta z = \dd z + o(\Delta \rho)
+\end{equation*}
+Доказательство:\\
+\begin{equation*}
+    \Delta z = f(x+\Delta x, y +\Delta y) - f(x, y) = (f(x+\Delta x, y + \Delta y) - f(x, y+\Delta y)) + f(x, y+\Delta y)- f(x, y)
+\end{equation*}
+\begin{equation*}
+    \Delta z_1 = f(x, y+\Delta y) - f(x, y) = | x - fiks;\ f(x, y)= \psi(y) | = \psi(y +\Delta y)- \psi (y) = 
+\end{equation*}
+\begin{equation*}
+    =|\psi(y) - \text{непрерывная}; \text{по т. Лагранжа}: \exists \overline{y}: \psi(y + \Delta y) - \psi(y) = \psi'_y(\overline{y}\Delta y) | = 
+\end{equation*}
+\begin{equation*}
+    = \psi'_y(\overline{y}\Delta y) = f'_y(x, \overline{y})\Delta y
+\end{equation*}
+
+\begin{equation*}
+    \Delta z_2 = f(x + \Delta x, y+  \Delta y) = f(x, y+ \Delta y) = |y+\Delta y - fiks;\ f(x, \Delta y +y) = \phi (x)| = \phi(x + \Delta x) = 
+\end{equation*}
+
+\begin{equation*}
+    = f'_x(\overline{x}, y+\Delta y)\cdot \Delta x 
+\end{equation*}
+
+\begin{equation*}
+    => \Delta z = \Delta z_2 +\Delta z_1 = f'_x(\overline{x}, y+\Delta y)\Delta x+ f'_y(x, \overline{y})\Delta y
+\end{equation*}
+
+\begin{equation*}
+    \measuredangle  \lim_{\Delta x -> 0, \Delta y -> 0}f'_x(\overline{x}, y+\Delta y) = f'_x(x, y)
+\end{equation*}
+по т. о функции, её предел и бмф:
+\begin{equation*}
+    f'_x(\overline{x}, y+\Delta y) = f'_x(x, y)+\alpha(\Delta \rho)
+\end{equation*}
+\begin{equation*}
+    \measuredangle  \lim_{\Delta y -> 0}f'_y(x,\overline{y}) = f'_y(x, y)\ => \ f_y'(x, \overline{y}) = f_y'(x, y)+ \beta(\Delta \rho)
+\end{equation*}
+\begin{equation*}
+    = f_x'(x, y)\Delta x+ f_y'(x,y)\Delta y +\alpha (\Delta \rho)\Delta x +\beta(\Delta \rho)\Delta y = \dd z+ o(\Delta \rho)
+\end{equation*}
+\begin{equation*}
+    \dd z = f'_x(x,y)\dd x + f_y'(x,y)\dd y
+\end{equation*}
+Доказано\\
+\section{П.7 Производная сложной функции, полная производная, полный Дифферинциал}
+\begin{equation}
+    z = z(u,v),\ u = u(x, y),\ v = v(x,y)
+\end{equation}
+\begin{equation}
+    z = z(u, v)= z(u(x,y), v(x,y)) = f(x,y)
+\end{equation}
+Теорема о производной сложной ф
+\begin{equation}
+    z(u,v),\ u(x,y)\ v(x,y)
+\end{equation}
+\begin{equation}
+    => \pdv{z}{x} = \pdv{z}{u}\cdot \pdv{u}{x} + \pdv{z}{v}\cdot \pdv{v}{x}
+\end{equation}
+\begin{equation}
+     \pdv{z}{y} = \pdv{z}{u}\cdot \pdv{u}{y} + \pdv{z}{v}\cdot \pdv{v}{y}
+\end{equation}
+\begin{center}
+    \includegraphics[width=.3\textwidth]{graphF.png} 
+\end{center}
+докажем
+\begin{equation}
+    \measuredangle \pdv{z}{x}:
+\end{equation}
+\begin{equation}
+    \Delta x -> \Delta_x u, \Delta_x v-> \Delta z;\ y -fiks
+\end{equation}
+\begin{equation}
+    \Delta z= \pdv{z}{u}\Delta_x u +\pdv{z}{v}\Delta_xv+\alpha(\Delta_xu)\Delta_xu+\beta(\Delta_xv)\Delta_xv\ \ \ |:\Delta x
+\end{equation}
+\begin{equation}
+    \frac{\Delta z}{\Delta x} = \pdv{z}{u}\cdot \frac{\Delta_x u}{\Delta x}+\pdv{z}{v}\cdot\frac{\Delta_xv}{\Delta x}+ \alpha(\Delta_x u)\frac{\Delta_xu}{\Delta x} +\beta(\Delta_xv)\frac{\Delta_yv}{\Delta x}
+\end{equation}
+\begin{equation}
+    \lim_{\Delta x->0}: \Delta -> 0 => \text{непрерывна}: \Delta_xu -> 0, \Delta_xv -> 0 => \alpha, \beta -> 0
+\end{equation}
+\begin{equation}
+    \pdv{z}{x} = \pdv{z}{u} \cdot \pdv{u}{x} + \pdv{z}{v}\cdot \pdv{v}{x}
+\end{equation}
+для $\pdv{z}{y}$ по аналогии\\
+\textbf{Доказано}
 \end{document}
