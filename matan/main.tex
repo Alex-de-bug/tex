@@ -316,4 +316,128 @@ $
 \end{equation}
 для $\pdv{z}{y}$ по аналогии\\
 \textbf{Доказано}
+
+
+
+
+\section{Производная от функций, заданной неявно}
+\begin{equation*}
+    y=y(x),\ F(x,y)=0,\ y'
+\end{equation*}
+Первый способ решения
+\begin{equation*}
+    e^y-e^x+xy=0\ (e^y-e^x+xy)'_x=0,\ y = y(x)
+\end{equation*}
+\begin{equation*}
+    e^y\cdot y'-e^y+y+xy'=0,\ (e^y+x)y' = e^x-y,\ y' = \frac{e^x-y}{e^y+x}
+\end{equation*}
+Второй способ решения
+\begin{equation}
+    y' = \frac{F'_x(x,y)}{F'_y(x,y)}
+\end{equation}
+\begin{equation*}
+    F'_x(x,y) = -e^x+y
+\end{equation*}
+\begin{equation*}
+    F'_y(x,y) = e^y+x
+\end{equation*}
+\begin{equation*}
+    y' = \frac{-e^x+y}{e^y+x}
+\end{equation*}
+Теорема о производной функции заданной неявно
+\begin{equation*}
+    y= y(x)- \text{непрерывна},\ F(x,y) = 0,\ (F,F'_x,F'_y - \text{непрерывны в окр (x,y)})
+\end{equation*}
+\begin{equation}
+    =>\ y' = \frac{F'_x(x,y)}{F'_y(x,y)};\ \dv{y}{x}= -\frac{\pdv{F}{x}(x,y)}{\pdv{F}{y}(x,y)}
+\end{equation}
+Доказательство
+\begin{equation*}
+    x;\ y(x);\ F(x,y) = 0
+\end{equation*}
+-
+\begin{equation*}
+    \Delta x;\ \Delta y(x);\ F(x+\Delta x,y+\Delta y) = 0
+\end{equation*}
+=
+\begin{equation*}
+    \Delta F(x) = F(x+\Delta x; y+ \Delta y) - F(x;y) = 0
+\end{equation*}
+\begin{equation*}
+    \Delta F(x) = \pdv{F}{x}\Delta x + \pdv{F}{y}\Delta y + \alpha(\Delta \rho)\Delta x + \beta (\Delta \rho) \Delta y = 0\ | :\Delta x
+\end{equation*}
+\begin{equation*}
+     \pdv{F}{x} + \pdv{F}{y}\frac{\Delta y}{\Delta x} + \alpha(\Delta \rho) + \beta (\Delta \rho) \frac{\Delta y}{\Delta x} = 0
+\end{equation*}
+\begin{equation*}
+    (\pdv{F}{y} + \beta (\Delta \rho))\frac{\Delta y}{\Delta x} = -(\pdv{F}{x} +\alpha(\Delta \rho))
+\end{equation*}
+\begin{equation*}
+    \frac{\Delta y}{\Delta x} = -\frac{\pdv{F}{x} +\alpha(\Delta \rho)}{\pdv{F}{y} + \beta (\Delta \rho)};\ \Delta x -> 0\ => \Delta y->0,\ \Delta \rho -> 0 \ =>\ \dv{y}{x} = \dv{-\frac{F}{x}}{\pdv{F}{y}}
+\end{equation*}
+Доказано
+\begin{equation*}
+    z = z(x,y)\ F(x,y,z)= 0\ z=z(x,y)\ \pdv{z}{x},\ \pdv{z}{y} - ?
+\end{equation*}
+\begin{equation*}
+    \pdv{z}{x} = -\frac{\pdv{F}{x}}{\pdv{F}{z}} \ and\ \pdv{z}{y} = -\frac{\pdv{F}{y}}{\pdv{F}{z}}
+\end{equation*}
+\begin{equation*}
+    z = z(x,y) \text{непрерывная}, F,\ F'_x, \ F'_y, \ F'_z - \ \text{непрерывная}\ and\ F'_z != 0
+\end{equation*}
+\section{Производная по направлению}
+\begin{equation*}
+    z = z(x,y),\ M(x;y),\ \overline{l}(l_x;\ l_y)
+\end{equation*}
+\begin{equation*}
+    \Delta x,\ \Delta y\ \text{вдоль }\overline{l}=>M'(x+\Delta x; y+\Delta y);\ \ \frac{\Delta_l z}{\Delta l}\ ->\ \pdv{z}{l}\ (\Delta l -> 0)
+\end{equation*}
+\begin{center}
+    \includegraphics[width=.3\textwidth]{ll.png} 
+    \includegraphics[width=.3\textwidth]{vecp.png}
+\end{center}
+Теорема (о производной функции по направлению)
+\begin{equation}
+    z=z(x,y),\ z,z'_x,z'_y - \text{непрерывна}\ => \ \pdv{z}{l} = \pdv{z}{x}cos\alpha+\pdv{z}{y}cos\beta, (cos\alpha;cos\beta) = \overline{l^o} = \frac{\overline{l}}{|\overline{l}|}
+\end{equation}
+Доказательство
+\begin{equation*}
+    \Delta_lz = \pdv{z}{x}\Delta x+ \pdv{z}{y}\Delta y + \alpha(\Delta l)\Delta x + \beta (\Delta l)\Delta y\ | :\Delta x
+\end{equation*}
+\begin{equation*}
+    \frac{\Delta_lz}{\Delta l} = \pdv{z}{x}\frac{\Delta x}{\Delta l}+ \pdv{z}{y}\frac{\Delta y}{\Delta l} + \alpha(\Delta l)\frac{\Delta x}{\Delta l} + \beta (\Delta l)\frac{\Delta y}{\Delta l}\ | :\Delta l
+\end{equation*}
+\begin{equation*}
+    \frac{\Delta_lz}{\Delta l} = \pdv{z}{x}\cdot cos\alpha+ \pdv{z}{y}\cdot cos\beta + \alpha(\Delta l)\cdot cos\alpha + \beta (\Delta l)\frac{\Delta y}{\Delta l}\ | :\Delta l
+\end{equation*}
+\begin{equation*}
+    \Delta l -> 0\ => \ \Delta x -> 0,\ \Delta y-> 0
+\end{equation*}
+\begin{equation*}
+    \pdv{z}{l} = \pdv{z}{x}\cdot cos(\alpha)+ \pdv{z}{y}\cdot cos\beta
+\end{equation*}
+\begin{equation*}
+    \measuredangle \overline{l}= \overline{i}= (1;0)
+\end{equation*}
+\begin{equation*}
+    \pdv{z}{l} = \pdv{z}{x}\cdot 1 +\pdv{z}{y}\cdot 0 = \pdv{z}{x}
+\end{equation*}
+\\
+\begin{equation*}
+    u  = u(x;y;z)\ \overline{l} = (l_x, l_y, l_z)\ \overline{l^o} = (cos\alpha; cos \beta; cos \gamma)
+\end{equation*}
+\begin{equation*}
+    \pdv{u}{l} = \pdv{u}{x}cos\alpha + \pdv{u}{y}cos\beta + \pdv{u}{z}cos\gamma
+\end{equation*}
+\section{Частные производные высших порядков}
+\begin{equation*}
+    z = z(x;y);\ \pdv{z}{x} = z'_x(x;y);\ \pdv{z}{y} = z'_y(x;y)\ 
+\end{equation*}
+\begin{equation*}
+    \pdv{^2z}{x^2} = \pdv{}{x}(\pdv{z}{x}) = (z_x')_x' = z_{xx}''(x;y) 
+\end{equation*}
+Теорема (о смешаных производных)
+\begin{equation}
+    z = z(x;y),\ z, z'_x, z'_y, z''_xy, z''_yx\ - \text{ непрерывны }=>\ \pdv{^2z}{x\partial y}= \pdv{^2z}{y\partial x}
+\end{equation}
 \end{document}
