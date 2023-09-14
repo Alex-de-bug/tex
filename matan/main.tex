@@ -333,7 +333,7 @@ $
 \end{equation*}
 Второй способ решения
 \begin{equation}
-    y' = \frac{F'_x(x,y)}{F'_y(x,y)}
+    y' = -\frac{F'_x(x,y)}{F'_y(x,y)}
 \end{equation}
 \begin{equation*}
     F'_x(x,y) = -e^x+y
@@ -440,4 +440,164 @@ $
 \begin{equation}
     z = z(x;y),\ z, z'_x, z'_y, z''_xy, z''_yx\ - \text{ непрерывны }=>\ \pdv{^2z}{x\partial y}= \pdv{^2z}{y\partial x}
 \end{equation}
+
+\section{Дифферинциалы высших порядков}
+\begin{equation}
+    z = z(x;y)
+\end{equation}
+Первого порядка
+\begin{equation*}
+    dz = \pdv{z}{x}dx + \pdv{z}{y} dy = \left(\pdv{}{x}dx + \pdv{}{y}dy\right)z
+\end{equation*}
+Второго порядка
+\begin{equation*}
+    d^2z = d(dz) = d\left(\pdv{z}{x}dx + \pdv{z}{y} dy\right) = \left(\pdv{^2}{x^2}dx^2 + 2\pdv{^2}{x\partial y }dxdy + \pdv{^2}{y^2}dy^2\right)z
+\end{equation*}
+\begin{equation*}
+    d^n z = d(dz) = \left(\sum_{k=0}^{n}C_n^k\pdv{^n}{x^{n\cdot k}\partial y^k}dx^{n-k}dy^k\right)z
+\end{equation*}
+Функция о трёх переменных
+\begin{equation}
+    u = u(x;y;z)
+\end{equation}
+\begin{equation*}
+    du = \left(\pdv{}{x}dx+\pdv{}{y}dy+\pdv{}{z}dz\right)u
+\end{equation*}
+
+\section{Экстремумы функции нескольких функций}
+\begin{equation*}
+    z =z(x,y);\ M_0\ \ z(x,y)\ \ \text{eкстремум, если}
+\end{equation*}
+\begin{equation*}
+    z(x,y) \leq z(x_0, y_0) <=> \Delta z(x_0, y_0) \leq 0 \-\ max
+\end{equation*}
+\begin{equation*}
+    z(x,y) \geq z(x_0, y_0) <=> \Delta z(x_0, y_0) \geq 0 \-\ min
+\end{equation*}
+$M_0 $ - точка экстремума
+\\ \\
+$M_0$ - Критическая для функции z, если для неё все частные производные первого порядка == 0 или не существуют
+\\ \\
+$M_0$ - стационарная точка для функции z, если для неё все частные производные  == 0
+\\ \\ 
+\textbf{Теорема(необходимое условие экстремума)}
+\begin{equation*}
+    M_0(x_0; y_0) - point\ extremum\ for\ z(x;y)\ => M_0-\ \text{Критическая}
+\end{equation*}
+Досказательство
+
+\begin{center}
+    \includegraphics[width=.3\textwidth]{feixed} 
+\end{center}
+\begin{equation*}
+    1) y = y_0\ (fixed)
+\end{equation*}
+\begin{equation*}
+    z_0(x, y_0) = \phi (x)
+\end{equation*}
+\begin{equation*}
+    x_0 - \ \text{ точка экстремума функции}\ \phi (x)
+\end{equation*}
+\begin{equation*}
+    x_0 - \ \text{ критическая для }\ \phi (x): \phi'(x_0) = 0
+\end{equation*}
+\begin{equation*}
+=> z'_x(x; y_0) = 0
+\end{equation*}
+\begin{equation*}
+    2) x = x_0 -\ fixed
+\end{equation*}
+\begin{equation*}
+    z = (x_0; y) = \psi (y)
+\end{equation*}
+\begin{equation*}
+    y_0 - \text{точка критическая для } \psi(y)
+\end{equation*}
+\begin{equation*}
+    => y_0 - \text{точка критическая для } \psi(y) : \psi'(y_0)=0\ => z'_y(x_0;y_0)=0
+\end{equation*}
+1+2 => $M_0(x_0;y_0)$ - точка критическая для z(x;y)
+\\ \\
+\textbf{Теорема(достаточные условия экстремума для стационарной точки)}
+\begin{equation*}
+    z(x; y)\ M_0 - ctachionarnaya
+\end{equation*}
+Пусть z и её частные производные до 2-го порядка включены непрерывно в окрестность $M_0$
+\begin{equation*}
+    z''_{xx}(M_0) = A,\ z''_{xy}(M_0) = B,\ z_{yy}''(M_0)=C
+\end{equation*}
+\begin{equation*}
+   D=AC-B^2 = 
+   \begin{cases}
+    A&B\\
+    B&C
+   \end{cases}
+\end{equation*}
+\begin{equation*}
+    D>0\ and \ A<0\ =>\ M_0-\ max
+ \end{equation*}
+ \begin{equation*}
+    D>0\ and \ A>0\ =>\ M_0-\ min
+ \end{equation*}
+ \begin{equation*}
+    D<0,\ M_0 - \text{седловая}
+ \end{equation*}
+ \begin{equation*}
+    D=0,\ ? \text{требуются доп исследования}
+ \end{equation*}
+Доказательство
+ \begin{equation*}
+    z(x+\Delta x; y+\Delta y) = z(x;y)+ \frac{dz(x;y)}{1!}+\frac{d^2z(x;y)}{2!}+0(\Delta \rho^2)\ \ Teylor
+ \end{equation*}
+ \begin{equation*}
+= z(x;y) + (z_x'(x;y)\Delta x+z'_y(x;y)\Delta) + \frac{1}{2!}(z''_{xx}(x;y)(\Delta x)^2+2\cdot z''_{xy}(x;y)\Delta x\Delta y+z''_{yy}(x;y)(\Delta y)^2) + o((\Delta \rho)^2)
+\end{equation*}
+$M_0 $ - стационарная => dz($M_0 $)=0
+\begin{equation*}
+    \Delta z(M_0)=\frac{1}{2!}(A(\Delta x)^2+2B\Delta x\Delta y + C(\Delta y)^2)+o((\Delta \rho)^2)
+\end{equation*}
+\begin{equation*}
+    \Delta x = \Delta \rho \cdot cos\phi\ \ and \Delta y = \Delta \rho \cdot sin\phi\
+\end{equation*}
+(**)
+\begin{equation*}
+    = \frac{(\Delta \rho)^2}{2}(A\cdot cos^2\phi + 2B\cdot cos\phi\cdot sin \phi + C\cdot sin^2\phi + \frac{o(\Delta \rho ^2)}{\Delta \rho^2})
+\end{equation*}
+\begin{equation*}
+    (A^2\cdot cos^2\phi + 2AB\cdot cos\phi\cdot sin \phi + B^2sin^2\phi)+(AC-B^2)sin^2\phi
+\end{equation*}
+(*)
+\begin{equation*}
+    \frac{1}{A}(((A\cdot cos\phi + B\cdot sin \phi)^2)+(AC-B^2)sin^2\phi)
+\end{equation*}
+\begin{equation*}
+    1) (AC-B^2)=D>0\ \ A<0\ => \Delta z(M_0)\leq 0 \ \ \Delta \rho -> 0 \max
+\end{equation*}
+\begin{equation*}
+    2) (AC-B^2)=D>0\ \ A>0\ => \Delta z(M_0)\geq 0 \ \ \Delta \rho -> 0 \min
+\end{equation*}
+\begin{equation*}
+    3) (AC-B^2)=D<0\ 
+\end{equation*}
+\begin{equation*}
+    3.1) (AC-B^2)=D<0\ \ A>0\ \ \phi: sin\phi = 0\ \ (*)=\frac{A^2}{A} = A \ >0\ \ => \Delta z(M_0)\geq 0
+\end{equation*}
+\begin{equation*}
+    \phi: tg\phi = -\frac{A}{B}\ \ (*)=\frac{1}{A}(AC - B^2)\cdot sin^2\phi\ \ => \ \Delta(M_0)\leq 0 
+\end{equation*}
+no extremum
+\begin{equation*}
+    3.2) \ A<0\:
+\end{equation*}
+no extremum
+\begin{equation*}
+    3.3) A=0: (**)= sin \phi(2b\cdot cos\phi+c\cdot sin\phi);\ \phi > 0 \text{знак как B};\ \phi < 0 \text{знак как -B}
+\end{equation*}
+\begin{equation*}
+    4) D=0:\ \Delta z(M_0)=\frac{(\Delta \rho)^2}{2}(\frac{(Acos\phi + Bsin\phi)^2}{A}+o(1))
+\end{equation*}
+\begin{equation*}
+    \phi: tg\phi = - \frac{A}{B}\ => \Delta z (M_0) = (\Delta\rho)^2\cdot o(1) = o(\Delta\rho^2)
+\end{equation*}
+нужны доп исследования
 \end{document}

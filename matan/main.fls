@@ -798,6 +798,10 @@ INPUT ./vecp.png
 INPUT vecp.png
 INPUT ./vecp.png
 INPUT ./vecp.png
+INPUT ./feixed.png
+INPUT feixed.png
+INPUT ./feixed.png
+INPUT ./feixed.png
 INPUT main.aux
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

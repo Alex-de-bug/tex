@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  11 SEP 2023 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  14 SEP 2023 16:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -984,20 +984,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 424--426
 
  []
 
-[9 <./ll.png> <./vecp.png>] (./main.aux) ) 
+[9 <./ll.png> <./vecp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 476--484
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--484
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--484
+
+ []
+
+<feixed.png, id=85, 317.185pt x 321.2pt>
+File: feixed.png Graphic file (type png)
+<use feixed.png>
+Package pdftex.def Info: feixed.png  used on input line 490.
+(pdftex.def)             Requested size: 167.21855pt x 169.33829pt.
+[10 <./feixed.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 518--522
+
+ []
+
+[11] [12] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28462 strings out of 476047
- 694112 string characters out of 5790247
- 1866248 words of memory out of 5000000
- 48442 multiletter control sequences out of 15000+600000
+ 28472 strings out of 476047
+ 694263 string characters out of 5790247
+ 1867248 words of memory out of 5000000
+ 48452 multiletter control sequences out of 15000+600000
  525101 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,7n,103p,754b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on main.pdf (9 pages, 847562 bytes).
+Output written on main.pdf (12 pages, 905080 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 164 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

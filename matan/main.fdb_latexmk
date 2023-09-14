@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1694439176 "/Users/alexalex/Desktop/tex/matan/main.tex" "main.pdf" "main" 1694439178 0
-  "/Users/alexalex/Desktop/tex/matan/main.tex" 1694439176 16131 8e80f8f50d6e1ae4bd8956a92872a1ab ""
+["pdflatex"] 1694699209 "/Users/alexalex/Desktop/tex/matan/main.tex" "main.pdf" "main" 1694699210 0
+  "/Users/alexalex/Desktop/tex/matan/main.tex" 1694699207 21922 a232c1386eed1808eab82a4c5c7c3809 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1684784477 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1683825241 3308 eee81981029f67083258db36df06e523 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1683825105 3304 6a543c07045572737981351171e0505e ""
@@ -212,14 +212,15 @@
   "dx.png" 1694091469 252855 92151895917692405e8d38a9379a6824 ""
   "f(x).png" 1694090617 43117 d476f440541335255418f8dc7e59b94c ""
   "f(x,y).png" 1694090636 84783 244adcb9aa0c8497ffd9425905b5c2ac ""
+  "feixed.png" 1694696166 73224 65759e9e948870a0fdb4ae088fdfe4f7 ""
   "gran.png" 1693833953 10139 dde426d5109b5daee8cc236db33d2fde ""
   "graphF.png" 1694094041 35473 cf1db2fd0089fa8dba6bead1a3317fdc ""
   "isolate.png" 1693833995 10578 2ffd7c5ca5ca59cfc2bfd938fcbcf6d5 ""
   "line.png" 1693834118 67675 43e60e2b051e1dd4244d306c802f211e ""
   "lines.png" 1693835868 28318 742ef575dbcb6b23a73c53aa080e06bc ""
   "ll.png" 1694437004 62126 b799277ee902cca2e186c42edd8e1c5e ""
-  "main.aux" 1694439178 1640 ea4e89b6a26c69041385e421f4afb198 "pdflatex"
-  "main.tex" 1694439176 16131 8e80f8f50d6e1ae4bd8956a92872a1ab ""
+  "main.aux" 1694699210 1948 8052c8d3d1b737078323a55ed1eee010 "pdflatex"
+  "main.tex" 1694699207 21922 a232c1386eed1808eab82a4c5c7c3809 ""
   "prir.png" 1693834562 217300 95a3134d087b21311fdc8a91143d9f9b ""
   "vecp.png" 1694437382 129667 3cbd69746afa5a137b453fdcfce697e0 ""
   (generated)
