@@ -236,5 +236,254 @@ P = (x;y) - точка
 \begin{equation*}
     |grad\ z(M)| \approx  \frac{1}{4} = tg\alpha
 \end{equation*}
+\section{Касательная прямая и нормальная плоскость кривой}
+L - кривая на плоскости R 2х мер
+
+
+1)Явно:
+\begin{equation*}
+    y = y(x)\ \ x\in [a;b]
+\end{equation*}
+Example:
+\begin{equation*}
+    L:\ y=x^2
+\end{equation*}
+\includegraphics[width=.3\textwidth]{yavno.png} 
+
+2)Неявно:
+\begin{equation*}
+    L:\ F(x,y) = 0
+\end{equation*}
+Example:
+\begin{equation*}
+    L:\ y=x^2
+\end{equation*}
+\includegraphics[width=.3\textwidth]{neyavno.png} 
+
+3)Векторно:
+\begin{equation*}
+    L:\ \overline{r} = \overline{r}(t)
+\end{equation*}
+\begin{equation*}
+    \begin{cases}
+        x = x(t)\\
+        y = y(t)
+    \end{cases}
+\end{equation*}
+Example:
+\begin{equation*}
+    \begin{cases}
+        x = 2cos(t)\\
+        y = sin(t)
+    \end{cases}
+    \ \ t\in [0;2\pi)
+\end{equation*}
+\\ \\
+L - кривая в пространстве R 3х мер
+
+1)
+\begin{equation*}
+    L: \overline{r} = \overline{r}(t)
+\end{equation*}
+\begin{equation*}
+    \begin{cases}
+        x = x(t)\\
+        y=y(t)\\
+        z=z(t)
+    \end{cases}
+    \ \ t\in [\alpha;\beta]
+\end{equation*}
+Example:
+\begin{equation*}
+    \begin{cases}
+        x = 2cos(t)\\
+        y=sin(t)\\
+        z=t
+    \end{cases}
+    \ \ t\in [0;2\pi)
+\end{equation*}
+\includegraphics[width=.3\textwidth]{spiral.png} 
+
+2)Задано неявно, как пересечение двух плоскостей
+\begin{equation*}
+    \begin{cases}
+        F_1(x,y,z) = 0\\
+        F_2(x,y,z) = 0
+    \end{cases}
+\end{equation*}
+Example:
+\begin{equation*}
+    \begin{cases}
+        x^2+y^2+z^2=4\\
+        x^2+y^2=2y
+    \end{cases}
+\end{equation*}
+\includegraphics[width=.3\textwidth]{neyavno2.png} 
+\\ \\
+1) 
+\begin{equation*}
+    \begin{cases}
+        x = x(t)\\
+        y=y(t)\\
+        z=z(t)
+    \end{cases}
+    \ \ \overline{r} = \overline{r}(t)
+\end{equation*}
+\begin{equation*}
+    \overline{\tau} = \frac{d\overline{r}}{dt} = \lim_{\Delta t->0}\frac{\Delta \overline{r}(t)}{\Delta t} = \frac{dx}{dt}\overline{i}+\frac{dy}{dt}\overline{j}+\frac{dz}{dt}\overline{k} = (x'(t); y'(t); z'(t))
+\end{equation*}
+при
+\begin{equation*}
+    x(t),\ y(t),\ z(t)\ - \text{гладкая кривая}
+\end{equation*}
+\includegraphics[width=.3\textwidth]{kas}
+\begin{equation*}
+    \Delta \overline{r}(t)= \overline{r}(t+\Delta t) - \overline{r}(t)
+\end{equation*}
+Уравнение касательной прямой в точке кривой:
+\begin{equation*}
+    \frac{x-x_0}{a} = \frac{y-y_0}{b} = \frac{z-z_0}{c}
+\end{equation*}
+\begin{equation*}
+    M_0(x_0;y_0;z_0), \ \overline{s}(a;b;c)
+\end{equation*}
+=>
+Уравнение касательной
+\begin{equation*}
+    \frac{x-x_0}{x'(t_0)} = \frac{y-y_0}{y'(t_0)} = \frac{z-z_0}{z'(t_0)} \ \ M_0:
+    \begin{cases}
+        x_0 = x(t_0)\\
+        y_0=y(t_0)\\
+        z_0=z(t_0)
+    \end{cases}
+\end{equation*}
+\\ \\
+Уравнение нормальной плоскости в точке кривой
+\begin{equation*}
+    A(x-x_0)+B(y-y_0)+C(z-z_0) = 0;\ \overline{n}(A;B;C);\ M_0(x_0;y_0;z_0)
+\end{equation*}
+=>
+\begin{equation*}
+    x'(t_0)(x-x_0)+y'(t_0)(y-y_0)+z'(t_0)(z-z_0) = 0
+\end{equation*}
+\section{Касательная плоскость и нормальная прямая поверхность}
+Г- поверхность в пространстве R 3х мер
+
+1) Явное
+\begin{equation*}
+    G:\ z = f(x;y);\ x = g(z;y);\ y = h(x;z);\ 
+\end{equation*}
+Example:
+\begin{equation*}
+    y = x^2 +z^2 
+\end{equation*}
+\includegraphics[width=.3\textwidth]{parabol.png}
+
+2) Неявное
+\begin{equation*}
+    G:\ F(x;y;z)=0\ 
+\end{equation*} 
+Example:
+\begin{equation*}
+    x^2-y^2+z^2-1=0
+\end{equation*}
+\includegraphics[width=.3\textwidth]{parabalobel.png} 
+
+3) Параметрически
+\begin{equation*}
+    \begin{cases}
+        x = x(u;v)\\
+        y = y(u;v)\\
+        z = z(u;v)
+    \end{cases}
+\end{equation*}
+Векторное:
+\begin{equation*}
+    \overline{r} = \overline{r}(u;v)
+\end{equation*}
+Example:
+\begin{equation*}
+    x = 2\cos\phi\sin\theta 
+\end{equation*}
+\begin{equation*}
+    y = 2\sin\phi\sin\theta 
+\end{equation*}
+\begin{equation*}
+    z = 2\cos\theta 
+\end{equation*}
+$\phi$ - азимутальный угол\\
+$\theta$ - зенитный угол\\
+$\phi \in [0;2\pi]$\\
+$\theta \in [0;\pi]$\\
+\begin{equation*}
+    \measuredangle x^2+y^2+z^2 = 4cos^2\phi sin^2\theta+4sin^2\phi sin^2\theta + 4 cos^2\theta = 4sin^2\theta +4cos^2\theta = 4
+\end{equation*}
+\begin{equation*}
+    x^2+y^2+z^2 = 4
+\end{equation*}
+сфера с центром в точке (0;0;0) и R=2\\
+\includegraphics[width=.3\textwidth]{sphere.png}
+\\ \\
+Касательная к поверхности в точке - это касательная к кривой на поверхности, проходящей через эту точку.
+\begin{equation*}
+    G:\ F(x;y;z) = 0;\ \ P(x;y;z) - point
+\end{equation*}
+P - обыкновенная точка к поверхности, если в этой точке все чатные производные $\pdv{F}{x}, \pdv{F}{y}, \pdv{F}{z} $ этой поверхности - существуют, непрерывны и не все =0
+\\
+P - особая, если все производные ранвы ноль или одно из них не существует.
+\\ \\
+Example
+\begin{equation*}
+    F(x,y,z) = x^2+y^2-z^2 = 0\ (cono)
+\end{equation*}
+\begin{equation*}
+    \pdv{F}{x} = 2x;\  \pdv{F}{y}= 2y;\ \pdv{F}{z}= -2z;\ \ \ \ => P(0,0,0)
+\end{equation*}
+
+Theorem  - о касательной плоскости 
+\begin{equation*}
+    P - \text{ обыкновенная точка =>}\ in\ P \text{ все касательные лежат в одной плоскости}
+\end{equation*}
+Доказательство
+\begin{equation*}
+    L:\ 
+    \begin{cases}
+        x = x(t)\\
+        y = y(t)\\
+        z = z(t)
+    \end{cases} \ \ \ \ 
+    \overline{\tau} = (x'(t), y'(t), z'(t))
+\end{equation*}
+\begin{equation*}
+    G: F(x;y;z) = 0
+\end{equation*}
+т.к. точки L лежат на поверхности, то 
+\begin{equation*}
+    F(x(t), y(t), z(t)) = 0\ \ \ | \cdot \frac{d}{dt}
+\end{equation*}
+\begin{equation*}
+    \pdv{F}{x}\cdot \pdv{x}{t} + \pdv{F}{y}\cdot \pdv{y}{t} + \pdv{F}{z}\cdot \pdv{z}{t} = 0
+\end{equation*}
+\begin{equation*}
+    grad(F)\cdot \overline{\tau} = 0
+\end{equation*}
+\begin{equation*}
+    grad(F) - \text{ вектор нормали n}
+\end{equation*}
+\begin{equation*}
+    \forall \overline{\tau} \perp grad(\overline{F}(P))
+\end{equation*}
+все касательные лежат в одной плоскости 
+
+доказано
+\\  \\
+Касательная плоскость:
+\begin{equation*}
+    \pdv{F}{x}\left(P\right)(x-x_0)+\pdv{F}{y}\left(P\right)(y - y_0) +\pdv{F}{z}\left(P\right)(z - z_0) = 0; \ \ \  P(x_0;y_0;z_0)
+\end{equation*}
+Нормальная прямая:
+\begin{equation*}
+    \frac{x-x_0}{\pdv{F}{x}\left(P\right)} = \frac{y-y_0}{\pdv{F}{y}\left(P\right)} = \frac{z-z_0}{\pdv{F}{z}\left(P\right)}
+\end{equation*}
 % \includegraphics[width=.3\textwidth]{1.1} 
 \end{document}
