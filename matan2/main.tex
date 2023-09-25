@@ -14,40 +14,7 @@
 \usepackage{physics}
 
 \begin{document}
-% НАЧАЛО ТИТУЛЬНОГО ЛИСТА
-\begin{center}
-    \Large
-    Федеральное государственное автономное \\
-    образовательное учреждение высшего образования \\ 
-    «Научно-образовательная корпорация ИТМО»\\
-    \vspace{0.5cm}
-    \large
-    Факультет программной инженерии и компьютерной техники \\
-    Направление подготовки 09.03.04 Программная инженерия \\
-    \vspace{1cm}
-    \Large
-    \textbf{Отчёт по лабораторной работе №3} \\
-    По дисциплине «Базы данных» (второй семестр)\\
-    \large
-    \vspace{8cm}
-
-    \begin{minipage}{.33\textwidth}
-    \end{minipage}
-    \hfill
-    \begin{minipage}{.4\textwidth}
-    
-        \textbf{Студент}: \vspace{.1cm} \\
-        \ Дениченко Александр P3112\\
-        \textbf{Практик}:  \\
-        \ Лисицина В.В
-    \end{minipage}
-    \vfill
-Санкт-Петербург\\ 2023 г.
-\end{center}
-
-% КОНЕЦ ТИТУЛЬНОГО ЛИСТА 
-\newpage
-
+ 
 \section{Векторная ФНП и векторное поле}
 \begin{equation*}
     \overline{\mathcal{V}} = (\mathcal{V}_x; \mathcal{V}_y) = (\mathcal{V}_x(x;y);\mathcal{V}_y(x,y)) = \mathcal{V}_x(x;y)\overline{i}+\mathcal{V}_y(x,y)\overline{j}
@@ -485,5 +452,63 @@ Theorem  - о касательной плоскости
 \begin{equation*}
     \frac{x-x_0}{\pdv{F}{x}\left(P\right)} = \frac{y-y_0}{\pdv{F}{y}\left(P\right)} = \frac{z-z_0}{\pdv{F}{z}\left(P\right)}
 \end{equation*}
+
+\section{Полярные координаты}
+$\phi$ - полярный угол 
+
+$\rho$ - полярный угол
+
+\begin{equation*}
+    \begin{cases}
+        \rho \geq 0 \\
+        0\leq \phi < 2\pi
+    \end{cases}
+    \begin{cases}
+        x=\rho\cdot \cos \phi\\
+        y = \rho \sin \phi
+    \end{cases}
+\end{equation*}
+\includegraphics[width=.3\textwidth]{psk} 
+
+\section{Цилиндрические и сферические координаты}
+\begin{minipage}{.5\textwidth}
+Цилиндрическая
+
+z - ось апликат\\
+\includegraphics[width=.6\textwidth]{chill}\\
+\begin{equation*}
+    \rho \geq 0;\ 0\leq\phi<2\pi;\ z\in \mathbb{R}
+\end{equation*}
+\begin{equation*}
+    \begin{cases}
+        x= \rho cos\phi\\
+        y = \rho sin\phi\\
+        z=z
+    \end{cases}
+\end{equation*}
+\includegraphics[width=.6\textwidth]{CHILLCONST.png}\\
+\end{minipage}
+\hfill
+\begin{minipage}{.5\textwidth}
+Сферическая
+
+$\phi$ - азимутальный 
+
+$\theta$ - зенитный угол
+
+$r$ - расстояние\\
+\includegraphics[width=.6\textwidth]{sphere12.png} 
+\begin{equation*}
+    r \geq 0;\ 0\leq \phi<2\pi;\ 0\leq \theta \leq \pi
+\end{equation*}
+\begin{equation*}
+    \begin{cases}
+        x= r\cdot \sin\phi\cos\theta\\
+        y = r\cdot \sin\phi \sin\theta\\
+        z=r\cdot \cos\theta
+    \end{cases}
+\end{equation*}
+\includegraphics[width=.6\textwidth]{sphereconst.png} 
+\end{minipage}
 % \includegraphics[width=.3\textwidth]{1.1} 
 \end{document}

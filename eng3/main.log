@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  26 SEP 2023 01:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  24 SEP 2023 00:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/alexalex/Desktop/tex/matan2/main.tex
-(/Users/alexalex/Desktop/tex/matan2/main.tex
+**/Users/alexalex/Desktop/tex/eng3/main.tex
+(/Users/alexalex/Desktop/tex/eng3/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-05-05> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -652,45 +652,30 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
-Package: physics 
- (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-05-05 L3 programming layer (loader) 
- (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+))) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count312
 \l__pdf_internal_box=\box66
-))
-Package: xparse 2023-02-02 L3 Experimental document command parser
-)) (./main.aux)
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Info: Redefining \th on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Info: Redefining \th on input line 14.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -750,167 +735,44 @@ Package caption Info: End \AtBeginDocument code.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 16.
+ on input line 14.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<grad.png, id=4, 207.77625pt x 167.62625pt>
-File: grad.png Graphic file (type png)
-<use grad.png>
-Package pdftex.def Info: grad.png  used on input line 74.
-(pdftex.def)             Requested size: 167.21855pt x 134.91197pt.
-<ans_grad.png, id=6, 293.095pt x 222.8325pt>
-File: ans_grad.png Graphic file (type png)
-<use ans_grad.png>
-Package pdftex.def Info: ans_grad.png  used on input line 90.
-(pdftex.def)             Requested size: 167.21855pt x 127.13144pt.
- [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc} <./grad.png>]
-<gradx.png, id=24, 462.72874pt x 253.94875pt>
-File: gradx.png Graphic file (type png)
-<use gradx.png>
-Package pdftex.def Info: gradx.png  used on input line 137.
-(pdftex.def)             Requested size: 167.21855pt x 91.77022pt.
- [2 <./ans_grad.png> <./gradx.png>]
-<yavno.png, id=31, 177.66376pt x 161.60374pt>
-File: yavno.png Graphic file (type png)
-<use yavno.png>
-Package pdftex.def Info: yavno.png  used on input line 218.
-(pdftex.def)             Requested size: 167.21855pt x 152.10727pt.
-<neyavno.png, id=32, 215.80624pt x 141.52875pt>
-File: neyavno.png Graphic file (type png)
-<use neyavno.png>
-Package pdftex.def Info: neyavno.png  used on input line 228.
-(pdftex.def)             Requested size: 167.21855pt x 109.66852pt.
- [3 <./yavno.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 247--250
-
- []
-
-<spiral.png, id=37, 404.51125pt x 297.11pt>
-File: spiral.png Graphic file (type png)
-<use spiral.png>
-Package pdftex.def Info: spiral.png  used on input line 272.
-(pdftex.def)             Requested size: 167.21855pt x 122.82233pt.
-<neyavno2.png, id=38, 432.61626pt x 344.28625pt>
-File: neyavno2.png Graphic file (type png)
-<use neyavno2.png>
-Package pdftex.def Info: neyavno2.png  used on input line 288.
-(pdftex.def)             Requested size: 167.21855pt x 133.07332pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 287--291
-
- []
-
-[4 <./neyavno.png> <./spiral.png>]
-<kas.png, id=44, 628.3475pt x 239.89626pt>
-File: kas.png Graphic file (type png)
-<use kas.png>
-Package pdftex.def Info: kas.png  used on input line 306.
-(pdftex.def)             Requested size: 167.21855pt x 63.83942pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--329
-
- []
-
-<parabol.png, id=45, 411.5375pt x 191.71625pt>
-File: parabol.png Graphic file (type png)
-<use parabol.png>
-Package pdftex.def Info: parabol.png  used on input line 347.
-(pdftex.def)             Requested size: 167.21855pt x 77.89915pt.
-[5 <./neyavno2.png> <./kas.png>]
-<parabalobel.png, id=51, 243.91125pt x 187.70125pt>
-File: parabalobel.png Graphic file (type png)
-<use parabalobel.png>
-Package pdftex.def Info: parabalobel.png  used on input line 357.
-(pdftex.def)             Requested size: 167.21855pt x 128.68341pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 380--385
-
- []
-
-<sphere.png, id=52, 229.85875pt x 188.705pt>
-File: sphere.png Graphic file (type png)
-<use sphere.png>
-Package pdftex.def Info: sphere.png  used on input line 392.
-(pdftex.def)             Requested size: 167.21855pt x 137.28703pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--395
-
- []
-
-[6 <./parabol.png> <./parabalobel.png> <./sphere.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 397--403
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--448
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
 
-<psk.png, id=59, 402.50375pt x 481.8pt>
-File: psk.png Graphic file (type png)
-<use psk.png>
-Package pdftex.def Info: psk.png  used on input line 471.
-(pdftex.def)             Requested size: 167.21855pt x 200.15646pt.
-[7]
-<chill.png, id=64, 244.915pt x 186.6975pt>
-File: chill.png Graphic file (type png)
-<use chill.png>
-Package pdftex.def Info: chill.png  used on input line 478.
-(pdftex.def)             Requested size: 167.21854pt x 127.47394pt.
+[1
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--479
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
-<CHILLCONST.png, id=65, 336.25626pt x 253.94875pt>
-File: CHILLCONST.png Graphic file (type png)
-<use CHILLCONST.png>
-Package pdftex.def Info: CHILLCONST.png  used on input line 489.
-(pdftex.def)             Requested size: 167.21854pt x 126.2882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--490
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
-<sphere12.png, id=66, 276.03125pt x 200.75pt>
-File: sphere12.png Graphic file (type png)
-<use sphere12.png>
-Package pdftex.def Info: sphere12.png  used on input line 500.
-(pdftex.def)             Requested size: 167.21854pt x 121.618pt.
-<sphereconst.png, id=67, 384.43625pt x 193.72375pt>
-File: sphereconst.png Graphic file (type png)
-<use sphereconst.png>
-Package pdftex.def Info: sphereconst.png  used on input line 511.
-(pdftex.def)             Requested size: 167.21854pt x 84.26619pt.
-
-Overfull \hbox (2.22166pt too wide) in paragraph at lines 474--514
-$[]$  $[]$ 
- []
-
-[8 <./psk.png> <./chill.png> <./CHILLCONST.png> <./sphere12.png> <./sphereconst.png>] (./main.aux) ) 
+[2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28397 strings out of 476047
- 693709 string characters out of 5790247
- 1864248 words of memory out of 5000000
- 48387 multiletter control sequences out of 15000+600000
- 518835 words of font info for 46 fonts, out of 8000000 for 9000
+ 27086 strings out of 476047
+ 677739 string characters out of 5790247
+ 1858248 words of memory out of 5000000
+ 47122 multiletter control sequences out of 15000+600000
+ 514708 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,9n,103p,755b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (8 pages, 698298 bytes).
+ 99i,6n,103p,733b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (2 pages, 39143 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 25 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
