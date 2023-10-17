@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  12 OCT 2023 17:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  14 OCT 2023 22:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/alexalex/Desktop/tex/matan3/main.tex
-(/Users/alexalex/Desktop/tex/matan3/main.tex
+**/Users/alexalex/Desktop/tex/eng6/main.tex
+(/Users/alexalex/Desktop/tex/eng6/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-05-05> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -652,45 +652,30 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
-Package: physics 
- (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-05-05 L3 programming layer (loader) 
- (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+))) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count312
 \l__pdf_internal_box=\box66
-))
-Package: xparse 2023-02-02 L3 Experimental document command parser
-)) (./main.aux)
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Info: Redefining \th on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Info: Redefining \th on input line 14.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -750,179 +735,24 @@ Package caption Info: End \AtBeginDocument code.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 19.
+ on input line 14.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+[1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
-
- []
-
-<123.png, id=19, 282.05376pt x 191.71625pt>
-File: 123.png Graphic file (type png)
-<use 123.png>
-Package pdftex.def Info: 123.png  used on input line 109.
-(pdftex.def)             Requested size: 167.21855pt x 113.66156pt.
-<krivo.png, id=21, 509.905pt x 221.82875pt>
-File: krivo.png Graphic file (type png)
-<use krivo.png>
-Package pdftex.def Info: krivo.png  used on input line 122.
-(pdftex.def)             Requested size: 167.21855pt x 72.74675pt.
-[2 <./123.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
-
- []
-
-<paral.png, id=30, 185.69376pt x 124.465pt>
-File: paral.png Graphic file (type png)
-<use paral.png>
-Package pdftex.def Info: paral.png  used on input line 164.
-(pdftex.def)             Requested size: 167.21855pt x 112.08392pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--165
-
- []
-
-
-LaTeX Warning: Command \cyrn invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyra invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyrg invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyrr invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyra invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyrn invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyri invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyrc invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyre invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyrt invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyro invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyrzh invalid in math mode on input line 190.
-
-
-LaTeX Warning: Command \cyre invalid in math mode on input line 190.
-
-Missing character: There is no í in font cmr10!
-Missing character: There is no à in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no ð in font cmr10!
-Missing character: There is no à in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no è in font cmr10!
-Missing character: There is no ö in font cmr10!
-Missing character: There is no å in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no î in font cmr10!
-Missing character: There is no æ in font cmr10!
-Missing character: There is no å in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no à in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no ð in font cmr10!
-Missing character: There is no à in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no è in font cmr10!
-Missing character: There is no ö in font cmr10!
-Missing character: There is no å in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no î in font cmr10!
-Missing character: There is no æ in font cmr10!
-Missing character: There is no å in font cmr10!
-Missing character: There is no í in font cmr7!
-Missing character: There is no à in font cmr7!
-Missing character: There is no ã in font cmr7!
-Missing character: There is no ð in font cmr7!
-Missing character: There is no à in font cmr7!
-Missing character: There is no í in font cmr7!
-Missing character: There is no è in font cmr7!
-Missing character: There is no ö in font cmr7!
-Missing character: There is no å in font cmr7!
-Missing character: There is no ò in font cmr7!
-Missing character: There is no î in font cmr7!
-Missing character: There is no æ in font cmr7!
-Missing character: There is no å in font cmr7!
-Missing character: There is no í in font cmr5!
-Missing character: There is no à in font cmr5!
-Missing character: There is no ã in font cmr5!
-Missing character: There is no ð in font cmr5!
-Missing character: There is no à in font cmr5!
-Missing character: There is no í in font cmr5!
-Missing character: There is no è in font cmr5!
-Missing character: There is no ö in font cmr5!
-Missing character: There is no å in font cmr5!
-Missing character: There is no ò in font cmr5!
-Missing character: There is no î in font cmr5!
-Missing character: There is no æ in font cmr5!
-Missing character: There is no å in font cmr5!
-[3 <./krivo.png> <./paral.png>]
-<rod1.png, id=37, 788.9475pt x 635.37375pt>
-File: rod1.png Graphic file (type png)
-<use rod1.png>
-Package pdftex.def Info: rod1.png  used on input line 209.
-(pdftex.def)             Requested size: 167.21855pt x 134.66368pt.
-<krivo12.png, id=38, 930.47626pt x 577.15625pt>
-File: krivo12.png Graphic file (type png)
-<use krivo12.png>
-Package pdftex.def Info: krivo12.png  used on input line 215.
-(pdftex.def)             Requested size: 167.21855pt x 103.71631pt.
- [4 <./rod1.png> <./krivo12.png>]
-<krivo2.png, id=45, 615.29875pt x 445.665pt>
-File: krivo2.png Graphic file (type png)
-<use krivo2.png>
-Package pdftex.def Info: krivo2.png  used on input line 278.
-(pdftex.def)             Requested size: 167.21855pt x 121.11319pt.
- [5 <./krivo2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 330--332
-
- []
-
-[6] (./main.aux) ) 
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] [2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28360 strings out of 476047
- 692930 string characters out of 5790247
- 1865248 words of memory out of 5000000
- 48345 multiletter control sequences out of 15000+600000
- 526633 words of font info for 72 fonts, out of 8000000 for 9000
+ 27091 strings out of 476047
+ 677795 string characters out of 5790247
+ 1856248 words of memory out of 5000000
+ 47125 multiletter control sequences out of 15000+600000
+ 515979 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,8n,103p,755b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on main.pdf (6 pages, 652098 bytes).
+ 99i,6n,103p,733b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (2 pages, 57461 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 35 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

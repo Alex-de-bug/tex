@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} %кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel} %русификатор 
+\usepackage{mathtools} %библиотека матеши
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage{amsmath}
+\usepackage{graphicx} %библиотека для графики и картинок
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+
+\begin{document}
+
+
+\section{Задачи}
+\begin{minipage}{.3\textwidth}
+\textbf{Трамвай}\\
+$s_0; v_{max} -?$
+Найдём зависимоть скорости от расстояния: за dt - $dv=adt$. Так как $dt = \frac{ds}{v}$, то $vdv =(a_0 -bs)ds$. Проинтегрируем и получим: $\int_{0}^{v}vdv = \int_{0}^{s} (a_0 -bs)ds$;
+$\frac{v^2}{2} = a_0s -\frac{bs^2}{2}$; $v = \sqrt{(2a_0 -bs)s} $. При $v = 0$; \textbf{$s_0 = \frac{2a_0}{b}$}. $v_{max}$ при $\frac{dv}{ds} = 0$ => $\frac{1}{2}\frac{2a_0-2bs}{\sqrt{2a_0s-bs^2}}=0$. Тогда s = $\frac{a_0}{b} = \frac{s_0}{2}$. Подставим его в v, которое будет max. $v_{max}=\sqrt{2a_0\frac{a_0}{b}-b\frac{a^2_0}{b^2}} = \frac{a_0}{\sqrt{b}}$
+\end{minipage}
+\hfill
+\begin{minipage}{.3\textwidth}
+\textbf{Частица y=kx2}\\
+$a-?$
+Продифференцируем дважды уравнение траектории по времени: $y^.=2kxx^.$; $y^{..} = 2k(x^{.2}+xx^{..})$.
+В точке х = 0 величина $|x^.|=v$: $a=(y^{..})_{x=0}=2kv^2$. 
+\end{minipage}
+\hfill
+\begin{minipage}{.3\textwidth}
+\textbf{Точка по окружности радиуса r}\\
+$a-?$
+По усл: $\frac{dv}{dt} = \frac{-v2}{r}$; $dt=\frac{ds}{v}$; $\frac{dv}{v} = \frac{-ds}{r}$. $\int_{v_0}^{v}\frac{dv}{v}=-\int_{0}^{s}\frac{ds}{r}$ => $ln\frac{v}{v_0}=-\frac{s}{r}$ => $v=v_0e^{-\frac{s}{r}}$(s/r).
+В данном случае $|a_{\tau}|=a_n$ => $a=\sqrt{2}a_n=\sqrt{2}\frac{v^2}{r} = \sqrt{2}(v_0^2/r)e^{-2s/r}$
+\end{minipage}
+
+\section{Задачи}
+\begin{minipage}{.3\textwidth}
+\textbf{Блок, нерастяжимая нить}\\
+$a_1-?$
+Выбираем положительное направление оси X вверх, тогда основное уравнение динамики в проеции:
+$
+\begin{cases}
+    m_1a_{1x}=T-m_1g\\
+    m_2a_{2x}=T-m_2g
+\end{cases}
+$. Воспользуемся кинематической связью: $a_1 =a_0+a'$, $a_2=a_0-a'$ ($a'$ - ускорение груза 1 относ блока). Решаем: $m_1(a_0+a')+m_1g=m_2(a_0-a')+m_2g$; $a'=\frac{(m_1-m_2)}{m_1+m_2}(g-a_0)$; $a_1=a_0+a'=\frac{2m_2a_0+(m_1-m_2)g}{m_1+m_2}$
+\end{minipage}
+\hfill
+\begin{minipage}{.3\textwidth}
+\textbf{Брусок массы m1}\\
+$t_0-?$
+\includegraphics[width=.3\textwidth]{brus.png}
+Основное уравнение динамики для бруска будет иметь вид: $m_1a_1=F_{tr}$, $m_2a_2=F-F_{tr}$. При росте F растёт $F_{tr}$ и имеет предел $F_{trmax} = \mu m_1g$ и при его достижении доска начнёт выскальзывать: $a_2\geq a_1$. $(\alpha t -\mu m_1g)/m_2\geq\mu g$(где равенство достиг при $t = t_0$), тогда $t_0=(m_1+m_2)\mu g/\alpha$
+\end{minipage}
+\hfill
+\begin{minipage}{.3\textwidth}
+\textbf{Наклонная плоскость}\\
+$|a|-?$
+\includegraphics[width=.3\textwidth]{plosk.png}
+При отстутствии $F_{tr}$ тело бы начало скользить ввехр по плоскости. При добавлении $F_{tr}$ направление движения не изменится, уменьшится a. Мы сможем определить направление $F_{tr}$ действ на тело $m_2$, когда узнаем направление a при отстутствии $F_{tr}$.
+1)$m_1g$, 2)$m_2gsin\alpha= \frac{3}{2}m_1g\frac{1}{2}=\frac{3}{4}m_1g<m_1g$ - тело $m_2$ движется вверх, $F_{tr}$ направлена противоположно. 
+$m_1$: $m_1\overline{g}+\overline{T}=m_1\overline{a_1}$; $m_2$: $\overline{T}+m_2\overline{g}+F_{tr}=m_2\overline{a_2}$; $\overline{a_1}|_{x_1}=\overline{a_2}|_{x_2}=a$
+$
+\begin{cases}
+    m_1a=m_1g-T\\
+    m_2a=T-m_2gsin\alpha-\mu m_2gcos\alpha
+\end{cases}\\; (m_1+m_2)a=m_1g-m_2g(sin\alpha+\mu cos\alpha);
+a = \frac{\frac{m_1}{m_2}-(sin\alpha+\mu cos\alpha)}{\frac{m_1}{m_2}+1}\cdot g = 0.05g
+$
+\end{minipage}
+
+\section{Задачи}
+\begin{minipage}{.3\textwidth}
+\textbf{Две тележки}\\
+$v-?$ Рассмотрим прыжок человека и импульс системы в от прыжка, до преземления невключительно. $(M+m)\overline{v_0}=M\overline{v}+m(\overline{u}+\overline{v})= (M+m)\overline{v}+m\overline{u}$; 
+$\overline{v} = \overline{v_0} - \frac{m}{m+M}\overline{u}$; $(\overline{u}+\overline{v})=\overline{v_0}-\frac{m}{m+M}\overline{u}+\overline{u} = \overline{v_0}+\frac{M}{m+M}\overline{u}$;
+Далее рассмотрим преземление человека на тележку из состояния полёта: $m(\overline{v_0}+\frac{M}{m+M}\overline{u})+M\overline{v_0}= (m+M)\overline{v'}$; $(m+M)\overline{v_0}+\frac{mM}{m+M}\overline{u}=(m+M)\overline{v'}$; 
+$\overline{v'} = \overline{v_0} + \frac{mM}{(m+M)^2}\overline{u}$
+\end{minipage}
+\hfill
+\begin{minipage}{.3\textwidth}
+\textbf{два человека}\\
+$v-?$ Рассмотрим первый случай, когда один человек спрыгивает с тележки: $(m+M)\overline{v}+m(\overline{u}+\overline{v})$; $\overline{v} = - \frac{m\overline{u}}{M+2m}$
+($\overline{v}$ - скорость тележки после прыжка первого человека)
+Следующий случай, когда второй человек спрыгивает: $(m+M)(-\frac{m\overline{u}}{M+2m})=M\overline{v'}+m(\overline{u}+\overline{v'}) = (m+M)\overline{v'}+m\overline{u}$
+($\overline{v'}$ - скорость тележки после прыжка второго человека).
+$(m+M)\overline{v'} = -m\overline{u}(\frac{m+M}{M+2m}+1) = -m\overline{u'}\frac{2M+3m}{(M+2m)}$; $\overline{v'} = - \frac{m\overline{u}(2M+3m)}{(M+2m)(M+m)}$
+\end{minipage}
+\hfill
+\begin{minipage}{.3\textwidth}
+\textbf{шайбы*}\\
+$T-?$ Рассмотрим ситуацию в ИСО: $T_1=T_2=m_1\frac{v^2_1}{r_1}=m_2\frac{v^2_2}{r_2}=a_{n1}=a_{n2}$.
+$r_1+r_2=l$; $r_1m_1=r_2m_2$  |  $r_1=\frac{m_2}{m_1+m_2}l$; $r_2=\frac{m_1}{m_1+m_2}l$
+Рассмотрим с-систему: $\overline{P_0}=0$; $m_1v_1=m_2v_2$; $\frac{v_1}{v_2}=\frac{m_2}{m_1}$  |  $v_1=v_c$; $v_c+v_2=v$; $v_1+v_2=v$  |  $v_1=\frac{m_2}{m_1+m_2}v$; $v_2=\frac{m_1}{m_1+m_2}v$  |  $T=\frac{m(\frac{m_2}{m_1+m_2}v)^2}{(\frac{m_2}{m_1+m_2})l} = \frac{m_1m_2}{m_1+m_2}\frac{v^2}{l}$. $R-?$ $R = \frac{v^2_2m_2}{T} = (\frac{m_1+m_2}{m_1})l$
+\end{minipage}
+\end{document}

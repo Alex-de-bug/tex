@@ -12,9 +12,12 @@
 \usepackage{pgfplots}
 \usepackage{amssymb}
 \usepackage{physics}
+\title{\LaTeX}
+\date{}
+\author{}
 
 \begin{document}
- 
+\maketitle
 \section{Введение в интеграл ФНП}
 1. \textbf{Определение Интегрируемой Функциональной Функции}: \\
    Начните с определения функционала (интегрируемой функциональной функции), которую вы хотите интегрировать. Обычно эта функциональная функция зависит от некоторой переменной, например, функции $f(x)$, где $x$ - независимая переменная в ФНП.
@@ -178,6 +181,169 @@ D = \{(x, y) \mid a \leq x \leq b, g_1(x) \leq y \leq g_2(x)\},
         \pdv{x}{u}\ \pdv{x}{v}\\
         \pdv{y}{u}\ \pdv{y}{v}
     \end{matrix}\right|\right|dvdu
+\end{equation*}
+\section{Тройной интеграл}
+\begin{equation*}
+    \mathcal{V} \in \mathbb{R}:\text{ огранич замкнут пов-ю S тело}
+\end{equation*}
+\begin{equation*}
+    f(x;y;z) \text{ непрерывна в $\mathcal{V}(на границе S тоже)$}
+\end{equation*}
+Схема интеграла
+
+1) n элементарных объёмов $\Delta \mathcal{V}_i\ i=1...n$
+
+2) $P_i(x_i;y_i;z_i)\in \Delta\mathcal{V}_i$
+
+$f(P_i)=f(x_i;y_i;z_i)\ \ f(P_i)\cdot \Delta \mathcal{V}_i$ \ \ \ $f(P_i)\cdot \Delta \mathcal{V}_i = \Delta G_i$
+
+3) $G_n = \sum_{i=1}^{n}\Delta G_i= \sum_{i=1}^{n}f(P_i)\Delta \mathcal{V}_i$
+4)$\lambda -> 0$ = $max(diam\Delta \mathcal{V}_i)$
+
+$\lim_{n->\inf;\lambda->0}G_n = \lim_{n->\inf;\lambda->0}\sum_{i=1}^{n}\Delta G_i= \lim_{n->\inf;\lambda->0}\sum_{i=1}^{n}f(P_i)\Delta \mathcal{V}_i$
+
+$G=\iiint_{\mathcal{V}}dG=\iiint_{\mathcal{V}}f(x;y;z)d\mathcal{V} = \iiint_{\mathcal{V}}f(x;y;z)dxdydz$
+\section{Криволиненйный интеграл}
+\textbf{ПЕРВЫЙ РОД}
+\begin{center}
+    \includegraphics[width=.3\textwidth]{rod1.png}
+\end{center}
+\begin{equation*}
+    z = f(x,y)
+\end{equation*}
+\begin{center}
+    \includegraphics[width=.3\textwidth]{krivo12.png}
+\end{center}
+\begin{equation*}
+    \lim_{n->\inf; \lambda->0}\sum_{i=1}^{n}f(x_i; y_i)\Delta l_i = \int_{L}^{}f(x;y)dl
+\end{equation*}
+Криволинейный интеграл 1 рода по длине дуги. Для непрерывных функций.
+
+Свойства:
+
+1) Линейность: $\int(a) = a\int$
+
+2) Аддитивность: $\int(+) = \int+\int$
+
+3) Оценка: мин - мин плостность умнож на длину и аналогично для макс 
+
+4) Среднее значение
+
+5) Не заданно направление, без разницы в какую сторону идти по длине при подсчёте чего-либо. Независимость от ориентированности кривой от интегрирования.
+\begin{equation*}
+    \int_{AB}^{} f(x;y)dl = \int_{BA}^{} f(x;y)dl
+\end{equation*}
+\textbf{Вычисление}
+
+Параметрически задана:
+\begin{equation*}
+    L:
+    \begin{cases}
+        x=x(t)\\
+        y=y(t)
+    \end{cases},t\in[ t;t_2]
+\end{equation*}
+
+\begin{equation*}
+    \int_{L}^{}f(x;y)dl = \int_{t_1}^{t_2}f(x(t);y(t))\sqrt{x'^2(t)+y'^2(t)}dt\ \ \ t_1<t_2
+\end{equation*}
+\begin{equation*}
+    \Delta l_i = \sqrt[]{\Delta x_i^2+\Delta y_i^2}=\left|\Delta x_i = x'(\overline{t}_i)\Delta t_i; \Delta y_i = y'(\overline{t'}_i)\Delta t_i\right| = 
+    \sqrt{x'^2(\overline{t}_i)+y'^2(\overline{t'}_i)}\abs{\Delta t_i}
+\end{equation*}
+\begin{equation*}
+    dl = \sqrt{x'^2(t)+y'^2(t)}dt
+\end{equation*}
+
+Задана явно:
+\begin{equation*}
+    L: y=y(x),\ x\in [a;b]
+\end{equation*}
+\begin{equation*}
+    dl = \sqrt{1+y'^2(x)}dx;\ \ \ \int_{a}^{b}f(x; y(x))\sqrt{1+y'^2(x)}dx
+\end{equation*}
+
+Задана полярно:
+\begin{equation*}
+    L: \rho = \rho(\phi),\ \ \ \phi \in [\phi_1;\phi_2]
+\end{equation*}
+\begin{equation*}
+    dl = \sqrt{\rho(\phi)^2+\rho'(\phi)^2}d\phi; \ \ \ \int_{\phi_1}^{\phi_2}f(\rho(\phi) cos\phi;\rho(\phi)sin\phi)\cdot \sqrt{\rho(\phi)^2+\rho'(\phi)^2}d\phi
+\end{equation*}
+
+\textbf{ВТОРОЙ РОД}
+
+Кривая ориентированная
+\begin{center}
+    \includegraphics[width=.3\textwidth]{krivo2.png} 
+\end{center}
+
+\begin{equation*}
+    \overline{F} = (P;Q)
+\end{equation*}
+\begin{equation*}
+    \Delta \overline{l}_i = (\Delta x_i; \Delta y_i)
+\end{equation*}
+\begin{equation*}
+    \Delta A_i = \overline{F}\cdot \Delta \overline{l}_i = P\Delta x_i+Q\Delta y_i
+\end{equation*}
+\begin{equation*}
+    \int_{L}^{}dA = \int_{L}^{}\overline{F}\cdot d \overline{l} = \int_{L}^{}Pdx+Qdy
+\end{equation*}
+Интеграл соответствует, если функция непрерывна 
+
+
+Свойства:
+
+1) Линейность: $\int(a) = a\int$
+
+2) Аддитивность: $\int(+) = \int+\int$
+
+3) Оценка: мин - мин плостность умнож на длину и аналогично для макс 
+
+4) Среднее значение
+
+5) Заданно направление. Зависимость от ориентированности кривой от интегрирования. Смена знака при смене обхода
+
+\begin{equation*}
+    \int_{AB}^{}\overline{F}d\overline{l} = -\int_{BA}^{}\overline{F}d\overline{l}
+\end{equation*}
+
+6) Связь кривол интеграла 1 рода и 2 рода
+\begin{equation*}
+    d\overline{l} = (cos\alpha\cdot dl; cos\beta\cdot dl; )=\tau^o dl
+\end{equation*}
+\begin{equation*}
+    \int_{L}^{}\overline{F}\cdot d\overline{l} = \int_{L}^{}\overline{F}\cdot \tau\cdot dl = \int_{L}^{}F_{||}\cdot dl
+\end{equation*}
+\begin{equation*}
+    \int_{L}^{}Pdx+Qdy = \int_{L}^{}(Pcos\alpha + Q cos\beta)dl
+\end{equation*}
+\textbf{Вычисление}
+
+Явно:
+\begin{equation*}
+    y= y(x),\ x\in [a,b]
+\end{equation*}
+\begin{equation*}
+    \int_{L}^{}Pdx+Qdy = +\  or\ - \int_{a}^{b}P(x;y(x))dx+Q(x;y(x))y'(x)dx
+\end{equation*}
+\\
+\begin{equation*}
+    x= x(y),\ x\in [c,d]
+\end{equation*}
+\begin{equation*}
+    \int_{L}^{} Pdx +Qdy = +\ or\ -\int_{c}^{d}P(x(y);y)x'(y)dy +Q(x(y);y)dy
+\end{equation*}
+Параметрически:
+\begin{equation*}
+    L: \begin{cases}
+        x=x(t)\\
+        y=y(t)
+    \end{cases}, t\in[t_1;t_2]
+\end{equation*}
+\begin{equation*}
+    \int_{L}^{}Pdx+Qdy = +\ or \ - \int_{t_1}^{t_2}P(x(y);y)x'(y)dy +Q(x;y(x))y'(x)dx
 \end{equation*}
 
 % \begin{equation*}
