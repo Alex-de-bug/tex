@@ -759,6 +759,11 @@ INPUT ./krivo2.png
 INPUT krivo2.png
 INPUT ./krivo2.png
 INPUT ./krivo2.png
+INPUT ./butilka.png
+INPUT ./butilka.png
+INPUT butilka.png
+INPUT ./butilka.png
+INPUT ./butilka.png
 INPUT main.aux
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1697121311 "/Users/alexalex/Desktop/tex/matan3/main.tex" "main.pdf" "main" 1697121312 0
-  "/Users/alexalex/Desktop/tex/matan3/main.tex" 1697121311 17294 498ff5f4693a0d2c4e489035a759ed4e ""
+["pdflatex"] 1697722553 "/Users/alexalex/Desktop/tex/matan3/main.tex" "main.pdf" "main" 1697722554 0
+  "/Users/alexalex/Desktop/tex/matan3/main.tex" 1697722553 20075 d1b29ff07bcc21e5a5f4109e63da36c2 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1684784477 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1683825105 3304 6a543c07045572737981351171e0505e ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm0500.tfm" 1684341405 3252 bc0f8cc163ba94bbce20e59f671a255d ""
@@ -205,11 +205,12 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683824033 7886842 9318a877a941dc86aae3806e8adeccb7 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "123.png" 1696511321 48990 fc22ae011d1ec7460049cb3ff30db0b1 ""
+  "butilka.png" 1697718605 133397 8505fb651e3d09ffca3bf0dbc31fab9f ""
   "krivo.png" 1696512385 110420 47d5f6ba6a7b0c391e2ab1f3efd3ec63 ""
   "krivo12.png" 1697117384 169371 3ccf91e1e65d1839851ae41a6fa37ad4 ""
   "krivo2.png" 1697120817 176723 f2d41634e7597ebd10f3fa5c788c3455 ""
-  "main.aux" 1697121312 634 f5e30ed060b324ecf45ff687dd394d41 "pdflatex"
-  "main.tex" 1697121311 17294 498ff5f4693a0d2c4e489035a759ed4e ""
+  "main.aux" 1697722554 765 774be7d1a10d50e12c5f3dedb91fe37c "pdflatex"
+  "main.tex" 1697722553 20075 d1b29ff07bcc21e5a5f4109e63da36c2 ""
   "paral.png" 1696513065 23865 e31e3ea8009632f9ea26082b542b6fcb ""
   "rod1.png" 1697116938 116591 34815ed3ce09fa2feaf13390402a5d72 ""
   (generated)

@@ -346,6 +346,96 @@ $G=\iiint_{\mathcal{V}}dG=\iiint_{\mathcal{V}}f(x;y;z)d\mathcal{V} = \iiint_{\ma
     \int_{L}^{}Pdx+Qdy = +\ or \ - \int_{t_1}^{t_2}P(x(y);y)x'(y)dy +Q(x;y(x))y'(x)dx
 \end{equation*}
 
+\section{Поверхностный интеграл}
+\includegraphics[width=.8\textwidth]{butilka.png}
+\\ 
+\textbf{1 род}
+\\
+Поверхностный интеграл
+\begin{equation*}
+    \lim_{n->\infty; \lambda->0}\sum_{k=1}^{n}f(x_i;y_i;z_i)\Delta S_i =\iint_S f(x;y;z)dS 
+\end{equation*}
+Свойства:
+
+1) Линейность
+
+2) Аддитивность
+
+3) Теорема об оценке: $m_{min} \cdot S \leq \iint_S fdS\leq M_{max}\cdot S$, m - min f(), M - max f()
+
+4) т.о среднем: соответствует $M'\in S: f(M')\cdot S = \iint_S fdS$; M' - среднее значение f на поверх S
+
+5) Независимость от ориентации поверхность.
+\\
+Вычисление:
+
+\begin{equation*}
+    \Delta \sigma_i = \Delta T_i \cdot cos\gamma_i
+\end{equation*}
+
+\begin{equation*}
+    d\sigma = dxdy = dS\cdot cos\gamma
+\end{equation*}
+
+\begin{equation*}
+    cos\gamma = \frac{|\overline{n}\cdot \overline{k}|}{|\overline{n}|\cdot |\overline{k}|}
+\end{equation*}
+\begin{equation*}
+    F(x;y;z) = 0 
+\end{equation*}
+\begin{equation*}
+    \overline{n} = gradF = (F'_x; F'_y; F'_z); \ \ k =(0;0;1)
+\end{equation*}
+\begin{equation*}
+    dS = \frac{1}{|F'_z|}\sqrt{F'^2_x+F'^2_y+F'^2_z}dxdy
+\end{equation*}
+\begin{equation*}
+    \iint_S f(x;y;z)dS = \iint_{D_{xy}}f(x;y;z(x;y))\frac{\sqrt{F'^2_x+F'^2_y+F'^2_z}}{|F'^2_z|}dxdy
+\end{equation*}
+\begin{equation*}
+    z = z(x;y);\ \ z - z(x;y) = 0; \ \ \iint_S f(x;y;z)dS = \iint_{D_{xy}}f(x;y;z(x;y))\sqrt{z'^2_x+z'^2_y+1}dxdy
+\end{equation*}
+\\
+Приложение 
+
+Площадь
+\begin{equation*}
+    S = \iint_S dS 
+\end{equation*}
+
+\begin{equation*}
+    G_S = \iint_S f(x;y;z)dS 
+\end{equation*}
+\\ 
+\textbf{2 род}
+\\
+Поверхностный интгерал 2 рода (по проекции поверхности)
+\begin{equation*}
+    \lim_{n->\infty; \lambda-> 0}\sum_{k=1}^{n}f(x_k;y_k;y_k)\Delta \sigma_k = \iint_S F(x;y;z)d\sigma
+\end{equation*}
+
+Свойства:
+
+1) Линейность
+
+2) Аддитивность
+
+3) Теорема об оценке: $m_{min} \cdot S \leq \iint_S fdS\leq M_{max}\cdot S$, m - min f(), M - max f()
+
+4) т.о среднем: соответствует $M'\in S: f(M')\cdot S = \iint_S fdS$; M' - среднее значение f на поверх S
+
+5) Зависимость от ориентации поверхности.
+
+6) Связь с 1 рода 
+
+\begin{equation*}
+    \iint_S Rdxdy + \iint_S P dy dz +\iint_S Q dzdx = \iint_S Pdydz + Qdzdx +Rdxdy = \iint_S (Pcos\alpha dS + Qcos\beta dS + Rcos\gamma)dS
+\end{equation*}
+\\
+Вычисление:
+\begin{equation*}
+    \iint_S F(x;y;z)dxdy = +(if\ n\ and \ k \ ugol\ osrt)-(if\ n\ and\ k\  ugol\ tupoy)\iint_{D_{xy}}R(x;y;z(x;y))dxdy 
+\end{equation*}
 % \begin{equation*}
     
 % \end{equation*}

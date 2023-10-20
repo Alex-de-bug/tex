@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1697573720 "/Users/alexalex/Desktop/tex/phys_kr_1/main.tex" "main.pdf" "main" 1697573721 0
-  "/Users/alexalex/Desktop/tex/phys_kr_1/main.tex" 1697573720 7075 3d4739403b3ab673aa0412cc882324a3 ""
+["pdflatex"] 1697833270 "/Users/alexalex/Desktop/tex/phys_kr_1/main.tex" "main.pdf" "main" 1697833271 0
+  "/Users/alexalex/Desktop/tex/phys_kr_1/main.tex" 1697833270 10388 584b73bb7de8c133a37da2ce7cc388b7 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1684784477 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1683825105 3304 6a543c07045572737981351171e0505e ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1683825100 3220 0e417eaf233b160335902e97259a6c77 ""
@@ -172,8 +172,8 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683824033 7886842 9318a877a941dc86aae3806e8adeccb7 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "brus.png" 1697560068 15590 b646613102c19f521f7329b2a2e40f78 ""
-  "main.aux" 1697573721 432 50e3e20148a2e211783c95538c4b733e "pdflatex"
-  "main.tex" 1697573720 7075 3d4739403b3ab673aa0412cc882324a3 ""
+  "main.aux" 1697833271 632 779636320f6b7ba0269574e0897bdaa6 "pdflatex"
+  "main.tex" 1697833270 10388 584b73bb7de8c133a37da2ce7cc388b7 ""
   "plosk.png" 1697563980 41197 db923d546fc4db5e5d24de3c51038cd4 ""
   (generated)
   "main.aux"
