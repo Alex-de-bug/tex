@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  25 OCT 2023 14:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  2 NOV 2023 23:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/alexalex/Desktop/tex/phys_kr_1/main.tex
-(/Users/alexalex/Desktop/tex/phys_kr_1/main.tex
+**/Users/alexalex/Desktop/tex/webKRteor/main.tex
+(/Users/alexalex/Desktop/tex/webKRteor/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-05-05> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -659,23 +659,23 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Info: Redefining \th on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Info: Redefining \th on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -686,14 +686,14 @@ LaTeX Info: Redefining \th on input line 14.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* v-part:(T,H,B)=(28.45274pt, 766.51724pt, 0.0pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=557.38951pt
-* \textheight=681.15898pt
+* \textheight=766.51724pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-52.36449pt
+* \topmargin=-80.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -735,44 +735,389 @@ Package caption Info: End \AtBeginDocument code.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 14.
+ on input line 15.
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 33--37
-[][] [] \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@ [][] []$ \T2A/cmr/m/n/5 => $\OML/cmm/m/it/5 ln[] \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@[]$ \T2A/cmr/m/n/5 => $\OML/cmm/m/it/5 v \OT1/cmr/m/n/5 =
+Underfull \hbox (badness 1314) in paragraph at lines 30--33
+\T2A/cmr/m/n/5 ции, встра-и-ва-е-мые в JSP-страницу. <jsp:include>:
  []
 
-<brus.png, id=4, 393.47pt x 197.73875pt>
-File: brus.png Graphic file (type png)
-<use brus.png>
-Package pdftex.def Info: brus.png  used on input line 55.
-(pdftex.def)             Requested size: 50.16606pt x 25.20909pt.
-<plosk.png, id=6, 486.81876pt x 303.1325pt>
-File: plosk.png Graphic file (type png)
-<use plosk.png>
-Package pdftex.def Info: plosk.png  used on input line 62.
-(pdftex.def)             Requested size: 50.16606pt x 31.23547pt.
 
-Underfull \hbox (badness 2050) in paragraph at lines 85--91
-\T2A/cmr/m/n/5 рой че-ло-век спры-ги-ва-ет: $\OT1/cmr/m/n/5 (\OML/cmm/m/it/5 m \OT1/cmr/m/n/5 + \OML/cmm/m/it/5 M\OT1/cmr/m/n/5 )(\OMS/cmsy/m/n/5 ^^@[]\OT1/cmr/m/n/5 ) =
+Underfull \hbox (badness 1102) in paragraph at lines 30--33
+\T2A/cmr/m/n/5 вклю-чать со-дер-жи-мое дру-гой JSP-страницы в те-
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 30--33
+\T2A/cmr/m/n/5 дан-ных. <jsp:setProperty>: для уста-нов-ки свойств
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 39--42
+[]\T2A/cmr/m/n/5 1. Веб-сервер вза-и-мо-дей-ству-ет с про-цес-сом че-рез
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 39--42
+\T2A/cmr/m/n/5 под-дер-жи-ва-ет по-сто-ян-ное со-еди-не-ние меж-ду веб-
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 50--56
+\T2A/cmr/m/n/5 $_ENV, $_GET, $_POST, $_FILES, $_COOKIE,
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 66--67
+[]\T2A/cmr/m/n/5 1. JS-библиотека, пред-на-зна-чен-ная для раз-ра-бот-
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 66--67
+\T2A/cmr/m/n/5 ме-то-ды ма-ни-пу-ля-ции DOM (на-при-мер, `append()`,
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 66--67
+\T2A/cmr/m/n/5 `addClass()`), со-бы-тия (на-при-мер, `click()`, `on()`),
+ []
+
+
+Underfull \hbox (badness 4699) in paragraph at lines 66--67
+\T2A/cmr/m/n/5 ма-цию (на-при-мер, `animate()`). jQuery упро-ща-ет
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 66--67
+\T2A/cmr/m/n/5 вза-и-мо-дей-ствие с веб-страницей, улуч-ша-ет кросс-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+\T2A/cmr/bx/n/5 2. Син-так-сис шаб-ло-нов, мо-дель дан-ных
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+[]\T2A/cmr/m/n/5 2. API, с по-мо-щью ко-то-ро-го сервлет мо-жет
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+\T2A/cmr/m/n/5 вза-и-мо-дей-ство-вать со сво-им кон-тей-не-ром. До-
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 99--102
+\T2A/cmr/m/n/5 ступ к ме-то-дам осу-ществ-ля-ет-ся че-рез ин-тер-фейс
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 99--102
+\T2A/cmr/m/n/5 при-ло-же-ния об-щий кон-текст. В кон-текст мож-но
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 99--102
+\T2A/cmr/m/n/5 (ме-то-ды getAttribute и setAttribute). Ес-ли при-ло-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--124
+[]\T2A/cmr/m/n/5 2. Рас-ши-ре-ние JSP, до-бав-ля-ю-щее воз-мож-ность
+ []
+
+
+Underfull \hbox (badness 5504) in paragraph at lines 111--124
+\T2A/cmr/m/n/5 ис-поль-зо-ва-ния до-пол-ни-тель-ных те-гов, ре-ша-ю-щих
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--124
+\T2A/cmr/m/n/5 Под-держ-ка ин-тер-на-ци-о-на-ли-за-ции. Ре-ко-мен-ду-ет-ся
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--124
+\T2A/cmr/m/n/5 prefix="c"uri="http://java.sun.com/jsp/jstl/core"%>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--124
+\T2A/cmr/m/n/5 prefix="x"uri="http://java.sun.com/jsp/jstl/xml"%>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--124
+\T2A/cmr/m/n/5 prefix="s"uri="http://java.sun.com/jsp/jstl/sql"%>
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 111--124
+\T2A/cmr/m/n/5 // Те-ги для фор-ма-ти-ро-ва-ния и ин-тер-на-ци-о-на-ли-
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 111--124
+\T2A/cmr/m/n/5 за-ции // ин-фор-ма-ции (i10n и i18n) <%@ taglib
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 аутен-ти-фи-ка-ции и поль-зо-ва-тель-ские за-го-лов-ки;
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 вклю-чая раз-бор JSON и дру-гих фор-ма-тов дан-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 ных request.post('/api/pet').send( name: 'Manny',
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 'application/json').end(function(err, res)if (err ||
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 !res.ok) alert('Oh no! Error');elsealert('yay got ' +
+ []
+
+
+Underfull \hbox (badness 4144) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 JSON.stringify(res.body));); 2. Шаб-лон про-ек-ти-ро-
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 ва-ния или пат-терн ^^V по-вто-ри-мая ар-хи-тек-тур-ная
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 си-ту-а-ци-ям. При-ме-ры вклю-ча-ют Singleton, Factory,
+ []
+
+
+Underfull \hbox (badness 3635) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 ло-каль-ных за-дач, та-ких как со-зда-ние объ-ек-тов,
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 130--137
+\T2A/cmr/m/n/5 управ-ле-ние со-сто-я-ни-ем. Поз-во-ля-ют из-бе-жать ѕти-
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 143--145
+[]\T2A/cmr/m/n/5 1. Бра-у-зер фор-ми-ру-ет HTTP-запрос и от-прав-ля-
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 143--145
+\T2A/cmr/m/n/5 ет его на сер-вер. Веб-контейнер со-зда-јт объ-ек-
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 146--148
+\T2A/cmr/m/n/5 ля-ет си-сте-му на несколь-ко уров-ней, каж-дый из
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 157--159
+[]\T2A/cmr/m/n/5 2. Сервле-ты мо-гут де-ле-ги-ро-вать об-ра-бот-ку за-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+\T2A/cmr/m/n/5 про-сов дру-гим ре-сур-сам (сервле-там, JSP и
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+\T2A/cmr/m/n/5 HTML-страницам). Два спо-со-ба по-лу-че-ния
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 162--164
+\T2A/cmr/bx/n/5 2. Сервле-ты - осо-бен-но-сти, пре-иму-ще-ства и
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 165--171
+\T2A/cmr/m/n/5 эле-мен-та обо-зна-ча-ют-ся те-га-ми. Те-ги мо-гут иметь
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--171
+\T2A/cmr/m/n/5 ат-ри-бу-ты. Эле-мен-ты мо-гут быть вло-жен-ны-ми.
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 165--171
+\T2A/cmr/m/n/5 Эле-мен-ты мо-гут быть вло-жен-ны-ми. <!DOCTYPE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--171
+\T2A/cmr/m/n/5 HTML PUBLIC -//W3C//DTD HTML 4.01//EN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--171
+\T2A/cmr/m/n/5 http://www.w3.org/TR/html4/strict.dtdї. <html>:
+ []
+
+
+Underfull \hbox (badness 6842) in paragraph at lines 165--171
+\T2A/cmr/m/n/5 для опре-де-ле-ния ко-ди-ров-ки. <title>: За-го-ло-вок
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 185--192
+\T2A/cmr/m/n/5 мо-дуль-ный дви-жок. Мо-дуль Thymeleaf на-зы-ва-ет-ся
  []
 
 [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc} <./brus.png> <./plosk.png>] (./main.aux) ) 
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+Underfull \hbox (badness 3872) in paragraph at lines 223--233
+[]\T2A/cmr/m/n/5 1. 2 ва-ри-ан-та син-так-си-са ^^V на ба-зе HTML и
+ []
+
+
+Underfull \hbox (badness 3635) in paragraph at lines 253--260
+\T2A/cmr/m/n/5 ни-цы. Обыч-но рас-по-ло-же-на в на-ча-ле стра-ни-цы.
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 253--260
+\T2A/cmr/m/n/5 На од-ной стра-ни-це мо-жет быть за-да-но несколь-
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 253--260
+\T2A/cmr/m/n/5 мо-жет быть ис-поль-зо-ва-на для ука-за-ния раз-лич-
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 253--260
+\T2A/cmr/m/n/5 ке-тов, тип кон-тен-та и дру-гие. buffer ^^V па-ра-мет-
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 253--260
+\T2A/cmr/m/n/5 груз-ка при пе-ре-пол-не-нии бу-фе-ра; contentType ^^V
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 253--260
+\T2A/cmr/m/n/5 ^^V ЯП; session ^^V со-зда-вать ли пред-опре-де-лен-ную
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 362--366
+[]\T2A/cmr/m/n/5 2. Код JSP-страницы транс-ли-ру-ет-ся в Java-код
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--366
+\T2A/cmr/m/n/5 сервле-та с по-мо-щью ком-пи-ля-то-ра JSP-страниц
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 373--375
+\T2A/cmr/m/n/5 прав-ля-е-мое кли-ен-том сер-ве-ру. В стар-то-вую стро-
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 373--375
+\T2A/cmr/m/n/5 ку вхо-дит: ме-тод, ко-то-рый ука-зы-ва-ет, ка-кое дей-
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 395--399
+\T2A/cmr/m/n/5 вых воз-мож-но-стей. Для ра-бо-ты в ста-рых бра-у-зе-
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 400--402
+\T2A/cmr/m/n/5 Method, Abstract Factory) по-мо-га-ют ре-шать за-да-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--407
+\T2A/cmr/bx/n/5 2. Су-перг-ло-баль-ные мас-си-вы в PHP
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 408--411
+[]\T2A/cmr/m/n/5 1. FastCGI - это клиент-серверный про-то-кол вза-
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 408--411
+\T2A/cmr/m/n/5 и-мо-дей-ствия меж-ду веб-сервером и при-ло-же-ни-ем.
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 408--411
+\T2A/cmr/m/n/5 Domain Sockets или TCP/IP (а не че-рез stdin и
+ []
+
+
+Underfull \hbox (badness 6808) in paragraph at lines 425--427
+[]\T2A/cmr/m/n/5 1. Пред-на-зна-че-ны для об-ме-на дан-ны-ми меж-ду
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 425--427
+\T2A/cmr/m/n/5 поль-зо-ва-те-лем и сер-ве-ром. До-ку-мент мо-жет со-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--427
+\T2A/cmr/m/n/5 дер-жать лю-бое чис-ло форм, но од-но-вре-мен-но
+ []
+
+
+Underfull \hbox (badness 3942) in paragraph at lines 425--427
+\T2A/cmr/m/n/5 на сер-вер мо-жет быть от-прав-ле-на толь-ко од-на
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 425--427
+\T2A/cmr/m/n/5 из них. Вло-жен-ные фор-мы за-пре-ще-ны. Гра-ни-цы
+ []
+
+
+Underfull \hbox (badness 5504) in paragraph at lines 425--427
+\T2A/cmr/m/n/5 фор-мы за-да-ют-ся те-га-ми <form>...</form>. Ме-
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 442--446
+\T2A/cmr/m/n/5 config; exception; out; page; PageContext; request;
+ []
+
+[2] [3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 27107 strings out of 476047
- 678001 string characters out of 5790247
+ 27111 strings out of 476047
+ 678083 string characters out of 5790247
  1909248 words of memory out of 5000000
- 47137 multiletter control sequences out of 15000+600000
- 516562 words of font info for 38 fonts, out of 8000000 for 9000
+ 47145 multiletter control sequences out of 15000+600000
+ 515971 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,103p,738b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (1 page, 190143 bytes).
+ 99i,5n,103p,838b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (3 pages, 162496 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

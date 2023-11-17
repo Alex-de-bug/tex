@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  25 OCT 2023 14:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  2 NOV 2023 22:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/alexalex/Desktop/tex/phys_kr_1/main.tex
-(/Users/alexalex/Desktop/tex/phys_kr_1/main.tex
+**/Users/alexalex/Desktop/tex/webkrPrak/main.tex
+(/Users/alexalex/Desktop/tex/webkrPrak/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-05-05> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -652,30 +652,52 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+))) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count312
+\lst@gtempboxa=\box66
+\lst@token=\toks44
+\lst@length=\count313
+\lst@currlwidth=\dimen299
+\lst@column=\count314
+\lst@pos=\count315
+\lst@lostspace=\dimen300
+\lst@width=\dimen301
+\lst@newlines=\count316
+\lst@lineno=\count317
+\lst@maxwidth=\dimen302
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count318
+\lst@skipnumbers=\count319
+\lst@framebox=\box67
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count312
-\l__pdf_internal_box=\box66
+\l__color_backend_stack_int=\count320
+\l__pdf_internal_box=\box68
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Info: Redefining \th on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Info: Redefining \th on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -713,17 +735,17 @@ LaTeX Info: Redefining \th on input line 14.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen299
-\scratchbox=\box67
-\nofMPsegments=\count314
-\nofMParguments=\count315
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen300
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count321
+\scratchdimen=\dimen303
+\scratchbox=\box69
+\nofMPsegments=\count322
+\nofMParguments=\count323
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen304
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
+\everyMPtoPDFconversion=\toks46
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -731,48 +753,920 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 14.
+ on input line 16.
 
+\c@lstlisting=\count327
 
-Underfull \hbox (badness 1184) in paragraph at lines 33--37
-[][] [] \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@ [][] []$ \T2A/cmr/m/n/5 => $\OML/cmm/m/it/5 ln[] \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@[]$ \T2A/cmr/m/n/5 => $\OML/cmm/m/it/5 v \OT1/cmr/m/n/5 =
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][] 
  []
 
-<brus.png, id=4, 393.47pt x 197.73875pt>
-File: brus.png Graphic file (type png)
-<use brus.png>
-Package pdftex.def Info: brus.png  used on input line 55.
-(pdftex.def)             Requested size: 50.16606pt x 25.20909pt.
-<plosk.png, id=6, 486.81876pt x 303.1325pt>
-File: plosk.png Graphic file (type png)
-<use plosk.png>
-Package pdftex.def Info: plosk.png  used on input line 62.
-(pdftex.def)             Requested size: 50.16606pt x 31.23547pt.
 
-Underfull \hbox (badness 2050) in paragraph at lines 85--91
-\T2A/cmr/m/n/5 рой че-ло-век спры-ги-ва-ет: $\OT1/cmr/m/n/5 (\OML/cmm/m/it/5 m \OT1/cmr/m/n/5 + \OML/cmm/m/it/5 M\OT1/cmr/m/n/5 )(\OMS/cmsy/m/n/5 ^^@[]\OT1/cmr/m/n/5 ) =
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 39--40
+[][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 52--53
+[]\T2A/cmr/m/n/5 Написать JSP стра-ни-цу, вы-во-дит
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 52--53
+\T2A/cmr/m/n/5 ко-ли-че-ство поль-зо-ва-те-лей, за по-
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 55--56
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 56--57
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 66--67
+[][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+[]\T2A/cmr/m/n/5 Шаблон и код ини-ци-а-ли-за-ции
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+\T2A/cmr/m/n/5 кон-тек-ста Thymeleaf, HTML-
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 74--75
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 75--76
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 80--81
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 81--82
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 83--84
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 84--85
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 88--89
+[][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 89--90
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 91--92
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 99--100
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 119--120
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 120--121
+[][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+[]\T2A/cmr/m/n/5 Написать JSP стра-нич-ку, отоб-
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 126--128
+\T2A/cmr/m/n/5 ра-жа-ет кор-зи-ну. объ-ект - класс
+ []
+
+
+Underfull \hbox (badness 8113) in paragraph at lines 126--128
+\T2A/cmr/m/n/5 ShoppingItem. хра-нит-ся managed
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 129--130
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 130--131
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 135--136
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 140--141
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 167--168
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 187--188
+[][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 188--189
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 190--191
+[][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 192--193
+[][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 194--195
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 195--196
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 197--198
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 199--200
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (35.48901pt too wide) in paragraph at lines 203--204
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 210--211
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 211--212
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 214--215
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 221--222
+\T2A/cmr/m/n/5 всех по-се-щјн-ных ссы-лок жјл-тый
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 223--224
+[][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 239--242
+[]\T2A/cmr/m/n/5 Написать сце-на-рий, ко-то-рый бу-
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 239--242
+\T2A/cmr/m/n/5 фактої во всех те-гах div class=
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 243--244
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 245--246
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 246--247
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 249--250
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 250--251
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 277--278
+[][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 282--283
+[][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 291--292
+[][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 4096) in paragraph at lines 297--298
+[]\T2A/cmr/m/n/5 LESS / SASS / SCSS.Если па-
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 317--318
+[]\T2A/cmr/m/n/5 Написать кон-фи-гу-ра-цию сервле-та
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 317--318
+\T2A/cmr/m/n/5 но-та-ции. Сервлет дол-жен при-ни-
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 319--320
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 321--322
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 331--332
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 332--333
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.32428pt too wide) in paragraph at lines 333--334
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 334--335
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 335--336
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 337--338
+[][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+[]\T2A/cmr/m/n/5 Написать PHP скрипт ко-то-рый
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 342--343
+\T2A/cmr/m/n/5 фор-ми-ру-ет фор-му с ло-ги-ным и
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+\T2A/cmr/m/n/5 па-ро-лем, ко-то-рая при са-б-ми-те
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 342--343
+\T2A/cmr/m/n/5 от-прав-ля-ет - authenticate.php по-
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 342--343
+\T2A/cmr/m/n/5 сред-ством SuperAgent, и успеш-но
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+\T2A/cmr/m/n/5 пе-ре-на-пра-вить поль-зо-ва-те-ля на
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 347--348
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 348--349
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 350--351
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 351--352
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 356--357
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 363--364
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 373--374
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 374--375
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 375--376
+[][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+[][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+[]\T2A/cmr/m/n/5 Реализовать функ-цию на
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 392--393
+\T2A/cmr/m/n/5 те-ку-щее ок-но,если в нем от-крыт
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 395--396
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 405--406
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 406--407
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 407--408
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 408--409
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 410--411
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 411--412
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 412--413
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 413--414
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (31.40665pt too wide) in paragraph at lines 421--422
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 422--423
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 423--424
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 424--425
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 425--426
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 426--427
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 428--429
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 429--430
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 430--431
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 431--432
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 432--433
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 436--437
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 438--439
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 439--440
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 440--441
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 441--442
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (35.48901pt too wide) in paragraph at lines 442--443
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 451--452
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 453--454
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 454--455
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 455--456
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 457--458
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 459--460
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 460--461
+[][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+[]\T2A/cmr/m/n/5 Написать HTML стра-ни-цу и
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 465--466
+\T2A/cmr/m/n/5 сервлет, воз-вра-ща-ю-щий стра-ни-це
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 470--471
+[][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 473--474
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 474--475
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 476--477
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 477--478
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.32428pt too wide) in paragraph at lines 478--479
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (27.32428pt too wide) in paragraph at lines 480--481
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 481--482
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 484--485
+[][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 485--486
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 486--487
+[][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 487--488
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 488--489
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 489--490
+[][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 490--491
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 491--492
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 492--493
+[][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 503--504
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 507--508
+[][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 508--509
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 510--511
+[][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 517--518
+[]\T2A/cmr/m/n/5 Написать css чтоб по кли-ку все
+ []
+
+
+Overfull \hbox (27.32428pt too wide) in paragraph at lines 520--521
+[][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 525--526
+[]\T2A/cmr/m/n/5 Написать стра-ни-цу на HTML и
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+[]\T2A/cmr/m/n/5 Код филь-тра за-про-
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 550--551
+\T2A/cmr/m/n/5 сов,запрещающий до-ступ к при-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+\T2A/cmr/m/n/5 зо-ва-те-лям (у неав-то-ри-зо-ван-но-го
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 553--554
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 554--555
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 555--556
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 556--557
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 557--558
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 558--559
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 559--560
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 560--561
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.91245pt too wide) in paragraph at lines 561--562
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 563--564
+[][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 564--565
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 565--566
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.99481pt too wide) in paragraph at lines 566--567
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 568--569
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (2.83008pt too wide) in paragraph at lines 569--570
+[][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 571--572
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.32428pt too wide) in paragraph at lines 578--579
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.24191pt too wide) in paragraph at lines 582--583
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (31.40665pt too wide) in paragraph at lines 583--584
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.32428pt too wide) in paragraph at lines 584--585
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.57138pt too wide) in paragraph at lines 587--588
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.15955pt too wide) in paragraph at lines 588--589
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 589--590
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 590--591
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 591--592
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.57138pt too wide) in paragraph at lines 593--594
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (31.40665pt too wide) in paragraph at lines 594--595
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.07718pt too wide) in paragraph at lines 595--596
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.32428pt too wide) in paragraph at lines 596--597
+[][][][][][][][][][][][][][][] 
  []
 
 [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc} <./brus.png> <./plosk.png>] (./main.aux) ) 
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 27107 strings out of 476047
- 678001 string characters out of 5790247
- 1909248 words of memory out of 5000000
- 47137 multiletter control sequences out of 15000+600000
- 516562 words of font info for 38 fonts, out of 8000000 for 9000
+ 28708 strings out of 476047
+ 699466 string characters out of 5790247
+ 2162248 words of memory out of 5000000
+ 48730 multiletter control sequences out of 15000+600000
+ 514455 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,103p,738b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (1 page, 190143 bytes).
+ 99i,5n,103p,759b,1089s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (3 pages, 97628 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

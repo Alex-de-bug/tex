@@ -436,6 +436,32 @@ $G=\iiint_{\mathcal{V}}dG=\iiint_{\mathcal{V}}f(x;y;z)d\mathcal{V} = \iiint_{\ma
 \begin{equation*}
     \iint_S F(x;y;z)dxdy = +(if\ n\ and \ k \ ugol\ osrt)-(if\ n\ and\ k\  ugol\ tupoy)\iint_{D_{xy}}R(x;y;z(x;y))dxdy 
 \end{equation*}
+\section{Формулы Стокса и Остроградского-Гаусса}
+Рассмотрим $S - $ гладкая поверхность в трёхмере\\
+$L - $ контр, огранич $S$\\
+$P, Q, R - $ непрерывна дифф на L и на S.\\
+
+\begin{equation*}
+    \overline{F} = (P;Q;R)
+\end{equation*}
+\begin{equation*}
+    \ointop_{L}\overline{F}d\overline{l} = \ointop_{L}dA
+\end{equation*}
+Циркуляция поля F вдоль L\\
+\textbf{Стокс}
+\begin{equation*}
+    \ointop_L Pdx + Qdx + Rdx  = \iint_S (\pdv{R}{y}-\pdv{Q}{z})dydz+(\pdv{P}{z}-\pdv{R}{x})dzdx+(\pdv{Q}{x}-\pdv{P}{y})dxdy
+\end{equation*}
+\textbf{Остроградский-Гаусс}\\
+T - тело в $\mathbb{R}^2$, S - граница тела Т, т.е. замкн пов-ть (гладкая)\\
+P,Q,R 
+\begin{equation*}
+    \iint_S Pdydz +Qdzdx+ Rdxdy = \iiint_T (\pdv{P}{x}+\pdv{Q}{y}+\pdv{R}{z})dxdydz
+\end{equation*}
+$\overline{F} = (P;Q;R),\ d\overline{S} = (dydz;dzdx;dxdy)$
+\begin{equation*}
+    \iint_{S^+} \overline{F}d\overline{S} = \iiint_T div\overline{F}dv
+\end{equation*}
 % \begin{equation*}
     
 % \end{equation*}

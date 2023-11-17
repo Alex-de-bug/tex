@@ -1,0 +1,639 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} %кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel} %русификатор 
+\usepackage{mathtools} %библиотека матеши
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage{amsmath}
+\usepackage{graphicx} %библиотека для графики и картинок
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\begin{document}
+\color{darkgray}
+\tiny
+\begin{minipage}{.2\textwidth}
+PHP скрипт, который достаёт из get имя и фамилию, выводя html
+\begin{lstlisting}
+<?php
+if (isset($_GET['name']) 
+&& isset($_GET['surname'])) {
+$name = $_GET['name'];
+$surname = $_GET['surname'];
+echo "<h1>$name $surname!</h1>";
+} else {
+echo "<p>No data was given</p>";
+}?>
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+    Написать фрагмент кода html, блокируют контент при ш э < 1024
+\begin{lstlisting}
+<html><head>
+<link rel="stylesheet" type=
+"text/css" href="styles.css">
+</head>
+<body><div class="content">
+<p>textext</p>
+</div></body></html>
+.content {display: block;}
+@media (max-width: 
+1023px) {.content {display:
+none; }}
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+    Написать JSP страницу, выводит количество пользователей, за последние 60 c
+\begin{lstlisting}
+<html><body><\%
+Map<String, Long> requestStats = 
+(ConcurrentHashMap<String, Long>)
+request.getAttribute
+("requestStats");
+long currentTime = System
+.currentTimeMillis();
+int count = 0;
+for (Long requestTime :
+requestStats.values()) {
+if (currentTime - requestTime
+ <= 60000) {count++;}}\%>
+<p><\%= count \%></p></body>
+</html>
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Шаблон и код инициализации контекста Thymeleaf, HTML-страницу,курсы валют (доллара и евро), динамику последнюю сессию
+\begin{lstlisting}
+<html><body><h1>kurs val</h1>
+<table><tr><th>Currency</th>
+<th>Current rate</th>
+<th>last trading</th></tr>
+<tr th:each="currency :
+${currencies}">
+<td th:text="${currency.name}">
+</td><td th:text="${currency
+.currentRate}"></td>
+<td th:text="${currency.change}">
+</td></tr></table></body></html>
+\end{lstlisting}
+\begin{lstlisting}
+@Controller
+@RequestMapping("/currency")
+public class CurrencyController {
+@GetMapping
+public String showCurrencyPage
+(Model model) {
+List<Currency> currencies = 
+new ArrayList<>();
+currencies.add(new Currency
+("dollar", 75.50, -0.25));
+currencies.add(new Currency
+("euro", 88.20, 0.10));
+model.addAttribute("currencies",
+ currencies);
+return "currency";}}
+\end{lstlisting}
+\end{minipage}
+\\
+\begin{minipage}{.2\textwidth}
+Заменить все гиперссылки на текстовое поле со значением ссылки
+\begin{lstlisting}
+function replaceLinks() {
+var contentDiv = document.
+getElementById("content");
+var links = contentDiv.get
+ElementsByTagName("a");
+for (var i = 0; i <
+ links.length; i++) {
+var link = links[i];
+var textField = document.
+createElement("input");
+textField.type = "text";
+textField.value = link.href;
+link.parentNode.replaceChild
+(textField, link);}}
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать JSP страничку, отображает корзину. 
+объект - класс ShoppingItem. хранится managed bean.
+\begin{lstlisting}
+<% @ taglib prefix="c" uri="
+http://java.sun.com/jsp/jstl/
+core" %><body><h1>Cart</h1>
+<table><tr><th>Name</th>
+<th>Price</th></tr>
+<c:forEach items='${shoppin
+gCartBean.items}' var='item'>
+<tr><td>${item.name}</td>
+<td>${item.price}</td></tr>
+</c:forEach></table></body>
+@ManagedBean
+public class ShoppingCartBean
+{private List<ShoppingItem> 
+items = new ArrayList<>();
+public List<ShoppingItem> 
+getItems(){return items;}
+public void addItem
+(ShoppingItem item){
+items.add(item);}}
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать структуру HTTP запроса, отправляющего логин и пароль пользователя
+\begin{lstlisting}
+POST /login HTTP/1.1
+Host: example.com
+Content-Type: 
+application/x-www-form-
+urlencoded
+Content-Length: 24
+username=123&password=123
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать AJAX запрос который получает JSON и выводит его элементы
+\begin{lstlisting}
+fetch('https://example.com')
+.then(response => response
+.data)\n .then(data => {
+for(i of data) {
+let el = document.creat
+eElement("span");
+el.innerHTML = JSON.str
+ingify(i);
+document.getElementById("js
+on-data").append(el)}})
+.catch(error => {
+console.error(error);
+});
+\end{lstlisting}
+\end{minipage}
+\\
+\begin{minipage}{.2\textwidth}
+FreeMarker страничка с оценками студентов, sort по времени получения оценки
+\begin{lstlisting}
+public static String 
+generateStudentGradePage(List
+<StudentGrade> studentGrades){
+Configuration cfg = new 
+Configuration(Configuration.
+VERSION***);
+cfg.setClassForTemplateLoading
+(StudentGradePageGenerator.
+class, "/");Template template =
+cfg.getTemplate("student_grades
+_template.ftl");
+Map<String, Object> dataModel =
+new HashMap<>();
+dataModel.put("studentGrades",
+studentGrades);
+StringWriter writer = new 
+StringWriter();
+template.process(dataModel, writer);
+return writer.toString();}
+<!DOCTYPE html>
+<html><body><table><tr>
+<th>stud</th>
+<th>grade</th>
+<th>time</th></tr>
+<#list studentGrades as grade>
+<tr><td>${grade.studentName}</td>
+<td>${grade.grade}</td>
+<td>${grade.timestamp?str
+ing("dd.MM.yyyy HH:mm:ss")}</td>
+</tr></#list></table>
+</body></html>
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать правило на CSS, что у всех посещённых ссылок жёлтый фон, кроме тех, кто лежит в news
+\begin{lstlisting}
+a:visited {background-color:
+ yellow;}
+.news a:visited {
+background-color: initial;}
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+CSS правило: рисовать границу в 1 пиксель для картинок в (class = ”news”) при наведении курсора
+\begin{lstlisting}
+.news img:hover {
+border: 1px solid #000;}
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать сценарий, который будет считать
+ количество слов «де-факто» во всех тегах div class= lecture. 
+ Ещё обязательно jQuery.
+\begin{lstlisting}
+$(document).ready(function(){
+var totalWordCount = 0;
+$("div.lecture").each(function
+(){var text = $(this).text();
+var wordCount = text.split
+("de-fakto").length - 1; 
+totalWordCount +=wordCount;});
+console.log(totalWordCount);
+});
+\end{lstlisting}
+\end{minipage}
+\\
+\begin{minipage}{.2\textwidth}
+Написать js функцию, которая заменяет содержимое <div> 
+с именем класса “nyan” на изображение по ссылке
+\begin{lstlisting}
+function replaceNya
+nContent(url) {
+document.querySelec
+tor('.nyan').innerHTML 
+= `<img src="${URL}">`;
+}
+replaceNyanContent();
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать сервлет, который принимает из http запроса параметр name и выводит его.
+\begin{lstlisting}
+@WebServlet("/hello")
+public class HelloServlet 
+extends HttpServlet {
+protected void doGet(
+HttpServletRequest request,
+HttpServletResponse response){
+String name = request.
+getParameter("name");
+response.setContentType
+("text/html");response.
+setCharacterEncoding("UTF-8");
+String htmlResponse = 
+"<html><body>";if (name !=
+ null && !name.isEmpty()) {
+htmlResponse += "<h2>Hello, 
+" + name + "!</h2>";
+} else {htmlResponse += 
+"<h2>Hola!</h2>";}
+htmlResponse += "</body>
+</html>";response.getWriter()
+.write(htmlResponse);}}
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+LESS / SASS / SCSS.Если параметр не обнаружен то вывести Anonymous user
+\begin{lstlisting}
+<!DOCTYPE html><html>
+<head><title>Check 
+Parameter</title>
+</head><body>
+<script>
+var parameterValue = 
+new URL(window.locat
+ion.href).searchPara
+ms.get("paramName");
+if (!parameterValue) {
+document.write("Anonymous 
+user in HTML");
+} </script>
+</body></html>
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать конфигурацию сервлета (org.xxx.MyServlet) с помощью аннотации. Сервлет должен принимать все запросы от файлов .html .xhtml
+\begin{lstlisting}
+@WebServlet(name = "MyServlet", 
+urlPatterns = {"*.html", 
+"*.xhtml"})public class MyServlet
+extends HttpServlet {}
+\end{lstlisting}
+\end{minipage}
+\\
+\begin{minipage}{.2\textwidth}
+Напишите js функ. которая заменит все текстовые поля на кнопки с тем же текстом
+\begin{lstlisting}
+function replaceText(){
+document.querySelectorAll(
+'input[type="text"]').forEach(
+function(textField) {var button
+=document.createElement('button');
+button.innerHTML=textField.value;
+textField.parentNode.replaceChild
+(button, textField);});}
+replaceTextFieldsWithButtons();
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать PHP скрипт который формирует форму с логиным и паролем, которая при сабмите отправляет - authenticate.php посредством SuperAgent, и успешно перенаправить пользователя на main.php
+\begin{lstlisting}
+<form id="login-form">
+<label for="username">Log:
+</label><input type="text" 
+id="username" name="username" 
+required><label for="password">
+Pass:</label><input 
+type="password" id="password" 
+name="password"><button type=
+"submit">Log</button>
+</form><script>
+document.getElementById(
+'login-form').addEvent
+Listener('submit', function(e) 
+{e.preventDefault();const
+username = document.
+getElementById('username').
+value;const password = 
+document.getElementById(
+'password').value;
+superagent.post('authenticate
+.php').send({ username, 
+password }).end(function 
+(err, res) {if (res.status
+=== 200) {window.location.
+href = 'main.php';} else {
+alert('Error');}});});
+</script></body></html>
+<?php if ($_SERVER['REQUEST
+_METHOD'] === 'POST') {
+$username = $_POST['username'];
+$password = $_POST['password'];
+if ($username === 'login' && 
+$password === 'password') {
+http_response_code(200);
+exit;} else {http_response
+_code(401);exit;}}?>    
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Повернуть все картинки на 90 градусов в форме с id=”dhdhgd
+\begin{lstlisting}
+form#dhdhgd  img {transform:
+rotate(90deg);}
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Реализовать функцию на JavaScript,которая будет закрывать текущее окно,если в нем открыт https://www.google.ru
+\begin{lstlisting}
+if (window.location.href 
+==="https://www.google.ru"){
+window.close();} 
+\end{lstlisting}
+\end{minipage}
+\\
+\begin{minipage}{.2\textwidth}
+Функция JavaScript, запрещающая для всех текстовых полей ввод символов, если они не латинские буквы или не цифры
+\begin{lstlisting}
+document.addEventListener
+('input', function(e){
+const inputElement = e.target;
+if (inputElement.tagName === 
+'INPUT' && inputElement.type 
+=== 'text') {const inputValue 
+= inputElement.value;
+const regex = /^[a-zA-Z0-9]+$/;
+if (!regex.test(inputValue)) {
+inputElement.value = inputValue
+.replace(/[^a-zA-Z0-9]+/g, '');}}
+});  
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+html форма которая отправляет ответ на вопрос из теста, при этом должен отправляться номер ответа (a,b,c..f) и номер вопроса
+\begin{lstlisting}
+<html><body><form action="validator
+.php" method="post"><h2>Q 1</h2>
+<label for="q1a"><input type=
+"radio" name="question1" value=
+"a" id="q1a"> a)</label><br>
+<label for="q1b"><input type=
+"radio" name="question1" 
+value="b" id="q1b"> b)</label>
+<label for="q1c"><input type=
+"radio" name="question1" value
+="c" id="q1c"> c)</label><br>
+<h2>Q 2</h2><label for="q2a">
+<input type="radio" name=
+"question2" value="a" id=
+"q2a"> a)</label><br>
+<label for="q2b"><input type=
+"radio" name="question2" 
+value="b" id="q2b"> b)</label>
+<label for="q2c"><input type
+="radio" name="question2" value
+="c" id="q2c"> c)</label><br>
+<input type="submit" value="Submit">
+</form></body></html>    
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать код сервлета, который будет перенаправлять все запросы на https://google.com
+\begin{lstlisting}
+@WebServlet("/redirect")
+public class RedirectServlet 
+extends HttpServlet {
+protected void doGet(HttpServ
+letRequest request, HttpServlet
+Response response) throws Servle
+tException, IOException {
+response.setStatus(HttpServletR
+esponse.SC_FOUND);
+response.setHeader("Location", 
+"https://www.google.com");}}
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать HTML страницу и сервлет, возвращающий странице количество сессий
+\begin{lstlisting}
+<html><body>
+<p id="sessionCount">active 
+sessions</p><script>
+fetch('SessionCounterServlet')
+.then(response => response.
+text())\n.then(data => {
+document.getElementById('sessi
+onCount').textContent = `Active
+ session count: ${data}`;})
+.catch(error => console.error
+(error));</script></body></html>
+public class SessionCounterServlet
+extends HttpServlet {
+protected void doGet(HttpServletRe
+quest req, HttpServletResponse 
+res)throws IOException {
+int activeSessions = 0;
+HttpSessionContext sessionContext 
+= req.getSession().getServlet
+Context().getSessionContext();
+if (sessionContext != null) {
+activeSessions = sessionContext.
+getActiveSessions().size();}
+res.setContentType("text/plain");
+res.getWriter().write(Integer.
+toString(activeSessions));}}
+\end{lstlisting}
+\end{minipage}
+\\
+\begin{minipage}{.2\textwidth}
+Страница JSP, проверяющая есть ли jsessionid в запросе и если нету - выводящая сообщение об ошибке с кодом ошибки.
+\begin{lstlisting}
+<html><head><meta charset=
+"UTF-8"><title>jsessionid 
+check</title></head><body>
+<%String jsessionid = requ
+est.getParameter("jsessionid");
+if (jsessionid == null || 
+jsessionid.isEmpty()) {
+response.setStatus(HttpSer
+vletResponse.SC_BAD_REQUEST);
+out.println("<h1>Error: no jse
+ssionid</h1>");} else {
+out.println("<h1>jsessionid i
+n request: " + jsessionid + 
+"</h1>");}%></body></html>  
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать css чтоб по клику все ссылки кроме внутри h1 подчеркивались
+\begin{lstlisting}
+a {text-decoration: none; }
+h1 a {text-decoration: underline;} 
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Написать страницу на HTML и CSS, скрывающую содержимое от пользователя и показать сообщение ”разрешение не поддерживается если разрешение экрана < 1400.
+\begin{lstlisting}
+<html><head><meta charset="
+UTF-8"><title>Checking Scre
+en Resolution</title>
+<style>.content {display: 
+block;}.message{display: 
+none;}
+@media screen and (max
+-width: 1400px) {
+.content {display: 
+none;}
+.message {display: 
+block;}}</style></head>
+<body><div class="cont
+ent"><h1>Welcome</h1>
+<p>content</p></div>
+<div class="message">
+<p>Your screen resolu
+tion is not supported.</p>
+</div></body></html> 
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}{.2\textwidth}
+Код фильтра запросов,запрещающий доступ к приложению неавторизованным пользователям (у неавторизованного пользователя в запросе отсутствует заголовок ”X-Application-User”)
+\begin{lstlisting}
+public class Authorizat
+ionFilter implements Filter {
+public void doFilter(ServletRe
+quest request, ServletResponse 
+response, FilterChain chain) 
+throws IOException, ServletEx
+ception { HttpServletRequest 
+httpRequest = (HttpServletReq
+uest) request; HttpServletRes
+ponse httpResponse = (HttpSer
+vletResponse) response;
+String applicationUserHeader 
+= httpRequest.getHeader("X-Appl
+ication-User");if (application
+UserHeader == null || applicat
+ionUserHeader.isEmpty()) {
+httpResponse.sendError(HttpServ
+letResponse.SC_UNAUTHORIZED, 
+"block");} else {chain.
+doFilter(request, response);}}}
+\end{lstlisting}
+\end{minipage}
+\\
+\begin{minipage}{.2\textwidth}
+Написать калькулятор на PHP
+\begin{lstlisting}
+<?php if ($_SERVER['REQUEST_METHOD
+'] === 'POST') {
+$num1 = $_POST['num1'];
+$num2 = $_POST['num2'];
+$operation = $_POST['operation'];
+if (is_numeric($num1) && is_numeric
+($num2)) {$num1 = floatval($num1);
+$num2 = floatval($num2);
+switch ($operation) {case 
+'add':$result = $num1 + $num2; break;
+case 'subtract': $result = $num1 
+- $num2;break; case 'multiply':
+$result = $num1 * $num2; break;
+case 'divide':if ($num2 != 0) {
+$result = $num1 / $num2;
+} else {$result = 'Division by zero';
+}break; default: $result = 'Invalid 
+operation';break;}echo $result;
+} else {echo 'Please enter numbers 
+to calculate.';}}?>
+\end{lstlisting}
+\end{minipage}
+\end{document}
+
+% \newpage
+% 21312
+% \begin{minipage}{.2\textwidth}
+%     Напишите js функ. которая заменит все текстовые поля на кнопки с тем же текстом
+% \begin{lstlisting}
+%     function replaceTextFieldsWithButtons() {
+%         document.querySelectorAll('input[type="text"]').forEach(function(textField) {
+%           var button = document.createElement('button');
+%           button.textContent = textField.value;
+%           textField.parentNode.replaceChild(button, textField);
+%         });
+%       }
+%       replaceTextFieldsWithButtons();
+% \end{lstlisting}
+% \end{minipage}
+% \hfill
+% \begin{minipage}{.2\textwidth}
+
+% \begin{lstlisting}
+    
+      
+% \end{lstlisting}
+% \end{minipage}
+% \hfill
+% \begin{minipage}{.2\textwidth}
+
+% \begin{lstlisting}
+
+% \end{lstlisting}
+% \end{minipage}
+% \hfill
+% \begin{minipage}{.2\textwidth}
+
+% \begin{lstlisting}
+
+% \end{lstlisting}
+% \end{minipage}
+\end{document}
