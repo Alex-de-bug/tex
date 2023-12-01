@@ -1,0 +1,320 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{color,pxfonts,fix-cm}
+\usepackage{latexsym}
+\usepackage[mathletters]{ucs}
+\DeclareUnicodeCharacter{8211}{\textendash}
+\DeclareUnicodeCharacter{8751}{$\oiint$}
+\DeclareUnicodeCharacter{46}{\textperiodcentered}
+\DeclareUnicodeCharacter{58}{$\colon$}
+\DeclareUnicodeCharacter{8749}{$\iiint$}
+\DeclareUnicodeCharacter{32}{$\ $}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{pict2e}
+\usepackage{wasysym}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\pagestyle{empty}
+\usepackage[margin=0in,paperwidth=595pt,paperheight=841pt]{geometry}
+\begin{document}
+\definecolor{color_29791}{rgb}{0,0,0}
+\definecolor{color_214303}{rgb}{0.752941,0,0}
+\definecolor{color_33455}{rgb}{0,0.439216,0.752941}
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(70.104,-62.64001){\fontsize{18}{1}\usefont{T2A}{cmr}{b}{n}\selectfont\color{color_29791}Задание 5 }
+\put(70.104,-87.26001){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}При помощи формулы Остроградского-Гаусса доказать формулу трёхмерного }
+\put(70.104,-102.14){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}интегрирования по частям: }
+\put(168.02,-134.9){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}∭푈∆푉푑푣}
+\put(178.97,-115.7){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(172.61,-151.7){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푇}
+\put(232.01,-134.9){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=∯푈}
+\put(271.25,-125.78){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕푉}
+\put(271.49,-142.94){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕푛⃗ }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_29791][even odd rule]
+(271.25pt, -131.9pt) -- (285.77pt, -131.9pt)
+ -- (285.77pt, -131.9pt)
+ -- (285.77pt, -131.06pt)
+ -- (285.77pt, -131.06pt)
+ -- (271.25pt, -131.06pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(287.81,-134.9){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푑푆}
+\put(252.77,-115.7){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(246.77,-151.7){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푆}
+\put(304.03,-134.9){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}−∭}
+\put(334.87,-134.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(339.91,-134.9){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}grad 푈⋅grad 푉}
+\put(416.71,-134.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(423.67,-134.9){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푑푣}
+\put(326.59,-115.7){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(320.23,-151.7){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푇}
+\put(437.5,-134.9){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}, }
+\put(70.104,-172.34){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}где 푇 – ограниченная область в пространстве с границей 푆, }
+\put(70.104,-195.5){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푆 – гладкая односвязная поверхность, }
+\put(70.104,-218.66){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푈(푥; 푦; 푧) и 푉(푥; 푦; 푧) – непрерывно дифференцируемые в области 푇 функции, }
+\put(70.104,-238.22){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕푉}
+\put(70.104,-251.3){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕푛}
+\put(76.824,-251.18){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}⃗ }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_29791][even odd rule]
+(70.104pt, -242.3pt) -- (81.26399pt, -242.3pt)
+ -- (81.26399pt, -242.3pt)
+ -- (81.26399pt, -241.46pt)
+ -- (81.26399pt, -241.46pt)
+ -- (70.104pt, -241.46pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(81.264,-245.3){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} – производная по направлению нормали 푛⃗  к поверхности 푆, }
+\put(70.104,-271.97){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}∆ – оператор Лапласа, }
+\put(70.104,-295.13){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푑푣 = 푑푥푑푦푑푧 – элементарный объём в области 푇. }
+\put(70.104,-318.05){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(70.104,-340.97){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}Воспользуемся формулой Остроградского-Гаусса: }
+\put(240.05,-373.73){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}∯퐹}
+\put(259.01,-371.45){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(266.93,-373.73){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}⋅푑푆}
+\put(273.05,-371.09){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}⃗⃗⃗⃗ }
+\put(248.57,-354.53){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(242.57,-390.53){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푆}
+\put(289.85,-373.73){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=∭푑푖푣 퐹}
+\put(346.27,-371.45){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(351.55,-373.73){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} 푑푣}
+\put(313.15,-354.53){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.79,-390.53){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푇}
+\put(367.99,-373.73){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(70.104,-413.21){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}Применим формулу Остроградского-Гаусса к векторному полю 퐹}
+\put(400.63,-410.93){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(407.59,-413.21){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} = 푈⋅푔푟푎푑 푉 }
+\put(70.104,-436.37){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}По свойству дивергенции для скалярного поля 휑 и векторного 퐹: }
+\put(95.3,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}div}
+\put(111.02,-467.35){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(116.06,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휑퐹}
+\put(132.02,-467.35){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(140.3,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=}
+\put(152.54,-458.71){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕휑퐹}
+\put(172.61,-461.11){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푥}
+\put(158.66,-475.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕푥}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_29791][even odd rule]
+(152.54pt, -464.83pt) -- (178.364pt, -464.83pt)
+ -- (178.364pt, -464.83pt)
+ -- (178.364pt, -463.99pt)
+ -- (178.364pt, -463.99pt)
+ -- (152.54pt, -463.99pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(181.13,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}+}
+\put(192.65,-458.35){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕휑퐹}
+\put(212.69,-460.75){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푦}
+\put(198.89,-475.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕푦}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_29791][even odd rule]
+(192.65pt, -464.83pt) -- (218.81pt, -464.83pt)
+ -- (218.81pt, -464.83pt)
+ -- (218.81pt, -463.99pt)
+ -- (218.81pt, -463.99pt)
+ -- (192.65pt, -463.99pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(221.45,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}+}
+\put(233.09,-458.71){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕휑퐹}
+\put(253.13,-461.11){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푧}
+\put(239.33,-475.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕푧}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_29791][even odd rule]
+(233.09pt, -464.83pt) -- (258.29pt, -464.83pt)
+ -- (258.29pt, -464.83pt)
+ -- (258.29pt, -463.99pt)
+ -- (258.29pt, -463.99pt)
+ -- (233.09pt, -463.99pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(261.65,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=퐹}
+\put(278.93,-470.23){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_214303}푥}
+\put(286.73,-458.71){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_214303}휕휑}
+\put(287.45,-475.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_214303}휕푥}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_214303][even odd rule]
+(286.73pt, -464.83pt) -- (301.754pt, -464.83pt)
+ -- (301.754pt, -464.83pt)
+ -- (301.754pt, -463.99pt)
+ -- (301.754pt, -463.99pt)
+ -- (286.73pt, -463.99pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(304.51,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}+휑}
+\put(326.47,-458.71){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_33455}휕퐹}
+\put(338.35,-461.11){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_33455}푥}
+\put(328.63,-475.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_33455}휕푥}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_33455][even odd rule]
+(326.47pt, -464.83pt) -- (344.23pt, -464.83pt)
+ -- (344.23pt, -464.83pt)
+ -- (344.23pt, -463.99pt)
+ -- (344.23pt, -463.99pt)
+ -- (326.47pt, -463.99pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(346.87,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}+퐹}
+\put(363.43,-470.23){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_214303}푦}
+\put(371.59,-458.71){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_214303}휕휑}
+\put(372.31,-475.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_214303}휕푦}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_214303][even odd rule]
+(371.59pt, -464.83pt) -- (386.59pt, -464.83pt)
+ -- (386.59pt, -464.83pt)
+ -- (386.59pt, -463.99pt)
+ -- (386.59pt, -463.99pt)
+ -- (371.59pt, -463.99pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(389.35,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}+휑}
+\put(411.31,-458.35){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_33455}휕퐹}
+\put(423.19,-460.75){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_33455}푦}
+\put(413.47,-475.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_33455}휕푦}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_33455][even odd rule]
+(411.31pt, -464.83pt) -- (429.334pt, -464.83pt)
+ -- (429.334pt, -464.83pt)
+ -- (429.334pt, -463.99pt)
+ -- (429.334pt, -463.99pt)
+ -- (411.31pt, -463.99pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(432.1,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}+퐹}
+\put(448.66,-470.23){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_214303}푧}
+\put(455.86,-458.71){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_214303}휕휑}
+\put(456.94,-475.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_214303}휕푧}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_214303][even odd rule]
+(455.86pt, -464.83pt) -- (470.86pt, -464.83pt)
+ -- (470.86pt, -464.83pt)
+ -- (470.86pt, -463.99pt)
+ -- (470.86pt, -463.99pt)
+ -- (455.86pt, -463.99pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(473.62,-467.83){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}+휑}
+\put(495.58,-458.71){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_33455}휕퐹}
+\put(507.46,-461.11){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_33455}푧}
+\put(497.74,-475.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_33455}휕푧}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_33455][even odd rule]
+(495.58pt, -464.83pt) -- (512.74pt, -464.83pt)
+ -- (512.74pt, -464.83pt)
+ -- (512.74pt, -463.99pt)
+ -- (512.74pt, -463.99pt)
+ -- (495.58pt, -463.99pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(167.3,-490.87){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=grad 휑⋅퐹+ 휑 div 퐹 }
+\put(222.89,-514.03){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}div}
+\put(238.61,-513.55){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(243.65,-514.03){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휑퐹}
+\put(259.61,-513.55){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(267.89,-514.03){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=grad 휑⋅퐹+ 휑 div 퐹 }
+\put(276.89,-536.95){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}Получаем: }
+\put(136.58,-562.27){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}div 퐹}
+\put(157.46,-559.99){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(166.1,-562.27){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=grad 푈⋅grad 푉+푈 div}
+\put(296.45,-561.79){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(301.51,-562.27){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}grad 퐹}
+\put(335.11,-561.79){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(343.39,-562.27){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}≝grad 푈⋅grad 푉+푈∆푉 }
+\put(169.22,-594.91){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}∯푈⋅푔푟푎푑 푉⋅푑푆}
+\put(249.29,-592.27){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}⃗⃗⃗⃗ }
+\put(177.77,-575.71){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(171.77,-611.71){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푆}
+\put(266.09,-594.91){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=∭}
+\put(297.65,-594.43){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(302.71,-594.91){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}grad 푈⋅grad 푉+푈∆푉}
+\put(417.43,-594.43){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(422.35,-594.91){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} 푑푣}
+\put(289.37,-575.71){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(283.01,-611.71){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푇}
+\put(438.7,-594.91){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(70.104,-632.47){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}Разобьем тройной интеграл в правой части на тройные интегралы от 푈∆푉 и grad 푈⋅grad 푉. }
+\put(70.104,-650.02){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}И распишем 푑푆}
+\put(136.46,-647.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}⃗⃗⃗⃗ }
+\put(150.02,-650.02){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} с помощью вектора нормаля и элемента площади поверхности: }
+\put(146.9,-682.78){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}∭푈∆푉 푑푣}
+\put(157.7,-663.58){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(151.46,-699.58){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푇}
+\put(211.49,-682.78){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=∯푈⋅푔푟푎푑 푉⋅푛⃗ 푑푆}
+\put(232.25,-663.58){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(226.25,-699.58){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푆}
+\put(327.07,-682.78){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}−∭(grad 푈⋅grad 푉) 푑푣}
+\put(349.63,-663.58){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(343.27,-699.58){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푇}
+\put(461.26,-682.78){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(70.104,-719.86){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}При проекции вектора на плоскость мы делим скалярное произведение на длину вектора, }
+\put(70.104,-734.856){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}куда проектируем, и учитывая, что в данном случае проектируем на единичный вектор }
+\put(70.104,-750.096){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}(нормаль к плоскости), мы выражаем 푔푟푎푑 푉⋅푛⃗  как производную функции по направлению }
+\put(70.104,-765.096){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}нормали к плоскости 푆. Таким образом, получаем исходное равенство.: }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(168.62,-66.71997){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}∭푈∆푉 푑푣}
+\put(179.57,-47.52002){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(173.21,-83.53998){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푇}
+\put(233.21,-66.71997){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=∯푈}
+\put(272.45,-57.59998){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕푉}
+\put(272.69,-74.76001){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}휕푛⃗ }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_29791][even odd rule]
+(272.45pt, -63.71997pt) -- (286.97pt, -63.71997pt)
+ -- (286.97pt, -63.71997pt)
+ -- (286.97pt, -62.87994pt)
+ -- (286.97pt, -62.87994pt)
+ -- (272.45pt, -62.87994pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(289.01,-66.71997){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푑푆}
+\put(254.09,-47.52002){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(248.09,-83.53998){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푆}
+\put(305.23,-66.71997){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}−∭(grad 푈⋅grad 푉) 푑푣}
+\put(327.79,-47.52002){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(321.43,-83.53998){\fontsize{8.52}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푇}
+\put(439.42,-66.71997){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(70.104,-103.94){\fontsize{12}{1}\usefont{T2A}{cmr}{m}{n}\selectfont\color{color_29791}Что и требовалось доказать. }
+\end{picture}
+\end{document}
