@@ -1,0 +1,119 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Задание 5}
+\author{}
+\date{}
+
+\begin{document}
+
+При помощи формулы Остроградского-Гаусса доказать формулу трёхмерного
+интегрирования по частям:
+
+\[\iiint_{T}^{\ }{U\mathrm{\Delta}V{dv}} = ∯_{S}^{\ }{U\frac{\partial V}{\partial\overrightarrow{n}}dS} - \iiint_{T}^{\ }{(grad\ U \cdot grad\ V){dv}},\]
+
+где \(T\) -- ограниченная область в пространстве с границей \(S\),
+
+\(S\) -- гладкая односвязная поверхность,
+
+\(U(x;\ y;\ z)\) и \(V(x;\ y;\ z)\) -- непрерывно дифференцируемые в
+области \(T\) функции,
+
+\(\frac{\partial V}{\partial\overrightarrow{n}}\ \)-- производная по
+направлению нормали \(\overrightarrow{n}\) к поверхности \(S\),
+
+\(\mathrm{\Delta}\) -- оператор Лапласа,
+
+\(dv\  = \ dxdydz\) -- элементарный объём в области \(T\).
+
+Воспользуемся формулой Остроградского-Гаусса:
+
+\[∯_{S}^{\ }{\overrightarrow{F} \cdot \overrightarrow{dS}} = \iiint_{T}^{\ }{div\ \overrightarrow{F}\ dv}\]
+
+Применим формулу Остроградского-Гаусса к векторному полю
+\(\overrightarrow{F}\  = \ U \cdot grad\ V\)
+
+По свойству дивергенции для скалярного поля \(\varphi\) и векторного
+\(F\):
+
+\[div(\varphi F) = \frac{\partial\varphi F_{x}}{\partial x} + \frac{\partial\varphi F_{y}}{\partial y} + \frac{\partial\varphi F_{z}}{\partial z} = F_{x}\frac{\partial\varphi}{\partial x} + \varphi\frac{\partial F_{x}}{\partial x} + F_{y}\frac{\partial\varphi}{\partial y} + \varphi\frac{\partial F_{y}}{\partial y} + F_{z}\frac{\partial\varphi}{\partial z} + \varphi\frac{\partial F_{z}}{\partial z} = grad\ \varphi \cdot F + \ \varphi\ div\ F\]
+
+\[div(\varphi F) = grad\ \varphi \cdot F + \ \varphi\ div\ F\]
+
+Получаем:
+
+\[div\ \overrightarrow{F} = grad\ U \cdot grad\ V + U\ div(grad\ F) ≝ grad\ U \cdot grad\ V + U\mathrm{\Delta}V\]
+
+\[∯_{S}^{\ }{U \cdot grad\ V \cdot \overrightarrow{dS}} = \iiint_{T}^{\ }{(grad\ U \cdot grad\ V + U\mathrm{\Delta}V)\ dv}\]
+
+Разобьем тройной интеграл в правой части на тройные интегралы от
+\(U\mathrm{\Delta}V\) и \(grad\ U \cdot grad\ V\). И распишем
+\(\overrightarrow{dS}\) с помощью вектора нормаля и элемента площади
+поверхности:
+
+\[\iiint_{T}^{\ }{U\mathrm{\Delta}V\ dv} = ∯_{S}^{\ }{U \cdot grad\ V \cdot \overrightarrow{n}dS} - \iiint_{T}^{\ }{(grad\ U \cdot grad\ V)\ dv}\]
+
+При проекции вектора на плоскость мы делим скалярное произведение на
+длину вектора, куда проектируем, и учитывая, что в данном случае
+проектируем на единичный вектор (нормаль к плоскости), мы выражаем
+\(grad\ V \cdot \overrightarrow{n}\) как производную функции по
+направлению нормали к плоскости \(S\). Таким образом, получаем исходное
+равенство.:
+
+\[\iiint_{T}^{\ }{U\mathrm{\Delta}V\ dv} = ∯_{S}^{\ }{U\frac{\partial V}{\partial\overrightarrow{n}}dS} - \iiint_{T}^{\ }{(grad\ U \cdot grad\ V)\ dv}\]
+
+Что и требовалось доказать.
+
+\end{document}

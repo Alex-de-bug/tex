@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  9 DEC 2023 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  7 DEC 2023 09:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/alexalex/Desktop/tex/webKRteor2/main.tex
-(/Users/alexalex/Desktop/tex/webKRteor2/main.tex
+**/Users/alexalex/Desktop/tex/phis/main.tex
+(/Users/alexalex/Desktop/tex/phis/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-05-05> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -652,45 +652,175 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+))) (/usr/local/texlive/2023/texmf-dist/tex/latex/derivative/derivative.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-05-05 L3 programming layer (loader) 
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count312
+\l__pdf_internal_box=\box66
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: derivative 2022/07/09 v1.2 Nice and easy derivatives and differentials for LaTeX
+\l__deriv_vmo_int=\count313
+\l__deriv_var_count_int=\count314
+\l__deriv_tmpa_int=\count315
+\l__deriv_tmpb_int=\count316
+\l__deriv_numerical_int=\count317
+\l__deriv_sort_max_int=\count318
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
-Package: physics 
- (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-05-05 L3 programming layer (loader) 
- (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count312
-\l__pdf_internal_box=\box66
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup6
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count319
+\float@exts=\toks44
+\float@box=\box67
+\@float@everytoks=\toks45
+\@floatcapt=\box68
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-04-22 v7.00x Hypertext links for LaTeX
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-Package: xparse 2023-02-02 L3 Experimental document command parser
-)) (./main.aux)
+\c@section@level=\count320
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count321
+)
+\@linkdim=\dimen299
+\Hy@linkcounter=\count322
+\Hy@pagecounter=\count323
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-04-22 v7.00x Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count324
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-04-22 v7.00x Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 3168.
+Package hyperref Info: Option `unicode' set `true' on input line 4065.
+Package hyperref Info: Hyper figures OFF on input line 4182.
+Package hyperref Info: Link nesting OFF on input line 4187.
+Package hyperref Info: Hyper index ON on input line 4190.
+Package hyperref Info: Plain pages OFF on input line 4197.
+Package hyperref Info: Backreferencing OFF on input line 4202.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4449.
+\c@Hy@tempcnt=\count325
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4787.
+\XeTeXLinkMargin=\dimen300
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count326
+\Field@Width=\dimen301
+\Fld@charsize=\dimen302
+Package hyperref Info: Hyper figures OFF on input line 6066.
+Package hyperref Info: Link nesting OFF on input line 6071.
+Package hyperref Info: Hyper index ON on input line 6074.
+Package hyperref Info: backreferencing OFF on input line 6081.
+Package hyperref Info: Link coloring OFF on input line 6086.
+Package hyperref Info: Link coloring with OCG OFF on input line 6091.
+Package hyperref Info: PDF/A mode OFF on input line 6096.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count327
+\c@Item=\count328
+\c@Hfootnote=\count329
+)
+Package hyperref Info: Driver: hpdftex.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-04-22 v7.00x Hyperref driver for pdfTeX
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count330
+\c@bookmark@seq@number=\count331
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip57
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Info: Redefining \th on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Info: Redefining \th on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -699,21 +829,21 @@ LaTeX Info: Redefining \th on input line 34.
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 766.51724pt, 0.0pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=557.38951pt
-* \textheight=766.51724pt
+* modes: landscape 
+* h-part:(L,W,R)=(28.45274pt, 738.0645pt, 28.45274pt)
+* v-part:(T,H,B)=(56.9055pt, 500.484pt, 56.9055pt)
+* \paperwidth=794.96999pt
+* \paperheight=614.295pt
+* \textwidth=738.0645pt
+* \textheight=500.484pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-80.81725pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
+* \marginparwidth=144.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -728,17 +858,17 @@ LaTeX Info: Redefining \th on input line 34.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen299
-\scratchbox=\box67
-\nofMPsegments=\count314
-\nofMParguments=\count315
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen300
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count332
+\scratchdimen=\dimen303
+\scratchbox=\box69
+\nofMPsegments=\count333
+\nofMParguments=\count334
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count335
+\MPscratchDim=\dimen304
+\MPnumerator=\count336
+\makeMPintoPDFobject=\count337
+\everyMPtoPDFconversion=\toks47
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -746,770 +876,95 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 34.
+ on input line 31.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+Package hyperref Info: Link coloring OFF on input line 31.
+(./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1496) in paragraph at lines 50--50
-[]\T2A/cmr/bx/n/5 1. Ком-по-нен-ты в Angular: вза-и-мо-дей-ствие с
- []
-
-
-Underfull \hbox (badness 1436) in paragraph at lines 50--50
-\T2A/cmr/m/n/5 са, по-ме-чен-но-го де-ко-ра-то-ром @Component, HTML
- []
-
-
-Underfull \hbox (badness 2495) in paragraph at lines 50--50
-\T2A/cmr/m/n/5 2.  Ини-ци-а-ли-за-ция. Раз-ные спо-со-бы при-ме-ня-ют-
- []
-
-
-Underfull \hbox (badness 3536) in paragraph at lines 50--50
-\T2A/cmr/m/n/5 ся в та-ком по-ряд-ке: Ме-тод би-на с ан-но-та-ци-ей
- []
-
-
-Underfull \hbox (badness 2065) in paragraph at lines 80--80
-\T2A/cmr/m/n/5 по-лу-ча-ет за-прос, он на ос-но-ва-нии кон-фи-гу-ра-ции
- []
-
-
-Underfull \hbox (badness 3209) in paragraph at lines 80--80
-\T2A/cmr/m/n/5 за-прос. Этот mapping - ме-ха-низм, поз-во-ля-ю-щий
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 80--80
-\T2A/cmr/m/n/5 React ком-по-нен-ты. function warningButton(){return
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-\T2A/cmr/m/n/5 <CustomButton color="кровиВТшников"/>}; JSX
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-\T2A/cmr/m/n/5 код: <div className=^^Qfoo^^Q>text</div> ком-пи-ли-
- []
-
-
-Underfull \hbox (badness 2435) in paragraph at lines 96--96
-[]\T2A/cmr/m/n/5 1.  1 спо-соб: JavaScript API - jsf.ajax.request();
- []
-
-
-Underfull \hbox (badness 4084) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 запрос ; execute - ком-по-нен-ты, об-ра-ба-ты-ва-е-мые
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 в цик-ле об-ра-бот-ки за-про-са ; render - пе-ре-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 ри-со-вы-ва-е-мые ком-по-нен-ты. <h:commandButton
- []
-
-
-Overfull \hbox (9.57855pt too wide) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 id="submit"value="submit"onclick="jsf.ajax.request(this,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 event, {execute: 'myinput', render:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 'outtext'});/>. 2 спо-соб: <h:commandButton
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 id='submit', value='submit'> <f:ajax
- []
-
-
-Overfull \hbox (5.78087pt too wide) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 execute="@form"render="msg"/></h:commandButton>
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-
- []
-
-
-Underfull \hbox (badness 2213) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 2. Опре-де-ля-ет жиз-нен-ный цикл би-нов и их ви-
- []
-
-
-Underfull \hbox (badness 3386) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 со-зда-ет-ся один раз при об-ра-ще-нии к стра-ни-це,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 и ис-поль-зу-ет-ся ров-но столь-ко, сколь-ко поль-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 зо-ва-тель на-хо-дит-ся на стра-ни-це); из JSF, но
- []
-
-
-Underfull \hbox (badness 2393) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 то-же ра-бо-та-ет; @SessionScoped - кон-текст - сес-
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 ек-цию объ-ек-та javax.enterprise.context.Conversation;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-\T2A/cmr/m/n/5 @Dependent. Ис-поль-зу-ет-ся по умол-ча-нию. ЖЦ
- []
-
-
-Underfull \hbox (badness 5652) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 сим-во-ли-че-ское имя. Пре-об-ра-зо-ва-ни-ем сим-во-ли-че-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 фейс org.springframework.web.servlet.ViewResolver.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 В од-ном при-ло-же-нии мож-но ис-поль-зо-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 вать несколь-ко ViewResolver'ов <bean
- []
-
-
-Overfull \hbox (0.8168pt too wide) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 lverї <property name="viewClass"value="o.s.w.s.v.Jstl
- []
-
-
-Underfull \hbox (badness 3250) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 - View"/> <property name="prefix"value="/WEB-
- []
-
-
-Underfull \hbox (badness 2326) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 2.  Angular - на-пи-са-на на TypeScript, раз-ви-тие
- []
-
-
-Underfull \hbox (badness 4752) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 AngularJS осо-бен-но-сти: крос-сплат-фор-мен-ное; для
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 раз-ра-бот-ки на-до на-стро-ить сбо-роч-ное окру-же-ние;
- []
-
-
-Underfull \hbox (badness 1231) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 при-ло-же-ние со-сто-ит из мо-ду-лей (NgModules); мо-
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 ду-ли обес-пе-чи-ва-ют кон-текст для ком-по-нен-тов; из
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 ком-по-нен-тов стро-ят-ся пред-став-ле-ния; ком-по-нен-ты
- []
-
-
-Underfull \hbox (badness 3471) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 жест-кие рам-ки для ком-по-нен-тов; есть иерар-хия
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 157--157
-\T2A/cmr/m/n/5 ком-по-нен-тов; го-раз-до ме-нее без-опа-сен и управ-ля-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--206
-[]\T2A/cmr/bx/n/5 1. Spring MVC: об-ра-бот-ка за-про-сов,
- []
-
-
-Underfull \hbox (badness 2564) in paragraph at lines 206--206
-\T2A/cmr/m/n/5 2.  Веб-приложение, ис-поль-зу-ю-щее един-ствен-ный
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 Validator. Ме-тод validate при-ни-ма-ет FacesContext,
- []
-
-
-Underfull \hbox (badness 5490) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 UiComponent и зна-че-ние. Осу-ществ-ля-ет-ся пе-ред
- []
-
-
-Underfull \hbox (badness 8113) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 зо-вы-вать ин-тер-фейс javax.faces.validator.Validator.
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 RegexValidator, RequiredValidator. Cоб-ствен-ные ва-
- []
-
-
-Underfull \hbox (badness 2951) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 ли-да-то-ры c по-мо-щью ан-но-та-ции @FacesValidator.
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 Со-зда-ние: па-ра-мет-ры ком-по-нен-та, вло-жен-ный тег,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 <f:validatorvalidatorId=^^Qcom.example.MyValidator^^Q/>,
- []
-
-
-Underfull \hbox (badness 4229) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 2.  Пе-ре-хва-ты-ва-ет вхо-дя-щие за-про-сы, упа-ко-вы-
- []
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 ва-ет дан-ные в нуж-ный фор-мат, от-прав-ля-ет эти
- []
-
-
-Underfull \hbox (badness 4569) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 дан-ные нуж-ной мо-де-ли, а за-тем от-вет от мо-
- []
-
-
-Underfull \hbox (badness 7777) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 де-ли пе-ре-дать об-рат-но в DispatcherServlet. На
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 ме-то-ды кон-трол-ле-ра ле-пят-ся раз-ные ан-но-та-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 ции(@GetMapping, @PostMapping, @PathVariable.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 @ResourcesVarible). @Controller $\OMS/cmsy/m/n/5 @$ \T2A/cmr/m/n/5 public class
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 HelloController { $\OMS/cmsy/m/n/5 @$ \T2A/cmr/m/n/5 @RequestMapping(value
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 = "/hello method = RequestMethod.GET)$\OMS/cmsy/m/n/5 @$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 public String printHello(ModelMap model) {$\OMS/cmsy/m/n/5 @$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
-\T2A/cmr/m/n/5 model.addAttribute("message "Hello Spring MVC
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 281--281
-\T2A/cmr/bx/n/5 2. Spring Framework. От-ли-чия и сход-ства с
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 336--336
-[]\T2A/cmr/m/n/5 1.  Осо-бен-но-сти: Компонентно-ориентированная
- []
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 336--336
-\T2A/cmr/m/n/5 струк-ту-ра. Ин-тер-фейс стро-ит-ся из ком-по-нен-тов,
- []
-
-
-Underfull \hbox (badness 7238) in paragraph at lines 336--336
-\T2A/cmr/m/n/5 ис-поль-зу-ют-ся JSP или XML-шаблоны (facelets).
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 336--336
-\T2A/cmr/m/n/5 Биз-нес ло-ги-ка вы-но-сит-ся в Java би-ны. На-пи-сан
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 336--336
-\T2A/cmr/m/n/5 ства: раз-де-ле-ние биз-нес ло-ги-ки от пред-став-ле-ния
- []
-
-
-Underfull \hbox (badness 3930) in paragraph at lines 336--336
-\T2A/cmr/m/n/5 (ре-а-ли-зу-ет MVC); Управ-ле-ние об-ме-ном дан-ны-ми
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 336--336
-\T2A/cmr/m/n/5 на-бо-ры ком-по-нент, мож-но опре-де-лять свои); под-
- []
-
-
-Underfull \hbox (badness 1748) in paragraph at lines 351--351
-[]\T2A/cmr/m/n/5 1.  Ин-тер-фей-сы веб при-ло-же-ний на JSF опи-сы-
- []
-
-
-Underfull \hbox (badness 2103) in paragraph at lines 351--351
-\T2A/cmr/m/n/5 ва-ют-ся в XHTML фай-лах. Там мо-гут быть как
- []
-
-
-Underfull \hbox (badness 1874) in paragraph at lines 351--351
-\T2A/cmr/m/n/5 JSF ком-по-нен-ты. Ком-по-нен-ты ^^V это клас-сы на-
- []
-
+LaTeX Font Info:    Trying to load font information for U+esint on input line 50.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+Underfull \hbox (badness 10000) in paragraph at lines 53--66
 
-Underfull \hbox (badness 3826) in paragraph at lines 351--351
-\T2A/cmr/m/n/5 след-ни-ки UIComponent, об-ра-зу-ют иерар-хию. Ко-
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 378--378
-\T2A/cmr/m/n/5 - кон-текст - сес-сия; ApplicationScoped - кон-текст
- []
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 393--393
-\T2A/cmr/m/n/5 ан-но-та-ции, ли-бо че-рез faces-config.xml: <managed-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--393
-\T2A/cmr/m/n/5 bean-scope>application</managed-bean-scope>.
- []
-
-
-Underfull \hbox (badness 1874) in paragraph at lines 393--393
-\T2A/cmr/m/n/5 NoneScoped - кон-текст не опре-де-лјн, жиз-нен-ным
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 393--393
-\T2A/cmr/m/n/5 цик-лом управ-ля-ют дру-гие би-ны; по умол-ча-нию
- []
-
-
-Underfull \hbox (badness 1668) in paragraph at lines 393--393
-\T2A/cmr/m/n/5 RequestScoped - кон-текст - за-прос; ViewScoped -
- []
-
-
-Underfull \hbox (badness 1968) in paragraph at lines 393--393
-\T2A/cmr/m/n/5 со-зда-ет-ся и со-хра-ня-ет-ся в кол-лек-ции ти-па Map.
- []
-
-
-Underfull \hbox (badness 1043) in paragraph at lines 413--413
-\T2A/cmr/m/n/5 ан-но-та-цию @PathVariable, па-ра-мет-ры GET-запроса
- []
-
-
-Underfull \hbox (badness 1303) in paragraph at lines 430--430
-[]\T2A/cmr/m/n/5 1.  FacesServlet ^^V глав-ный сервлет, ко-то-рый за-
- []
-
-
-Underfull \hbox (badness 2318) in paragraph at lines 430--430
-\T2A/cmr/m/n/5 ни-ма-ет-ся жиз-нен-ным цик-лом об-ра-бот-ки за-про-сов
- []
-
-
-Underfull \hbox (badness 1454) in paragraph at lines 430--430
-\T2A/cmr/m/n/5 MVVM и яв-ля-ет-ся компонентно-ориентированным.
- []
-
-
-Underfull \hbox (badness 5064) in paragraph at lines 454--454
-[]\T2A/cmr/m/n/5 1.  Клас-сы, ре-а-ли-зу-ю-щие ин-тер-фейс Converter.
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 Ис-поль-зу-ют-ся для пре-об-ра-зо-ва-ния дан-ных ком-по-
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 нен-та в за-дан-ный фор-мат (да-та, чис-ло и т. д.).
- []
-
-
-Underfull \hbox (badness 3364) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 Су-ще-ству-ют стан-дарт-ные кон-вер-те-ры для ос-нов-
- []
-
-
-Underfull \hbox (badness 5022) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 Мож-но со-зда-вать соб-ствен-ные кон-вер-те-ры. Что-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 бы за-ре-ги-стри-ро-вать свой кон-вер-тер, необ-хо-ди-
- []
-
-
-Underfull \hbox (badness 7704) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 мо про-пи-сать его в faces-config.xml ли-бо вос-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 поль-зо-вать-ся ан-но-та-ци-ей FacesConverter. На-
- []
-
-
-Underfull \hbox (badness 4378) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 зна-че-ние в JSF: ав-то-ма-ти-че-ское(на ос-но-ве ти-па
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 дан-ных) <h:inputText value="#{user.age}"/>
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 ; с по-мо-щью ат-ри-бу-та converter: <h:inputText
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 converter="#{javax.faces.DateTime}"/> ; с
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 по-мо-щью вло-жен-но-го те-га: <h:outputText
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 value="#{user.birthDay}ї <f:converter
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 converterId="#{javax.faces.DateTime}"/>
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 Че-рез мо-дель пред-став-ле-ние по-лу-ча-ет до-ступ к
- []
-
-
-Underfull \hbox (badness 7851) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 Су-ще-ству-ет ан-но-та-ция @ModelAttribute, ко-то-рая
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 поз-во-ля-ет за-дать в кон-трол-ле-ре ме-тод, за-пол-ня-
- []
-
-
-Underfull \hbox (badness 3333) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 ю-щий мо-дель ат-ри-бу-та-ми, ко-то-рые по-том бу-дут
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 454--454
-\T2A/cmr/m/n/5 в мо-дель. В об-щем слу-чае, ре-а-ли-зу-ет ин-тер-фейс
- []
-
-
-Underfull \hbox (badness 6001) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 шаб-ло-нов. Шаб-ло-ны по-хо-жи на обыч-ный html,
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 ний, ко-то-рая со-дер-жит встро-ен-ные пред-став-ле-ния
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 из дру-гих ком-по-нен-тов. Под-дер-жи-ва-ет-ся ин-тер-по-
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 по-нент на-пря-мую про-сит у кон-тей-не-ра пе-ре-дать
- []
-
-
-Underfull \hbox (badness 3849) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 ему за-ви-си-мость. Про-ти-во-по-став-ля-ет-ся DI, ко-то-
- []
-
+Underfull \hbox (badness 10000) in paragraph at lines 53--66
 
-Underfull \hbox (badness 1048) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 рый про-ис-хо-дит ав-то-ма-ти-че-ски. Не ре-ко-мен-ду-ет-ся
  []
 
-
-Underfull \hbox (badness 3168) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 к ис-поль-зо-ва-нию, но необ-хо-ди-мо ко-гда DI да-ет
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 же-ния (на-при-мер ClassPathXmlApplicationContext).
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 За-тем: context.getBean(^^Pname^^Q) ^^V вер-нет нуж-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 ный бин. Так-же мож-но ука-зать кон-крет-ный
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 класс или ин-тер-фейс: context.getBean(^^Pname^^Q,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 MyBean.class). ApplicationContext appContext =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 new ClassPathXmlApplicationContext(^^P/application-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
-\T2A/cmr/m/n/5 context.xml^^Q); MyBean bean =
- []
-
-
-Underfull \hbox (badness 2253) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 за-ре-ги-стри-ро-ван-ные в ком-по-нен-тах в де-ре-ве, ис-
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 каль-ным зна-че-ни-ем, хра-ня-щим-ся для ком-по-нен-та.
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 Ес-ли зна-че-ние ком-по-нен-та не про-хо-дит ва-ли-да-
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 цию, фор-ми-ру-ет-ся со-об-ще-ние об ошиб-ке, ко-то-рое
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 со-хра-ня-ет-ся в FacesContext. Update Model Values
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 Phase: Ре-а-ли-за-ция JavaServer Faces уста-нав-ли-ва-
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 ет со-от-вет-ству-ю-щие свой-ства объ-ек-та на сто-роне
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 сер-ве-ра для ло-каль-ных зна-че-ний ком-по-нен-тов. В
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 этот мо-мент, ес-ли при-ло-же-нию необ-хо-ди-мо пе-ре-
- []
-
-
-Underfull \hbox (badness 1748) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 на-пра-вить на дру-гой ре-сурс веб-приложения или
- []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 2.  1. Кон-фи-гу-ра-ция, на-пи-сан-ная на xml или в
- []
-
-
-Underfull \hbox (badness 1708) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 ви-де Java ко-да, по-па-да-ет в BeanDefinitionReader,
- []
-
-
-Underfull \hbox (badness 1377) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 ка-ким об-ра-зом сприн-гу со-зда-вать би-ны, как бин
- []
-
-
-Underfull \hbox (badness 5105) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 опре-де-лен, ка-кие за-ви-си-мо-сти в се-бе со-дер-жит,
- []
-
-
-Underfull \hbox (badness 1881) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 то он в кон-вей-е-ре бу-дет об-ра-бо-тан сра-зу, бу-дет
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 ес-ли мы его опре-де-ли-ли. 5. Уста-нав-ли-ва-ют-ся си-
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 стем-ные пе-ре-мен-ные, property для то-го, что-бы в
- []
-
-
-Underfull \hbox (badness 1092) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 даль-ней-шем пра-виль-но со-здать би-ны. Жиз-нен-ный
- []
-
-
-Underfull \hbox (badness 6252) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 кон-фи-гу-ра-ции би-на, внед-ре-ние за-ви-си-мо-стей; 3.
- []
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 Но-ти-фи-ка-ция aware-интерфейсов. Об-нов-ле-ние кон-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 ^^U ме-тод postProcessBeforeInitialization() ин-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 тер-фей-са BeanPostProcessor; 5. Ини-ци-а-ли-за-
- []
-
-
-Underfull \hbox (badness 7869) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 ция. Ме-тод би-на с ан-но-та-ци-ей @PostConstruct
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 из стан-дар-та; Ме-тод afterPropertiesSet() би-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 на; Init-метод. 6. Пост-инициализация ^^U ме-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 тод postProcessAfterInitialization() ин-тер-фей-са
- []
-
-
-Underfull \hbox (badness 1466) in paragraph at lines 524--524
-\T2A/cmr/m/n/5 та-ци-ей @PreDestroy; 2. Ме-тод с име-нем, ко-то-рое
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 549--549
-\T2A/cmr/m/n/5 за-ни-ма-ю-щий-ся жиз-нен-ным цик-лом ком-по-нен-тов и
- []
 
+Underfull \hbox (badness 10000) in paragraph at lines 53--66
 
-Underfull \hbox (badness 1270) in paragraph at lines 567--567
-[]\T2A/cmr/m/n/5 1.  Stereotype ^^V ан-но-та-ция, вклю-ча-ю-щая в се-бя
  []
 
 [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] [2] [3]
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+<triangle.png, id=33, 254.9525pt x 214.8025pt>
+File: triangle.png Graphic file (type png)
+<use triangle.png>
+Package pdftex.def Info: triangle.png  used on input line 92.
+(pdftex.def)             Requested size: 166.06337pt x 139.91823pt.
 
-Package caption Warning: Unused \captionsetup[sub] on input line 19.
-See the caption package documentation for explanation.
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
-[4] [5] (./main.aux) ) 
+ []
+
+<pronKonf.png, id=35, 525.965pt x 258.9675pt>
+File: pronKonf.png Graphic file (type png)
+<use pronKonf.png>
+Package pdftex.def Info: pronKonf.png  used on input line 99.
+(pdftex.def)             Requested size: 252.41959pt x 124.28322pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+<linealKonf.png, id=36, 442.65375pt x 218.8175pt>
+File: linealKonf.png Graphic file (type png)
+<use linealKonf.png>
+Package pdftex.def Info: linealKonf.png  used on input line 106.
+(pdftex.def)             Requested size: 232.49278pt x 114.93098pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+[2 <./triangle.png> <./pronKonf.png> <./linealKonf.png>] [3] [4] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: AE3C41858AAB736CE118112F863770F2;580.
+ ) 
 Here is how much of TeX's memory you used:
- 28296 strings out of 476047
- 692193 string characters out of 5790247
- 1960248 words of memory out of 5000000
- 48301 multiletter control sequences out of 15000+600000
- 517216 words of font info for 44 fonts, out of 8000000 for 9000
+ 36572 strings out of 476047
+ 861045 string characters out of 5790247
+ 1868248 words of memory out of 5000000
+ 56432 multiletter control sequences out of 15000+600000
+ 521175 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,5n,103p,758b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (5 pages, 182223 bytes).
+ 99i,9n,103p,921b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on main.pdf (4 pages, 237672 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 130 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 60 words of extra memory for PDF output out of 10000 (max. 10000000)
 
