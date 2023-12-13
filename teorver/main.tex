@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} %кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel} %русификатор 
+\usepackage{mathtools} %библиотека матеши
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage{amsmath}
+\usepackage{graphicx} %библиотека для графики и картинок
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+
+\begin{document}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel={$x_i$},
+        ylabel={$n_i$},
+        xtick={56.5,61.5,66.5,71.5,76.5,81.5,86.5,91.5,96.5},
+        ytick={8,9,10,11,12,14,15},
+        xmin=55, xmax=100,
+        ymin=7, ymax=16,
+        grid=both,
+        width=10cm,
+        height=7cm,
+        legend pos=north west,
+        legend style={cells={anchor=west}},
+        legend entries={Полигон частот},
+    ]
+    
+    \addplot+[
+        mark=*,
+        sharp plot,
+        ] coordinates {
+        (56.5, 9)
+        (61.5, 10)
+        (66.5, 11)
+        (71.5, 14)
+        (76.5, 15)
+        (81.5, 10)
+        (86.5, 12)
+        (91.5, 11)
+        (96.5, 8)
+    };
+    
+    \end{axis}
+    \end{tikzpicture}
+
+
+
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel={$x_i$},
+            ylabel={$\frac{W_i}{h}$},
+            xtick=data,
+            symbolic x coords={{[54-59)},{[59-64)},{[64-69)},{[69-74)},{[74-79)},{[79-84)},{[84-89)},{[89-94)},{[94-99)},{[99-104]}},
+            ymin=0, ymax=0.04,
+            ytick={0.02,0.022,0.028,0.03,0.02,0.024,0.022,0.018,0.016},
+            grid=both,
+            width=14cm,
+            height=8cm,
+            bar width=20pt,
+            legend pos=north east,
+            ybar interval,
+            scaled y ticks=false,
+            tickwidth=0,
+            axis on top,
+            yticklabel style={/pgf/number format/.cd,fixed,precision=3},
+            legend pos=north west,
+            legend style={cells={anchor=west}},
+            legend entries={Гистограмма относительных частот},
+        ]
+
+        \addplot+[fill=blue] coordinates {
+                ({[54-59)}, 0.018)
+                ({[59-64)}, 0.02)
+                ({[64-69)}, 0.022)
+                ({[69-74)}, 0.028)
+                ({[74-79)}, 0.03)
+                ({[79-84)}, 0.02)
+                ({[84-89)}, 0.024)
+                ({[89-94)}, 0.022)
+                ({[94-99)}, 0.016)
+                ({[99-104]}, 0.01)
+            };
+        
+
+        
+        \end{axis}
+        \end{tikzpicture}
+
+        \begin{tikzpicture}
+            \begin{axis}[
+                legend pos=north west,
+                legend style={cells={anchor=west}},
+                legend entries={Эмпирическая функция распределения},
+                xlabel={x},
+                ylabel={$F^*(x)$},
+                width=12cm,
+                height=8cm,
+                grid=both,
+                ymin=0,
+                ymax=1,
+                xmin=54,
+                xmax=99,
+                % ytick={0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1},
+                ytick={0.09,0.19,0.3,0.44,0.59,0.69,0.81,0.92,1},
+                xtick={54,56.5,61.5,66.5,71.5,76.5,81.5,86.5,91.5,96.5,99},
+                extra x ticks={56.5,61.5,66.5,71.5,76.5,81.5,86.5,91.5,96.5},
+            ]
+            
+            \addplot+[smooth] coordinates {
+                (54, 0)
+                (56.5, 0.09)
+                (61.5, 0.19)
+                (66.5, 0.3)
+                (71.5, 0.44)
+                (76.5, 0.59)
+                (81.5, 0.69)
+                (86.5, 0.81)
+                (91.5, 0.92)
+                (96.5, 1)
+            };
+            
+            \end{axis}
+        \end{tikzpicture}
+
+\end{document}
