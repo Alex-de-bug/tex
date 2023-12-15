@@ -1,13 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1702588513 "/Users/alexalex/Desktop/tex/teorver/main.tex" "main.pdf" "main" 1702588514 0
-  "/Users/alexalex/Desktop/tex/teorver/main.tex" 1702588513 5250 f2bbcbf97c4efb8c227a9709f8dbe745 ""
+["pdflatex"] 1702499814 "/Users/alexalex/Desktop/tex/phys lab last/main.tex" "main.pdf" "main" 1702499815 0
+  "/Users/alexalex/Desktop/tex/phys lab last/main.tex" 1702499814 4757 04a332b3b9530c829666b3a9b7b3684e ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1683825100 3220 0e417eaf233b160335902e97259a6c77 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1136849721 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -164,8 +162,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683823977 4643411 5ced174c6d521e21dd58a10751c00482 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683824033 7886842 9318a877a941dc86aae3806e8adeccb7 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "main.aux" 1702588514 132 dbefece5cb2935baa713ec3017e95ed6 "pdflatex"
-  "main.tex" 1702588513 5250 f2bbcbf97c4efb8c227a9709f8dbe745 ""
+  "main.aux" 1702499815 647 f4b75c2c136a5556d154a835e324e1cf "pdflatex"
+  "main.tex" 1702499814 4757 04a332b3b9530c829666b3a9b7b3684e ""
   (generated)
   "main.aux"
   "main.log"

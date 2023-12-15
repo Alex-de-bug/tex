@@ -1,0 +1,153 @@
+\documentclass[landscape]{article}
+\usepackage[utf8]{inputenc} %кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel} %русификатор 
+\usepackage{mathtools} %библиотека матеши
+\usepackage[left=0cm,right=0.5cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage{amsmath}
+\usepackage{graphicx} %библиотека для графики и картинок
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{graphicx} % Для изменения размера графика
+
+\begin{document}
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}
+    \begin{axis}[
+        xlabel={$\varepsilon$ (рад/c$^2$)},
+        ylabel={$M$ (Н$\cdot$м)},
+        grid=both,
+        width=\textwidth, 
+        height=0.7\textheight,
+        xmax=14,
+        ymax=0.25,
+        mark=*,
+        only marks,
+        xtick={0,0.4,...,14}, 
+        ytick={0,0.01,...,0.25}, 
+    ]
+
+
+    \addplot+[
+        error bars/.cd,
+        x dir=both, x explicit,
+        y dir=both, y explicit,
+    ] 
+        coordinates {
+        (0.48363, 0.060113)   +- (0.09, 0.0007)
+        (1.32820, 0.109427)   +- (0.09, 0.0007)
+        (1.96525, 0.158622)   +- (0.09, 0.0007)
+        (2.88792, 0.207529)   +- (0.09, 0.0007)
+        (1.218103627, 0.0600097)   +- (0.09, 0.0007)
+        (2.386177717, 0.1091550)   +- (0.09, 0.0007)
+        (3.445184907, 0.1580692)   +- (0.09, 0.0007)
+        (5.040696876, 0.2064739)   +- (0.09, 0.0007)
+        (2.205338, 0.059870311)   +- (0.09, 0.0007)
+        (4.224232, 0.108681541)   +- (0.09, 0.0007)
+        (6.184133, 0.157044915)   +- (0.09, 0.0007)
+        (9.290377, 0.204389957)   +- (0.09, 0.0007)
+    };
+    % Аппроксимирующая линия (линейная)
+    \addplot[smooth] coordinates {
+        (0.48363, 0.060113)
+        (2.82792, 0.207529) 
+    };
+    % Аппроксимирующая линия (линейная)
+    \addplot[smooth] coordinates {
+        (1.218103627, 0.0600097)
+        (4.840696876, 0.2064739)
+    };
+    % Аппроксимирующая линия (линейная)
+    \addplot[smooth] coordinates {
+        (2.205338, 0.059870311)
+        (9.290377, 0.210389957)
+    };
+
+    \addplot+[
+        error bars/.cd,
+        x dir=both, x explicit,
+        y dir=both, y explicit
+    ] 
+        coordinates {
+        (0.964057, 0.060045)   +- (0.09, 0.0007)
+        (1.564429, 0.109367)   +- (0.09, 0.0007)
+        (2.724521, 0.158338)   +- (0.09, 0.0007)
+        (3.472116, 0.207243)   +- (0.09, 0.0007)
+        (1.565423755, 0.0599606)   +- (0.09, 0.0007)
+        (2.824003255, 0.1090422)   +- (0.09, 0.0007)
+        (4.850889122, 0.1575435)   +- (0.09, 0.0007)
+        (5.748639868, 0.2061267)   +- (0.09, 0.0007)
+        (2.8, 0.0597855)   +- (0.09, 0.0007)
+        (5.4, 0.1083626)   +- (0.09, 0.0007)
+        (9.0, 0.1559736)   +- (0.09, 0.0007)
+        (13.3, 0.2024037)  +- (0.09, 0.0007)
+    };
+    % Аппроксимирующая линия (линейная)
+    \addplot[smooth] coordinates {
+        (0.884057, 0.060045)
+        (3.492116, 0.207243)
+    };
+     % Аппроксимирующая линия (линейная)
+     \addplot[smooth] coordinates {
+        (1.565423755, 0.0599606)
+        (5.988639868, 0.2061267)
+    };
+    % Аппроксимирующая линия (линейная)
+    \addplot[smooth] coordinates {
+        (2.8, 0.0619606)
+        (13.3, 0.2074037)
+    };
+
+    \end{axis}
+    \end{tikzpicture}
+    \caption{График зависимости M от $\varepsilon$ для разных положений утяжелителей}
+    \label{fig:my_graph}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}
+    \begin{axis}[
+        xlabel={$R^2$},
+        ylabel={$I$},
+        grid=both,
+        width=0.8\textwidth,
+        height=0.5\textwidth,
+        xmax=0.02,
+        ymax=0.07,
+        legend pos=north west,
+        mark=*,
+        only marks,
+        xtick={0,0.005,...,0.02},
+        ytick={0,0.01,...,0.07}, 
+    ]
+    \addplot+[
+        only marks,
+        mark=*,
+        mark options={fill=white},
+    ] 
+        coordinates {
+        (0.002, 0.013)
+        (0.005, 0.020)
+        (0.007, 0.032)
+        (0.010, 0.039)
+        (0.012, 0.056)
+        (0.015, 0.056)
+    };
+    % Аппроксимирующая линия (линейная)
+    \addplot[smooth, blue] coordinates {
+        (0.002, 0.011)
+        (0.015, 0.060)
+    };
+    
+    \legend{$I(R2)$}
+    \end{axis}
+    \end{tikzpicture}
+    \caption{График зависимости $I(R^2)$}
+    \label{fig:I_R2_graph}
+\end{figure}
+\end{document}
+

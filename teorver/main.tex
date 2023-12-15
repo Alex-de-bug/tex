@@ -125,4 +125,50 @@
             \end{axis}
         \end{tikzpicture}
 
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel=$x$,
+                ylabel=$y$,
+                legend pos=outer north east,
+                xmin=0, xmax=1290, % установите необходимые пределы для x
+                ymin=0, ymax=1.7,   % установите необходимые пределы для y
+                grid=major,
+                width=10cm,
+                height=8cm
+            ]
+            
+            % Точки
+            \addplot[only marks, mark=*] coordinates {
+                (250, 0.2)
+                (250, 0.4)
+                (250, 0.6)
+
+                (450, 0.4)
+                (450, 0.6)
+                (450, 0.8)
+
+                (650, 0.8)
+                (650, 1.0)
+                (650, 1.2)
+
+                (850, 0.8)
+                (850, 1.0)
+                (850, 1.2)
+
+                (1050, 1)
+                (1050, 1.2)
+                (1050, 1.4)
+
+                (1250, 1.4)
+                (1250, 1.6)
+            };
+            
+            % Линия регрессии
+            \addplot[blue, domain=0:1260, samples=100] {0.00094*x + 0.270218};
+            \addlegendentry{Очень случайные точки}
+            \addlegendentry{Линия регрессии}
+            
+            \end{axis}
+            \end{tikzpicture}
+
 \end{document}
