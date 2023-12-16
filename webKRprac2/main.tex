@@ -275,6 +275,247 @@ textArea.value = '';}}</script></h:head>
 <h:inputTextarea id="inputTextArea" rows="5" cols="30" oninput="validateInput()" /></h:form></h:body>
     \end{lstlisting}
 \end{minipage}%
+\\
+
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Конфигурация faces-config, задающая managed bean с именем myBean, которым будет управлять сам программист}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+<faces-config version="2.2" ...> <managed-bean>
+<managed-bean-name>myBean</managed-bean-name>
+<managed-bean-class>MyBean</managed-bean-class>
+<managed-bean-scope>custom</managed-bean-scope>
+</managed-bean> </faces-config>
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Angular компонент, который позволяет поделиться чем-то в VK, Twitter, Facebook (API для соцсетей можно описать текстом)
+    API принимает логин и пароль, а также сообщение, которое будет опубликовано на личной странице после прохождения авторизации.}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+import { Component} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+@Component({ selector: 'my-app',
+template: <div class="form-group">
+<label>Login</label>
+<input class="form-control" name="username" [(ngModel)]="username" /> </div>
+<div class="form-group"><label>Password</label>
+<input class="form-control" name="password" [(ngModel)]="password" /></div>
+<div class="form-group"><label>Message</label>
+<input class="form-control" name="message" [(ngModel)]="message" /></div>
+<div class="form-group">
+<button class="btn btn-default" (click)="submit()">Send</button></div>})
+export class AppComponent {username: string="";
+password: string="";message: string="";
+http: HttpClient;
+submit(){const body = {login: username, password: password, message: message};
+this.http.post('link to API', body);}}
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Приложение на Angular, реализующее форму для заполнения бланка на отчисление по собственному желанию. Форма должна принимать на вход имя пользователя и дату, и формировать заполненный бланк заявления (на клиентской стороне)}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+@Component({selector: 'app',template: `<form>
+<input type="text" name="firstName" placeholder="Name" [(ngModel)]="firstName">
+<input type="text" name="lastName" placeholder="lastName" [(ngModel)]="lastName">
+<input type="date" name="lastName" [(ngModel)]="date"></form>
+<main><h1>PSJ</h1>
+<h2>{{ firstName }} {{ lastName }}, {{ date }}, PSJ</h2>
+</main>`})
+class AppComponent {firstName = "" lastName = ""
+date = "01-09-2021"}
+    \end{lstlisting}
+\end{minipage}%
+\\
+
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Написать на Angular интерфейс, который проверяет если ли в куки sessionid и если нет, отправляет пользователя на аутентификацию по логину и паролю}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+@Component({selector: 'app',
+template: `<form *ngIf="!hasCookie">
+<h1>auth</h1><input type="text" name="username" placeholder="name">
+<input type="password" name="password" placeholder="password">
+<input type="submit" value="sing in"></form>`})
+class AppComponent {get hasCookie(): boolean {
+return document.cookie.indexOf("jSessionid=") != -1;}}
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Компонент для React, формирующий строку с автодополнением. Массив значений для автодополнения должен получаться с сервера посредством запроса к REST API}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+function Autocomplete() {
+const [candidates, setCandidates] = useState([])
+async function updateList(e) {
+let res = await fetch("http://api.itmo.ru/stu
+dents/search?q=" + e.target.value);
+setCandidates(await res.json())} return <div>
+<input type="text" onChange={updateList}>
+<ul>{candidates.map((text, i) => <li key={i}>{text}</li>)}</ul></div>;}
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Реализовать бронь авиабилетов на jsf}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+@ManagedBean @SessionScoped @Setter @Getter
+public class Ticket {private int  id;     
+private int price;private String source;     
+private String dest;@ManagedProperty(value = "#{repoBean}")
+private TicketRepo repo;  
+private List<Ticket> available;
+@PostConstruct void init(){
+available = repo.getAvaible();}
+public void book(int id) {repo.book(id); 
+available =  repo.getAvailable()}}
+<h1>Book avia ticket></h1>
+<ui:repeat value="#{tickets.available}" var="ticket">
+<div class="ticket">
+#{ticket.source} - #{ticket.destination}
+Number: #{ticket.id} Cost: #{ticket.price} e.g.
+<h:commandButton action="#{tickets.book(ticket.id)}"
+ value="book"/></div></ui:repeat>
+    \end{lstlisting}
+\end{minipage}%
+\\
+
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{REST - контроллер на Spring Web MVC, предоставляющий CRUD-интерфейс к таблице со списком покемонов}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+@RestController class PokemonResource {
+@Autowired private PokemonRepository repository;
+@GetMapping("/pokemons") List<Pokemon> all() {
+return repository.findAll()}
+@GetMapping("/pokemons/{id}")
+Pokemon one(@PathVariable Long id) {
+return repository.findOne(id)}
+@PostMapping("/pokemons")
+Long createNew(@RequestBody Pokemon pokemon) {
+return repository.save(pokemon)}
+@DeleteMapping("/pokemons/{id}")
+void delete(@PathVariable Long id) {
+repository.delete(id)}}
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Написать на vue.js интерфейс для навигации по текстовому документу, представленному в виде большой строки, должны быть реализованы переходы на следующую и предыдущую страницу}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+<template>
+<div><p>{{ this.document.substring(this.start, this.start + this.shift) }}</p></div>
+<button @click="next">Next</button>
+<button @click="prev">Back</button>
+</template><script> export default {
+data :function() {return {start : 0, shift : 10, document : "lotofNumbers"}},
+methods :{next : function(){this.start += this.shift;}, prev : function(){
+this.start -= this.shift;}}}</script>
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{JSF страничка с данными из бина}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+@Named("myBean") @ManagedBean class MyBean {
+int value; public int getValue(){return value;}}
+<h:outputText value="#{myBean.value}"/>        
+    \end{lstlisting}
+\end{minipage}%
+\\
+
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Конфигурация, чтобы JSF обрабатывал все запросы приходящие с .xhtml и со всех URL, начинающихся с /faces/}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+<web-app><servlet>
+<servlet-name>Faces Servlet</servlet-name>
+<servlet-class>javax.faces.webapp.FacesServlet
+</servlet-class></servlet><servlet-mapping>
+<servlet-name>Faces Servlet</servlet-name>
+<url-pattern>*.xhtml</url-pattern></servlet-mapping>
+<servlet-mapping>
+<servlet-name>Faces Servlet</servlet-name> 
+<url-pattern>/faces/*</url-pattern>
+</servlet-mapping></web-app>
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Интерфейс на Angular, который выводит интерактивные часы с обновление каждую секунду}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+@Component({ selector:'my-app', 
+template: <div>{{time}}</div>})
+export class AppComponent{
+time: ""
+setInterval(()=>this.time = new Date(),1000)}
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Интерфейс реализации логин+пароль на React. На стороне сервера- Rest API}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+function App(props) {
+const [login, setLogin] = useState("")
+const [password, setPassword] = useState("")
+async function onSubmit() {
+let res = await fetch("api/login", {
+headers: {"Content-Type": "application/json"},
+body: JSON.stringify({login: login, password: password})})
+let token = await res.text();
+localStorage.setItem("token", token)}
+return (<form onSubmit={onSubmit}>
+<input type="text" placeholder="login" required value={login}
+onChange={e => setLogin(e.target.value)}/>
+<input type="password" placeholder="Pass" required value={password}
+onChange={e => setPassword(e.target.value)}/>
+<input type="submit" value="Sign in"/>
+</form>);}
+    \end{lstlisting}
+\end{minipage}%
+\\
+
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Интерфейс на Vue, реализующий простой телефонный набиратель (кнопки 0-9, *, \#, кнопка набрать номер и экран)}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+<template><div class="screen" v-text="display"></div>
+<div class="keypad"><button v-for="n in numbers" v-text="n"@click="typeN(n)"></button></div>
+<button @click="ring">Ring</button> </template>
+<script>export default {data() {return {
+display: '',numbers: [0-9, '*', '#']}},
+methods: {typeN(n) {this.display += n;},
+ring() {alert("Ringing" + this.display);}}}
+</script>
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Написать на JSF правило навигации в faces-config.xml со страницы page1.jsp на page2.jsp с использованием этой кнопки: <h:commandButton action="goToPage" value="Go to Page 2"/>}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+<navigation-rule>
+<from-view-id>/page1.jsp</from-view-id>
+<navigation-case>
+<from-outcome>goToPage</from-outcome>
+<to-view-id>/page2.jspl</to-view-id>
+<redirect/></navigation-case></navigation-rule>
+    \end{lstlisting}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Написать интерфейс для ввода данных банковской карты на React}
+    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
+export function App() {
+const [name, setName] = React.useState('');
+const [number, setNumber] = React.useState('');
+function handleSubmit(event) {
+event.preventDefault(); console.log('name:', name);
+console.log('number:', number);}
+return (<form onSubmit={handleSubmit}><div>
+<label>Name</label><input type="text" maxLength={5}
+value={name} onChange={(e)=>setName(e.target.value)}
+/></div><div><label>CVS Number</label>
+<input type="text" maxLength={5} value={number}
+onChange={(e) => setNumber(e.target.value)}/></div>
+<button type="submit">Submit</button></form>);}
+    \end{lstlisting}
+\end{minipage}%
 
 \end{document}
 
