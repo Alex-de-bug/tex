@@ -149,17 +149,20 @@ public int div(int a, int b) { return a / b; }}
     \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
 @ManagedBean @SessionScoped @Setter @Getter 
 public class PassportInputBean { 	
-private String series; private String number; 	
+private Long series; private Long number; 	
 private Date date; private String place; 	
 @ManagedProperty(value = "#{repoBean}") 
 private PassportRepo repo; 	
 public void storePassportData() { 		
 repo.store(series, number, date, place);}}
 <h:form>Enter series	
-<h:inputText type="text" value="#{passportInputBean.series}"
-required="true"/>Enter number	
-<h:inputText type="text" value="#{passportInputBean.number}"> 
-Enter date<h:inputText value="#{passportInputBean.date}">
+<h:inputText type="number" value="#{passportInputBean.series}"
+required="true"><f:validateLongRange minimum="0" maximum="9999"/>	
+</h:inputText>
+<h:inputText type="number" value="#{passportInputBean.number}"> 
+<f:validateLongRange minimum="0" maximum="999999" />
+</h:inputText>
+<h:inputText value="#{passportInputBean.date}">
 <f:convertDateTime pattern="yyyy-MM-dd"/> 	
 </h:inputText> Enter born place 	
 <h:inputText type="text" value="#{passportInputBean.place}">
@@ -186,7 +189,8 @@ public void setValue(int value) {this.value = value;}}
 @Named("serverTimer") @ApplicaitonScoped
 public class ServerTimer { private long start;
 public ServerTimer() {start = System.currentTimeMillis();}
-public long getTime() {return (System.currentTimeMillis() - start) / 60000;}}
+public double getTime() {long currentTime = System.currentTimeMillis();
+return Math.floor((currentTime - start) / 60000.0);}}
     \end{lstlisting}
 \end{minipage}%
 \\ 
@@ -240,17 +244,7 @@ public class MyBean{}
 
 \begin{minipage}[t]{0.3\textwidth}
     \textbf{Vue.js простейший чат бот, который на любое сообщение отвечает сам дурак}
-    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-<template> <input v-model="message_value" placeholder="message"/> 
-<button @click="send">send</button> 
-<li v-for="item in message_history" :key="item"> 
-{{item}}</li></template> 
-<script> export default { data() { return { 
-message_value: '', message_history: []}},methods: { 
-send(){this.message_history.push(this.message_value); 
-this.message_history.push("sam durak"); 
-this.message_value = "";}}}</script>
-    \end{lstlisting}
+"новый билет скорее всего"
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
@@ -267,12 +261,13 @@ double fToC(@RequestParam double f) {return (f - 32.0) / 1.8;}}
 \begin{minipage}[t]{0.3\textwidth}
     \textbf{Написать JSF страницу с многострочным полем, в которое можно вводить только строчные символы латиницы.}
     \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-<h:head> <script> function validateInput() {
+<h:head><script>function validateInput(event) {
 var textArea = document.getElementById('inputTextArea');
-var regex = /^[a-z\s]*$/; if (!regex.test(textArea.value)) {
-textArea.value = '';}}</script></h:head>
-<h:body><h:form>
-<h:inputTextarea id="inputTextArea" rows="5" cols="30" oninput="validateInput()" /></h:form></h:body>
+var regex = /^[a-z\s]*$/;
+if (!regex.test(textArea.value)) {event.preventDefault();}}
+</script></h:head><h:body><h:form>
+<h:inputTextarea id="inputTextArea" rows="5" cols="30" oninput="validateInput(event)"/>
+</h:form></h:body>
     \end{lstlisting}
 \end{minipage}%
 \\
@@ -358,16 +353,18 @@ setCandidates(await res.json())} return <div>
 \begin{minipage}[t]{0.3\textwidth}
     \textbf{Реализовать бронь авиабилетов на jsf}
     \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-@ManagedBean @SessionScoped @Setter @Getter
-public class Ticket {private int  id;     
-private int price;private String source;     
-private String dest;@ManagedProperty(value = "#{repoBean}")
-private TicketRepo repo;  
+@ManagedBean @SessionScoped @Getter @Setter
+public class TicketBean implements Serializable {
+@ManagedProperty(value = "#{repoBean}")
+private TicketRepo repo;
 private List<Ticket> available;
-@PostConstruct void init(){
-available = repo.getAvaible();}
-public void book(int id) {repo.book(id); 
-available =  repo.getAvailable()}}
+@PostConstruct public void init() {
+available = repo.getAvailable();}
+public void book(int id) { repo.book(id);
+available = repo.getAvailable();}}
+@Getter @Setter public class Ticket {
+private int id; private int price;
+private String source; private String dest;}
 <h1>Book avia ticket></h1>
 <ui:repeat value="#{tickets.available}" var="ticket">
 <div class="ticket">
@@ -400,16 +397,7 @@ repository.delete(id)}}
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
     \textbf{Написать на vue.js интерфейс для навигации по текстовому документу, представленному в виде большой строки, должны быть реализованы переходы на следующую и предыдущую страницу}
-    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-<template>
-<div><p>{{ this.document.substring(this.start, this.start + this.shift) }}</p></div>
-<button @click="next">Next</button>
-<button @click="prev">Back</button>
-</template><script> export default {
-data :function() {return {start : 0, shift : 10, document : "lotofNumbers"}},
-methods :{next : function(){this.start += this.shift;}, prev : function(){
-this.start -= this.shift;}}}</script>
-    \end{lstlisting}
+Рома опять трахнул натартари
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
@@ -474,16 +462,7 @@ onChange={e => setPassword(e.target.value)}/>
 
 \begin{minipage}[t]{0.3\textwidth}
     \textbf{Интерфейс на Vue, реализующий простой телефонный набиратель (кнопки 0-9, *, \#, кнопка набрать номер и экран)}
-    \begin{lstlisting}[frame=single, basicstyle=\tiny\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-<template><div class="screen" v-text="display"></div>
-<div class="keypad"><button v-for="n in numbers" v-text="n"@click="typeN(n)"></button></div>
-<button @click="ring">Ring</button> </template>
-<script>export default {data() {return {
-display: '',numbers: [0-9, '*', '#']}},
-methods: {typeN(n) {this.display += n;},
-ring() {alert("Ringing" + this.display);}}}
-</script>
-    \end{lstlisting}
+курим реализацию вуе
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
@@ -511,7 +490,7 @@ return (<form onSubmit={handleSubmit}><div>
 <label>Name</label><input type="text" maxLength={5}
 value={name} onChange={(e)=>setName(e.target.value)}
 /></div><div><label>CVS Number</label>
-<input type="text" maxLength={5} value={number}
+<input type="number" maxLength={8} value={number}
 onChange={(e) => setNumber(e.target.value)}/></div>
 <button type="submit">Submit</button></form>);}
     \end{lstlisting}
