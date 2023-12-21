@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  20 DEC 2023 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  21 DEC 2023 23:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1325,332 +1325,327 @@ Underfull \hbox (badness 1043) in paragraph at lines 435--435
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 452--452
+Underfull \hbox (badness 1303) in paragraph at lines 450--450
 []\T2A/cmr/m/n/5 1.  FacesServlet ^^V глав-ный сервлет, ко-то-рый за-
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 452--452
+Underfull \hbox (badness 2318) in paragraph at lines 450--450
 \T2A/cmr/m/n/5 ни-ма-ет-ся жиз-нен-ным цик-лом об-ра-бот-ки за-про-сов
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 452--452
-\T2A/cmr/m/n/5 MVVM и яв-ля-ет-ся компонентно-ориентированным.
- []
-
-
-Underfull \hbox (badness 5064) in paragraph at lines 476--476
-[]\T2A/cmr/m/n/5 1.  Клас-сы, ре-а-ли-зу-ю-щие ин-тер-фейс Converter.
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 Ис-поль-зу-ют-ся для пре-об-ра-зо-ва-ния дан-ных ком-по-
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 нен-та в за-дан-ный фор-мат (да-та, чис-ло и т. д.).
- []
-
-
-Underfull \hbox (badness 3364) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 Су-ще-ству-ют стан-дарт-ные кон-вер-те-ры для ос-нов-
- []
-
-
-Underfull \hbox (badness 5022) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 Мож-но со-зда-вать соб-ствен-ные кон-вер-те-ры. Что-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 бы за-ре-ги-стри-ро-вать свой кон-вер-тер, необ-хо-ди-
- []
-
-
-Underfull \hbox (badness 7704) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 мо про-пи-сать его в faces-config.xml ли-бо вос-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 поль-зо-вать-ся ан-но-та-ци-ей FacesConverter. На-
- []
-
-
-Underfull \hbox (badness 4378) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 зна-че-ние в JSF: ав-то-ма-ти-че-ское(на ос-но-ве ти-па
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 дан-ных) <h:inputText value="#{user.age}"/>
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 ; с по-мо-щью ат-ри-бу-та converter: <h:inputText
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 converter="#{javax.faces.DateTime}"/> ; с
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 по-мо-щью вло-жен-но-го те-га: <h:outputText
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 value="#{user.birthDay}ї <f:converter
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 converterId="#{javax.faces.DateTime}"/>
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 Че-рез мо-дель пред-став-ле-ние по-лу-ча-ет до-ступ к
- []
-
-
-Underfull \hbox (badness 7851) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 Су-ще-ству-ет ан-но-та-ция @ModelAttribute, ко-то-рая
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 поз-во-ля-ет за-дать в кон-трол-ле-ре ме-тод, за-пол-ня-
- []
-
-
-Underfull \hbox (badness 3333) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 ю-щий мо-дель ат-ри-бу-та-ми, ко-то-рые по-том бу-дут
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 476--476
-\T2A/cmr/m/n/5 в мо-дель. В об-щем слу-чае, ре-а-ли-зу-ет ин-тер-фейс
- []
-
-
-Underfull \hbox (badness 6001) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 шаб-ло-нов. Шаб-ло-ны по-хо-жи на обыч-ный html,
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 ний, ко-то-рая со-дер-жит встро-ен-ные пред-став-ле-ния
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 из дру-гих ком-по-нен-тов. Под-дер-жи-ва-ет-ся ин-тер-по-
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 по-нент на-пря-мую про-сит у кон-тей-не-ра пе-ре-дать
- []
-
-
-Underfull \hbox (badness 3849) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 ему за-ви-си-мость. Про-ти-во-по-став-ля-ет-ся DI, ко-то-
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 рый про-ис-хо-дит ав-то-ма-ти-че-ски. Не ре-ко-мен-ду-ет-ся
- []
-
-
-Underfull \hbox (badness 3168) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 к ис-поль-зо-ва-нию, но необ-хо-ди-мо ко-гда DI да-ет
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 же-ния (на-при-мер ClassPathXmlApplicationContext).
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 За-тем: context.getBean(^^Pname^^Q) ^^V вер-нет нуж-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 ный бин. Так-же мож-но ука-зать кон-крет-ный
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 класс или ин-тер-фейс: context.getBean(^^Pname^^Q,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 MyBean.class). ApplicationContext appContext =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 new ClassPathXmlApplicationContext(^^P/application-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
-\T2A/cmr/m/n/5 context.xml^^Q); MyBean bean =
- []
-
-
-Underfull \hbox (badness 2253) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 за-ре-ги-стри-ро-ван-ные в ком-по-нен-тах в де-ре-ве, ис-
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 каль-ным зна-че-ни-ем, хра-ня-щим-ся для ком-по-нен-та.
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 Ес-ли зна-че-ние ком-по-нен-та не про-хо-дит ва-ли-да-
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 цию, фор-ми-ру-ет-ся со-об-ще-ние об ошиб-ке, ко-то-рое
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 со-хра-ня-ет-ся в FacesContext. Update Model Values
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 Phase: Ре-а-ли-за-ция JavaServer Faces уста-нав-ли-ва-
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 ет со-от-вет-ству-ю-щие свой-ства объ-ек-та на сто-роне
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 сер-ве-ра для ло-каль-ных зна-че-ний ком-по-нен-тов. В
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 этот мо-мент, ес-ли при-ло-же-нию необ-хо-ди-мо пе-ре-
- []
-
-
-Underfull \hbox (badness 1748) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 на-пра-вить на дру-гой ре-сурс веб-приложения или
- []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 2.  1. Кон-фи-гу-ра-ция, на-пи-сан-ная на xml или в
- []
-
-
-Underfull \hbox (badness 1708) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 ви-де Java ко-да, по-па-да-ет в BeanDefinitionReader,
- []
-
-
-Underfull \hbox (badness 1377) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 ка-ким об-ра-зом сприн-гу со-зда-вать би-ны, как бин
- []
-
-
-Underfull \hbox (badness 5105) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 опре-де-лен, ка-кие за-ви-си-мо-сти в се-бе со-дер-жит,
- []
-
-
-Underfull \hbox (badness 1881) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 то он в кон-вей-е-ре бу-дет об-ра-бо-тан сра-зу, бу-дет
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 ес-ли мы его опре-де-ли-ли. 5. Уста-нав-ли-ва-ют-ся си-
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 стем-ные пе-ре-мен-ные, property для то-го, что-бы в
- []
-
-
-Underfull \hbox (badness 1092) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 даль-ней-шем пра-виль-но со-здать би-ны. Жиз-нен-ный
- []
-
-
-Underfull \hbox (badness 6252) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 кон-фи-гу-ра-ции би-на, внед-ре-ние за-ви-си-мо-стей; 3.
- []
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 Но-ти-фи-ка-ция aware-интерфейсов. Об-нов-ле-ние кон-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 ^^U ме-тод postProcessBeforeInitialization() ин-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 тер-фей-са BeanPostProcessor; 5. Ини-ци-а-ли-за-
- []
-
-
-Underfull \hbox (badness 7869) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 ция. Ме-тод би-на с ан-но-та-ци-ей @PostConstruct
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 из стан-дар-та; Ме-тод afterPropertiesSet() би-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 на; Init-метод. 6. Пост-инициализация ^^U ме-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 тод postProcessAfterInitialization() ин-тер-фей-са
- []
-
-
-Underfull \hbox (badness 1466) in paragraph at lines 546--546
-\T2A/cmr/m/n/5 та-ци-ей @PreDestroy; 2. Ме-тод с име-нем, ко-то-рое
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 571--571
+Underfull \hbox (badness 1342) in paragraph at lines 450--450
 \T2A/cmr/m/n/5 за-ни-ма-ю-щий-ся жиз-нен-ным цик-лом ком-по-нен-тов и
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 589--589
+Underfull \hbox (badness 5064) in paragraph at lines 474--474
+[]\T2A/cmr/m/n/5 1.  Клас-сы, ре-а-ли-зу-ю-щие ин-тер-фейс Converter.
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 Ис-поль-зу-ют-ся для пре-об-ра-зо-ва-ния дан-ных ком-по-
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 нен-та в за-дан-ный фор-мат (да-та, чис-ло и т. д.).
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 Су-ще-ству-ют стан-дарт-ные кон-вер-те-ры для ос-нов-
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 Мож-но со-зда-вать соб-ствен-ные кон-вер-те-ры. Что-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 бы за-ре-ги-стри-ро-вать свой кон-вер-тер, необ-хо-ди-
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 мо про-пи-сать его в faces-config.xml ли-бо вос-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 поль-зо-вать-ся ан-но-та-ци-ей FacesConverter. На-
+ []
+
+
+Underfull \hbox (badness 4378) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 зна-че-ние в JSF: ав-то-ма-ти-че-ское(на ос-но-ве ти-па
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 дан-ных) <h:inputText value="#{user.age}"/>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 ; с по-мо-щью ат-ри-бу-та converter: <h:inputText
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 converter="#{javax.faces.DateTime}"/> ; с
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 по-мо-щью вло-жен-но-го те-га: <h:outputText
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 value="#{user.birthDay}ї <f:converter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 converterId="#{javax.faces.DateTime}"/>
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 Че-рез мо-дель пред-став-ле-ние по-лу-ча-ет до-ступ к
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 Су-ще-ству-ет ан-но-та-ция @ModelAttribute, ко-то-рая
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 поз-во-ля-ет за-дать в кон-трол-ле-ре ме-тод, за-пол-ня-
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 ю-щий мо-дель ат-ри-бу-та-ми, ко-то-рые по-том бу-дут
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 474--474
+\T2A/cmr/m/n/5 в мо-дель. В об-щем слу-чае, ре-а-ли-зу-ет ин-тер-фейс
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 шаб-ло-нов. Шаб-ло-ны по-хо-жи на обыч-ный html,
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 ний, ко-то-рая со-дер-жит встро-ен-ные пред-став-ле-ния
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 из дру-гих ком-по-нен-тов. Под-дер-жи-ва-ет-ся ин-тер-по-
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 по-нент на-пря-мую про-сит у кон-тей-не-ра пе-ре-дать
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 ему за-ви-си-мость. Про-ти-во-по-став-ля-ет-ся DI, ко-то-
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 рый про-ис-хо-дит ав-то-ма-ти-че-ски. Не ре-ко-мен-ду-ет-ся
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 к ис-поль-зо-ва-нию, но необ-хо-ди-мо ко-гда DI да-ет
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 же-ния (на-при-мер ClassPathXmlApplicationContext).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 За-тем: context.getBean(^^Pname^^Q) ^^V вер-нет нуж-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 ный бин. Так-же мож-но ука-зать кон-крет-ный
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 класс или ин-тер-фейс: context.getBean(^^Pname^^Q,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 MyBean.class). ApplicationContext appContext =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 new ClassPathXmlApplicationContext(^^P/application-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+\T2A/cmr/m/n/5 context.xml^^Q); MyBean bean =
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 за-ре-ги-стри-ро-ван-ные в ком-по-нен-тах в де-ре-ве, ис-
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 каль-ным зна-че-ни-ем, хра-ня-щим-ся для ком-по-нен-та.
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 Ес-ли зна-че-ние ком-по-нен-та не про-хо-дит ва-ли-да-
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 цию, фор-ми-ру-ет-ся со-об-ще-ние об ошиб-ке, ко-то-рое
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 со-хра-ня-ет-ся в FacesContext. Update Model Values
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 Phase: Ре-а-ли-за-ция JavaServer Faces уста-нав-ли-ва-
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 ет со-от-вет-ству-ю-щие свой-ства объ-ек-та на сто-роне
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 сер-ве-ра для ло-каль-ных зна-че-ний ком-по-нен-тов. В
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 этот мо-мент, ес-ли при-ло-же-нию необ-хо-ди-мо пе-ре-
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 на-пра-вить на дру-гой ре-сурс веб-приложения или
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 2.  1. Кон-фи-гу-ра-ция, на-пи-сан-ная на xml или в
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 ви-де Java ко-да, по-па-да-ет в BeanDefinitionReader,
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 ка-ким об-ра-зом сприн-гу со-зда-вать би-ны, как бин
+ []
+
+
+Underfull \hbox (badness 5105) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 опре-де-лен, ка-кие за-ви-си-мо-сти в се-бе со-дер-жит,
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 то он в кон-вей-е-ре бу-дет об-ра-бо-тан сра-зу, бу-дет
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 ес-ли мы его опре-де-ли-ли. 5. Уста-нав-ли-ва-ют-ся си-
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 стем-ные пе-ре-мен-ные, property для то-го, что-бы в
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 даль-ней-шем пра-виль-но со-здать би-ны. Жиз-нен-ный
+ []
+
+
+Underfull \hbox (badness 6252) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 кон-фи-гу-ра-ции би-на, внед-ре-ние за-ви-си-мо-стей; 3.
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 Но-ти-фи-ка-ция aware-интерфейсов. Об-нов-ле-ние кон-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 ^^U ме-тод postProcessBeforeInitialization() ин-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 тер-фей-са BeanPostProcessor; 5. Ини-ци-а-ли-за-
+ []
+
+
+Underfull \hbox (badness 7869) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 ция. Ме-тод би-на с ан-но-та-ци-ей @PostConstruct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 из стан-дар-та; Ме-тод afterPropertiesSet() би-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 на; Init-метод. 6. Пост-инициализация ^^U ме-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 тод postProcessAfterInitialization() ин-тер-фей-са
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 544--544
+\T2A/cmr/m/n/5 та-ци-ей @PreDestroy; 2. Ме-тод с име-нем, ко-то-рое
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 586--586
 []\T2A/cmr/m/n/5 1.  Stereotype ^^V ан-но-та-ция, вклю-ча-ю-щая в се-бя
  []
 
@@ -1661,20 +1656,20 @@ Underfull \hbox (badness 1270) in paragraph at lines 589--589
 Package caption Warning: Unused \captionsetup[sub] on input line 19.
 See the caption package documentation for explanation.
 
-[4] [5] (./main.aux) ) 
+[4] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  28298 strings out of 476047
  692224 string characters out of 5790247
- 1970248 words of memory out of 5000000
+ 1966248 words of memory out of 5000000
  48303 multiletter control sequences out of 15000+600000
  517216 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,5n,103p,965b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (5 pages, 185164 bytes).
+Output written on main.pdf (4 pages, 182181 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
