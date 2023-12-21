@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  21 DEC 2023 22:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  22 DEC 2023 01:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -821,80 +821,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--244
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--274
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+[]\T2A/cmr/bx/n/5 Написать на JSF пра-ви-ло на-ви-га-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+\T2A/cmr/bx/n/5 ции в faces-config.xml со стра-ни-цы
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+\T2A/cmr/bx/n/5 page1.jsp на page2.jsp с ис-поль-зо-ва-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+\T2A/cmr/bx/n/5 ни-ем этой кноп-ки: <h:commandButton
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--281
 
  []
 
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-Underfull \hbox (badness 1242) in paragraph at lines 288--289
+Underfull \hbox (badness 1242) in paragraph at lines 295--296
 []\T2A/cmr/bx/n/5 Angular ком-по-нент, ко-то-рый поз-во-ля-ет по-де-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--325
+Underfull \hbox (badness 10000) in paragraph at lines 282--332
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--378
+Underfull \hbox (badness 10000) in paragraph at lines 333--385
 
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 380--381
+Underfull \hbox (badness 2941) in paragraph at lines 387--388
 \T2A/cmr/bx/n/5 став-ля-ю-щий CRUD-интерфейс к таб-ли-це со
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--412
+Underfull \hbox (badness 10000) in paragraph at lines 386--433
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 413--462
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
-[]\T2A/cmr/bx/n/5 Написать на JSF пра-ви-ло на-ви-га-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
-\T2A/cmr/bx/n/5 ции в faces-config.xml со стра-ни-цы
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
-\T2A/cmr/bx/n/5 page1.jsp на page2.jsp с ис-поль-зо-ва-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
-\T2A/cmr/bx/n/5 ни-ем этой кноп-ки: <h:commandButton
  []
 
 
 Package caption Warning: Unused \captionsetup[sub] on input line 19.
 See the caption package documentation for explanation.
 
-[2] [3] (./main.aux) ) 
+[2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 30309 strings out of 476047
- 720664 string characters out of 5790247
- 2375248 words of memory out of 5000000
- 50294 multiletter control sequences out of 15000+600000
+ 30308 strings out of 476047
+ 720646 string characters out of 5790247
+ 2381248 words of memory out of 5000000
+ 50293 multiletter control sequences out of 15000+600000
  517526 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,7n,103p,758b,1202s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on main.pdf (3 pages, 174532 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
+Output written on main.pdf (2 pages, 144784 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
