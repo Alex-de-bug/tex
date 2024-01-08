@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  8 JAN 2024 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  9 JAN 2024 00:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -731,11 +731,11 @@ LaTeX Info: Redefining \th on input line 38.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 766.51724pt, 0.0pt)
+* v-part:(T,H,B)=(28.45274pt, 732.37402pt, 34.14322pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=557.38951pt
-* \textheight=766.51724pt
+* \textheight=732.37402pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
 * \topmargin=-80.81725pt
@@ -798,54 +798,54 @@ File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-Overfull \hbox (19.33968pt too wide) in paragraph at lines 156--157
+Overfull \hbox (19.33968pt too wide) in paragraph at lines 158--159
 \T2A/cmr/bx/n/10 3. Ќа-пи-сать кон-фи-гу-ра-цию Application Context без Spring Boot, что-бы он вы-пол-н€л по-иск би-нов в org.itmo.web,
  []
 
 [2] [3]
-Overfull \hbox (8.97662pt too wide) in paragraph at lines 259--259
+Overfull \hbox (8.97662pt too wide) in paragraph at lines 287--287
 \T2A/cmr/m/n/10 (@ManagedBean(name = "myBean") @RequestScoped), ли-бо че-рез faces-config.xml: <managed-bean-name>myBean</managed-
  []
 
 
-Overfull \hbox (7.3159pt too wide) in paragraph at lines 259--259
+Overfull \hbox (7.3159pt too wide) in paragraph at lines 287--287
 \T2A/cmr/m/n/10 bean-scope>. NoneScoped - кон-текст не опре-де-лЉн, жиз-нен-ным цик-лом управ-л€-ют дру-гие би-ны; по умол-ча-нию RequestScoped
  []
 
 [4] [5]
-Overfull \hbox (3.24638pt too wide) in paragraph at lines 382--383
+Overfull \hbox (3.24638pt too wide) in paragraph at lines 410--411
 \T2A/cmr/bx/n/10 3. Ќа-пи-сать Java класс с ме-то-дом main, ини-ци-а-ли-зи-ру-ю-щий и кон-фи-гу-ри-ру-ю-щий Spring ApplicationContext.
  []
 
-[6] [7] [8] [9]
-Overfull \hbox (59.12883pt too wide) in paragraph at lines 641--641
+[6] [7] [8] [9] [10] [11] [12] [13] [14]
+Overfull \hbox (59.12883pt too wide) in paragraph at lines 917--917
 \T2A/cmr/m/n/10 <h:inputText converter= "#{javax.faces.DateTime}"/>; с по-мо-щью вло-жен-но-го те-га <f:converter converterId="#{javax.faces.DateTime}".
  []
 
-[10] [11] [12]
-Overfull \hbox (19.45296pt too wide) in paragraph at lines 783--784
+[15] [16] [17]
+Overfull \hbox (19.45296pt too wide) in paragraph at lines 1059--1060
 \T2A/cmr/m/n/10 HTML эле-мен-ты (та-кие как div, span, h1, input) так и ка-стом-ные React ком-по-нен-ты. JSX код: <div className=^^Qfoo^^Q>text</div>
  []
 
-[13]
+[18]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 19.
 See the caption package documentation for explanation.
 
-[14] (./main.aux) ) 
+[19] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  30327 strings out of 476047
  720950 string characters out of 5790247
- 1959248 words of memory out of 5000000
+ 1941248 words of memory out of 5000000
  50311 multiletter control sequences out of 15000+600000
  518340 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,6n,103p,835b,1636s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (14 pages, 229420 bytes).
+Output written on main.pdf (19 pages, 247080 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

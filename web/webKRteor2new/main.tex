@@ -3,7 +3,7 @@
 \usepackage[T2A]{fontenc}
 \usepackage[english,russian]{babel} %русификатор 
 \usepackage{mathtools} %библиотека матеши
-\usepackage[left=1cm,right=1cm,top=1cm,bottom=0cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=1.2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
 \usepackage{amsmath}
 \usepackage{graphicx} %библиотека для графики и картинок
 \graphicspath{}
@@ -65,23 +65,24 @@
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
-                                http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-            version="4.0">
+<web-app xmlns:xsi="url"
+    xmlns="url"
+        xmlns:web="url"
+    xsi:schemaLocation="url"
+    id="WebApp_ID" version="3.0">
+    <display-name>MVC</display-name>
     <servlet>
-        <servlet-name>dispatcher</servlet-name>
+        <servlet-name>SpringController</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>/WEB-INF/applicationContext.xml</param-value>
+            <param-value>/WEB-INF/spring-mvc.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>dispatcher</servlet-name>
-        <url-pattern>/</url-pattern>
+        <servlet-name>SpringController</servlet-name>
+        <url-pattern>*.htm</url-pattern>
     </servlet-mapping>
 </web-app>
 \end{lstlisting}
@@ -108,28 +109,29 @@ Stub - Заглушка, Skeleton - каркас. Server Stub - имплемен
     После обработки данных из модели, представление формирует ответ пользователю в нужном формате, будь то HTML-страница, JSON-объект или другой тип данных.
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-const Carousel = () => {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const images = [
-    '/images/image1.jpg'...
-    ];
-    const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1);};
-    const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1);};
+const Carousel({ images }) {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+    const handlePrevious = () => {
+        setCurrentIndex((prevIndex) => prevIndex - 1 + images.length);
+    };
     return (
     <div>
-        <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
-        <div> <button onClick={prevImage}>back</button>
-        <button onClick={nextImage}>next</button> </div>
-    </div>);};
-    
+        <button onClick={handlePrevious}>back</button>
+        <button onClick={handleNext}>next</button>
+        <img src={images[currentIndex]} alt="Image" />
+    </div>
+    );
+}
+export default Carousel;
 \end{lstlisting}
 
 % 3
-\bil{Технология RMI. Использование RMI в Java EE}{Управление состоянием в React. Redux}{Написать конфигурацию Application Context  без Spring  Boot, чтобы он выполнял поиск бинов в  org.itmo.web, при этом исключая бины, которые реализуют с класс RubezhkaPassService}{
+\bil{Технология RMI. Использование RMI в Java EE}
+{Управление состоянием в React. Redux}
+{Написать конфигурацию Application Context  без Spring  Boot, чтобы он выполнял поиск бинов в  org.itmo.web, при этом исключая бины, которые реализуют с класс RubezhkaPassService}{
     Система RMI позволяет объекту, запущенному на одной виртуальной машине Java, вызывать методы объекта, 
     запущенного на другой виртуальной машине Java. Работает поверх TCP. В общем случае, объекты передаются 
     по значению, передаваемые объекты должны быть Serializable. RMI основана на более ранней технологии 
@@ -158,19 +160,12 @@ const Carousel = () => {
 @Configuration
 @ComponentScan(basePackages = "org.itmo.web", excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = RubezhkaPassService.class))
 public class AppConfig {
-    @Bean
-    public SomeBean someBean() {
-        return new SomeBean("Hello from SomeBean!");
-    }
-}
-public class Main {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.register(AppConfig.class);
-        context.refresh();
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        // using
+        context.close();
     }
 }
-    
 \end{lstlisting}
 
 % 4
@@ -199,38 +194,71 @@ public class Main {
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
 @Component({
-  selector: 'app-login',
-  template: '
-    <form (ngSubmit)="login()">
-      <input type="text" placeholder="login" [(ngModel)]="username">
-      <input type="password" placeholder="pass" [(ngModel)]="password">
-      <button type="submit">log</button>
+    selector: 'app-login',
+    templateUrl: '
+    <form (ngSubmit)="onSubmit()" >
+        <input type="text" v-model="username">
+        <input type="password" v-model="password">
+        <button type="submit">Login</button>
     </form>'
 })
 export class LoginComponent {
-  username: string = '';
-  password: string = '';
-  constructor() {}
-  login(): void {
-    // request on server for auth user
-  }
+    username: string;
+    password: string;
+    constructor(private authService: AuthService) { }
+    onSubmit() {
+        this.authService.login(this.username, this.password);
+    }
 }
-@Component({
-  selector: 'app-root',
-  template: '<router-outlet></router-outlet>'
+
+@Injectable({
+  providedIn: 'root'
 })
-export class AppComponent implements OnInit {
-  constructor(private router: Router) {}
-  ngOnInit(): void {
-    if (!document.cookie.split(';').some(cookie => cookie.trim().startsWith('jsessionid='))) {
-      this.router.navigate(['/login']);
+export class AuthService {
+  constructor(private router: Router) { }
+
+  login(username: string, password: string) {
+    if (!Cookies.get('jsessionid')) {
+      //logic
+      Cookies.set('jsessionid', 'your-session-id');
+      this.router.navigate(['/home']);
+    } else {
+      this.router.navigate(['/home']);
     }
   }
 }
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthGuard implements CanActivate {
+  constructor(private authService: AuthService) { }
+  canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): Observable<boolean> {
+    return this.authService.isAuthenticated();
+  }
+}
+
+const routes: Routes = [
+  { path: 'home', canActivate: [AuthGuard] },
+  { path: 'login', component: LoginComponent },
+  { path: '**', redirectTo: 'login' }
+];
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+  providers: [AuthGuard],
+  bootstrap: AppComponent
+})
+export class AppRoutingModule { }
 \end{lstlisting}
 
 % 5
-\bil{Область видимости управляемых бинов. Способы конфигурации управляемых бинов}{Принципиальные отличия подходов, реализуемых Spring и Java/Jakarta EE}{Компонент для React, формирующий строку с автодополнением. Массив значений для автодополнения должен получаться с сервера посредством запроса к REST API}{
+\bil{Область видимости управляемых бинов. Способы конфигурации управляемых бинов}
+{Принципиальные отличия подходов, реализуемых Spring и Java/Jakarta EE}
+{Компонент для React, формирующий строку с автодополнением. Массив значений для автодополнения должен получаться с сервера посредством запроса к REST API}{
     Контекст определяет, к чему будет привязан бин и его время жизни. 
     Конфигурировать можно через аннотации (@ManagedBean(name = "myBean") @RequestScoped), либо через faces-config.xml: 
     <managed-bean-name>myBean</managed-bean-name>
@@ -383,11 +411,9 @@ export default Forum;
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
     public class SprCInit {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.scan("org.itmo.web");
-        context.refresh();
-        SomeBean someBean = context.getBean(SomeBean.class);
-        someBean.doSomething();
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("org.itmo.web");
+        MyBean myBean = context.getBean(MyBean.class);
+        // using bean
         context.close();
     }
 }
@@ -460,7 +486,40 @@ export class PassComponent {
     Хуки - функции, которые позволяют использовать состояние и другие возможности React без создания класса. useState и useEffect являются наиболее распространенными хуками.
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-1234
+<html lang="en" xmlns:th="http://thymeleaf.com">
+<body>        
+    <form th:action="@{/submit}" th:object="${supportForm}" method="post">
+        <div>
+            <select id="reason" name="reason" th:field="*{reason}">
+                <option value="pivo">OutOfPivoException</option>
+                <option value="general">Other</option>
+            </select>
+            <input type="email" id="email" name="email" th:field="*{email}">
+            <textarea id="issue" name="issue" th:field="*{issue}"></textarea>
+            <button type="submit">send</button>
+        </div>
+    </form>
+</body>
+</html>
+
+@Controller
+public class SupportController {
+    @GetMapping("/support")
+    public String showSupportForm(Model model) {
+        model.addAttribute("supportForm", new SupportForm());
+        return "support-form";
+    }
+    @PostMapping("/submit")
+    public String submitSupportForm(SupportForm supportForm) {
+        return "thank-you";
+    }
+}
+@Lombok
+public class SupportForm {
+    private String reason;
+    private String email;
+    private String issue;
+}
 \end{lstlisting}
 
 % 10
@@ -483,7 +542,55 @@ export class PassComponent {
     @Qualifier - позволяет определить пользовательские аннотации для уточнения, какой именно бин должен быть инжектирован, если имеется несколько кандидатов.
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-123
+const appRoutes: Routes = [
+    { path: 'home', component: HomeComponent },
+    { path: 'news', component: NewsComponent },
+    { path: '', redirectTo: '/home', pathMatch: 'full' }];
+    @NgModule({
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        NewsComponent
+    ],
+    imports: [
+        BrowserModule,
+        RouterModule.forRoot(appRoutes)
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+    })
+export class AppModule { }
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+export class HomeComponent implements OnInit {
+  constructor() { }
+  ngOnInit(): void {
+  }
+}
+
+@Component({
+  selector: 'app-news',
+  templateUrl: './news.component.html',
+  styleUrls: ['./news.component.css']
+})
+export class NewsComponent implements OnInit {
+  constructor() { }
+  ngOnInit(): void {
+  }
+}
+
+app.component.html:    
+<nav>
+    <ul>
+        <li><a routerLink="/home">General</a></li>
+        <li><a routerLink="/news">News</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
 \end{lstlisting}
 
 % 11
@@ -506,7 +613,38 @@ export class PassComponent {
     @Qualifier используется когда надо конкретизировать какой именно бин внедрить и это и является решением ситуации неоднозначных зависимостей. В бины внедряется не оригинальный класс бина-зависимости, а класс-прокси, который создается на лету самим контейнером и позволяет реализовывать перехватчики.
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-123
+@Component({
+    selector: 'app-input-form',
+    templateUrl: '
+    <div>
+        <input type="text" id="name" [(ngModel)]="userName" />
+        <input type="date" id="date" [(ngModel)]="date" />
+        <button (click)="generatePSG()">ok</button>
+    </div>'
+})
+export class InputFormComponent {
+    userName: string = '';
+    date: string = '';
+    generatedPSG: boolean = false;
+    generatePSG() {
+    const psg = new PSG(this.userName, this.date);
+    this.generatedPSG = true;
+    }
+}
+
+@Component({
+    selector: 'app-psg-blank',
+    templateUrl: '
+    <div *ngIf="generatedPSG">
+    <h2>PSG</h2>
+        <p>{{ userName }}</p>
+        <p>{{ date }}</p>
+    </div>'
+})
+export class PSGBlankComponent {
+}
+        
+    
 \end{lstlisting}
 
 % 12
@@ -533,7 +671,25 @@ Spring Boot оснащен встроенным контейнером серв�
 Стартеры - это набор удобных дескрипторов зависимостей, которые вы можете включить в свое приложение. Вы получаете универсальный набор для всех необходимых вам Spring и связанных с ними технологий без необходимости искать примеры кода и копировать и вставлять множество дескрипторов зависимостей.
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-123
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="url"
+            xmlns:xsi="url"
+            xsi:schemaLocation="url"
+            version="4.0">
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+</web-app>
+    
 \end{lstlisting}
 
 % 13
@@ -565,7 +721,55 @@ Model: Managed beans. Вместо них можно использовать CD
 Interceptors – классы, реагирующие на определенные события ЖЦ бинов, например @PostConstruct, @PreDestroy, @AroundInvoke и т.д.
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-123
+
+const UserTable = ({ users }) => {
+    return (
+    <table>
+        <thead>
+        <tr>
+            <th>Screen Name</th>
+            <th>Full Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        {users.map((user, index) => (
+            <tr>
+                <td>{user.screenName}</td>
+                <td>{user.fullName}</td>
+            </tr>
+        ))}
+        </tbody>
+    </table>
+    );
+};
+
+const UserListPage = () => {
+    const initialUsers = [
+    { screenName: 'user1', fullName: 'leo' },
+    // ...
+    ];
+    const [users, setUsers] = useState(initialUsers);
+    const [searchTerm, setSearchTerm] = useState('');
+    const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+    };
+    const filteredUsers = users.filter((user) =>
+    user.fullName.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    return (
+    <div>
+        <input
+        type="text"
+        placeholder="Search by Full Name"
+        value={searchTerm}
+        onChange={handleSearch}
+        />
+        <UserTable users={filteredUsers} />
+    </div>
+    );
+};
+export default UserListPage;
+    
 \end{lstlisting}
 
 % 14
@@ -583,7 +787,40 @@ Interceptors – классы, реагирующие на определенн�
     Третья фаза - после конструирования объекта с обработанными зависимостями подразумевается добавление срезов (аспектов). Аспекты - вкрапления, позволяющие изменить поведение так же как данные при настройке бина. Добавить поведение до после вызова оригинала.
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-123
+<html xmlns="url"
+        xmlns:h="html"
+        xmlns:f="core">
+<h:head>
+    <h:outputScript library="js" name="jquery.min.js" target="head" />
+    <script>
+        function loadMoreNumbers() {
+            var lastNumber = document.getElementById('lastNumber').value;
+            $.ajax({
+                type: 'GET',
+                url: 'loadNumbers.xhtml',
+                data: {
+                    lastNumber: lastNumber
+                },
+                success: function (data) {
+                    $('#numberList').append(data);
+                }
+            });
+        }
+    </script>
+</h:head>
+<h:body>
+    <ul id="numberList">
+        <ui:repeat value="#{numberBean.firstTenPrimeNumbers}" var="number">
+            <li>#{number}</li>
+        </ui:repeat>
+    </ul>
+    <h:form>
+        <input type="hidden" id="lastNumber" value="#{numberBean.lastNumber}" />
+        <h:commandButton value="load" onclick="loadMoreNumbers(); return false;" />
+    </h:form>
+</h:body>
+</html>
+    
 \end{lstlisting}
 
 % 15
@@ -614,7 +851,46 @@ Interceptors – классы, реагирующие на определенн�
     Хук useContext() позволяет извлекать значения из контекста в любом компоненте, обернутом в провайдер (provider).
 }
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily, breaklines=true, breakatwhitespace=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}]
-123
+<!DOCTYPE html>
+<html xmlns="url"
+        xmlns:h="html"
+        xmlns:f="core"
+        xmlns:ui="facelets">
+<h:head>
+    <h:outputScript library="javax.faces" name="jsf.js" />
+</h:head>
+<h:body> 
+    <h:form>
+        <h:dataTable value="#{studentBean.students}" var="student">
+            <h:column>
+                #{student.name}
+            </h:column>
+            <h:column>
+                <h:commandButton value="Clear" action="#{studentBean.dismissStudent(student)}">
+                    <f:ajax render="@form" />
+                </h:commandButton>
+            </h:column>
+        </h:dataTable>
+    </h:form>
+</h:body>
+</html>
+
+@Named
+@SessionScoped
+public class StudentBean implements Serializable {
+    private List<Student> students;
+    public StudentBean() {
+        students = new ArrayList<>();
+        students.add(new Student("user"));
+    }
+    public List<Student> getStudents() {
+        return students;
+    }
+    public void dismissStudent(Student student) {
+        students.remove(student);
+    }
+}
+    
 \end{lstlisting}
 
 % 16
