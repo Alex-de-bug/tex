@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  8 JAN 2024 03:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  8 JAN 2024 18:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -818,44 +818,34 @@ Overfull \hbox (3.24638pt too wide) in paragraph at lines 382--383
  []
 
 [6] [7] [8] [9]
-Overfull \hbox (80.42807pt too wide) in paragraph at lines 615--615
-\T2A/cmr/m/n/10 ссыл-ки на кон-крет-ные пред-став-ле-ни€ за-ни-ма-ет-с€ спе-ци-аль-ный класс, ре-а-ли-зу-ю-щий ин-тер-фейс org.springframework.web.servlet.ViewResolver.
+Overfull \hbox (59.12883pt too wide) in paragraph at lines 641--641
+\T2A/cmr/m/n/10 <h:inputText converter= "#{javax.faces.DateTime}"/>; с по-мо-щью вло-жен-но-го те-га <f:converter converterId="#{javax.faces.DateTime}".
  []
 
-
-Overfull \hbox (25.35597pt too wide) in paragraph at lines 615--615
-\T2A/cmr/m/n/10 ¬ од-ном при-ло-же-нии мож-но ис-поль-зо-вать несколь-ко ViewResolver'ов <bean id="viewResolver"class="o.s.w.s.v.UrlBasedViewReso
+[10] [11] [12]
+Overfull \hbox (19.45296pt too wide) in paragraph at lines 783--784
+\T2A/cmr/m/n/10 HTML эле-мен-ты (та-кие как div, span, h1, input) так и ка-стом-ные React ком-по-нен-ты. JSX код: <div className=^^Qfoo^^Q>text</div>
  []
 
-
-Overfull \hbox (41.80414pt too wide) in paragraph at lines 641--641
-\T2A/cmr/m/n/10 свой-ству managed bean объ-ек-та. (@FacesConverter("URLConverter"))  он-вер-те-ры ре-а-ли-зу-ют ин-тер-фейс javax.faces.convert.Converter
- []
-
-
-Overfull \hbox (103.39912pt too wide) in paragraph at lines 641--641
-\T2A/cmr/m/n/10 те-ров: ав-то-ма-ти-че-ское <h:inputText value="#{user.age}"/>; с по-мо-щью ат-ри-бу-та converter <h:inputText converter="#{javax.faces.DateTime}"/>;
- []
-
-[10]
+[13]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 19.
 See the caption package documentation for explanation.
 
-[11] (./main.aux) ) 
+[14] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 30326 strings out of 476047
- 720935 string characters out of 5790247
+ 30327 strings out of 476047
+ 720950 string characters out of 5790247
  1959248 words of memory out of 5000000
- 50310 multiletter control sequences out of 15000+600000
+ 50311 multiletter control sequences out of 15000+600000
  518340 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,6n,103p,835b,1636s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (11 pages, 211926 bytes).
+Output written on main.pdf (14 pages, 229420 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
