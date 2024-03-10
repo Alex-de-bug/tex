@@ -10,42 +10,49 @@
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \usepackage{subcaption}
 \usepackage{pgfplots}
+\usepackage{tikz}
+
 
 \begin{document}
-% НАЧАЛО ТИТУЛЬНОГО ЛИСТА
-\begin{center}
-    \Large
-    Федеральное государственное автономное \\
-    образовательное учреждение высшего образования \\ 
-    «Научно-образовательная корпорация ИТМО»\\
-    \vspace{0.5cm}
-    \large
-    Факультет программной инженерии и компьютерной техники \\
-    Направление подготовки 09.03.04 Программная инженерия \\
-    \vspace{1cm}
-    \Large
-    \textbf{Отчёт по лабораторной работе №3} \\
-    По дисциплине «Базы данных» (второй семестр)\\
-    \large
-    \vspace{8cm}
 
-    \begin{minipage}{.33\textwidth}
-    \end{minipage}
-    \hfill
-    \begin{minipage}{.4\textwidth}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel={Интервалы},
+        ylabel={Плотность вероятности},
+        ymin=0, ymax=1.5,
+        xmin=4.3, xmax=5.7,
+        ytick={0.10, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4},
+        xticklabel style={
+            /pgf/number format/fixed,
+            /pgf/number format/precision=5
+        },
+        scaled x ticks=false,
+    ]
     
-        \textbf{Студент}: \vspace{.1cm} \\
-        \ Дениченко Александр P3112\\
-        \textbf{Практик}:  \\
-        \ Лисицина В.В
-    \end{minipage}
-    \vfill
-Санкт-Петербург\\ 2023 г.
-\end{center}
+    % Добавляем столбцы гистограммы
+    \addplot+[ybar interval, mark=no] plot coordinates {
+        (4.3, 0.07) (4.49, 0.07) % Интервал от 4.30 до 4.49
+        (4.5, 0.29) (4.69, 0.29) % Интервал от 4.50 до 4.69
+        (4.7, 0.78) (4.89, 0.78) % Интервал от 4.70 до 4.89
+        (4.9, 1.3) (5.09, 1.3)   % Интервал от 4.90 до 5.09
+        (5.1, 1.33) (5.29, 1.33) % Интервал от 5.10 до 5.29
+        (5.3, 0.84) (5.49, 0.84) % Интервал от 5.30 до 5.49
+        (5.5, 0.33) (5.69, 0.33) % Интервал от 5.50 до 5.69
+    };
+    
+    % Добавляем кривую плотности вероятности
+    \addplot [smooth, thick, red] coordinates {
+        (4.395, 0.07)
+        (4.595, 0.29)
+        (4.795, 0.78)
+        (4.995, 1.3)
+        (5.195, 1.33)
+        (5.395, 0.84)
+        (5.595, 0.33)
+    };
+    
+    \end{axis}
+    \end{tikzpicture}
 
-% КОНЕЦ ТИТУЛЬНОГО ЛИСТА 
-\newpage
 
-\section{First proj}
-\includegraphics[width=.9\textwidth]{123}
 \end{document}

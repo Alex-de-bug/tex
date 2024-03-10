@@ -1,0 +1,116 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} %кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel} %русификатор 
+\usepackage{mathtools} %библиотека матеши
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage{amsmath}
+\usepackage{graphicx} %библиотека для графики и картинок
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.6, decoration={
+    markings,
+    mark=at position 0.5 with {\arrow{>}} % Отмечает направление стрелкой в середине пути
+  }]
+    % Рисуем сетку
+    \draw[very thin,color=gray] (0,0) grid (28,19);
+    
+    % Рисуем оси
+    \draw[->] (0,0) -- (29,0) node[right] {$x$};
+    \draw[->] (0,0) -- (0,20) node[above] {$y$};
+    
+    % Отмечаем деления на осях
+    \foreach \x in {0,1,...,28}
+        \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+    \foreach \y in {0,1,...,19}
+        \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+    
+    % Соединяем точки
+    \draw[thick] (11,10) -- (14,13) -- (19,13) -- (16,10) -- (19,7) -- (14,7) -- cycle;
+    
+    % Отмечаем точки
+    \foreach \point in {(11,10), (14,13), (19,13), (16,10), (19,7), (14,7)}
+    \fill \point circle (3pt);
+    
+
+    \node at (14,10) [below] {7.9В};
+
+    \foreach \x in {2.2, 7.2, 12.0, 16.5, 21.2, 27.5}
+        \fill (\x,2) circle (3pt);
+
+    \foreach \x in {2.7, 7.4, 12.0, 16.5, 21.0, 26.6}
+        \fill (\x,4) circle (3pt);
+
+    \foreach \x in {3, 7.2, 11.5, 17, 21.3, 26.1}
+        \fill (\x,6) circle (3pt);
+    
+    \foreach \x in {3.4, 7.2, 10.7, 21.2, 25.8}
+        \fill (\x,8) circle (3pt);
+
+    \foreach \x in {3.5, 7.2, 10.4, 17, 21.2, 25.9}
+        \fill (\x,10) circle (3pt);
+    
+    \foreach \x in {3.6, 7.5, 10.9, 21.2, 26}
+        \fill (\x,12) circle (3pt);
+
+    \foreach \x in {3.3, 7.8, 11.8, 16.6, 21, 26.2}
+        \fill (\x,14) circle (3pt);
+
+    \foreach \x in {3, 8, 12.3, 16.2, 20.8, 26.6}
+        \fill (\x,16) circle (3pt);   
+    
+    \foreach \x in {2.4, 8, 12.3, 16.2, 20.8, 27.3}
+        \fill (\x,18) circle (3pt);
+
+    % Эквипотенциальные линии
+    \node at (2.2,2) [below] {2 В};
+    \draw[smooth] plot coordinates {(2.2,2) (2.7,4) (3,6) (3.4,8) (3.5,10) (3.6,12) (3.3,14) (3,16) (2.4,18)};
+    \node at (7.2,2) [below] {4 В};
+    \draw[smooth] plot coordinates {(7.2,2) (7.4,4) (7.2,6) (7.2,8) (7.2,10) (7.5,12) (7.8,14) (8,16) (8,18)};
+    \node at (12.0,2) [below] {6 В};
+    \draw[smooth] plot coordinates {(12.0,2) (12.0,4) (11.5,6) (10.7,8) (10.4,10) (10.9,12) (11.8,14) (12.3,16) (12.3,18)};
+    \node at (16.5,2) [below] {8 В};
+    \draw[smooth] plot coordinates {(16.5,2) (16.5,4) (17,6) (19.8, 6.8) (17,10) (19.8,13.2) (16.6,14) (16.2,16) (16.2,18)};
+    \node at (21.2,2) [below] {10 В};
+    \draw[smooth] plot coordinates {(21.2,2) (21.0,4) (21.3,6) (21.2,8) (21.2,10) (21.2,12) (21,14) (20.8,16) (20.8,18)};
+    \node at (27.5,2) [below] {12 В};
+    \draw[smooth] plot coordinates {(27.5,2) (26.6,4) (26.1,6) (25.8,8) (25.9,10) (26,12) (26.2,14) (26.6,16) (27.3,18)};
+
+    % Рисуем линию с декорацией, указывающей направление
+    \draw[->, line width=1.5pt, >=latex] (11, 10) -- (0, 10);
+    \draw[->, line width=1.5pt, >=latex] (28, 10) -- (16, 10);
+
+
+    % \draw[->, line width=1.5pt, >=latex, smooth] plot coordinates {(28, 11.5) (26, 11.3) (23, 11.3) (19, 11.5) (18, 12)};
+    % \draw[->, line width=1.5pt, >=latex, smooth] plot coordinates {(28, 8.5) (26, 8.7) (23, 8.7) (19, 8.5) (18, 8)};
+
+    \draw[->, line width=1.5pt, >=latex, smooth] (28, 15) .. controls (23.5, 16) and (19, 16) .. (18.5, 13);
+    \draw[->, line width=1.5pt, >=latex, smooth] (28, 5) .. controls (23.5, 4) and (19, 4) .. (18.5, 7);
+
+    \draw[->, line width=1.5pt, >=latex, smooth] (28, 11) .. controls (23.5, 10.5) and (19, 10.5) .. (18, 12);
+    \draw[->, line width=1.5pt, >=latex, smooth] (28, 9) .. controls (23.5, 9.5) and (19, 9.5) .. (18, 8);
+
+    \draw[->, line width=1.5pt, >=latex, smooth] (28, 16) .. controls (24, 16.7) and (19, 20) .. (17, 13);
+    \draw[->, line width=1.5pt, >=latex, smooth] (28, 4) .. controls (24, 3.3) and (19, 0) .. (17, 7);
+
+    \draw[->, line width=1.5pt, >=latex, smooth] (13, 8) .. controls (9, 4.5) and (4, 4.5) .. (0, 6);
+    \draw[->, line width=1.5pt, >=latex, smooth] (13, 12) .. controls (9, 15.5) and (4, 15.5) .. (0, 14);
+
+    \draw[->, line width=1.5pt, >=latex, smooth] (12, 9) .. controls (9, 5) and (4, 5.5) .. (0, 8);
+    \draw[->, line width=1.5pt, >=latex, smooth] (12, 11) .. controls (9, 13.5) and (4, 14) .. (0, 12);
+
+    \draw[->, line width=1.5pt, >=latex, smooth] (15, 13) .. controls (15, 16) and (4, 19) .. (0, 15.5);
+
+    \draw[->, line width=1.5pt, >=latex, smooth] (15, 7) .. controls (15, 4) and (4, 1) .. (0, 4.5);
+
+
+\end{tikzpicture}
+
+\end{document}
