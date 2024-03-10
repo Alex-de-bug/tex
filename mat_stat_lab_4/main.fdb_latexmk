@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1710109134 "/Users/alexalex/Desktop/tex/mat_stat_lab_1/main.tex" "main.pdf" "main" 1710109135 0
-  "/Users/alexalex/Desktop/tex/mat_stat_lab_1/main.tex" 1710109134 12748 a784647464e06beb7fdae6b168716ad4 ""
+["pdflatex"] 1710107002 "/Users/alexalex/Desktop/tex/mat_stat_lab_4/main.tex" "main.pdf" "main" 1710107003 0
+  "/Users/alexalex/Desktop/tex/mat_stat_lab_4/main.tex" 1710107002 11297 e5e4e19080a590e93a540253558ca550 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1683825241 3308 eee81981029f67083258db36df06e523 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1683825105 3304 6a543c07045572737981351171e0505e ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm0500.tfm" 1684341405 3252 bc0f8cc163ba94bbce20e59f671a255d ""
@@ -199,8 +199,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683823977 4643411 5ced174c6d521e21dd58a10751c00482 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683824033 7886842 9318a877a941dc86aae3806e8adeccb7 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "main.aux" 1710109135 1383 b04e4ca826f3b41804c4f803ffd53736 "pdflatex"
-  "main.tex" 1710109134 12748 a784647464e06beb7fdae6b168716ad4 ""
+  "main.aux" 1710107003 1383 64c618b8bc921c3d3af571617f62b19a "pdflatex"
+  "main.tex" 1710107002 11297 e5e4e19080a590e93a540253558ca550 ""
   "poligon.png" 1709056757 179041 194671f111f5ac82e0334d16ba6ab2d1 ""
   (generated)
   "main.aux"
