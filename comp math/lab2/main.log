@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  19 FEB 2024 02:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  5 MAR 2024 17:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/alexalex/Desktop/tex/comp math/first proj/main.tex"
-(/Users/alexalex/Desktop/tex/comp math/first proj/main.tex
+**"/Users/alexalex/Desktop/cm_math/lab 2/comp math/first proj/main.tex"
+(/Users/alexalex/Desktop/cm_math/lab 2/comp math/first proj/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-05-05> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -674,30 +674,44 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/derivative/derivative.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-05-05 L3 programming layer (loader) 
  (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count320
 \l__pdf_internal_box=\box68
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: derivative 2022/07/09 v1.2 Nice and easy derivatives and differentials for LaTeX
+\l__deriv_vmo_int=\count321
+\l__deriv_var_count_int=\count322
+\l__deriv_tmpa_int=\count323
+\l__deriv_tmpb_int=\count324
+\l__deriv_numerical_int=\count325
+\l__deriv_sort_max_int=\count326
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Info: Redefining \th on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Info: Redefining \th on input line 17.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -735,16 +749,16 @@ LaTeX Info: Redefining \th on input line 15.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
+\scratchcounter=\count327
 \scratchdimen=\dimen303
 \scratchbox=\box69
-\nofMPsegments=\count322
-\nofMParguments=\count323
+\nofMPsegments=\count328
+\nofMParguments=\count329
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count324
+\MPscratchCnt=\count330
 \MPscratchDim=\dimen304
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
 \everyMPtoPDFconversion=\toks46
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -756,46 +770,343 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
+Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 15.
-
-\c@lstlisting=\count327
+\c@lstlisting=\count333
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 61--67
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
-<2.png, id=14, 1690.315pt x 856.19875pt>
-File: 2.png Graphic file (type png)
-<use 2.png>
-Package pdftex.def Info: 2.png  used on input line 76.
-(pdftex.def)             Requested size: 557.38951pt x 282.33742pt.
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 79.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 187--191
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
+
+ []
+
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 367--371
+
+ []
+
+NOTE: coordinate (2Y2.0e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9798994e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9597989e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9396983e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9195976e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.899497e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8793965e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8592958e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8391953e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8190947e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.798994e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7788934e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7587929e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7386923e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7185916e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.698491e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6783905e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6582898e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6381892e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6180887e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.597988e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5778874e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5577869e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5376863e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5175856e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.497485e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4773845e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4572838e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4371832e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4170827e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.396982e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3768814e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3567809e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3366803e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3165796e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.296479e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2763785e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2562778e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2361772e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2160767e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.195976e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1758754e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1557748e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1356743e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.1356949e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.1557938e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.1758955e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.1959943e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.2160962e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.236198e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.2562967e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.2763985e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.2964973e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3165991e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3367009e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3567998e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3769016e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3970003e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.4171022e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.437204e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.4573027e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.4774045e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.4975034e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5176051e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5377069e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5578058e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5779076e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5980063e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.6181082e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.63821e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.6583087e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.6784105e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.6985094e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7186111e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7387129e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7588118e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7789136e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7990123e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.8191142e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.839216e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.8593147e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.8794165e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.8995154e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.9196172e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.939719e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.9598178e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.9799196e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y2.0000183e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9798994e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9597989e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9396983e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9195976e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.899497e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8793965e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8592958e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8391953e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8190947e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.798994e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7788934e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7587929e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7386923e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7185916e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.698491e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6783905e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6582898e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6381892e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6180887e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.597988e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5778874e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5577869e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5376863e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5175856e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.497485e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4773845e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4572838e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4371832e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4170827e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.396982e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3768814e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3567809e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3366803e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3165796e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.296479e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2763785e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2562778e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2361772e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2160767e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.195976e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1758754e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1557748e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1356743e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.1356949e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.1557938e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.1758955e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.1959943e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.2160962e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.236198e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.2562967e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.2763985e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.2964973e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3165991e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3367009e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3567998e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3769016e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.3970003e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.4171022e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.437204e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.4573027e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.4774045e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.4975034e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5176051e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5377069e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5578058e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5779076e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.5980063e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.6181082e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.63821e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.6583087e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.6784105e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.6985094e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7186111e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7387129e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7588118e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7789136e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.7990123e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.8191142e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.839216e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.8593147e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.8794165e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.8995154e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.9196172e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.939719e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.9598178e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y1.9799196e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y2.0000183e0],3Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 519--524
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--532
+
+ []
+
+<bisection.png, id=43, 1031.855pt x 622.325pt>
+File: bisection.png Graphic file (type png)
+<use bisection.png>
+Package pdftex.def Info: bisection.png  used on input line 536.
+(pdftex.def)             Requested size: 390.17094pt x 235.31795pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+
+ []
+
+[8 <./bisection.png>]
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 540.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./2.png>]
-<3.png, id=23, 1123.19624pt x 752.8125pt>
-File: 3.png Graphic file (type png)
-<use 3.png>
-Package pdftex.def Info: 3.png  used on input line 126.
-(pdftex.def)             Requested size: 557.38951pt x 373.57953pt.
- [3] [4 <./3.png>] (./main.aux) ) 
+)
+<newtown.png, id=49, 1059.96pt x 406.51875pt>
+File: newtown.png Graphic file (type png)
+<use newtown.png>
+Package pdftex.def Info: newtown.png  used on input line 591.
+(pdftex.def)             Requested size: 390.17094pt x 149.64041pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--595
+
+ []
+
+[9] [10 <./newtown.png>]
+<simple.png, id=58, 1124.2pt x 404.51125pt>
+File: simple.png Graphic file (type png)
+<use simple.png>
+Package pdftex.def Info: simple.png  used on input line 662.
+(pdftex.def)             Requested size: 390.17094pt x 140.38979pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--666
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--666
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--666
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--666
+
+ []
+
+[11 <./simple.png>]
+<simpleSis.png, id=63, 845.1575pt x 545.03625pt>
+File: simpleSis.png Graphic file (type png)
+<use simpleSis.png>
+Package pdftex.def Info: simpleSis.png  used on input line 725.
+(pdftex.def)             Requested size: 390.17094pt x 251.62622pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--729
+
+ []
+
+[12] [13 <./simpleSis.png>] [14] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28786 strings out of 476047
- 700771 string characters out of 5790247
- 1988248 words of memory out of 5000000
- 48786 multiletter control sequences out of 15000+600000
- 523598 words of font info for 59 fonts, out of 8000000 for 9000
+ 31385 strings out of 476047
+ 784174 string characters out of 5790247
+ 2006248 words of memory out of 5000000
+ 51372 multiletter control sequences out of 15000+600000
+ 523263 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,103p,772b,1639s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (4 pages, 421117 bytes).
+ 99i,20n,103p,782b,2261s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (14 pages, 730620 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 143 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

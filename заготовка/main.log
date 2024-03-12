@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  22 SEP 2023 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  12 MAR 2024 17:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/alexalex/Desktop/tex/first proj — копия/main.tex"
-(/Users/alexalex/Desktop/tex/first proj — копия/main.tex
+**/Users/alexalex/Desktop/tex/заготовка/main.tex
+(/Users/alexalex/Desktop/tex/заготовка/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-05-05> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -652,10 +652,17 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+))) (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count312
+\float@exts=\toks44
+\float@box=\box66
+\@float@everytoks=\toks45
+\@floatcapt=\box67
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count312
-\l__pdf_internal_box=\box66
+\l__color_backend_stack_int=\count313
+\l__pdf_internal_box=\box68
 ) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -713,17 +720,17 @@ LaTeX Info: Redefining \th on input line 15.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
+\scratchcounter=\count314
 \scratchdimen=\dimen299
-\scratchbox=\box67
-\nofMPsegments=\count314
-\nofMParguments=\count315
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count316
+\scratchbox=\box69
+\nofMPsegments=\count315
+\nofMParguments=\count316
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count317
 \MPscratchDim=\dimen300
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
-\everyMPtoPDFconversion=\toks45
+\MPnumerator=\count318
+\makeMPintoPDFobject=\count319
+\everyMPtoPDFconversion=\toks47
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -731,6 +738,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 
@@ -738,26 +746,26 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
  on input line 15.
 
 
-Overfull \hbox (278.03828pt too wide) in paragraph at lines 39--40
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+
  []
 
 [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] (./main.aux) ) 
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] [2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 27190 strings out of 476047
- 680131 string characters out of 5790247
- 1856248 words of memory out of 5000000
- 47227 multiletter control sequences out of 15000+600000
- 513538 words of font info for 35 fonts, out of 8000000 for 9000
+ 27174 strings out of 476047
+ 679116 string characters out of 5790247
+ 1853248 words of memory out of 5000000
+ 47194 multiletter control sequences out of 15000+600000
+ 519739 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,103p,774b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (1 page, 23860 bytes).
+ 99i,5n,103p,765b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on main.pdf (2 pages, 56556 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
- 14 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
