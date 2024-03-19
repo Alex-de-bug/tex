@@ -11,6 +11,17 @@
 \usepackage{subcaption}
 \usepackage{pgfplots}
 \usepackage{float}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\lstset{
+    language=Java,
+    frame=single,
+    breaklines=true,
+    numbers=left, % нумерация строк
+    caption={Пример Java кода}, 
+    label={lst:java_example}
+}
 
 \begin{document}
 % НАЧАЛО ТИТУЛЬНОГО ЛИСТА
@@ -26,7 +37,7 @@
     \vspace{1cm}
     \Large
     \textbf{Отчёт по лабораторной работе №3} \\
-    По дисциплине «Математическая статистика» (4 семестр)\\
+    По дисциплине «Вычислительная математика» (4 семестр)\\
     \large
     \vspace{8cm}
 
@@ -48,8 +59,7 @@
 \newpage
 \pagestyle{plain}
 \section{Цель работы}
-Найти приближенное значение определенного интеграла с требуе-
-мой точностью различными численными методами.
+Найти приближенное значение определенного интеграла с требуемой точностью различными численными методами.
 \[\text{Вариант} - 8\]
 \section{Вычислительная часть}
 1. Вычислить интеграл, приведенный в таблице 1, точно.\\
@@ -171,6 +181,344 @@
 \[= \frac{0.1}{3}(-6+ 4\cdot(-3.737 + 1.821+ 8.875+ 17.569+ 28.047)+2(-1.136 + 5.152+ 13.008+ 22.576) + 34) = 10.5833\]\\
 Относительная погрешность:
 \[\epsilon = \frac{|10.5833 - 10.583|}{10.583}\cdot 100 = 0.0028\%\]
-\\
+\section{Машинная реализация}
+
+\begin{lstlisting}[language=Java, caption={Первый узел валидации}]
+private CalculateError isValidInterval(RequestFuncUser requestFuncUser) {
+    ArrayList<Double> kritPoints = new Functions().getErrPoints((int) requestFuncUser.getTypeFunc());
+    if(requestFuncUser.getA()>requestFuncUser.getB()){
+        double tmp = requestFuncUser.getA();
+        requestFuncUser.setA(requestFuncUser.getB());
+        requestFuncUser.setB(tmp);
+    }
+    Double a = requestFuncUser.getA();
+    Double b = requestFuncUser.getB();
+    Functions functions = new Functions();
+
+    if(a.equals(b)) {
+        return CalculateError.INCORRECT_BOUNDS_NULL_S;
+    }
+    for (Double point : kritPoints) {
+        logger.info("point > a: "+(point>a)+"; point<b: "+(point<b));
+        if (point.equals(a) && !Double.isNaN(functions.f_dx(a, (int) requestFuncUser.getTypeFunc()))
+                && Double.isFinite(functions.f_dx(a, (int) requestFuncUser.getTypeFunc()))) {
+            requestFuncUser.setA(a + 0.0000001);
+        } else if (point.equals(b) && !Double.isNaN(functions.f_dx(b, (int) requestFuncUser.getTypeFunc()))
+                && Double.isFinite(functions.f_dx(b, (int) requestFuncUser.getTypeFunc()))) {
+            requestFuncUser.setB(b - 0.0000001);
+        }else if (Double.isNaN(functions.f_dx(a, (int) requestFuncUser.getTypeFunc())) ||
+                Double.isNaN(functions.f_dx(b, (int) requestFuncUser.getTypeFunc()))
+                || Double.isInfinite(functions.f_dx(a, (int) requestFuncUser.getTypeFunc()))
+                || Double.isInfinite(functions.f_dx(b, (int) requestFuncUser.getTypeFunc()))) {
+            return CalculateError.INCORRECT_BOUNDS_INT_ERR;
+        }
+        if(point>a && point<b && (Double.isNaN(functions.f_dx(point, (int) requestFuncUser.getTypeFunc()))
+                || Double.isInfinite(functions.f_dx(point, (int) requestFuncUser.getTypeFunc())) )){
+            logger.warn("somnitelno no okey");
+        }
+    }
+    logger.info("f_dx(a): "+functions.f_dx(a, (int) requestFuncUser.getTypeFunc())+"; f_dx(b): "+functions.f_dx(b, (int) requestFuncUser.getTypeFunc()));
+    return null;
+} 
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Второй узел валидации}]
+if(critInterval.isEmpty()){
+    mathMethod = getMethod((int) pointRequest.getMethod(), pointRequest);
+    mathMethod.calculate();
+    tmp = mathMethod.getAnswer().outAnswer();
+}else {
+    double a = pointRequest.getA();
+    double b = pointRequest.getB();
+    double crit1 = critInterval.get(0);
+    double crit2 = critInterval.get(1);
+    if (a < crit1 && b > crit2) {
+        RequestFuncUser interval1 = pointRequest.clone();
+        interval1.setB(crit1);
+        logger.info(interval1.toString());
+
+        RequestFuncUser interval2 = pointRequest.clone();
+        interval2.setA(crit2);
+        logger.info(interval2.toString());
+
+        MathMethod mathMethod1 = getMethod((int) interval1.getMethod(), interval1);
+        MathMethod mathMethod2 = getMethod((int) interval2.getMethod(), interval2);
+
+
+        mathMethod1.calculate();
+        mathMethod2.calculate();
+        logger.info(mathMethod1.answerInfo.toString());
+        logger.info(mathMethod2.answerInfo.toString());
+
+        double e = mathMethod1.answerInfo.e;
+        double ans = mathMethod1.answerInfo.answer + mathMethod2.answerInfo.answer;
+        double r = (mathMethod1.answerInfo.r + mathMethod2.answerInfo.r)/2;
+        long n = mathMethod1.answerInfo.n + mathMethod2.answerInfo.n;
+        AnswerInfo answerInfo = new AnswerInfo(e, ans, ans, r, n);
+        if(Math.abs(interval1.getA()) == Math.abs(interval2.getB())){
+            answerInfo = new AnswerInfo(0, 0, 0, 0, 0);
+        }
+        tmp = answerInfo.outAnswer();
+    } else if (a >= crit1 && b <= crit2) {
+        AnswerInfo answerInfo = new AnswerInfo(0, 0, 0, 0, 0);
+        tmp = answerInfo.outAnswer();
+    } else if (a >= crit1 && a <= crit2 && b > crit2) {
+        RequestFuncUser interval1 = pointRequest.clone();
+        interval1.setA(crit2);
+        MathMethod mathMethod1 = getMethod((int) interval1.getMethod(), interval1);
+        mathMethod1.calculate();
+        logger.info(mathMethod1.answerInfo.toString());
+        tmp = mathMethod1.answerInfo.outAnswer();
+    } else if (a < crit1 && b <= crit2 && b >= crit1) {
+        RequestFuncUser interval1 = pointRequest.clone();
+        interval1.setB(crit1);
+        MathMethod mathMethod1 = getMethod((int) interval1.getMethod(), interval1);
+        mathMethod1.calculate();
+        logger.info(mathMethod1.answerInfo.toString());
+        tmp = mathMethod1.answerInfo.outAnswer();
+    } else if ((b < crit1)||(a > crit2)) {
+        mathMethod = getMethod((int) pointRequest.getMethod(), pointRequest);
+        mathMethod.calculate();
+        tmp = mathMethod.getAnswer().outAnswer();
+    } else {
+        AnswerInfo answerInfo = new AnswerInfo(0, 0, 0, 0, 0);
+        tmp = answerInfo.outAnswer();
+    }
+}
+    \end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Метод средних прямоугольников}]
+public void calculate() {
+    if (a > b) {
+        double tmp = a;
+        a = b;
+        b = tmp;
+    }
+
+    double step, sum, r = e + 1;
+    long n = 4;
+    double currAns = 0, prevAns = 0;
+
+    while (r > e){
+        step = (b - a) / n;
+        sum = 0;
+        for (int i = 0; i < n; i++) {
+            double aNew = a + step / 2 + step * i;
+            sum += functions.f(aNew, (int) number);
+        }
+        prevAns = currAns;
+        currAns = sum * step;
+        if (n > 4) {
+            r = Math.abs(currAns - prevAns) / 3.0;
+        }
+        n *= 2;
+        if(n > 1000000000){
+            break;
+        }
+    }
+    answerInfo = new AnswerInfo(e, currAns, prevAns, r, n / 2);
+    }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Метод левых прямоугольников}]
+public void calculate() {
+    if (a > b) {
+        double tmp = a;
+        a = b;
+        b = tmp;
+    }
+
+    double step, sum, r = e + 1;
+    long n = 4;
+    double currAns = 0, prevAns = 0;
+
+    while (r > e){
+        step = (b - a) / n;
+        sum = 0;
+        for (int i = 0; i < n; i++) {
+            double aNew = a + step * i;
+            sum += functions.f(aNew, (int) number);
+        }
+        prevAns = currAns;
+        currAns = sum * step;
+        if (n > 4) {
+            r = Math.abs(currAns - prevAns) / 3.0;
+        }
+        n *= 2;
+        if(n > 1000000000){
+            break;
+        }
+    }
+    answerInfo = new AnswerInfo(e, currAns, prevAns, r, n / 2);
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Метод правых прямоугольников}]
+public void calculate() {
+    if (a > b) {
+        double tmp = a;
+        a = b;
+        b = tmp;
+    }
+
+    double step, sum, r = e + 1;
+    long n = 4;
+    double currAns = 0, prevAns = 0;
+
+    while (r > e){
+        step = (b - a) / n;
+        sum = 0;
+        for (int i = 1; i <= n; i++) {
+            double aNew = a + step * i;
+            sum += functions.f(aNew, (int) number);
+        }
+        prevAns = currAns;
+        currAns = sum * step;
+        if (n > 4) {
+            r = Math.abs(currAns - prevAns) / 3.0;
+        }
+        n *= 2;
+        if(n > 1000000000){
+            break;
+        }
+    }
+    answerInfo = new AnswerInfo(e, currAns, prevAns, r, n / 2);
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Метод Симпсона}]
+public void calculate() {
+    if (a > b) {
+        double tmp = a;
+        a = b;
+        b = tmp;
+    }
+
+    double aNew = a, step, sum = 0, r = e + 1;
+    long n = 4;
+    double y0 = functions.f(a, (int) number);
+    double yn = functions.f(b, (int) number);
+    double currAns = 0, prevAns = 0;
+
+    while (r >= e) {
+        step = (b - a) / n;
+        sum = 0;
+        aNew = a + step;
+        for (int i = 1; i < n; i++) {
+            if (i % 2 == 0) {
+                sum += 2 * functions.f(aNew, (int) number);
+            } else {
+                sum += 4 * functions.f(aNew, (int) number);
+            }
+            aNew += step;
+        }
+        prevAns = currAns;
+        currAns = step / 3 * (y0 + sum + yn);
+        if (n > 4) {
+            r = Math.abs(currAns - prevAns) / 15.0;
+        }
+        n *= 2;
+        if(n > 1000000000){
+            break;
+        }
+    }
+
+    answerInfo = new AnswerInfo(e, currAns, prevAns, r, n / 2);
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Метод Трапеций}]
+public void calculate() {
+    if (a > b) {
+        double tmp = a;
+        a = b;
+        b = tmp;
+    }
+
+    double aNew = a, step, sum = 0, r = e + 1;
+    long n = 4;
+    double y0 = functions.f(a, (int) number);
+    double yn = functions.f(b, (int) number);
+    double currAns = 0, prevAns = 0;
+
+    while (r > e) {
+        step = (b - a) / n;
+        sum = 0;
+        aNew = a + step;
+        for (int i = 1; i < n; i++) {
+            sum += functions.f(aNew, (int) number);
+            aNew += step;
+        }
+        prevAns = currAns;
+        currAns = step * ((y0 + yn) / 2 + sum);
+        if (n > 4) {
+            r = Math.abs(currAns - prevAns) / 3.0;
+        }
+        n *= 2;
+        if(n > 1000000000){
+            break;
+        }
+    }
+    answerInfo = new AnswerInfo(e, currAns, prevAns, r, n / 2);
+}
+\end{lstlisting}
+ 
+\section{Пример работы программы}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{example.png}
+    \caption{Front: React}
+    \label{fig:example}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{logs.png}
+    \caption{Backend: String logs}
+    \label{fig:logs}
+\end{figure}
+
+\section{Диаграммы}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{left.pdf}
+    \caption{Левые прямоугольники}
+    \label{fig:logs}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{right.pdf}
+    \caption{Правые прямоугольники}
+    \label{fig:logs}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{trapez.pdf}
+    \caption{Трапеции}
+    \label{fig:logs}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{center.pdf}
+    \caption{Центральные прямоугольники}
+    \label{fig:logs}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{simpson.pdf}
+    \caption{Симпсон}
+    \label{fig:logs}
+\end{figure}
+
+\section{GitHub}
+Ссылка на мой репозиторий на GitHub: \url{https://github.com/Alex-de-bug/cm_math/tree/main/lab3}.
+
+\section{Вывод}
+При работе были изучены несколько численных методов вычисления интегралов, написаны несколько алгоритмов для реализации. Подсчёт руками помог усвоить все тонкости работы численных методов. Придумана обработка точек разрыва в том числе неустранимых 2го рода.
 \end{document}
 \includegraphics[width=.9\textwidth]{123}
