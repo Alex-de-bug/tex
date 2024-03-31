@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} %кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel} %русификатор 
+\usepackage{mathtools} %библиотека матеши
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %изменение отступов на листе
+\usepackage{amsmath}
+\usepackage{graphicx} %библиотека для графики и картинок
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{float}
+
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}[
+    xlabel={Координата $X$, см},
+    ylabel={Потенциал $\phi$, В},
+    xmin=0, xmax=30,
+    ymin=0, ymax=15,
+    axis lines=middle,
+    grid=both,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    width=12cm, height=8cm,
+    legend style={at={(0.5,-0.15)},anchor=north}
+  ]
+
+  % Точки данных
+  \addplot [mark=*, only marks] coordinates {(3.5,2) (7.2,4) (10.5,6) (11,7.9) (16,7.9) (17,8) (21.2,10) (25.9,12)};
+  
+  % Линии между точками
+  \addplot [smooth, thick, blue] coordinates {(3.5,2) (7.2,4) (10.5,6) (11,7.9)};
+  \addplot [thick, blue] coordinates {(11,7.9) (16,7.9)};
+  \addplot [smooth, thick, blue] coordinates {(11,7.9) (17,8) (21.2,10) (25.9,12)};
+  
+  \end{axis}
+\end{tikzpicture}
+\end{document}
