@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712100089 "/Users/alexalex/Desktop/tex/metop_lab_4/main.tex" "main.pdf" "main" 1712100090 0
-  "/Users/alexalex/Desktop/tex/metop_lab_4/main.tex" 1712100089 8784 1e88a07f2b558d93dfaf37cf93063255 ""
+["pdflatex"] 1712265364 "/Users/alexalex/Desktop/tex/metop_lab_4/main.tex" "main.pdf" "main" 1712265364 0
+  "/Users/alexalex/Desktop/tex/metop_lab_4/main.tex" 1712265364 9376 be0db5e1983cb8cf793038dac26506ec ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1683825241 3308 eee81981029f67083258db36df06e523 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1683825105 3304 6a543c07045572737981351171e0505e ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1683825100 3220 0e417eaf233b160335902e97259a6c77 ""
@@ -205,8 +205,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683823977 4643411 5ced174c6d521e21dd58a10751c00482 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683824033 7886842 9318a877a941dc86aae3806e8adeccb7 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "main.aux" 1712100090 132 61e1bedc8c7da8c5fef50fe149ac19c1 "pdflatex"
-  "main.tex" 1712100089 8784 1e88a07f2b558d93dfaf37cf93063255 ""
+  "main.aux" 1712265364 132 61e1bedc8c7da8c5fef50fe149ac19c1 "pdflatex"
+  "main.tex" 1712265364 9376 be0db5e1983cb8cf793038dac26506ec ""
   (generated)
   "main.aux"
   "main.log"
