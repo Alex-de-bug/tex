@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712597971 "/Users/alexalex/Desktop/tex/phis_lab3/main.tex" "main.pdf" "main" 1712597972 0
-  "/Users/alexalex/Desktop/tex/phis_lab3/main.tex" 1712597971 5658 8c4122d672b8307f97eb783dbaf79348 ""
+["pdflatex"] 1713009589 "/Users/alexalex/Desktop/tex/phis_lab3/main.tex" "main.pdf" "main" 1713009590 0
+  "/Users/alexalex/Desktop/tex/phis_lab3/main.tex" 1713009589 5628 bff36b26fa71570007d570e3bc51e63e ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm0500.tfm" 1684341405 3252 bc0f8cc163ba94bbce20e59f671a255d ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm0700.tfm" 1684341403 3256 b15a2ce2310c0038b96c5235b038f0eb ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1683825100 3220 0e417eaf233b160335902e97259a6c77 ""
@@ -169,8 +169,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683823977 4643411 5ced174c6d521e21dd58a10751c00482 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683824033 7886842 9318a877a941dc86aae3806e8adeccb7 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "main.aux" 1712597972 886 5a7faf634be6321c450f332f68766847 "pdflatex"
-  "main.tex" 1712597971 5658 8c4122d672b8307f97eb783dbaf79348 ""
+  "main.aux" 1713009590 886 5a7faf634be6321c450f332f68766847 "pdflatex"
+  "main.tex" 1713009589 5628 bff36b26fa71570007d570e3bc51e63e ""
   (generated)
   "main.aux"
   "main.log"

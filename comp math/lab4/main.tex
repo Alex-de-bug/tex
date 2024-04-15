@@ -332,20 +332,605 @@ a_2 = 0.207
 
 \section{Машинная реализация}
 
-\begin{lstlisting}[language=Java, caption={Первый узел валидации}]
-private CalculateError isValidInterval(RequestFuncUser requestFuncUser) {
+\begin{lstlisting}[language=Java, caption={Кубическая аппроксимация}]
+    package com.example.web4.math.approx;
+
+    import com.example.web4.dto.PointDto;
+    import com.example.web4.dto.RequestFuncUser;
+    import lombok.Getter;
+    import org.apache.commons.math3.linear.*;
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+    
+    import java.util.ArrayList;
+    @Getter
+    
+    public class CubicApprox extends Method{
+        private Double a;
+        private Double b;
+        private Double c;
+        private Double d;
+    
+        private static final Logger logger = LoggerFactory.getLogger(CubicApprox.class);
+    
+        public CubicApprox(RequestFuncUser requestFuncUser) {
+            super(requestFuncUser);
+        }
+    
+        private double f(double x) {
+            return a * Math.pow(x, 3) + b * Math.pow(x, 2) + c * x + d;
+        }
+    
+        @Override
+        public void calculate() {
+            int n = requestFuncUser.getPoints().size();
+            double[][] matrixData = new double[4][4];
+            double[] vector = new double[4];
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double x = point.getX();
+                double y = point.getY();
+                double x2 = Math.pow(x, 2);
+                double x3 = Math.pow(x, 3);
+                double x4 = Math.pow(x, 4);
+                double x5 = Math.pow(x, 5);
+                double x6 = Math.pow(x, 6);
+    
+                matrixData[0][0] += x6;
+                matrixData[0][1] += x5;
+                matrixData[0][2] += x4;
+                matrixData[0][3] += x3;
+                matrixData[1][0] += x5;
+                matrixData[1][1] += x4;
+                matrixData[1][2] += x3;
+                matrixData[1][3] += x2;
+                matrixData[2][0] += x4;
+                matrixData[2][1] += x3;
+                matrixData[2][2] += x2;
+                matrixData[2][3] += x;
+                matrixData[3][0] += x3;
+                matrixData[3][1] += x2;
+                matrixData[3][2] += x;
+                matrixData[3][3] += 1;
+                vector[0] += y * x3;
+                vector[1] += y * x2;
+                vector[2] += y * x;
+                vector[3] += y;
+            }
+    
+            RealMatrix coefficients = new Array2DRowRealMatrix(matrixData, false);
+            DecompositionSolver solver = new LUDecomposition(coefficients).getSolver();
+    
+            RealVector constants = new ArrayRealVector(vector, false);
+            RealVector solution = solver.solve(constants);
+    
+            a = solution.getEntry(0);
+            b = solution.getEntry(1);
+            c = solution.getEntry(2);
+            d = solution.getEntry(3);
+            logger.info("cubic: a = "+a+"; b = "+b+"; c = "+c+"; d = "+d);
+    
+            for (PointDto pointDto : requestFuncUser.getPoints()){
+                ArrayList<Double> tmp = new ArrayList<>();
+                tmp.add(pointDto.getX());
+                tmp.add(pointDto.getY());
+                tmp.add(f(pointDto.getX()));
+                tmp.add(f(pointDto.getX()) - pointDto.getY());
+                table.add(tmp);
+                S += Math.pow(f(pointDto.getX()) - pointDto.getY(), 2);
+            }
+            sko = Math.sqrt(S/n);
+    
+            double meanY = requestFuncUser.getPoints().stream().mapToDouble(PointDto::getY).average().orElse(0);
+            double ssTot = 0;
+            double ssRes = 0;
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double fi = f(point.getX());
+                ssTot += Math.pow(point.getY() - meanY, 2);
+                ssRes += Math.pow(point.getY() - fi, 2);
+            }
+            determ = 1 - (ssRes / ssTot);
+    
+            korrelPirs = Math.sqrt(determ);
+        }
+        @Override
+        protected String getStringFun() {
+    //        a * Math.pow(x, 3) + b * Math.pow(x, 2) + c * x + d;
+            return "\\phi (x)="+formatScientificNotation(a.toString())+"\\cdot x^3 +"+formatScientificNotation(b.toString())+"\\cdot x^2+"+formatScientificNotation(c.toString())+"\\cdot x +"+formatScientificNotation(d.toString());
+        }
+    }
     
 \end{lstlisting}
 
+\begin{lstlisting}[language=Java, caption={Експоненциальная аппроксимация}]
+    package com.example.web4.math.approx;
 
+    import com.example.web4.dto.PointDto;
+    import com.example.web4.dto.RequestFuncUser;
+    import lombok.Getter;
+    import org.apache.commons.math3.linear.*;
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+    import java.util.ArrayList;
+    @Getter
+    public class ExpApprox extends Method {
+        private Double a;
+        private Double b;
+    
+        private static final Logger logger = LoggerFactory.getLogger(ExpApprox.class);
+    
+        public ExpApprox(RequestFuncUser requestFuncUser) {
+            super(requestFuncUser);
+        }
+    
+        private double f(double x) {
+            return a * Math.exp(b * x);
+        }
+    
+        @Override
+        public void calculate() {
+            int n = requestFuncUser.getPoints().size();
+            double sumX = 0;
+            double sumYln = 0;
+            double sumX2 = 0;
+            double sumXYln = 0;
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double x = point.getX();
+                double y = Math.log(point.getY()); 
+    
+                sumX += x;
+                sumYln += y;
+                sumX2 += x * x;
+                sumXYln += x * y;
+            }
+    
+            double b = (n * sumXYln - sumX * sumYln) / (n * sumX2 - sumX * sumX);
+            double aLn = (sumYln - b * sumX) / n; // ln(a)
+    
+            this.a = Math.exp(aLn);
+            this.b = b;
+            logger.info("exp: a = "+a+"; b = "+b);
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double fi = f(point.getX());
+                double eps = fi - point.getY();
+                ArrayList<Double> row = new ArrayList<>();
+                row.add(point.getX());
+                row.add(point.getY());
+                row.add(fi);
+                row.add(eps);
+                table.add(row);
+                S += Math.pow(eps, 2);
+            }
+            sko = Math.sqrt(S/n);
+    
+            double meanY = requestFuncUser.getPoints().stream().mapToDouble(PointDto::getY).average().orElse(0);
+            double ssTot = 0;
+            double ssRes = 0;
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double fi = f(point.getX());
+                ssTot += Math.pow(point.getY() - meanY, 2);
+                ssRes += Math.pow(point.getY() - fi, 2);
+            }
+            determ = 1 - (ssRes / ssTot);
+    
+            korrelPirs = Math.sqrt(determ);
+        }
+    
+        @Override
+        protected String getStringFun() {
+    //        a * Math.exp(b * x);
+            return "\\phi (x)="+formatScientificNotation(a.toString())+"\\cdot e^{"+formatScientificNotation(b.toString())+"\\cdot x}";
+        }
+    }
+    
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Линейная аппроксимация}]
+    package com.example.web4.math.approx;
+
+    import com.example.web4.dto.PointDto;
+    import com.example.web4.dto.RequestFuncUser;
+    
+    import java.util.ArrayList;
+    
+    import lombok.Getter;
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+    @Getter
+    public class LinApprox extends Method {
+        private Double a;
+        private Double b;
+    
+        private static final Logger logger = LoggerFactory.getLogger(LinApprox.class);
+    
+        public LinApprox(RequestFuncUser requestFuncUser) {
+            super(requestFuncUser);
+        }
+        private double f(double x){
+            return a*x+b;
+        }
+    
+        @Override
+        public void calculate(){
+            double sumX = 0;
+            double sumXX = 0;
+            double sumY = 0;
+            double sumXY = 0;
+            double sumYY = 0;
+            int n = requestFuncUser.getSliderValue();
+            for (PointDto pointDto : requestFuncUser.getPoints()){
+                sumX += pointDto.getX();
+                sumXX += Math.pow(pointDto.getX(), 2);
+                sumY += pointDto.getY();
+                sumXY += pointDto.getX()*pointDto.getY();
+                sumYY += pointDto.getY() * pointDto.getY();
+            }
+            a = (sumXY*n - sumX*sumY)/(sumXX*n - sumX*sumX);
+            b = (sumXX*sumY - sumX*sumXY)/(sumXX*n - sumX*sumX);
+    
+            logger.info("lin: a = "+a+"; b = "+b);
+    
+            for (PointDto pointDto : requestFuncUser.getPoints()){
+                ArrayList<Double> tmp = new ArrayList<>();
+                tmp.add(pointDto.getX());
+                tmp.add(pointDto.getY());
+                tmp.add(f(pointDto.getX()));
+                tmp.add(f(pointDto.getX()) - pointDto.getY());
+                table.add(tmp);
+                S += Math.pow(f(pointDto.getX()) - pointDto.getY(), 2);
+            }
+    
+            sko = Math.sqrt(S/n);
+    
+            korrelPirs = (sumXY * n - sumX * sumY) / Math.sqrt((sumXX * n - sumX * sumX) * (sumYY * n - sumY * sumY));
+            determ = Math.pow(korrelPirs ,2);
+        }
+    
+    
+        @Override
+        protected String getStringFun() {
+    //        a*x+b;
+            return "\\phi (x)="+formatScientificNotation(a.toString())+"\\cdot x+"+formatScientificNotation(b.toString());
+        }
+    }
+    
+    
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Логарифмическая аппроксимация}]
+    package com.example.web4.math.approx;
+
+    import com.example.web4.dto.PointDto;
+    import com.example.web4.dto.RequestFuncUser;
+    import lombok.Getter;
+    import org.apache.commons.math3.linear.*;
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+    import java.util.ArrayList;
+    @Getter
+    public class LogApprox extends Method {
+        private Double a;
+        private Double b;
+    
+    
+        private static final Logger logger = LoggerFactory.getLogger(LogApprox.class);
+    
+        public LogApprox(RequestFuncUser requestFuncUser) {
+            super(requestFuncUser);
+        }
+    
+        private double f(double x) {
+            return a * Math.log(x) + b;
+        }
+    
+        @Override
+        public void calculate() {
+            int n = requestFuncUser.getPoints().size();
+            double sumLnX = 0;
+            double sumY = 0;
+            double sumLnX2 = 0;
+            double sumYLnX = 0;
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double x = point.getX();
+                double y = point.getY();
+                double lnX = Math.log(x);
+    
+                sumLnX += lnX;
+                sumY += y;
+                sumLnX2 += lnX * lnX;
+                sumYLnX += y * lnX;
+            }
+    
+            double b = (sumY * sumLnX2 - sumLnX * sumYLnX) / (n * sumLnX2 - sumLnX * sumLnX);
+            double a = (n * sumYLnX - sumLnX * sumY) / (n * sumLnX2 - sumLnX * sumLnX);
+    
+            this.a = a;
+            this.b = b;
+            logger.info("log: a = "+a+"; b = "+b);
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double fi = f(point.getX());
+                double eps = fi - point.getY();
+                ArrayList<Double> row = new ArrayList<>();
+                row.add(point.getX());
+                row.add(point.getY());
+                row.add(fi);
+                row.add(eps);
+                table.add(row);
+                S += Math.pow(eps, 2);
+            }
+            sko = Math.sqrt(S/n);
+    
+            double meanY = requestFuncUser.getPoints().stream().mapToDouble(PointDto::getY).average().orElse(0);
+            double ssTot = 0;
+            double ssRes = 0;
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double fi = f(point.getX());
+                ssTot += Math.pow(point.getY() - meanY, 2);
+                ssRes += Math.pow(point.getY() - fi, 2);
+            }
+    
+            determ = 1 - (ssRes / ssTot);
+    
+            korrelPirs = Math.sqrt(determ);
+        }
+    
+
+        @Override
+        protected String getStringFun() {
+    //        a * Math.log(x) + b;
+            return "\\phi (x)="+formatScientificNotation(a.toString())+"\\cdot ln(x)+"+formatScientificNotation(b.toString());
+        }
+    }
+    
+    
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Степенная аппроксимация}]
+    package com.example.web4.math.approx;
+
+    import com.example.web4.dto.PointDto;
+    import com.example.web4.dto.RequestFuncUser;
+    import lombok.Getter;
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+    import java.util.ArrayList;
+    @Getter
+    public class PowerApprox extends Method {
+        private Double a;
+        private Double b;
+    
+        private static final Logger logger = LoggerFactory.getLogger(PowerApprox.class);
+    
+        public PowerApprox(RequestFuncUser requestFuncUser) {
+            super(requestFuncUser);
+        }
+    
+        private double f(double x) {
+            return a * Math.pow(x, b);
+        }
+    
+        @Override
+        public void calculate() {
+            int n = requestFuncUser.getPoints().size();
+            double sumLnX = 0;
+            double sumLnY = 0;
+            double sumLnX2 = 0;
+            double sumLnXLnY = 0;
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double lnX = Math.log(point.getX());
+                double lnY = Math.log(point.getY());
+    
+                sumLnX += lnX;
+                sumLnY += lnY;
+                sumLnX2 += lnX * lnX;
+                sumLnXLnY += lnX * lnY;
+            }
+    
+            b = (n * sumLnXLnY - sumLnX * sumLnY) / (n * sumLnX2 - sumLnX * sumLnX);
+            double lnA = (sumLnY - b * sumLnX) / n;
+    
+            this.a = Math.exp(lnA);
+            this.b = b;
+            logger.info("power: a = "+a+"; b = "+b);
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double fi = f(point.getX());
+                double eps = fi - point.getY();
+                ArrayList<Double> row = new ArrayList<>();
+                row.add(point.getX());
+                row.add(point.getY());
+                row.add(fi);
+                row.add(eps);
+                table.add(row);
+                S += Math.pow(eps, 2);
+            }
+            sko = Math.sqrt(S/n);
+    
+            double meanY = requestFuncUser.getPoints().stream().mapToDouble(PointDto::getY).average().orElse(0);
+            double ssTot = 0;
+            double ssRes = 0;
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double fi = f(point.getX());
+                ssTot += Math.pow(point.getY() - meanY, 2);
+                ssRes += Math.pow(point.getY() - fi, 2);
+            }
+    
+            determ = 1 - (ssRes / ssTot);
+    
+            korrelPirs = Math.sqrt(determ);
+        }
+
+    
+        @Override
+        protected String getStringFun() {
+    //        a * Math.pow(x, b);
+            return "\\phi (x)="+formatScientificNotation(a.toString())+"\\cdot x^{"+formatScientificNotation(b.toString())+"}";
+        }
+    }
+    
+    
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Квадратичная аппроксимация}]
+    package com.example.web4.math.approx;
+
+    import com.example.web4.dto.PointDto;
+    import com.example.web4.dto.RequestFuncUser;
+    import lombok.Getter;
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+    import java.util.ArrayList;
+    import org.apache.commons.math3.linear.*;
+    @Getter
+    public class QuadApprox extends Method{
+        private Double a;
+        private Double b;
+        private Double c;
+    
+        private static final Logger logger = LoggerFactory.getLogger(QuadApprox.class);
+    
+        public QuadApprox(RequestFuncUser requestFuncUser) {
+            super(requestFuncUser);
+        }
+    
+        private double f(double x) {
+            return a * Math.pow(x, 2) + b * x + c;
+        }
+    
+        @Override
+        public void calculate() {
+            int n = requestFuncUser.getPoints().size();
+            double[] terms = new double[3];
+            double[][] matrixData = new double[3][3];
+            double[] vector = new double[3];
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double x = point.getX();
+                double y = point.getY();
+                terms[0] += Math.pow(x, 4);
+                terms[1] += Math.pow(x, 3);
+                terms[2] += Math.pow(x, 2);
+    
+                matrixData[0][0] += Math.pow(x, 4);
+                matrixData[0][1] += Math.pow(x, 3);
+                matrixData[0][2] += Math.pow(x, 2);
+                matrixData[1][0] += Math.pow(x, 3);
+                matrixData[1][1] += Math.pow(x, 2);
+                matrixData[1][2] += x;
+                matrixData[2][0] += Math.pow(x, 2);
+                matrixData[2][1] += x;
+                matrixData[2][2] += 1;
+    
+                vector[0] += x * x * y;
+                vector[1] += x * y;
+                vector[2] += y;
+            }
+    
+            RealMatrix coefficients = new Array2DRowRealMatrix(matrixData, false);
+            DecompositionSolver solver = new LUDecomposition(coefficients).getSolver();
+    
+            RealVector constants = new ArrayRealVector(vector, false);
+            RealVector solution = solver.solve(constants);
+    
+            a = solution.getEntry(0);
+            b = solution.getEntry(1);
+            c = solution.getEntry(2);
+            logger.info("quad: a = "+a+"; b = "+b+"; c = "+c);
+    
+            for (PointDto pointDto : requestFuncUser.getPoints()){
+                ArrayList<Double> tmp = new ArrayList<>();
+                tmp.add(pointDto.getX());
+                tmp.add(pointDto.getY());
+                tmp.add(f(pointDto.getX()));
+                tmp.add(f(pointDto.getX()) - pointDto.getY());
+                table.add(tmp);
+                S += Math.pow(f(pointDto.getX()) - pointDto.getY(), 2);
+            }
+            sko = Math.sqrt(S/n);
+    
+            double meanY = requestFuncUser.getPoints().stream().mapToDouble(PointDto::getY).average().orElse(0);
+            double ssTot = 0;
+            double ssRes = 0;
+    
+            for (PointDto point : requestFuncUser.getPoints()) {
+                double fi = f(point.getX());
+                ssTot += Math.pow(point.getY() - meanY, 2);
+                ssRes += Math.pow(point.getY() - fi, 2);
+            }
+    
+            determ = 1 - (ssRes / ssTot);
+    
+            korrelPirs = Math.sqrt(determ);
+        }
+    
+        @Override
+        protected String getStringFun() {
+    //        a * Math.pow(x, 2) + b * x + c;
+            return "\\phi (x)="+formatScientificNotation(a.toString())+"\\cdot x^2+"+formatScientificNotation(b.toString())+"\\cdot x+"+formatScientificNotation(c.toString());
+        }
+    }
+    
+    
+\end{lstlisting}
  
 \section{Пример работы программы}
+Данные для ввода:
+\begin{center}
+    \includegraphics[width=.2\textwidth]{data.png}
+\end{center}
+Вывод:
+\begin{center}
+    \includegraphics[width=.7\textwidth]{cubic.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{exp.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{lin.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{log.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{pow.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{quad.png}
+\end{center}
 
+\section{Схемы}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{cubic_scheme.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{exp_scheme.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{lin_scheme.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{log_scheme.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.7\textwidth]{power_scheme.png}
+\end{center}
+\begin{center}
+    \includegraphics[width=.6\textwidth]{quad_scheme.png}
+\end{center}
 
 \section{GitHub}
-Ссылка на мой репозиторий на GitHub: \url{https://github.com/Alex-de-bug/cm_math/tree/main/lab3}.
+Ссылка на мой репозиторий на GitHub: \url{https://github.com/Alex-de-bug/cm_math/tree/main/lab4}.
 
 \section{Вывод}
-При работе были изучены несколько численных методов вычисления интегралов, написаны несколько алгоритмов для реализации. Подсчёт руками помог усвоить все тонкости работы численных методов. Придумана обработка точек разрыва в том числе неустранимых 2го рода.
+При работе были изучены метод аппроксации различными функциями, написано приложение для автоматизации подсчётов. Изучено поведение аппроксимации различных функций.
 \end{document}
 \includegraphics[width=.9\textwidth]{123}
