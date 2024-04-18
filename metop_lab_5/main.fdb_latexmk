@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1713462699 "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" "main.pdf" "main" 1713462700 0
-  "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" 1713462699 17839 1d770a2e5ad219628dbe87c3a6814f48 ""
+["pdflatex"] 1713481973 "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" "main.pdf" "main" 1713481973 0
+  "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" 1713481971 15221 3913eecea89e45e25b97997d2c64b578 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1683825241 3308 eee81981029f67083258db36df06e523 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1683825105 3304 6a543c07045572737981351171e0505e ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1683825100 3220 0e417eaf233b160335902e97259a6c77 ""
@@ -209,8 +209,8 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "func.png" 1713196480 49624 2cc5cce7f463539228a3b78e6b98b251 ""
   "grad.png" 1713197394 47663 ae898bac4742ed48c2605e8866c10446 ""
-  "main.aux" 1713462700 2262 2355f32162d7a0ef32131c53ef0287f0 "pdflatex"
-  "main.tex" 1713462699 17839 1d770a2e5ad219628dbe87c3a6814f48 ""
+  "main.aux" 1713481973 1846 7a03a31b3b1969592cbd540dd441356d "pdflatex"
+  "main.tex" 1713481971 15221 3913eecea89e45e25b97997d2c64b578 ""
   "min.png" 1713197782 80741 16802388e504fc4e4adb5d50fe4a531d ""
   (generated)
   "main.aux"

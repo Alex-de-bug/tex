@@ -250,6 +250,9 @@
 \end{table}
 Критерий выполнен, ответ получен. 
 \[x_1 = 0,\ x_2 = \frac{22}{5}, \ x_3 = \frac{7}{15},\ x_4 = \frac{31}{15},\ x_5 = 0,\ f = \frac{11}{3}\]
+
+
+
 \section*{Задание 3}
 
 Данные:
@@ -329,121 +332,71 @@
     \end{tabular}
 \end{table}
 Критерий оптимальности не выполнен 
-\[min(\frac{1}{6}, \frac{1}{4}) = \frac{1}{4}\]
- $\lambda_3$ попадает в базисные, а $\lambda_5$ попадает в свободные перменные.
-\[\lambda_5 = 2\lambda_1 -4\lambda_2-2\lambda_3 +\frac{1}{2}\]
+\[min(\frac{1}{6}, \frac{1}{4}) = \frac{1}{6}\]
 
-\[\lambda_3 = \lambda_1 - 2 \lambda_2 - \frac{1}{2}\lambda_5 +\frac{1}{4} \]
-\[\lambda_4 = -4\lambda_1 +2\lambda_2-2\cdot (\lambda_1 - 2 \lambda_2 - \frac{1}{2}\lambda_5 +\frac{1}{4}) + \frac{1}{2} = -6\lambda_1 +6\lambda_2+\lambda_5\]
-\[g'(\lambda) = 3\lambda_1 + \lambda_2 + 5\cdot(\lambda_1 - 2 \lambda_2 - \frac{1}{2}\lambda_5 +\frac{1}{4}) =8\lambda_1 - 9\lambda_2-\frac{5}{2}\lambda_5+\frac{5}{4}\]
+
+
+ $\lambda_3$ попадает в базисные, а $\lambda_4$ попадает в свободные перменные.
+\[\lambda_4 = -4\lambda_1+2\lambda_2-2\lambda_3+\frac{1}{3}\]
+
+\[\lambda_3 = -2\lambda_1+\lambda_2-\frac{1}{2}\lambda_4+\frac{1}{6}\]
+\[\lambda_5 = 2\lambda_1-4\lambda_2-2(-2\lambda_1+\lambda_2-\frac{1}{2}\lambda_4+\frac{1}{6}) + \frac{1}{2} = 
+6\lambda_1-6\lambda_2+\lambda_4+\frac{1}{6}\]
+\[g'(\lambda) = 3\lambda_1 + \lambda_2 + 5(-2\lambda_1+\lambda_2-\frac{1}{2}\lambda_4+\frac{1}{6}) = 
+-7\lambda_1+6\lambda_2-\frac{5}{2}\lambda_4+\frac{5}{6}\]
 
 \begin{table}[H]
     \centering
-    \caption{Симплекс таблица после смены базиса с $\lambda_3$}
+    \caption{Симплекс таблица после смены базиса}
     \begin{tabular}{|c|c|c|c|c|}
     \hline
-    &$\lambda_1$&$\lambda_2$&$\lambda_5$&$\beta$\\\hline
-    $\lambda_4$&-6&6&1&0\\
+    &$\lambda_1$&$\lambda_2$&$\lambda_4$&$\beta$\\\hline
+    $\lambda_3$&-2&1&$-\frac{1}{2}$&$\frac{1}{6}$\\
     &&&&\\\hline
-    $\lambda_3$&1&-2&$-\frac{1}{2}$&$\frac{1}{4}$\\
+    $\lambda_5$&6&-6&1&$\frac{1}{6}$\\
     &&&&\\\hline
-    $g'$&8&-9&$-\frac{5}{2}$&$\frac{5}{4}$\\
+    $g'$&-7&6&$-\frac{5}{2}$&$\frac{5}{6}$\\
     &&&&\\\hline
     \end{tabular}
 \end{table}
 Критерий оптимальности не выполнен 
-\[min(0, -\frac{1}{4}) = -\frac{1}{4}\]
-$\lambda_1$ попадает в базисные, а $\lambda_3$ попадает в свободные перменные.
+\[min(\frac{1}{36}, -) = \frac{1}{36}\]
+$\lambda_2$ попадает в базисные, а $\lambda_5$ попадает в свободные перменные.
 
-\[\lambda_3 = \lambda_1 - 2 \lambda_2 - \frac{1}{2}\lambda_5 +\frac{1}{4} \]
+\[\lambda_5 = 6\lambda_1-6\lambda_2+\lambda_4+\frac{1}{6}\]
 
-\[\lambda_1 = 2\lambda_2 + \lambda_3 +\frac{1}{2}\lambda_5 -\frac{1}{4}\]
-\[\lambda_4 = -6\cdot(2\lambda_2 + \lambda_3 +\frac{1}{2}\lambda_5 -\frac{1}{4}) +6\lambda_2+\lambda_5 = -6\lambda_2-6\lambda_3-2\lambda_5 +\frac{3}{2}\]
+\[\lambda_2 = \lambda_1 +\frac{1}{6}\lambda_4 -\frac{1}{6}\lambda_5+\frac{1}{36}\]
 
-\[g'(\lambda) = 3\cdot (2\lambda_2 + \lambda_3 +\frac{1}{2}\lambda_5 -\frac{1}{4}) + \lambda_2 + 5\lambda_3 = 7\lambda_2 +8\lambda_3 +\frac{3}{2}\lambda_5 - \frac{3}{4}\]
+\[\lambda_3 = -2\lambda_1+(\lambda_1 +\frac{1}{6}\lambda_4 -\frac{1}{6}\lambda_5+\frac{1}{36})-\frac{1}{2}\lambda_4+\frac{1}{6}=
+-\lambda_1 - \frac{1}{3}\lambda_4 - \frac{1}{6}\lambda_5 + \frac{7}{36}\]
 
-\begin{table}[H]
-    \centering
-    \caption{Симплекс таблица после смены базиса с $\lambda_1$}
-    \begin{tabular}{|c|c|c|c|c|}
-    \hline
-    &$\lambda_2$&$\lambda_3$&$\lambda_5$&$\beta$\\\hline
-    $\lambda_4$&-6&-6&-2&$\frac{3}{2}$\\
-    &&&&\\\hline
-    $\lambda_1$&2&1&$\frac{1}{2}$&$-\frac{1}{4}$\\
-    &&&&\\\hline
-    $g'$&7&8&$\frac{3}{2}$&$-\frac{3}{4}$\\
-    &&&&\\\hline
-    \end{tabular}
-\end{table}
-Критерий оптимальности не выполнен 
-\[min(\frac{1}{4}, \frac{1}{4}) = \frac{1}{4}\]
-$\lambda_2$ попадает в базисные, а $\lambda_4$ попадает в свободные перменные.
-
-\[\lambda_4 = -6\lambda_2-6\lambda_3-2\lambda_5 +\frac{3}{2}\]
-
-\[\lambda_2 = -\lambda_3 - \frac{1}{6}\lambda_4 - \frac{1}{3}\lambda_5 +\frac{1}{4}\]
-\[\lambda_1 = 2(-\lambda_3 - \frac{1}{6}\lambda_4 - \frac{1}{3}\lambda_5 +\frac{1}{4})+ \lambda_3 +\frac{1}{2}\lambda_5 -\frac{1}{4} =
--\lambda_3 - \frac{1}{3}\lambda_4 - \frac{1}{6}\lambda_5 + \frac{1}{4}\]
-
-\[g'(\lambda) = 7\cdot(-\lambda_3 - \frac{1}{6}\lambda_4 - \frac{1}{3}\lambda_5 +\frac{1}{4}) +8\lambda_3 +\frac{3}{2}\lambda_5 - \frac{3}{4} = \lambda_3 - \frac{7}{6}\lambda_4 - \frac{5}{6}\lambda_5 +1 \]
+\[g' = -7\lambda_1+6(\lambda_1 +\frac{1}{6}\lambda_4 -\frac{1}{6}\lambda_5+\frac{1}{36})-\frac{5}{2}\lambda_4+\frac{5}{6} = 
+-\lambda_1 - \frac{3}{2}\lambda_4 - \lambda_5 +1\]
 
 \begin{table}[H]
     \centering
-    \caption{Симплекс таблица после смены базиса с $\lambda_2$}
+    \caption{Симплекс таблица после смены базиса}
     \begin{tabular}{|c|c|c|c|c|}
     \hline
-    &$\lambda_3$&$\lambda_4$&$\lambda_5$&$\beta$\\\hline
-    $\lambda_2$&-1&$-\frac{1}{6}$&$-\frac{1}{3}$&$\frac{1}{4}$\\
+               &$\lambda_1$&$\lambda_4$&$\lambda_5$&$\beta$\\\hline
+    $\lambda_2$&1&$\frac{1}{6}$&$-\frac{1}{6}$&$\frac{1}{36}$\\
     &&&&\\\hline
-    $\lambda_1$&-1&$-\frac{1}{3}$&$-\frac{1}{6}$&$\frac{1}{4}$\\
+    $\lambda_3$&-1&$-\frac{1}{3}$&$-\frac{1}{6}$&$\frac{7}{36}$\\
     &&&&\\\hline
-    $g'$&1&$-\frac{7}{6}$&$-\frac{5}{6}$&$1$\\
-    &&&&\\\hline
-    \end{tabular}
-\end{table}
-
-Критерий оптимальности не выполнен 
-\[min(\frac{1}{4}, -\frac{1}{4}) = -\frac{1}{4}\]
-$\lambda_3$ попадает в базисные, а $\lambda_1$ попадает в свободные перменные.
-\[\lambda_1 = -\lambda_3 - \frac{1}{3}\lambda_4 - \frac{1}{6}\lambda_5 + \frac{1}{4}\]
-
-\[\lambda_3 = -\lambda_1-\frac{1}{3}\lambda_4-\frac{1}{6}\lambda_5+\frac{1}{4}\]
-\[\lambda_2 = -(-\lambda_1-\frac{1}{3}\lambda_4-\frac{1}{6}\lambda_5+\frac{1}{4}) - \frac{1}{6}\lambda_4 - \frac{1}{3}\lambda_5 +\frac{1}{4} =
-\lambda_1 + \frac{1}{6}\lambda_4-\frac{1}{6}\lambda_5\]
-\[g'(\lambda) = (-\lambda_1-\frac{1}{3}\lambda_4-\frac{1}{6}\lambda_5+\frac{1}{4}) - \frac{7}{6}\lambda_4 - \frac{5}{6}\lambda_5 +1 = 
--\lambda_1 - \frac{3}{2}\lambda_4 - \lambda_5+\frac{5}{4}\]
-
-\begin{table}[H]
-    \centering
-    \caption{Симплекс таблица после смены базиса с $\lambda_3$}
-    \begin{tabular}{|c|c|c|c|c|}
-    \hline
-    &$\lambda_1$&$\lambda_4$&$\lambda_5$&$\beta$\\\hline
-    $\lambda_2$&1&$\frac{1}{6}$&$-\frac{1}{6}$&$0$\\
-    &&&&\\\hline
-    $\lambda_3$&-1&$-\frac{1}{3}$&$-\frac{1}{6}$&$\frac{1}{4}$\\
-    &&&&\\\hline
-    $g'$&-1&$-\frac{3}{2}$&-1&$\frac{5}{4}$\\
+    $g'$&-1&$-\frac{3}{2}$&-1&1\\
     &&&&\\\hline
     \end{tabular}
 \end{table}
 Критерий выполнен.
 
-\[\lambda_1 = 0;\ \ \lambda_2 = 0;\ \ \lambda_3 = \frac{1}{4};\ \ \lambda_4 = 0;\ \ \lambda_5 = 0 \ \ g(\lambda) = \frac{5}{4}\]
-\[f(x) = g(\lambda) = \frac{5}{4}\]
+\[\lambda_1 = 0;\ \ \lambda_2 = \frac{1}{36};\ \ \lambda_3 = \frac{7}{36};\ \ \lambda_4 = 0;\ \ \lambda_5 = 0 \ \ g(\lambda) = 1\]
+\[f(x) = g(\lambda) = 1\]
 
 
 
 Перейдём к x.
 \[X(A^T\lambda - C) = 0\]
-\[A^T\lambda = \begin{pmatrix}
-    -4&2&-2\\
-    2&-4&-2\\
-    0&2&0\\
-    0&0&2\\
-    2&0&0
-\end{pmatrix} \]
+\[A^T\lambda =\]
 
 
 
