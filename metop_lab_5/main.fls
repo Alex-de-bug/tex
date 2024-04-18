@@ -756,8 +756,6 @@ INPUT ./min.png
 INPUT min.png
 INPUT ./min.png
 INPUT ./min.png
-INPUT /Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm0700.tfm
-INPUT /Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm0500.tfm
 INPUT main.aux
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb

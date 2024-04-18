@@ -1,10 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1713389296 "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" "main.pdf" "main" 1713389297 0
-  "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" 1713389295 19453 b12c2aa6516a422d1b5c50ad8722db09 ""
+["pdflatex"] 1713462699 "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" "main.pdf" "main" 1713462700 0
+  "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" 1713462699 17839 1d770a2e5ad219628dbe87c3a6814f48 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1683825241 3308 eee81981029f67083258db36df06e523 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1683825105 3304 6a543c07045572737981351171e0505e ""
-  "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm0500.tfm" 1684341405 3252 bc0f8cc163ba94bbce20e59f671a255d ""
-  "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm0700.tfm" 1684341403 3256 b15a2ce2310c0038b96c5235b038f0eb ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1683825100 3220 0e417eaf233b160335902e97259a6c77 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1683825239 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1683825102 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
@@ -211,8 +209,8 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "func.png" 1713196480 49624 2cc5cce7f463539228a3b78e6b98b251 ""
   "grad.png" 1713197394 47663 ae898bac4742ed48c2605e8866c10446 ""
-  "main.aux" 1713389297 2388 dfdac6403e6b677c4b86e43a02619368 "pdflatex"
-  "main.tex" 1713389295 19453 b12c2aa6516a422d1b5c50ad8722db09 ""
+  "main.aux" 1713462700 2262 2355f32162d7a0ef32131c53ef0287f0 "pdflatex"
+  "main.tex" 1713462699 17839 1d770a2e5ad219628dbe87c3a6814f48 ""
   "min.png" 1713197782 80741 16802388e504fc4e4adb5d50fe4a531d ""
   (generated)
   "main.aux"
