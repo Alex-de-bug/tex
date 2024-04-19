@@ -1,6 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1713481973 "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" "main.pdf" "main" 1713481973 0
-  "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" 1713481971 15221 3913eecea89e45e25b97997d2c64b578 ""
+["pdflatex"] 1713546318 "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" "main.pdf" "main" 1713546319 0
+  "/Users/alexalex/Desktop/tex/metop_lab_5/main.tex" 1713546318 16963 7c65d4132744bd3fcb2613bb5558f7e8 ""
+  "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1684784477 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1683825241 3308 eee81981029f67083258db36df06e523 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1683825105 3304 6a543c07045572737981351171e0505e ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1683825100 3220 0e417eaf233b160335902e97259a6c77 ""
@@ -43,6 +44,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1215737283 145408 43d44302ca7d82d487f511f83e309505 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1215737283 135942 859a90cad7494a1e79c94baf546d7de5 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
@@ -209,8 +211,8 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "func.png" 1713196480 49624 2cc5cce7f463539228a3b78e6b98b251 ""
   "grad.png" 1713197394 47663 ae898bac4742ed48c2605e8866c10446 ""
-  "main.aux" 1713481973 1846 7a03a31b3b1969592cbd540dd441356d "pdflatex"
-  "main.tex" 1713481971 15221 3913eecea89e45e25b97997d2c64b578 ""
+  "main.aux" 1713546319 1846 9d2a54df548a78ab734966872764a76e "pdflatex"
+  "main.tex" 1713546318 16963 7c65d4132744bd3fcb2613bb5558f7e8 ""
   "min.png" 1713197782 80741 16802388e504fc4e4adb5d50fe4a531d ""
   (generated)
   "main.aux"

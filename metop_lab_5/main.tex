@@ -371,7 +371,7 @@ $\lambda_2$ попадает в базисные, а $\lambda_5$ попадае�
 -\lambda_1 - \frac{1}{3}\lambda_4 - \frac{1}{6}\lambda_5 + \frac{7}{36}\]
 
 \[g' = -7\lambda_1+6(\lambda_1 +\frac{1}{6}\lambda_4 -\frac{1}{6}\lambda_5+\frac{1}{36})-\frac{5}{2}\lambda_4+\frac{5}{6} = 
--\lambda_1 - \frac{3}{2}\lambda_4 - \lambda_5 +1\]
+-\lambda_1 - \frac{3}{2}\lambda_4 - \lambda_5 -1\]
 
 \begin{table}[H]
     \centering
@@ -383,25 +383,126 @@ $\lambda_2$ попадает в базисные, а $\lambda_5$ попадае�
     &&&&\\\hline
     $\lambda_3$&-1&$-\frac{1}{3}$&$-\frac{1}{6}$&$\frac{7}{36}$\\
     &&&&\\\hline
-    $g'$&-1&$-\frac{3}{2}$&-1&1\\
+    $g'$&-1&$-\frac{3}{2}$&-1&-1\\
     &&&&\\\hline
     \end{tabular}
 \end{table}
 Критерий выполнен.
 
-\[\lambda_1 = 0;\ \ \lambda_2 = \frac{1}{36};\ \ \lambda_3 = \frac{7}{36};\ \ \lambda_4 = 0;\ \ \lambda_5 = 0 \ \ g(\lambda) = 1\]
-\[f(x) = g(\lambda) = 1\]
+\[\lambda_1 = 0;\ \ \lambda_2 = \frac{1}{36};\ \ \lambda_3 = \frac{7}{36};\ \ \lambda_4 = 0;\ \ \lambda_5 = 0 \ \ g(\lambda) = -1\]
+\[f(x) = g(\lambda) = -1\]
 
 
 
 Перейдём к x.
 \[X(A^T\lambda - C) = 0\]
-\[A^T\lambda =\]
+\[A^T\lambda - C =\begin{pmatrix}
+    -4&2&-2\\
+    2&-4&-2\\
+    0&2&0\\
+    0&0&2\\
+    2&0&0
+\end{pmatrix} \cdot
+\begin{pmatrix}
+    0\\
+    \\
+    \frac{1}{36}\\
+    \\
+    \frac{7}{36}\\
+\end{pmatrix}-
+\begin{pmatrix}
+    -\frac{1}{3}\\
+    \\
+    -0.5\\
+    \\
+    0\\
+    \\
+    0\\
+    \\
+    0\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+    -\frac{1}{3}\\
+    \\
+    -0.5\\
+    \\
+    \frac{1}{18}\\
+    \\
+    \frac{7}{18}\\
+    \\
+    0\\
+\end{pmatrix}-
+\begin{pmatrix}
+    -\frac{1}{3}\\
+    \\
+    -0.5\\
+    \\
+    0\\
+    \\
+    0\\
+    \\
+    0\\
+\end{pmatrix} =
+\begin{pmatrix}
+    0\\
+    \\
+    0\\
+    \\
+    \frac{1}{18}\\
+    \\
+    \frac{7}{18}\\
+    \\
+    0\\
+\end{pmatrix}
+\]
 
+\[
+    AX -B =
+    \begin{pmatrix}
+        -4&2&0&0&2\\
+        2&-4&2&0&0\\
+        -2&-2&0&2&0
+    \end{pmatrix}
+    \cdot 
+    X -
+    \begin{pmatrix}
+        -3\\
+        -1\\
+        -5
+    \end{pmatrix} = 
+    \begin{pmatrix}
+        -4x_1+2x_2+2x_5+3\\
+        2x_1-4x_2+2x_3+1\\
+        -2x_1-2x_2+2x_4+5
+    \end{pmatrix}
+\]
+\[\begin{cases}
+    \frac{2}{36}x_1 - \frac{4}{36}x_2 +\frac{2}{36}x_3 + \frac{1}{36} = 0\\
+    -\frac{14}{36}x_1-\frac{14}{36}x_2+\frac{14}{36}x_4 + \frac{35}{36} = 0\\
+    x_3,\ x_4 = 0
+\end{cases}\ => \ 
+\begin{cases}
+    \frac{2}{36}x_1 - \frac{4}{36}x_2 + \frac{1}{36} = 0\\
+    -\frac{14}{36}x_1-\frac{14}{36}x_2 + \frac{35}{36} = 0\\
+    x_3,\ x_4 = 0
+\end{cases}\ =>\ 
+\begin{cases}
+    x_1 = \frac{3}{2}\\
+    x_2 = 1\\
+    x_3,\ x_4 = 0
+\end{cases}
+\]
+\[-4x_1+2x_2+2x_5=-3\]
+\[x_5 = 2x_1 - x_2 -\frac{3}{2} = 3 -1-\frac{3}{2} = \frac{1}{2}\]
+\[f(x) = -\frac{1}{3}\cdot \frac{3}{2} - \frac{1}{2}\cdot 1 = -1\]
 
+\textbf{Ответ:}
+\[x_1 = \frac{3}{2};\ x_2 = 1;\ x_3 = 0;\ x_4 = 0;\ x_5 = \frac{1}{2};\ f_{max} = -1\]
 
 \end{document}
 \includegraphics[width=.9\textwidth]{123}
 
 
 \[f(x) = x_2-6x_3+x_4-3x_5\]
+
