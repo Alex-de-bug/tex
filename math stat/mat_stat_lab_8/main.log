@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  12 MAY 2024 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  12 MAY 2024 19:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -777,83 +777,87 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
+<toch.png, id=13, 705.63625pt x 363.3575pt>
+File: toch.png Graphic file (type png)
+<use toch.png>
+Package pdftex.def Info: toch.png  used on input line 122.
+(pdftex.def)             Requested size: 445.9133pt x 229.61502pt.
+ [2]
+<next.png, id=25, 850.17625pt x 354.32375pt>
+File: next.png Graphic file (type png)
+<use next.png>
+Package pdftex.def Info: next.png  used on input line 149.
+(pdftex.def)             Requested size: 445.9133pt x 185.84433pt.
+ [3 <./toch.png>] [4 <./next.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+<kvas.png, id=36, 908.39375pt x 357.335pt>
+File: kvas.png Graphic file (type png)
+<use kvas.png>
+Package pdftex.def Info: kvas.png  used on input line 192.
+(pdftex.def)             Requested size: 445.9133pt x 175.41193pt.
+<kvakva.png, id=37, 909.3975pt x 377.41pt>
+File: kvakva.png Graphic file (type png)
+<use kvakva.png>
+Package pdftex.def Info: kvakva.png  used on input line 197.
+(pdftex.def)             Requested size: 445.9133pt x 185.0592pt.
+[5 <./kvas.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 206--209
+
+ []
+
+[6 <./kvakva.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 281--285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
-
- []
-
-[2]
-<inv.png, id=24, 766.865pt x 209.78375pt>
-File: inv.png Graphic file (type png)
-<use inv.png>
-Package pdftex.def Info: inv.png  used on input line 148.
-(pdftex.def)             Requested size: 501.64716pt x 137.23169pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
+Underfull \hbox (badness 10000) in paragraph at lines 285--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
-
- []
-
-[3 <./inv.png>]
-<drob.png, id=31, 794.97pt x 200.75pt>
-File: drob.png Graphic file (type png)
-<use drob.png>
-Package pdftex.def Info: drob.png  used on input line 219.
-(pdftex.def)             Requested size: 501.64716pt x 126.68146pt.
- [4 <./drob.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 245--248
-
+Overfull \hbox (8.39326pt too wide) detected at line 294
+\OT1/cmr/m/n/10 35\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 054 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 124 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 638[] \OML/cmm/m/it/10 < M\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 y=x[]\OT1/cmr/m/n/10 ] \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 35\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 054 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 124 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10 + 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 638[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--248
-
- []
-
-[5]
-<pow.png, id=39, 737.75626pt x 221.82875pt>
-File: pow.png Graphic file (type png)
-<use pow.png>
-Package pdftex.def Info: pow.png  used on input line 290.
-(pdftex.def)             Requested size: 501.64716pt x 150.83476pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 316--319
-
+Overfull \hbox (8.39326pt too wide) detected at line 297
+\OT1/cmr/m/n/10 35\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 054 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 124 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 16 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 638[] \OML/cmm/m/it/10 < M\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 y=x[]\OT1/cmr/m/n/10 ] \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 35\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 054 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 124 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 16 + 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 638[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--319
-
+Overfull \hbox (8.39326pt too wide) detected at line 300
+\OT1/cmr/m/n/10 35\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 054 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 124 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 21 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 638[] \OML/cmm/m/it/10 < M\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 y=x[]\OT1/cmr/m/n/10 ] \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 35\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 054 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 124 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 21 + 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 638[]
  []
 
-[6 <./pow.png>]
-<exp.png, id=44, 734.745pt x 251.94125pt>
-File: exp.png Graphic file (type png)
-<use exp.png>
-Package pdftex.def Info: exp.png  used on input line 361.
-(pdftex.def)             Requested size: 501.64716pt x 172.01744pt.
- [7 <./exp.png>] (./main.aux) ) 
+
+Overfull \hbox (8.39326pt too wide) detected at line 303
+\OT1/cmr/m/n/10 35\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 054 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 124 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 29 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 638[] \OML/cmm/m/it/10 < M\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 y=x[]\OT1/cmr/m/n/10 ] \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 35\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 054 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 124 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 29 + 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 638[]
+ []
+
+[7]
+<res.png, id=51, 609.2361pt x 379.4175pt>
+File: res.png Graphic file (type png)
+<use res.png>
+Package pdftex.def Info: res.png  used on input line 309.
+(pdftex.def)             Requested size: 501.64716pt x 312.42119pt.
+ [8 <./res.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 29324 strings out of 476047
- 748781 string characters out of 5790247
- 1865248 words of memory out of 5000000
- 49319 multiletter control sequences out of 15000+600000
+ 29331 strings out of 476047
+ 748895 string characters out of 5790247
+ 1868248 words of memory out of 5000000
+ 49325 multiletter control sequences out of 15000+600000
  521010 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,103p,773b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on main.pdf (7 pages, 290346 bytes).
+ 99i,9n,103p,773b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on main.pdf (8 pages, 347875 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

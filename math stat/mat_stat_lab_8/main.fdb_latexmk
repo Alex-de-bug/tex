@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1715538524 "/Users/alexalex/Desktop/tex/math stat/mat_stat_lab_7/main.tex" "main.pdf" "main" 1715538525 0
-  "/Users/alexalex/Desktop/tex/math stat/mat_stat_lab_7/main.tex" 1715538524 14837 68f17f9dac744941bb8c58e7d452f332 ""
+["pdflatex"] 1715530537 "/Users/alexalex/Desktop/tex/math stat/mat_stat_lab_7/main.tex" "main.pdf" "main" 1715530538 0
+  "/Users/alexalex/Desktop/tex/math stat/mat_stat_lab_7/main.tex" 1715530537 14326 01d910b870d987df20e93d85ce82fa8b ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1684784477 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1683825241 3308 eee81981029f67083258db36df06e523 ""
   "/Users/alexalex/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1683825105 3304 6a543c07045572737981351171e0505e ""
@@ -25,6 +25,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
@@ -192,12 +193,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683823977 4643411 5ced174c6d521e21dd58a10751c00482 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683824033 7886842 9318a877a941dc86aae3806e8adeccb7 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "drob.png" 1715538242 51941 5e5f9ebe71d1c57657ff4d2658ba094e ""
-  "exp.png" 1715538035 54566 38ead720cd808d0f4db819fa6eed832e ""
-  "inv.png" 1715538365 51263 190b150a92000b65ab3f2bdd3c1f9803 ""
-  "main.aux" 1715538525 132 451533ab23d6cc1f816109f926adff2c "pdflatex"
-  "main.tex" 1715538524 14837 68f17f9dac744941bb8c58e7d452f332 ""
-  "pow.png" 1715538137 54884 8376d96df22b3ba84f775088c2d9d5ae ""
+  "kvakva.png" 1715342173 33159 bc5595a80ae541ff82011677b1050239 ""
+  "kvas.png" 1715342073 22924 f798dbe892be1fc8b5bd74d398c34c1e ""
+  "main.aux" 1715530538 132 c2301647373dfb03b18672530c16246e "pdflatex"
+  "main.tex" 1715530537 14326 01d910b870d987df20e93d85ce82fa8b ""
+  "next.png" 1715340678 19967 81d37e7e6af5d325e250ad8724702c50 ""
+  "res.png" 1715348023 96257 afbe2e2fcb8f9573b1cc6705cb92766f ""
+  "toch.png" 1715339492 20784 6cd30a912594e4bf9a2a85a876576405 ""
   (generated)
   "main.aux"
   "main.log"
