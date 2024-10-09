@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1728494669.74225 "/home/alwx/tex/lab1modeling/main.tex" "main.pdf" "main" 1728494670.34071 0
+["pdflatex"] 1728497416.00803 "/home/alwx/tex/lab1modeling/main.tex" "main.pdf" "main" 1728497416.60618 0
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1728470229.72656 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1728469942.4428 3308 eee81981029f67083258db36df06e523 ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1728469941.54945 3304 6a543c07045572737981351171e0505e ""
@@ -9,7 +9,7 @@
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1728469940.6661 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1728469939.77274 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/latt0800.tfm" 1728491701.19144 1272 2a21550efcb075c108e98819097de5c8 ""
-  "/home/alwx/tex/lab1modeling/main.tex" 1728494668.98033 21931 9e35878e3916eb77d68eb08cf6257007 ""
+  "/home/alwx/tex/lab1modeling/main.tex" 1728497415.26811 21944 f147cd3e3a6546909ec1e78591b6b8eb ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1727349926 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1727349926 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1727349926 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -206,8 +206,8 @@
   "4.png" 1728487596.1694 30169 e90a92240a6f290b09f6302e17a78615 ""
   "5.png" 1728487716.38726 33062 cd6e55283b955e497439c66cf1591e3c ""
   "6.png" 1728491112.93592 34084 5a68d5586b71a2d6ec4e311e71a8c5db ""
-  "main.aux" 1728494670.27369 3472 578506dcbcb83b56ad5463340c7a8f34 "pdflatex"
-  "main.tex" 1728494668.98033 21931 9e35878e3916eb77d68eb08cf6257007 ""
+  "main.aux" 1728497416.54145 3501 f21ab68573706c6e2f3c59fc42e0269f "pdflatex"
+  "main.tex" 1728497415.26811 21944 f147cd3e3a6546909ec1e78591b6b8eb ""
   (generated)
   "main.aux"
   "main.log"
