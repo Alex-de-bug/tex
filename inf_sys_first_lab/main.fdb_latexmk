@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1729895801.40681 "/home/alwx/tex/inf_sys_first_lab/main.tex" "main.pdf" "main" 1729895802.2062 0
+["pdflatex"] 1729896184.88484 "/home/alwx/tex/inf_sys_first_lab/main.tex" "main.pdf" "main" 1729896185.6786 0
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1728469942.4428 3308 eee81981029f67083258db36df06e523 ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1728469941.54945 3304 6a543c07045572737981351171e0505e ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1728469938.61605 3220 0e417eaf233b160335902e97259a6c77 ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1728469940.6661 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1728469939.77274 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
-  "/home/alwx/tex/inf_sys_first_lab/main.tex" 1729895801.25845 6496 ceddca9ac6a2354e66556311121dde1e ""
+  "/home/alwx/tex/inf_sys_first_lab/main.tex" 1729896184.73566 6523 1c59f51e2cb420bd9c3e2ee96c958cd7 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1727349926 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1727349926 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1727349926 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -205,9 +205,9 @@
   "11.jpg" 1729892952.79476 152645 9226f939e6e903f94035cd72c1a3bed0 ""
   "2.jpg" 1729892952.78476 287593 539530b20ed28dc62df66da42fcddac2 ""
   "3.jpg" 1729892952.79143 261842 98fcbe7e67c34d5cca7f9848259ffcc8 ""
-  "main.aux" 1729895802.14512 1074 aa6b21ab95c4ebc6e13ec35b87cb090a "pdflatex"
-  "main.out" 1729895802.14512 1170 897ae0d1fb4957e327deb54a86d5eddc "pdflatex"
-  "main.tex" 1729895801.25845 6496 ceddca9ac6a2354e66556311121dde1e ""
+  "main.aux" 1729896185.61899 1074 aa6b21ab95c4ebc6e13ec35b87cb090a "pdflatex"
+  "main.out" 1729896185.61899 1170 897ae0d1fb4957e327deb54a86d5eddc "pdflatex"
+  "main.tex" 1729896184.73566 6523 1c59f51e2cb420bd9c3e2ee96c958cd7 ""
   "package_uml.png" 1729893906.28569 31488 0c8c67a73e0431f7fea0fac893c2e466 ""
   (generated)
   "main.aux"

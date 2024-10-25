@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.9)  26 OCT 2024 01:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.9)  26 OCT 2024 01:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -863,12 +863,7 @@ Package hyperref Info: Link coloring OFF on input line 16.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
-
- []
-
-[1
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
 <11.jpg, id=40, 1536.74126pt x 736.7525pt>
@@ -934,7 +929,7 @@ Here is how much of TeX's memory you used:
  1038 hyphenation exceptions out of 8191
  99i,5n,107p,869b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on main.pdf (4 pages, 609561 bytes).
+Output written on main.pdf (4 pages, 610052 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
