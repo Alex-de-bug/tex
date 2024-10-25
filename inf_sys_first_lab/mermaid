@@ -1,0 +1,288 @@
+classDiagram
+    class AppError {
+        -int status
+        -String message
+        -Date timestamp
+        +AppError(int, String)
+    }
+    class AdminRightsRequest {
+        -String username
+    }
+    class EditResponse {
+        -String username
+        -Boolean rulling
+    }
+    class JwtRequest {
+        -String username
+        -String password
+    }
+    class RegUserDto {
+        -String username
+        -String password
+        -String confirmPassword
+    }
+    class RequestVehicle {
+        -String name
+        -Long x
+        -Double y
+        -String type
+        -Double enginePower
+        -long numberOfWheels
+        -Long capacity
+        -Double distanceTravelled
+        -Float fuelConsumption
+        -String fuelType
+        -List~String~ namesOfOwners
+        -Boolean permissionToEdit
+    }
+    class SimpleInfoAboutCars {
+        -Long id
+        -String name
+        -Long x
+        -Double y
+        -String type
+        -Double enginePower
+        -long numberOfWheels
+        -Long capacity
+        -Double distanceTravelled
+        -Float fuelConsumption
+        -String fuelType
+        -List~String~ namesUsers
+        -Boolean permissionToEdit
+        +SimpleInfoAboutCars(Vehicle)
+    }
+    class UserDto {
+        -Long id
+        -String username
+    }
+    class UserWithJwtResponse {
+        -String name
+        -List~String~ roles
+        -String token
+    }
+    class Action {
+        <<enumeration>>
+        +CREATE_VEHICLE
+        +UPDATE_VEHICLE
+        +DELETE_VEHICLE
+    }
+    class FuelType {
+        <<enumeration>>
+        +KEROSENE
+        +ELECTRICITY
+        +DIESEL
+        +MANPOWER
+        +PLASMA
+        +fromString(String)
+    }
+    class VehicleType {
+        <<enumeration>>
+        +PLANE
+        +BOAT
+        +BICYCLE
+        +fromString(String)
+    }
+    class Coordinates {
+        -Long id
+        -Long x
+        -Double y
+    }
+    class RequestForRights {
+        -Long id
+        -String username
+    }
+    class Role {
+        -Integer id
+        -String name
+    }
+    class User {
+        -Long id
+        -String username
+        -String password
+        -Collection~Role~ roles
+    }
+    class UserAction {
+        -Long id
+        -Action action
+        -Long vehicleId
+        -LocalDateTime timestamp
+        -User user
+    }
+    class Vehicle {
+        -Long id
+        -String name
+        -Coordinates coordinates
+        -LocalDateTime creationDate
+        -VehicleType type
+        -Double enginePower
+        -long numberOfWheels
+        -Long capacity
+        -Double distanceTravelled
+        -Float fuelConsumption
+        -FuelType fuelType
+        -Collection~User~ users
+        -Boolean permissionToEdit
+    }
+
+    class AdminService {
+        -UserRepository userRepository
+        -RoleService roleService
+        -RequestForRightsRepository requestForRightsRepository
+        +editResponces(EditResponse)
+    }
+    class AuthService {
+        -UserService userService
+        -JwtTokenUtil jwtTokenUtils
+        -AuthenticationManager authenticationManager
+        +createAuthToken(JwtRequest)
+        +createNewUser(RegUserDto)
+        +updateAuthToken(String)
+    }
+    class UserController {
+        -VehicleService vehicleService
+        -UserService userService
+        -AuthService authService
+        -UserActionService userActionService
+        -SimpMessagingTemplate messagingTemplate
+        +getTableWithVehicle()
+        +updateVehicle(String, Long, RequestVehicle, BindingResult)
+        +deleteVehicle(Long, String, String)
+        +createVehicle(String, RequestVehicle, BindingResult)
+        +getAdminRights(AdminRightsRequest)
+        +updateToken(String)
+    }
+    class UserService {
+        -UserRepository userRepository
+        -RoleService roleService
+        -PasswordEncoder passwordEncoder
+        -RequestForRightsRepository requestForRightsRepository
+        +findByUsername(String)
+        +loadUserByUsername(String)
+        +loadRolesByUsername(String)
+        +createNewUser(RegUserDto)
+        +pushReqForAdminRights(AdminRightsRequest)
+        +getAllRequests()
+    }
+    class VehicleService {
+        -VehicleRepository vehicleRepository
+        -CoordinatesRepositury coordinatesRepositury
+        -UserRepository userRepository
+        -JwtTokenUtil jwtTokenUtil
+        -RoleService roleService
+        -UserActionService userActionService
+        +getAllVehicle()
+        +updateVehicle(Long, RequestVehicle, String)
+        +deleteVehicle(Long, String, String)
+        +createVehicle(RequestVehicle)
+    }
+    class UserActionService {
+        -UserRepository userRepository
+        -UserActionRepository userActionRepository
+        -JwtTokenUtil jwtTokenUtil
+        +logAction(Action, String, Long)
+    }
+    class RoleService {
+        -RoleRepository roleRepository
+        +getUserRole()
+        +getAdminRole()
+    }
+
+
+    class PasswordEncoderConfiguration {
+        +passwordEncoder() PasswordEncoder
+    }
+
+    class SecurityConfig {
+        -UserService userService
+        -JwtRequestFilter jwtRequestFilter
+        -PasswordEncoder passwordEncoder
+        +securityFilterChain(HttpSecurity) SecurityFilterChain
+        +daoAuthenticationProvider() DaoAuthenticationProvider
+        +authenticationManager(AuthenticationConfiguration) AuthenticationManager
+        +adminAuthorizationManager() AdminAuthorizationManager
+    }
+
+    class JwtRequestFilter {
+        -JwtTokenUtil jwtTokenUtil
+        +doFilterInternal(HttpServletRequest, HttpServletResponse, FilterChain)
+    }
+    class JwtTokenUtil {
+        -String secret
+        -Duration jwtLifetime
+        +generateToken(UserDetails) String
+        +getUsername(String) String
+        +getRoles(String) List~String~
+        -getAllClaimsFromToken(String) Claims
+    }
+
+    class Sha384PasswordEncoder {
+        +encode(CharSequence) String
+        +matches(CharSequence, String) boolean
+        -hashPassword(String) String
+    }
+    class AdminAuthorizationManager {
+        -UserService userService
+        +check(Supplier~Authentication~, RequestAuthorizationContext) AuthorizationDecision
+    }
+    class WebSocketConfig {
+        -JwtTokenUtil jwtTokenUtil
+        -UserService userService
+        +configureMessageBroker(MessageBrokerRegistry)
+        +registerStompEndpoints(StompEndpointRegistry)
+        +configureClientInboundChannel(ChannelRegistration)
+    }
+    class GlobalExceptionHandler {
+         +handleFormatException(HttpMessageNotReadableException) ResponseEntity~AppError~
+         +handleDataIntegrityViolation(DataIntegrityViolationException) ResponseEntity~AppError~
+         +handleValidationExceptions(MethodArgumentNotValidException) ResponseEntity~AppError~
+    }
+
+
+
+    Vehicle "1" *-- "*" User : users
+    UserAction "*" -- "1" User : user
+    Vehicle "1" *-- "1" Coordinates : coordinates
+
+    AdminService --> UserRepository
+    AdminService --> RoleService
+    AdminService --> RequestForRightsRepository
+
+    AuthService --> UserService
+    AuthService --> JwtTokenUtil
+    AuthService --> AuthenticationManager
+
+    UserController --> VehicleService
+    UserController --> UserService
+    UserController --> AuthService
+    UserController --> UserActionService
+    UserController --> SimpMessagingTemplate
+
+    UserService --> UserRepository
+    UserService --> RoleService
+    UserService --> PasswordEncoder
+    UserService --> RequestForRightsRepository
+
+    VehicleService --> VehicleRepository
+    VehicleService --> CoordinatesRepositury
+    VehicleService --> UserRepository
+    VehicleService --> JwtTokenUtil
+    VehicleService --> RoleService
+    VehicleService --> UserActionService
+
+
+    UserActionService --> UserRepository
+    UserActionService --> UserActionRepository
+    UserActionService --> JwtTokenUtil
+
+    RoleService --> RoleRepository
+    
+    SecurityConfig --> UserService
+    SecurityConfig --> JwtRequestFilter
+    SecurityConfig --> PasswordEncoder
+
+    JwtRequestFilter --> JwtTokenUtil
+    
+    AdminAuthorizationManager --> UserService
+
+    WebSocketConfig --> JwtTokenUtil
+    WebSocketConfig --> UserService
