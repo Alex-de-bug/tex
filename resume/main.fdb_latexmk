@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1727972473.30806 "/home/alwx/tex/resume/main.tex" "main.pdf" "main" 1727972473.74837 0
-  "/home/alwx/tex/resume/main.tex" 1727972473.14289 5988 d0ea9c09b58ce922948399fd0578d134 ""
+["pdflatex"] 1730714878.48642 "/home/alwx/tex/resume/main.tex" "main.pdf" "main" 1730714879.43233 0
+  "/home/alwx/tex/resume/main.tex" 1730714878.21308 6063 98f26eb6eed66679694188d9f7f0d8bf ""
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_4jropk.enc" 1727349926 3267 177411e539fcc6ace86309ff03b22da6 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1727349926 3021 665788e9679767ade2a71155215d25e0 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -120,9 +120,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1727821310.20332 5462926 d819f3d6cbf07195f5abfccb2da6f2bc ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1727821255 8555703 7abbaeeb42912506da0b4362f642174b ""
-  "main.aux" 1727972473.68289 793 5ed0ba86df96282708dc3c6e9a4e9e4a "pdflatex"
-  "main.out" 1727972473.68623 552 286bd51718bac03256fff953f8e40e14 "pdflatex"
-  "main.tex" 1727972473.14289 5988 d0ea9c09b58ce922948399fd0578d134 ""
+  "main.aux" 1730714879.29642 686 e677ebbc06eec909fb3df564939910f7 "pdflatex"
+  "main.out" 1730714879.29642 459 aa956f8cb76f072918d5886980c79535 "pdflatex"
+  "main.tex" 1730714878.21308 6063 98f26eb6eed66679694188d9f7f0d8bf ""
   (generated)
   "main.aux"
   "main.log"

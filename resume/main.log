@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.2)  3 OCT 2024 19:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.2)  4 NOV 2024 13:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -542,9 +542,9 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
 (Font)              scaled to size 6.0pt on input line 119.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 182.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 169.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 182.
+(Font)              scaled to size 10.0pt on input line 169.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -559,21 +559,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 286BD51718BAC03256FFF953F8E40E14;552.
+(rerunfilecheck)             Checksum: AA956F8CB76F072918D5886980C79535;459.
  ) 
 Here is how much of TeX's memory you used:
- 13472 strings out of 474116
- 235779 string characters out of 5750249
- 1955187 words of memory out of 5000000
- 35622 multiletter control sequences out of 15000+600000
+ 13470 strings out of 474116
+ 235759 string characters out of 5750249
+ 1945187 words of memory out of 5000000
+ 35621 multiletter control sequences out of 15000+600000
  672860 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,282b,898s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on main.pdf (1 page, 191551 bytes).
+Output written on main.pdf (1 page, 193578 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
