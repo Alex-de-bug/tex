@@ -1,12 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1730741923.78292 "/home/alwx/tex/lab2modeling/main.tex" "main.pdf" "main" 1730741924.48029 0
+["pdflatex"] 1730997503.20335 "/home/alwx/tex/lab2modeling/main.tex" "main.pdf" "main" 1730997503.98132 0
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1728470229.72656 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1728469942.4428 3308 eee81981029f67083258db36df06e523 ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1728469941.54945 3304 6a543c07045572737981351171e0505e ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1728469938.61605 3220 0e417eaf233b160335902e97259a6c77 ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1728469940.6661 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/home/alwx/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1728469939.77274 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
-  "/home/alwx/tex/lab2modeling/main.tex" 1730741922.82652 19229 d8ab7890f0b5db8ac3894ee019c69e5a ""
+  "/home/alwx/tex/lab2modeling/main.tex" 1730997503.04244 19228 77be9d6f2d792509fdf03cf23ffc7841 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1727349926 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1727349926 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1727349926 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -208,8 +208,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1728469926.93579 5345996 744a4d11b40dca179439dcd694afeaf8 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1728469912 7974788 7d4ec548e9269bcdaaa09463167d4fca ""
   "image.png" 1730739014.43251 69103 df7dcb4717138e4a72a33d1c2eeaa4a8 ""
-  "main.aux" 1730741924.41988 2509 49854d8a92ee7c2fcc9f40ac0ead53bc "pdflatex"
-  "main.tex" 1730741922.82652 19229 d8ab7890f0b5db8ac3894ee019c69e5a ""
+  "main.aux" 1730997503.92244 2509 49854d8a92ee7c2fcc9f40ac0ead53bc "pdflatex"
+  "main.tex" 1730997503.04244 19228 77be9d6f2d792509fdf03cf23ffc7841 ""
   (generated)
   "main.aux"
   "main.log"
