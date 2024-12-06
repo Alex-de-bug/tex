@@ -1,0 +1,203 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Александр Дениченко} \\ \vspace{1pt}
+    \small 8-921-512-43-61 $|$ \href{mailto:a.deni444enko@mail.ru}{\underline{a.deni444enko@mail.ru}} $|$ 
+    \href{https://t.me/nord_west_zap}{\underline{t.me/nord\_west\_zap}} $|$
+    \href{https://github.com/Alex-de-bug}{\underline{github.com/Alex-de-bug}}
+\end{center}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Технические навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Языки программирования}{: Java (Core, Collections, Concurrency), C, Python, Assembly (RISC-V)} \\
+     \textbf{Фреймворки и технологии}{: Spring (Mail, Boot, MVC, Security, Data JPA), Hibernate, Criteria API} \\
+     \textbf{Веб-разработка}{: React.js, Redux, HTML/CSS, RESTful APIs} \\
+     \textbf{Инструменты DevOps}{: Docker, Git (GitHub, GitLab), Nginx, Maven, Flyway} \\
+     \textbf{Базы данных}{: PostgreSQL, Redis} \\
+     \textbf{Безопасность}{: JWT, OAuth 2.0} \\
+     \textbf{Средства разработки}{: VSCode, Vim, LaTeX}
+    }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Университет ИТМО}{Санкт-Петербург, РФ}
+      {Бакалавриат, Программная инженерия}{Окончание в июле 2026}
+          \resumeItemListStart
+            \resumeItem{Проведено научное исследование по теме "Архитектура процессора с тегированной памятью"}
+            \resumeItem{Разработан эмулятор процессора RISC-V с реализацией собственного ассемблера}
+            \resumeItem{Изучены принципы операционных систем на практике с XV6, включая управление памятью и планирование процессов}
+            \resumeItem{Средний балл: 4.7/5.0}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% -----------EXPERIENCE-----------
+\section{Опыт работы}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Backend-разработчик}{Октябрь 2023 - Настоящее время}
+      {Лаборатория COSM, Команда Crossroads}{Санкт-Петербург, РФ}
+      \resumeItemListStart
+        \resumeItem{Разработка backend-сервисов с использованием Spring Framework}
+        \resumeItem{Проектирование и реализация RESTful API}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------COMMUNITY AND LEADERSHIP-----------
+\section{Сообщество и лидерство}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full-Stack разработчик. 3-е место}{Сентябрь 2023}
+      {Хакатон "На Севере кодить!"}{Мурманск, РФ}
+      \resumeItemListStart
+        \resumeItem{Разработано два веб-приложений для системы управления транспортными картами}
+        \resumeItem{Мобильное приложение на React Native для управления транспортными картами пользователей}
+        \resumeItem{Панель администратора с использованием фреймворка Next.js для управления системой}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Проекты}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Система управления задачами} $|$ \emph{Spring Boot, Angular, PostgreSQL} $|$ \emph{Full-Stack}}{Октябрь 2024}
+        \resumeItemListStart
+          \resumeItem{Разработка системы управления проектами по типу Jira с планированием спринтов и командным взаимодействием}
+          \resumeItem{Реализованы миграции базы данных с помощью Flyway и оптимизирована производительность запросов с помощью индексов}
+          \resumeItem{Созданы хранимые процедуры и функции на уровне базы данных для сложной бизнес-логики}
+          \resumeItem{Разработан комплексный набор автотестов с использованием Mockito для тестирования API}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Калькулятор бухгалтерских услуг} $|$ \emph{Spring Boot, React, PostgreSQL} $|$ \emph{Full-Stack}}{Июль 2024}
+          \resumeItemListStart
+            \resumeItem{Разработана автоматизированная система расчета стоимости бухгалтерских услуг}
+            \resumeItem{Реализована панель администратора с аутентификацией JWT и Spring Security}
+            \resumeItem{Создана система уведомлений по email с собственным доменом для обратной связи}
+            \resumeItem{Написана подробная \href{https://github.com/Alex-de-bug/accounting_calculator/blob/main/documentation/main.tex}{\underline{документация требований}}}
+            \resumeItem{Сайт в production: \href{https://zhukov-finance.ru/}{\underline{zhukov-finance.ru}}}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Система управления транспортом} $|$ \emph{Spring Boot, React, WebSocket, PostgreSQL} $|$ \emph{Full-Stack}}{Сентябрь 2024}
+          \resumeItemListStart
+            \resumeItem{Разработана система управления транспортом с интеграцией WebSocket для обновлений в реальном времени}
+            \resumeItem{Создана защищенная панель администратора с использованием Spring Security и JWT}
+            \resumeItem{Реализован автоматизированный процесс развертывания с использованием Docker и Nginx}
+            \resumeItem{Разработан адаптивный пользовательский интерфейс на JavaScript и React с локализацией}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
